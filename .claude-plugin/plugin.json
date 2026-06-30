@@ -1,0 +1,8 @@
+{
+  "name": "legal-br",
+  "version": "1.0.0",
+  "description": "Acelere a revisão de contratos, triagem de Acordos de Confidencialidade (NDA) e fluxos de compliance para equipes jurídicas internas no Brasil. Redija peças e pareceres jurídicos, organize pesquisa de precedentes e gerencie conhecimento institucional — adaptado para o direito brasileiro (Código Civil, LGPD, CLT, CDC, Lei 14.133/2021).",
+  "author": {
+    "name": "Anthropic"
+  }
+}
