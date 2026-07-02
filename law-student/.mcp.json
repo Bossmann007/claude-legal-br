@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "Slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "title": "Slack",
+      "description": "Search messages, read channels, find discussions across your workspace."
+    },
+    "Google Drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "title": "Google Drive",
+      "description": "Search, read, and fetch documents from Google Drive."
+    },
+    "JusBrasil / Escavador / PJe (placeholder)": {
+      "type": "http",
+      "url": "[PLACEHOLDER — no well-known public MCP connector for JusBrasil, Escavador, or PJe (Processo Judicial Eletrônico) as of this writing; wire one up here if/when a real integration exists]",
+      "title": "Brazilian legal/case research (placeholder)",
+      "description": "Placeholder for Brazilian jurisprudência research — STF/STJ/TJ/TRT case law, súmulas, diários oficiais. Not a real connector yet. Until one is wired up, cite from training knowledge tagged `[conhecimento do modelo — verificar]` or from student-pasted material."
+    }
+  },
+  "recommendedCategories": [
+    "legal-research",
+    "case-law",
+    "documents",
+    "chat"
+  ]
+}

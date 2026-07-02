@@ -1,0 +1,61 @@
+{
+  "mcpServers": {
+    "Slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "title": "Slack",
+      "description": "Search messages, read channels, find discussions across your workspace."
+    },
+    "Google Drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "title": "Google Drive",
+      "description": "Search, read, and fetch documents from Google Drive."
+    },
+    "Everlaw": {
+      "type": "http",
+      "url": "https://api.everlaw.com/v1/mcp",
+      "title": "Everlaw",
+      "description": "Search, organize, and retrieve documents from your Everlaw projects — metadata, keywords, document types — with review links."
+    },
+    "TopCounsel": {
+      "type": "http",
+      "url": "https://api.techgc.co/api/mcp/topcounsel",
+      "title": "TopCounsel",
+      "description": "Outside counsel recommendations from The L Suite — 5,000+ in-house counsel community sentiment, rankings, and expertise evidence."
+    },
+    "JusBrasil": {
+      "type": "http",
+      "url": "https://mcp.jusbrasil.com.br/",
+      "title": "JusBrasil",
+      "description": "Maior plataforma de pesquisa jurídica do Brasil — jurisprudência de tribunais estaduais e federais, doutrina, legislação federal/estadual/municipal, e verificação de citações."
+    },
+    "Aurora": {
+      "type": "http",
+      "url": "https://mcp.ai.consilio.com",
+      "title": "Aurora",
+      "description": "Read-only Consilio ediscovery — find matters, list workspaces, full-text search, AI-powered cross-matter investigations, every record cited to source."
+    },
+    "Escavador": {
+      "type": "http",
+      "url": "https://mcp.escavador.com/anthropic",
+      "title": "Escavador",
+      "description": "Rastreamento de processos e movimentações em todos os tribunais brasileiros — dados de partes, advogados, andamentos processuais, e analytics de juízes e advogados adversos."
+    },
+    "PJe": {
+      "type": "http",
+      "url": "https://mcp.pje.jus.br/anthropic",
+      "title": "PJe (Processo Judicial Eletrônico)",
+      "description": "Sistema oficial de e-filing e acompanhamento processual da Justiça Federal e da maioria dos tribunais estaduais/trabalhistas brasileiros — consulta de autos, movimentações, prazos, e intimações eletrônicas."
+    }
+  },
+  "recommendedCategories": [
+    "ediscovery",
+    "legal-research",
+    "case-law",
+    "court-analytics",
+    "outside-counsel-network",
+    "documents",
+    "chat"
+  ]
+}

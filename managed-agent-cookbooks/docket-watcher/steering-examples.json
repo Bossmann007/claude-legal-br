@@ -1,0 +1,5 @@
+[
+  { "event": "Watch docket 5001234-56.2026.4.03.6100 in TRF-3, matter M-2026-042", "description": "Single-matter federal (Justiça Federal) docket sweep" },
+  { "event": "Daily sweep: all active matters with hearings in next 14 days", "description": "Scheduled portfolio sweep for near-term hearings" },
+  { "event": "New filing detected: Contestação in matter M-2026-042, compute réplica deadline", "description": "Event-triggered deadline computation for a specific filing" }
+]

@@ -1,0 +1,36 @@
+{
+  "mcpServers": {
+    "Solve Intelligence": {
+      "type": "http",
+      "url": "https://api.solveintelligence.com/mcp/",
+      "title": "Solve Intelligence",
+      "description": "Patent workflows — search patent and non-patent literature, legal texts, SEP technical standards, prior art, claim analysis."
+    },
+    "JusBrasil / Escavador / PJe (placeholder)": {
+      "type": "http",
+      "url": "[PLACEHOLDER — no well-known public MCP connector for JusBrasil, Escavador, or PJe (Processo Judicial Eletrônico) as of this writing; wire one up here if/when a real integration exists]",
+      "title": "Brazilian legal/case research (placeholder)",
+      "description": "Placeholder for Brazilian jurisprudência and docket research — STF/STJ/TJ/TRT case law, diários oficiais, andamento processual. Not a real connector yet. Until one is wired up, cite from training knowledge tagged `[model knowledge — verify]` or from user-pasted material tagged `[user provided]`."
+    },
+    "Slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "title": "Slack",
+      "description": "Search messages, read channels, find discussions across your workspace."
+    },
+    "Google Drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "title": "Google Drive",
+      "description": "Search, read, and fetch documents from Google Drive."
+    }
+  },
+  "recommendedCategories": [
+    "ip-management",
+    "legal-research",
+    "case-law",
+    "documents",
+    "chat",
+    "email"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "mcpServers": {
+    "Slack": {
+      "type": "http",
+      "url": "https://mcp.slack.com/mcp",
+      "title": "Slack",
+      "description": "Search messages, read channels, find discussions across your workspace."
+    },
+    "Google Drive": {
+      "type": "http",
+      "url": "https://drivemcp.googleapis.com/mcp/v1",
+      "title": "Google Drive",
+      "description": "Search, read, and fetch documents from Google Drive."
+    },
+    "JusBrasil": {
+      "type": "http",
+      "url": "https://mcp.jusbrasil.com.br/",
+      "title": "JusBrasil",
+      "description": "Case-law and docket search/aggregation platform — jurisprudência dos tribunais, andamentos processuais, diários oficiais, e verificação de citações. [verify endpoint against actual JusBrasil developer docs before production use]"
+    },
+    "Escavador": {
+      "type": "http",
+      "url": "https://mcp.escavador.com/mcp",
+      "title": "Escavador",
+      "description": "Primary law research — busca de processos por partes/OAB, jurisprudência, extração de movimentações e decisões, verificação de andamento. [verify endpoint against actual Escavador developer docs before production use]"
+    },
+    "PJe": {
+      "type": "http",
+      "url": "https://mcp.pje.jus.br/",
+      "title": "PJe (Processo Judicial eletrônico)",
+      "description": "Direct access to a tribunal's PJe instance for docket/movimentação lookups. Each tribunal (TJ, TRF, TST, etc.) runs its own separate PJe deployment — there is no single unified PJe endpoint; point this at the specific tribunal instance(s) the clinic needs. [verify endpoint per tribunal before production use]"
+    }
+  },
+  "recommendedCategories": [
+    "case-management",
+    "legal-research",
+    "case-law",
+    "licensing-boards",
+    "documents",
+    "chat"
+  ]
+}

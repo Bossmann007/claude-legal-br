@@ -11,6 +11,28 @@ Plugin de produtividade com IA para times jurídicos internos no Brasil, projeta
 - **Privacidade / Compliance** -- LGPD, revisão de DPA/Acordo de Tratamento de Dados, atendimento a titulares, monitoramento regulatório (ANPD)
 - **Suporte ao Contencioso** -- Preservação de documentos, preparação para litígio, pareceres de caso
 
+## Qual domínio devo usar?
+
+```
+Sua tarefa envolve...
+├─ Contrato com fornecedor/cliente, NDA, MSA?        → commercial-legal
+├─ Empregado, rescisão, CCT, investigação interna?   → employment-legal
+│    (disputa trabalhista NÃO é commercial-legal)
+├─ LGPD, DPA, titular de dados, ANPD?                → privacy-legal
+├─ M&A, atas, diligência, societário?                → corporate-legal
+├─ Marca, patente, clearance, cease & desist?        → ip-legal
+├─ Processo judicial, cronologia, peças?             → litigation-legal
+├─ Lançamento de produto, termos de uso?             → product-legal
+├─ Monitorar regulação, gap analysis?                → regulatory-legal
+├─ Uso de IA na empresa, AIA, inventário?            → ai-governance-legal
+├─ Estudar Direito (aluno)?                          → law-student
+├─ NPJ / clínica com estagiários?                    → legal-clinic
+├─ Instalar/gerenciar skills deste repo?             → legal-builder-hub
+└─ Pesquisa jurídica profunda multi-fonte?           → external_plugins/cocounsel-legal
+```
+
+Visão completa da arquitetura e taxonomia: [ARCHITECTURE.md](ARCHITECTURE.md). Quando escalar para advogado humano: [references/escalation-process.md](references/escalation-process.md).
+
 ## Instalação
 
 ```
@@ -229,3 +251,15 @@ claude-legal-br/
     ├── signature-request/SKILL.md
     └── vendor-check/SKILL.md
 ```
+
+## Localização — backlog
+
+Backlog fechado. Todos os 13 plugins do marketplace (mais `external_plugins/cocounsel-legal`, mantido como está — plugin de terceiro da Thomson Reuters, branded em Westlaw por natureza, fora de escopo de adaptação) foram auditados por substância US-centric e corrigidos. Os `managed-agent-cookbooks/` com integrações de pesquisa jurídica (`docket-watcher`, `reg-monitor`) também foram adaptados.
+
+**Vocabulário de tags de proveniência** — canônico em todo o repo: Westlaw/CourtListener/Trellis/Descrybe → JusBrasil/Escavador/PJe; USPTO → INPI; Federal Register → DOU (Diário Oficial da União, seções I/II/III) + portais gov.br por agência (sem API única — RSS/scraping). Aplicado em `CLAUDE.md` de todos os 13 plugins, `.mcp.json` onde havia conector US-específico configurado, e nos SKILL.md com exemplos de citação.
+
+**Adaptado por plugin:** `employment-legal` (CLT licenças, CCT/base territorial, dispensa coletiva, prescrição trabalhista 2/5 anos), `legal-clinic` (estagiário NPJ/OAB), `ip-legal` (INPI/LPI, agente da propriedade industrial), `privacy-legal` (LGPD/ANPD, RIPD), `regulatory-legal` (DOU/gov.br, consulta pública), `corporate-legal` (Ltda./S.A./CVM, LSA), `product-legal` (setores employment/government), `commercial-legal` (Código Civil, CDC, Lei de Arbitragem/CAM-CCBC, foro de eleição CPC Art. 63), `ai-governance-legal` (PL 2338/2023, LGPD Art. 20, ANPD), `litigation-legal` (PJe por tribunal — TJ/TRF, sem endpoint único), `legal-builder-hub` (índice/roteamento cross-plugin).
+
+**Gaps de substância mais profundos, além de troca de terminologia** (reescrita de doutrina, não apenas nome de ferramenta): `employment-legal/skills/worker-classification/SKILL.md` (ainda 100% doutrina US — ABC test/FLSA/IRS §530 — sem framework CLT art. 3º de vínculo empregatício) e `ip-legal/skills/fto-triage/SKILL.md` (USPTO PAIR/PatentCenter e §284 como default, sem framework de anuidades/vigência da LPI) foram identificados e despachados para reescrita dedicada.
+
+**Placeholders conhecidos, tag `[verify]`:** URLs/domínios exatos de API JusBrasil/Escavador/PJe (não confirmados contra documentação real — nenhum conector MCP público conhecido hoje), estrutura de portal por agência gov.br (ANPD/BCB/ANVISA/ANATEL/ANEEL/ANS/CADE), granularidade de PJe por tribunal (cada TJ/TRF roda instância própria, sem endpoint federado).
