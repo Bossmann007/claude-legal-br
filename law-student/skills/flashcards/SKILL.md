@@ -138,7 +138,7 @@ Per subject: total cards, bucket distribution, due today, reviewed this week. Hi
 
 - **outline-builder:** after building or extending an outline, offer to generate flashcards from the new material
 - **socratic-drill:** if a card has been wrong 2+ times, route it to `/law-student:socratic-drill` for verbal working-through — flashcards aren't enough for concepts you don't actually understand
-- **bar-prep-questions:** bar prep subjects with poor flashcard stats weight higher in MBE drilling
+- **bar-prep-questions:** OAB prep subjects with poor flashcard stats weight higher in drilling de questões objetivas (1ª fase)
 
 ## Storage
 

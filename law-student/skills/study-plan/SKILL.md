@@ -17,7 +17,7 @@ argument-hint: "[--build | --update | --status | --cram]"
    - `--build` (default if no plan exists): walk the inputs gate (exam, subjects, hours/week, days off, methods). Build the phase structure + daily schedule for the first two weeks. Write `study-plan.yaml`.
    - `--update` (default if plan exists): re-read `session_history`, adjust subject priorities and weekly_hours, fill in the next stretch of daily schedule.
    - `--status`: what's scheduled today / this week, score trend, subjects slipping, next scheduled session per subject.
-   - `--cram`: force cram mode — 80/20 high-yield prioritization, daily MBE volume, taper last 2-3 days.
+   - `--cram`: force cram mode — 80/20 high-yield prioritization, daily volume de questões objetivas (1ª fase), taper last 2-3 days.
 5. Before writing: summarize the plan in prose and confirm with the student. Adjust based on their answer.
 6. Always sanity-check hours/week against the student's stated life constraints. Over-ambitious plans fail.
 
@@ -35,7 +35,7 @@ A plan is opinion, not doctrine. The skill states clearly what's an estimate:
 
 - **Time-per-topic estimates** are general guidance (based on typical Barbri/Themis/Kaplan weightings). Flag them as estimates — the student's real pace will differ.
 - **Subject weightings** are derived from the student's own reported weak subjects and session history. Confident.
-- **High-yield-topic prioritization in cram mode** is based on multi-year bar exam release patterns (MBE/MEE subject frequency). Flag any "this is definitely on the exam" claim as `[UNCERTAIN — past frequency is not a prediction]`.
+- **High-yield-topic prioritization in cram mode** is based on multi-year Exame de Ordem (OAB) patterns (frequência de temas na 1ª fase objetiva / 2ª fase prático-profissional). Flag any "this is definitely on the exam" claim as `[UNCERTAIN — past frequency is not a prediction]`.
 
 ## Load context
 
@@ -54,7 +54,7 @@ A plan is opinion, not doctrine. The skill states clearly what's an estimate:
 
 > What are we building a plan for?
 >
-> 1. **Bar exam** (you have a bar date in mind)
+> 1. **Exame de Ordem (OAB)** (you have an exam date in mind)
 > 2. **A specific law school exam or set of finals**
 > 3. **General semester study cadence** (outlining, reading, drilling across all classes)
 
@@ -93,7 +93,7 @@ Ask, one question, wait:
 
 > Your profile says you're on [Barbri / Themis / Kaplan]. They publish a day-by-day calendar with every subject and task scheduled. Two ways this plan can work — pick one:
 >
-> 1. **Supplement.** The prep course is your primary curriculum. This plan fills gaps: extra MBE drilling on your weak subjects, targeted essay practice, flashcard loops on the topics you're missing. I won't rebuild the prep-course calendar; I'll layer on top of it.
+> 1. **Supplement.** The prep course is your primary curriculum. This plan fills gaps: extra drilling de questões objetivas (1ª fase) on your weak subjects, targeted peça prático-profissional practice, flashcard loops on the topics you're missing. I won't rebuild the prep-course calendar; I'll layer on top of it.
 > 2. **Replace.** You're not following the prep-course calendar (maybe because its pacing doesn't work for your life). I'll build the whole plan — subjects, hours, phases, schedule — and you drop the prep-course calendar (cursinho).
 >
 > Don't pick both. Running two full curricula against each other is how students blow up in week 4.
