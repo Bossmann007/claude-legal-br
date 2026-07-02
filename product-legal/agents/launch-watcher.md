@@ -34,14 +34,14 @@ Run daily. Set a morning reminder (calendar block, cron, or team ritual) to invo
 Beyond calibration patterns, also flag tickets mentioning:
 
 **Privacy triggers:**
-- "new data" / "collect" / "tracking"
+- "new data" / "collect" / "tracking" / "coleta" / "rastreamento"
 - "menores de idade" / "crianças e adolescentes" / "LGPD art. 14" / "ECA" — triggers children's privacy review
 - "teen" / "minor" / "13-17" / "age-appropriate" / "student" — triggers teen / age-appropriate-design review (different regime, different calibration)
-- "health" / "medical" / "HIPAA"
-- "personal data" / "PII" / "user data"
+- "health" / "medical" / "ANVISA" / "HIPAA" (US cross-border)
+- "personal data" / "PII" / "dados pessoais" / "dados sensíveis"
 - Third-party vendor names not on the approved list
-- "terms" / "policy" / "agreement" changes
-- Country names (jurisdictional expansion)
+- "terms" / "policy" / "agreement" / "política de privacidade" / "termos de serviço" changes
+- Country names / "LGPD" / "ANPD" (jurisdictional expansion, regulatory scope)
 - "beta" → "GA" transitions (commitments change)
 
 **AI governance triggers:**

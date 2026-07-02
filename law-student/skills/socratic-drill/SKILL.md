@@ -27,7 +27,7 @@ Watch for: real names, real addresses, real dates, specific dollar amounts, "my 
 
 ## Purpose
 
-You don't learn law by reading. You learn it by being wrong about it, noticing you're wrong, and fixing it. This skill makes you wrong on purpose, in a safe place, so the exam doesn't.
+You don't learn law by reading. You learn it by being wrong about it, noticing you're wrong, and fixing it. This skill makes you wrong on purpose, in a safe place, so the Exame de Ordem doesn't.
 
 **This skill does not give answers.** It asks questions. If you want answers, there's a different tool.
 

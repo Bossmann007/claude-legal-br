@@ -233,7 +233,8 @@ AI use to customers, employees, or affected parties]
 **gaps_found:** [PLACEHOLDER — N, number of REQUIRED + ADVISABLE gaps found in the most recent acknowledged sweep]
 
 **Work-product header** (prepended to every analysis, memo, AIA, triage, or vendor review this plugin generates):
-- If Role in `## Who's using this` is Lawyer / legal professional: `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL`
+- If Role in `## Who's using this` is Lawyer / legal professional (default — Brazil): `CONFIDENCIAL — SIGILO PROFISSIONAL DO ADVOGADO (Estatuto OAB, Lei 8.906/1994, art. 7º) — PREPARADO SOB ORIENTAÇÃO JURÍDICA`
+  - **US-footprint exception:** where the matter touches the US, switch to `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL` (FRCP 26(b)(3), a US discovery doctrine — see the explanation below on how sigilo profissional differs).
 - If Role is Non-lawyer: `RESEARCH NOTES — NOT LEGAL ADVICE — REVIEW WITH A LICENSED ATTORNEY, SOLICITOR, BARRISTER, OR OTHER AUTHORISED LEGAL PROFESSIONAL IN YOUR JURISDICTION BEFORE ACTING`
 
 **The header's protection is jurisdiction-specific.** "Attorney work product" is a US doctrine (FRCP 26(b)(3)). It does not exist in most other legal systems, and asserting it on a document does not create it:

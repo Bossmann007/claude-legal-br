@@ -102,11 +102,13 @@ Rules for every skill, command, and agent in this plugin:
 
 Skills in this plugin produce analysis, policy diffs, gap reports, and feed digests. The **work-product header** prepended to every output depends on the Role in `## Who's using this`:
 
-- If Role is **Lawyer / legal professional**: `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL`
+- If Role is **Lawyer / legal professional**: `CONFIDENCIAL — SIGILO PROFISSIONAL DO ADVOGADO (Estatuto OAB, Lei 8.906/1994, art. 7º) — PREPARADO SOB ORIENTAÇÃO JURÍDICA`
 - If Role is **Non-lawyer** (either type): `RESEARCH NOTES — NOT LEGAL ADVICE — REVIEW WITH A LICENSED ATTORNEY BEFORE ACTING`
 
-**The header's protection is jurisdiction-specific.** "Attorney work product" is a US doctrine (FRCP 26(b)(3)). It does not exist in most other legal systems, and asserting it on a document does not create it:
+**The header's protection is jurisdiction-specific.** The operative regime by default is **sigilo profissional do advogado** (Brazilian lawyer professional secrecy), grounded in the Estatuto da OAB (Lei 8.906/1994, art. 7º, II and XIX). This protection stands independently of whether litigation is pending:
 
+- **Brasil (default):** The **sigilo profissional do advogado** (Art. 7º, XIX, Estatuto da OAB — Lei 8.906/1994; Art. 34-36, Código de Ética e Disciplina da OAB) protects communications and documents produced by lawyers licensed with the OAB in the exercise of their profession. This protection applies only when the document was effectively produced or supervised by a lawyer with active OAB registration — internal analyses conducted solely by non-lawyer professionals (compliance, paralegal) do not generate professional secrecy, even with the marking applied.
+- **US jurisdictions (exception):** Where the matter footprint touches the US, "Attorney work product" is a discovery-shielding doctrine (FRCP 26(b)(3)) that operates differently from Brazilian sigilo. For US-touching matters, consider: `PRIVILEGED & CONFIDENTIAL — ATTORNEY WORK PRODUCT — PREPARED AT THE DIRECTION OF COUNSEL`, with a note: `[Note: work product protection is a US discovery doctrine. In Brazil, the operative regime is sigilo profissional do advogado (Estatuto OAB, Lei 8.906/1994). Confirm which regime applies to your matter's jurisdiction footprint.]`
 - **EU:** No general work-product protection. Legal professional privilege (LPP) protects communications with external counsel for the purpose of legal advice, but internal analyses, DPIAs, compliance assessments, and launch reviews are generally NOT shielded from supervisory authorities. Art. 58(1) GDPR gives DPAs broad investigative powers. A DG COMP dawn raid can seize a "privileged" launch review.
 - **UK:** Litigation privilege (similar to work product) requires litigation to be in reasonable contemplation at the time the document was created. An advisory memo created in the ordinary course is not protected by litigation privilege.
 - **Germany, France, others:** No equivalent to US work product. Protections vary and are generally narrower.

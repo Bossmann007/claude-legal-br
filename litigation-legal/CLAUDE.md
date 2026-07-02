@@ -32,7 +32,7 @@ This file is the house-level frame every matter is triaged against. Risk calibra
 **Org / legal entity:** [PLACEHOLDER — e.g., "Acme Ltda., sociedade empresária limitada constituída sob as leis brasileiras"] *(From company-profile.md — edit there to change across all plugins)*
 **Industry:** [PLACEHOLDER] *(From company-profile.md — edit there to change across all plugins)*
 **Public / private / subsidiary:** [PLACEHOLDER]
-**Regulated status:** [PLACEHOLDER — e.g., SEC-registrant, HIPAA-covered, FINRA, FTC scrutiny, none] *(From company-profile.md — edit there to change across all plugins)*
+**Regulated status:** [PLACEHOLDER — e.g., companhia aberta registrada na CVM, instituição regulada pelo BCB, operadora de saúde (ANS), empresa sob ANVISA, sob análise do CADE, nenhum] *(From company-profile.md — edit there to change across all plugins)*
 **Core jurisdictions:** [PLACEHOLDER — operational + frequent-fora] *(From company-profile.md — edit there to change across all plugins)*
 **Headcount:** [PLACEHOLDER] *(From company-profile.md — edit there to change across all plugins)*
 **Legal team size:** [PLACEHOLDER]
@@ -74,9 +74,9 @@ This file is the house-level frame every matter is triaged against. Risk calibra
 
 **Default side:** [PLACEHOLDER — `plaintiff` | `defense` | `both — default plaintiff` | `both — default defense` | `varies by matter`]
 
-*Plaintiff posture: risk calibration is case value, contingency economics, client expectations, SOL exposure. Demand letters are assertions. Discovery is offensive.*
+*Plaintiff posture: risk calibration is case value, contingency economics, client expectations, exposição a prescrição. Demand letters are assertions. A produção de provas / pedido de exibição (CPC 396-404) é ofensiva.*
 
-*Defense posture: risk calibration is exposure, reserves (in-house only), settlement authority, insurance coverage. Demand letters are received and triaged. Discovery is defensive.*
+*Defense posture: risk calibration is exposure, reserves (in-house only), settlement authority, insurance coverage. Demand letters are received and triaged. A produção de provas / exibição é defensiva.*
 
 *Skills that branch on side: `demand-draft` / `demand-received`, `subpoena-triage`, `matter-intake` (per-matter), `chronology` (offensive vs defensive framing), `claim-chart` (proving vs disproving elements).*
 

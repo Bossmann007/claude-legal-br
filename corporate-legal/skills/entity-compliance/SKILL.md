@@ -140,8 +140,7 @@ For each jurisdiction where the entity is registered (domestic or foreign):
 > Let me capture them so we can track this going forward.
 >
 > For [Entity] in [Jurisdiction]:
-> 1. What type of filing is required? (Annual report, franchise tax, confirmation
->    statement, annual return, or something else?)
+> 1. What type of filing is required? (Declarações à Junta Comercial, Alteração Contratual, AGO, DEFIS, DFP/ITR, Formulário de Referência, ou outro?)
 > 2. When is it due? (Fixed date like May 1, anniversary month, or other?)
 > 3. What's the typical fee? (Approximate is fine — or "unknown".)
 > 4. Who is your registered agent or local filing agent there?
@@ -263,13 +262,13 @@ Updates one or more entities in the tracker. Three sub-modes:
 
 **Before directing or confirming a filing:** Read `## Who's using this` in `~/.claude/plugins/config/claude-for-legal/corporate-legal/CLAUDE.md`. If the Role is **Non-lawyer**:
 
-> Filing a Statement of Information, annual report, or franchise tax return with a Secretary of State has legal consequences — it's a formal representation from the entity, it carries fees, and missed or incorrect filings can cause loss of good standing or franchise-tax defaults. Have you reviewed this with an attorney (or a qualified registered agent) before filing? If yes, proceed to record the filing. If no, here's a brief to bring to them:
+> Filing declarations with the Junta Comercial, alterações contratuais, or tax obligations (DEFIS, ECF, DFP) has legal consequences — it's a formal representation from the entity, it carries fees, and missed or incorrect filings can cause loss of good standing or penalties from the tax authorities and registrar. Have you reviewed this with an attorney (or a qualified contador/advogado responsável) before filing? If yes, proceed to record the filing. If no, here's a brief to bring to them:
 >
 > - Entity, jurisdiction, filing type, and due date
-> - What the tracker says about the last filing (date, fee, officer/director information last reported)
-> - Open questions (is the officer/director information still accurate; has the registered agent changed; has the principal office changed)
-> - What could go wrong (out-of-date officer information, missed deadline triggering franchise tax or dissolution, fee calculation error)
-> - What to ask the attorney (is a filing actually needed this year; are there any charter amendments or officer changes that need to be reflected; who should sign)
+> - What the tracker says about the last filing (date, fee, officer/partner information last reported)
+> - Open questions (is the officer/partner information still accurate; has the registered agent/contador changed; has the registered office changed)
+> - What could go wrong (out-of-date partner/officer information, missed 30-day deadline for alteração causing loss of retroactivity, registration or tax compliance failures)
+> - What to ask the attorney (is a filing actually needed this year; are there any contract amendments or partner/officer changes that need to be reflected; who should sign)
 >
 > If you need to find an attorney, solicitor, barrister, or other authorised legal professional: contact your professional regulator (state bar in the US, SRA/Bar Standards Board in England & Wales, Law Society in Scotland/NI/Ireland/Canada/Australia, or your jurisdiction's equivalent) for a referral service.
 
@@ -282,11 +281,11 @@ Do not record a new `last_filed` date past this gate without an explicit yes. Tr
 ```
 
 Attorney tells Claude what was filed:
-> "We filed the Delaware annual report for [Entity] on March 1. Fee was $450."
+> "Registramos a ata da AGO na Junta Comercial (JUCESP) para [Entity] em 1º de março. Taxa de R$ 150,00."
 
 Claude updates:
 - `last_filed` → March 1 date
-- `last_fee` → $450
+- `last_fee` → R$ 150,00
 - `status` → `current`
 - `last_updated` in metadata
 

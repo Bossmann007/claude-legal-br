@@ -10,7 +10,7 @@ argument-hint: "[--build | --update | --status | --cram]"
 
 # /study-plan
 
-1. Load `~/.claude/plugins/config/claude-for-legal/law-student/CLAUDE.md` → bar jurisdiction, exam format, bar date, weak subjects, target study hours/day, prep course.
+1. Load `~/.claude/plugins/config/claude-for-legal/law-student/CLAUDE.md` → exam format, exam date, área (2ª fase), weak subjects, target study hours/day, prep course.
 2. Load `~/.claude/plugins/config/claude-for-legal/law-student/study-plan.yaml` if it exists.
 3. Apply the framework below.
 4. Route by flag:
@@ -40,10 +40,10 @@ A plan is opinion, not doctrine. The skill states clearly what's an estimate:
 ## Load context
 
 `~/.claude/plugins/config/claude-for-legal/law-student/CLAUDE.md`:
-- Bar jurisdiction, exam format, bar date
-- Current classes (for non-bar use)
-- Weak subjects (MBE, essay)
-- Prep course
+- Exam format, exam date
+- Current classes (for non-exam use)
+- Weak subjects (1ª fase, 2ª fase)
+- Cursinho preparatório
 - Target study hours/day
 
 `~/.claude/plugins/config/claude-for-legal/law-student/study-plan.yaml` if it exists — extend, don't overwrite.
@@ -66,8 +66,8 @@ For (3) semester: ask for the term-end date as the anchor.
 
 **Ask and wait.** Do not bulk all questions into one prompt and move on.
 
-- **Exam date:** confirmed? (If bar: ask for jurisdiction if not in practice profile — study content depends on it.)
-- **Subjects to cover:** for bar, read from NCBE subject outline for the exam format (NextGen / traditional UBE / state-specific). For a class, the syllabus. Confirm with student — "any subject I should add or drop?"
+- **Exam date:** confirmed? (If Exame de Ordem: ask for área (civil/penal/trabalho/administrativo/tributário/constitucional/empresarial) if not in practice profile — study content depends on it.)
+- **Subjects to cover:** for Exame de Ordem, read from edital FGV for the exam format (1ª fase objetiva / 2ª fase prático-profissional). For a class, the syllabus. Confirm with student — "any subject I should add or drop?"
 - **Strongest subjects:** least priority. Still reviewed, not drilled heavily.
 - **Weakest subjects:** most priority. Get more sessions.
 - **Hours per week available:** realistic, not aspirational. "I can do 20 hours" is different from "I will do 20 hours for 8 weeks." Ask what they can actually sustain.
@@ -82,7 +82,7 @@ For (3) semester: ask for the term-end date as the anchor.
   Do not skip this step even if the practice profile's target hours number was already captured at cold-start. The profile captures what the student said; the life-context check captures whether it's sustainable. If the check produces a lower number, use the lower number for the plan and note the adjustment in the `confidence_flags` block.
 
   If the student declines to share life context ("just build it"), respect that — but add a `confidence_flags` entry: "Life-context check declined; plan assumes [N] hours/week is sustainable. Revisit at end of week 2 if adherence is below [X]%."
-- **Preferred study methods:** multi-select. MBE practice / essays / flashcards / outlining / drilling / re-reading. Weight the schedule toward the methods they say they'll actually do.
+- **Preferred study methods:** multi-select. Questões de 1ª fase / peças da 2ª fase / flashcards / outlining / drilling / re-reading. Weight the schedule toward the methods they say they'll actually do.
 - **Days off per week:** rest days matter. Plans that schedule 7/7 days fail in week 3.
 
 ### Step 2.5: Supplement vs. replace (prep-course users)
@@ -94,7 +94,7 @@ Ask, one question, wait:
 > Your profile says you're on [Barbri / Themis / Kaplan]. They publish a day-by-day calendar with every subject and task scheduled. Two ways this plan can work — pick one:
 >
 > 1. **Supplement.** The prep course is your primary curriculum. This plan fills gaps: extra MBE drilling on your weak subjects, targeted essay practice, flashcard loops on the topics you're missing. I won't rebuild the prep-course calendar; I'll layer on top of it.
-> 2. **Replace.** You're not following the prep-course calendar (maybe because its pacing doesn't work for your life). I'll build the whole plan — subjects, hours, phases, schedule — and you drop the prep-course calendar.
+> 2. **Replace.** You're not following the prep-course calendar (maybe because its pacing doesn't work for your life). I'll build the whole plan — subjects, hours, phases, schedule — and you drop the prep-course calendar (cursinho).
 >
 > Don't pick both. Running two full curricula against each other is how students blow up in week 4.
 
@@ -112,16 +112,16 @@ Calculate weeks-to-exam from today's date. Then:
 
 **Normal mode (4+ weeks out):**
 - Split weeks into phases:
-  - **Learning phase** (first ~60% of time): one subject per ~3-5 days, mixing outlining/reading with flashcards and a few MBE/essay questions on fresh material.
-  - **Drilling phase** (next ~30%): more MBE volume, more essay practice, simulated conditions, all subjects in rotation.
+  - **Learning phase** (first ~60% of time): one subject per ~3-5 days, mixing outlining/reading with flashcards and a few questões/peças on fresh material.
+  - **Drilling phase** (next ~30%): more questões de 1ª fase, more peças da 2ª fase, simulated conditions, all subjects in rotation.
   - **Review phase** (last ~10%): focused on weakest subtopics from session_history, full practice exams, light review of strong areas.
 - Weight subjects by weakness: weak subjects get ~2x the hours of strong subjects.
 - Schedule day-by-day: which subject, which method, how long. Leave slack for the student's actual life.
 
 **Cram mode (< 4 weeks out):**
 - Flag it: "You're less than four weeks out. This is cram mode — the plan prioritizes high-yield topics over full coverage. You will leave gaps. That's the tradeoff at this point."
-- 80/20 prioritization: the MBE subjects that historically appear most (Civ Pro, Evidence, Con Law, Contracts) get the lion's share. Narrower subjects get minimum viable coverage.
-- Daily schedule: MBE blocks every day (volume matters now), essay practice every other day, one simulated exam per week.
+- 80/20 prioritization: the subjects that historically appear most na 1ª fase (Direito Penal, Processo Penal, Direito Civil, Processo Civil) get the lion's share. Narrower subjects get minimum viable coverage.
+- Daily schedule: blocos de questões todo dia (volume matters now), prática de peças todo outro dia, um simulado completo por semana.
 - Sleep and taper the last 2-3 days. Do not schedule hard drilling the day before the exam. This is real — students who cram through the night before score worse.
 
 ### Step 4: Write it
@@ -129,10 +129,10 @@ Calculate weeks-to-exam from today's date. Then:
 Write to `~/.claude/plugins/config/claude-for-legal/law-student/study-plan.yaml`:
 
 ```yaml
-plan_type: bar  # or law-school-exam or semester
+plan_type: exame-de-ordem  # or law-school-exam or semester
 exam_date: 2026-07-28
-jurisdiction: CA
-exam_format: state-specific  # or NextGen / UBE
+area: civil  # or penal / trabalho / administrativo / tributário / constitucional / empresarial
+exam_format: oab-fgv  # or law-school / semester
 created: 2026-05-08
 last_updated: 2026-05-08
 weeks_to_exam: 12
@@ -143,11 +143,11 @@ phases:
   - name: learning
     start: 2026-05-08
     end: 2026-06-20
-    focus: outlining, flashcards, introductory MBE
+    focus: outlining, flashcards, questões iniciais da 1ª fase
   - name: drilling
     start: 2026-06-21
     end: 2026-07-18
-    focus: MBE volume, essay practice, simulated conditions
+    focus: volume de questões 1ª fase, prática de peças 2ª fase, simulated conditions
   - name: review
     start: 2026-07-19
     end: 2026-07-27
@@ -169,8 +169,8 @@ schedule:
       - subject: Evidence
         method: outline-review
         duration_min: 90
-      - subject: Evidence
-        method: mbe
+      - subject: Direito Penal
+        method: questões-1fase
         duration_min: 60
         n_questions: 25
   - date: 2026-05-09
@@ -179,8 +179,8 @@ schedule:
       - subject: Contracts
         method: flashcards
         duration_min: 45
-      - subject: Contracts
-        method: essay
+      - subject: Direito Civil
+        method: peça-2fase
         duration_min: 60
   # etc.
 session_history: []  # appended by bar-prep, flashcards, drill, irac as sessions complete
@@ -198,9 +198,9 @@ The header does not go inside the YAML itself (it's a data file), but it belongs
 
 Summarize the plan in prose (not raw YAML) before saving, with the header on top:
 
-> STUDY NOTES — NOT LEGAL ADVICE
+> NOTAS DE ESTUDO — NÃO É ACONSELHAMENTO JURÍDICO
 >
-> Here's what I built. [X] weeks to the [exam]. [Y] hours/week across [Z] days. Weak subjects (Evidence, Contracts) get 2x the hours. Three phases: learning through [date], drilling through [date], review the last [N] days. I've scheduled the first two weeks day-by-day. Beyond that it's allocated by week — I'll fill in the daily schedule as you complete sessions, so the plan adapts to where you actually are.
+> Here's what I built. [X] weeks to the Exame de Ordem. [Y] hours/week across [Z] days. Weak subjects (Direito Penal, Direito Civil) get 2x the hours. Three phases: learning through [date], drilling through [date], review the last [N] days. I've scheduled the first two weeks day-by-day. Beyond that it's allocated by week — I'll fill in the daily schedule as you complete sessions, so the plan adapts to where you actually are.
 >
 > Does this feel right? Too ambitious? Too light? Missing a subject?
 
@@ -244,5 +244,5 @@ On the next `/law-student:study-plan --update` run (or when any skill detects th
 
 - **Guarantee you pass.** The plan is a scaffold. The work is on you.
 - **Predict the exam.** Cram mode uses historical subject frequency; high-yield ≠ guaranteed-tested.
-- **Replace your prep course schedule.** If you're on Barbri/Themis/Kaplan, this plan can supplement — don't run two full curricula against each other. Use one as primary.
+- **Replace your prep course schedule.** If you're on a cursinho preparatório (Damásio/CERS/Gran Cursos/Ênfase), this plan can supplement — don't run two full curricula against each other. Use one as primary.
 - **Schedule your life.** Hours available is what you tell me. If you overstate, the plan will break in week 2. Be honest.

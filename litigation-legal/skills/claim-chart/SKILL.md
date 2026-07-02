@@ -14,7 +14,7 @@ argument-hint: '[--patent | --civil] [--infringement | --invalidity | --review] 
    - `--civil` → civil element chart. Require the cause of action (or defense) and the side.
    - No flag → ask the user which.
 5. For civil mode: consult `references/element-templates.md` in the skill directory for the baseline element list. Confirm the controlling pattern instruction or statute with the user before mapping.
-6. For patent mode: parse asserted claims into elements, flag disputed terms for construction, apply any Markman order.
+6. For patent mode: parse asserted claims into elements, flag disputed terms for construction, apply any claim-construction ruling (interpretação de reivindicações, tipicamente via perícia técnica).
 7. Map elements against the target (accused product / prior art / evidence corpus / chart under review). Every cell pin-cited. Apply the apostrophe-prefix neutralization before writing any cell value starting with `=`, `+`, `-`, `@`, tab, or CR.
 8. Produce the gap list (civil) or needs-evidence list (patent) — the priority output.
 9. Write markdown, CSV (values + `_sources` companion), and Excel or Sheets per user preference. Work-product header on every output.
@@ -39,7 +39,7 @@ Confirm: "This use is within the proceedings in which the documents were disclos
 
 **Put this at the top of every output. Do not drop it. Do not soften it.**
 
-> This chart is a draft for attorney analysis and verification, not a filed contention, an MSJ brief, an opening statement, or a legal opinion. Every mapping is a lead the attorney must verify against the source. The elements listed come from pattern jury instructions, the Restatement, or the claim language as parsed — the **controlling** authority in the user's jurisdiction (CACI / NYPJI / the circuit's pattern charge / the governing statute / a Markman order) may differ and always controls. Gap detection is a starting point for discovery or a motion; it is not a conclusion about the merits.
+> This chart is a draft for attorney analysis and verification, not a filed contention, an MSJ brief, an opening statement, or a legal opinion. Every mapping is a lead the attorney must verify against the source. The elements listed come from the applicable law and doctrine, or the claim language as parsed — the **controlling** authority in the user's jurisdiction (a lei e a jurisprudência aplicáveis do STJ/TJ, o laudo pericial, ou a decisão de interpretação de reivindicações) may differ and always controls. Gap detection is a starting point for discovery or a motion; it is not a conclusion about the merits.
 
 Under-flagging a gap is a one-way door — a complaint filed without plausibility on an element, an MSJ response served without evidence for a disputed element, or a case tried without proof of damages. Over-flagging is a two-way door — the attorney clears flags in review. The default is biased toward the two-way door.
 
@@ -47,7 +47,7 @@ Under-flagging a gap is a one-way door — a complaint filed without plausibilit
 
 ## Matter context
 
-Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `✗` (the default for in-house users), skip the rest of this paragraph — skills use practice-level context and the matter machinery is invisible. If enabled and there is no active matter, ask: "Which matter is this for? Run `/litigation-legal:matter-workspace switch <slug>` or say `practice-level`." Load the active matter's `matter.md` — especially the case theory, the pleading / complaint (for the elements actually alleged), the jurisdiction, any Markman order or stipulated constructions (patent mode), and the phase of the case. Write outputs to the matter folder at `~/.claude/plugins/config/claude-for-legal/litigation-legal/matters/<matter-slug>/claim-charts/`. Never read another matter's files unless `Cross-matter context` is `on`.
+Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `✗` (the default for in-house users), skip the rest of this paragraph — skills use practice-level context and the matter machinery is invisible. If enabled and there is no active matter, ask: "Which matter is this for? Run `/litigation-legal:matter-workspace switch <slug>` or say `practice-level`." Load the active matter's `matter.md` — especially the case theory, the pleading / complaint (for the elements actually alleged), the jurisdiction, any decisão de interpretação de reivindicações (perícia técnica) or stipulated constructions (patent mode), and the phase of the case. Write outputs to the matter folder at `~/.claude/plugins/config/claude-for-legal/litigation-legal/matters/<matter-slug>/claim-charts/`. Never read another matter's files unless `Cross-matter context` is `on`.
 
 ---
 
@@ -56,7 +56,7 @@ Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `�
 - `~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md` → role, work-product header, decision posture, document storage, case-theory scaffolding
 - Active matter's `matter.md` — claims, defenses, side, jurisdiction, phase, theory
 - For civil mode: the complaint or counterclaim (for the actually-pleaded counts), any answer (for the actually-pleaded affirmative defenses), the relevant pattern jury instruction source, and the governing statute if statutory. Also the evidence corpus — deposition transcripts, declarations, produced documents, expert reports.
-- For patent mode: the patent, the asserted claims, the specification, prosecution history if available, the accused-product material or prior art reference, any Markman order or stipulated constructions.
+- For patent mode: the patent, the asserted claims, the specification, prosecution history if available, the accused-product material or prior art reference, any decisão de interpretação de reivindicações (perícia técnica) or stipulated constructions.
 
 If `CLAUDE.md` has `[PLACEHOLDER]` markers, surface this bounce:
 
@@ -110,7 +110,7 @@ Plus intake (common to both):
 
 - **Patent number and asserted claims.** Which independent, which dependent. (Don't chart unasserted claims unless asked.) For a BR-designated patent, use the INPI registration/publication number by default; the USPTO number applies only when a US-designated patent is genuinely in scope.
 - **Priority date.** For a BR-designated patent (default), the priority date fixes the novidade baseline under LPI arts. 11-15 (what counts as prior art / estado da técnica) and, where a foreign priority is claimed, the unionist priority under the Paris Convention (LPI art. 16) `[model knowledge — verify]`. There is no AIA/pre-AIA split in Brazilian practice — that dichotomy is a US statutory artifact. For a US-designated patent genuinely in scope, apply the §102 bar and the AIA/pre-AIA effective-filing-date regime as the explicit US fallback.
-- **Existing constructions.** Brazilian civil procedure has no discrete Markman-hearing institution. Claim construction, where disputed, is developed through **perícia técnica** (expert examination, CPC arts. 464-480) conducted within the ação de nulidade or ação de infração — there is no separate pretrial claim-construction hearing or order. If a perícia has already produced a laudo pericial addressing claim scope, apply it the way a Markman order would be applied. For a US-designated patent genuinely in scope, apply any actual Markman order or stipulated constructions from that proceeding.
+- **Existing constructions.** Brazilian civil procedure has no discrete claim-construction proceeding. Claim construction, where disputed, is developed through **perícia técnica** (expert examination, CPC arts. 464-480) conducted within the ação de nulidade or ação de infração — there is no separate pretrial claim-construction hearing or order. If a perícia has already produced a laudo pericial addressing claim scope, apply it the way a claim-construction ruling would be applied. For a US-designated patent genuinely in scope, apply any actual Markman order or stipulated constructions from that proceeding.
 
 ## Patent-mode workflow
 
@@ -124,7 +124,7 @@ Parse asserted independent claims into numbered elements. Handle:
 - **Means-plus-function (§112(f))** — every "means for [function]" or non-structural functional term. Scope is the structure disclosed in the spec plus equivalents. Cite corresponding structure by col./line. If the spec fails to disclose structure, flag `indefinite-112f`.
 - **Markush groups, Jepson claims, product-by-process, method-step order dependencies** — flag with a note on unusual construction rules.
 - **Dependent claims** — reference parent; chart only the additional limitations. **Execute, don't gesture.** If asserted claims include dependents, produce the actual additional-limitation rows for each dependent in Step 4 — do not emit a note that dependents "should be charted."
-- **Structural-term cognates — default to `construction-dependent`.** For each element that recites a structural noun with a common cognate in the prior art of the field, default the row's state to `literal-construction-dependent` (not `literal`) unless the spec expressly defines the term or an existing Markman order forecloses the ambiguity. These are the terms most commonly disputed at Markman — presuming a clean literal read under-flags the risk. Common cognate families to flag proactively:
+- **Structural-term cognates — default to `construction-dependent`.** For each element that recites a structural noun with a common cognate in the prior art of the field, default the row's state to `literal-construction-dependent` (not `literal`) unless the spec expressly defines the term or an existing decisão de interpretação de reivindicações forecloses the ambiguity. These are the terms most commonly disputed in perícia técnica — presuming a clean literal read under-flags the risk. Common cognate families to flag proactively:
 
   | Field | Cognate family (flag as `structural-term-cognate`) |
   |---|---|
@@ -137,13 +137,13 @@ Parse asserted independent claims into numbered elements. Handle:
   | Structural | wall / member / support / strut / rib |
   | Surfaces | surface / face / interface |
 
-  This list is not exhaustive — if the claim recites a structural noun that could reasonably be read narrowly (pointed barb vs. any projection) or broadly (channel vs. any passage), flag `structural-term-cognate` in `_constructions` and default the row to `construction-dependent`. The attorney can demote it to `literal` after a Markman order or a definition in the spec forecloses the ambiguity.
+  This list is not exhaustive — if the claim recites a structural noun that could reasonably be read narrowly (pointed barb vs. any projection) or broadly (channel vs. any passage), flag `structural-term-cognate` in `_constructions` and default the row to `construction-dependent`. The attorney can demote it to `literal` after a decisão de interpretação de reivindicações or a definition in the spec forecloses the ambiguity.
 
 Show the parse to the user. Confirm before mapping. A wrong parse poisons every row below it.
 
 ### Step 2: Claim construction check
 
-**No Markman-style hearing under Brazilian civil procedure (default).** For a BR-designated patent, disputed claim terms are resolved through **perícia técnica** (CPC arts. 464-480) — a court-appointed expert (perito) examines the claim scope within the ação de nulidade or ação de infração, and the parties may name assistentes técnicos to contest the laudo. There is no discrete, bifurcated claim-construction hearing that precedes the infringement/validity merits the way a Markman hearing does in US practice `[model knowledge — verify]`. Flag disputed terms below as "pending perícia" rather than "pending Markman" unless a US-designated patent is genuinely in scope.
+**No separate claim-construction hearing under Brazilian civil procedure (default).** For a BR-designated patent, disputed claim terms are resolved through **perícia técnica** (CPC arts. 464-480) — a court-appointed expert (perito) examines the claim scope within the ação de nulidade or ação de infração, and the parties may name assistentes técnicos to contest the laudo. There is no discrete, bifurcated claim-construction hearing that precedes the infringement/validity merits the way a Markman hearing does in US practice `[model knowledge — verify]`. Flag disputed terms below as "pending perícia" rather than "pending claim construction" unless a US-designated patent is genuinely in scope.
 
 Flag disputed terms:
 
@@ -153,7 +153,7 @@ Flag disputed terms:
 - Relative terms ("substantially", "about") — definiteness risk under *Nautilus, Inc. v. Biosig Instruments, Inc.*, 572 U.S. 898 (2014)
 - Computer-implemented terms — Alice / §101 exposure for invalidity
 
-For each flagged term, state the construction(s) under which the mapping works and the construction(s) under which it fails. If a Markman order exists, apply it. If briefing is underway, chart under each side's proposed construction.
+For each flagged term, state the construction(s) under which the mapping works and the construction(s) under which it fails. If a claim-construction ruling (laudo pericial / decisão de interpretação de reivindicações) exists, apply it. If briefing is underway, chart under each side's proposed construction.
 
 ### Step 3: Map
 

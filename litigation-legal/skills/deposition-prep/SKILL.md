@@ -150,7 +150,7 @@ Each topic is a thing you want to establish or explore. Organize around the theo
 
 ## II. [Good fact topic]
 
-**Goal:** Establish [fact] for use at summary judgment / trial.
+**Goal:** Establish [fact] for use at julgamento antecipado (CPC art. 355) ou em audiência de instrução.
 
 **Documents:**
 - [Bates] — [description] — [why it matters]

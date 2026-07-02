@@ -188,7 +188,7 @@ Output: `~/.claude/plugins/config/claude-for-legal/litigation-legal/inbound/[slu
 *Privilege scoping is a first-pass read; final call is counsel's, not this skill's.*
 
 **Attorney-client / work product likely implicated:** [yes/no + which categories] `[SME VERIFY]`
-**Other privileges:** [trade secret, HIPAA, state, common interest] `[SME VERIFY]`
+**Other privileges:** [sigilo profissional do advogado (Estatuto OAB art. 7º), segredo de justiça (CPC art. 189), sigilo bancário/fiscal (LC 105/2001), segredo industrial, dados protegidos pela LGPD] `[SME VERIFY]`
 **Privilege log format required:** [per `~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md`]
 
 ---
