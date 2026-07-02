@@ -85,7 +85,8 @@ not drop it. Do not soften it. Do not let the reader skim past it.**
 > decision.
 
 Under-flagging a blocking patent is a one-way door — a product launched, a
-deposition a year later, treble damages on the table. Over-flagging is a
+perícia técnica a year later, perdas e danos (LPI art. 210) and an injunction
+on the table. Over-flagging is a
 two-way door — the attorney narrows the list in a read-through. Stay on the
 two-way door side. Always.
 
@@ -298,9 +299,12 @@ Capture:
 - **Priority date and issue date**
 - **Expiration date.** For a BR patent: term is 20 years from the filing date
   (invention patents) or 15 years from filing (utility models), per
-  Lei 9.279/1996 art. 40 — with a minimum guaranteed term of 10 (invention) or
-  7 (utility model) years from grant if examination was unusually delayed
-  (art. 40, parágrafo único) `[model knowledge — verify]`. Confirm the actual
+  Lei 9.279/1996 art. 40. The sole paragraph of art. 40 originally guaranteed
+  a *minimum* term of 10 (invention) or 7 (utility model) years from grant when
+  examination ran long — but the STF declared that minimum-term guarantee
+  unconstitutional in ADI 5.529 (May 2021), so it no longer applies to grants
+  issued after that ruling `[model knowledge — verify against current INPI/STF
+  guidance if a minimum-term calculation is in play]`. Confirm the actual
   expiration in **e-INPI / RPI**, not by calculating from the priority date
   alone — the filing date that starts the clock, any divisional filings, and
   any annuity lapse all affect the real date. For a US-designated patent in

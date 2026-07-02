@@ -1,10 +1,12 @@
 ---
 name: invention-intake
 description: >
-  Invention disclosure first-pass screen — novelty, obviousness, §101
-  eligibility, bar dates, detectability, and strategic value. Use when an
-  invention disclosure comes in and needs triage on whether to pursue a
-  prior-art search and patent counsel review, investigate further, or decline.
+  Invention disclosure first-pass screen — novidade, atividade inventiva,
+  patenteabilidade (LPI art. 8/10/18), grace period / bar dates, detectability,
+  and strategic value. Use when an invention disclosure comes in and needs
+  triage on whether to pursue a prior-art search and patent counsel review,
+  investigate further, or decline. LPI (Lei 9.279/1996) first; 35 U.S.C. §102
+  as a gated US-filing fallback.
 argument-hint: "[paste or describe the invention disclosure — or just the title and I'll ask]"
 ---
 
@@ -27,8 +29,9 @@ does not do one.
 3. Run intake. If the user pasted or uploaded a disclosure, read it. If not,
    ask the seven intake questions (what / problem / differences / inventors /
    public disclosure / status / technology area) in one batch and wait.
-4. Run the six screens: novelty signals, obviousness flags, § 101 eligibility,
-   public disclosure / bar dates, detectability, strategic value. Each screen
+4. Run the six screens: novelty signals, obviousness flags, subject-matter
+   eligibility (LPI arts. 10/18), public disclosure / bar dates, detectability,
+   strategic value. Each screen
    gets a ✓ / 🟡 / 🔴 verdict with one-line reasoning.
 5. Write the invention screen memo to the matter folder (if a matter is
    active) or the practice outputs folder. Apply the work-product header per
@@ -39,8 +42,9 @@ does not do one.
 7. Close with the decision tree (prior-art search / inventor follow-up /
    specialist review / decline + thank-you / trade-secret route) and the
    non-lawyer gate if the role is non-lawyer.
-8. If the screen hit a within-one-year US disclosure or any public disclosure
-   with foreign rights in scope, flag at the top: **time-sensitive**.
+8. If the screen hit a public disclosure within the 12-month *período de graça*
+   (LPI art. 12) or any public disclosure with foreign rights in scope, flag at
+   the top: **time-sensitive**.
 
 This skill never concludes that an invention is patentable. If uncertain,
 flag — a registered patent attorney or agent decides.
@@ -78,8 +82,8 @@ area.)
 > the initial screen, warrants investigation" or that it does not.
 
 Under-flagging an invention that should have been filed is a one-way door — the
-one-year US bar runs, foreign rights are lost at first public disclosure, the
-competitor files first. Over-flagging just means a prior-art search that comes
+12-month *período de graça* (LPI art. 12) runs out, foreign rights are lost at
+first public disclosure, the competitor files first. Over-flagging just means a prior-art search that comes
 back empty. Stay on the two-way door side.
 
 ---
@@ -212,44 +216,60 @@ flag for further investigation, never conclude obviousness or non-obviousness.
   have predicted
 - Long-felt need — the problem was known, and attempts to solve it had failed
 
-#### Screen 3: Subject-matter eligibility (§ 101)
+#### Screen 3: Subject-matter eligibility (LPI arts. 10 e 18)
 
-Is this an abstract idea, law of nature, or natural phenomenon? This is the
-hardest screen, the most litigated, and the one most likely to require a
-specialist read. Flag anything borderline for specialist review.
+Is this excluded from patentability? Brazil handles this in two lists, not a
+single judge-made test: **LPI art. 10** enumerates what is *not considered an
+invention or utility model* (abstract ideas, scientific discoveries, math
+methods, business/accounting/financial schemes, software "as such", rules of
+games, presentations of information, natural living beings/biological material
+found in nature), and **LPI art. 18** enumerates what *cannot be patented*
+(anything contrary to morals/health/security, atomic transformations, all or
+part of living beings except transgenic microorganisms meeting art. 18 III).
+This is the screen most likely to require a specialist read. Flag anything
+borderline. `[settled — last confirmed 2026-07-02]`
 
-**Red flags (🔴) for § 101:**
-- Pure **business method** without technical implementation — "a method of
-  pricing widgets more efficiently"
-- **Mathematical algorithm** on its own — even as dressed up in pseudocode
-- **Organizing human activity** — scheduling, pairing, matching, reviewing —
-  without a technical improvement
-- Claim that reads as "**do [known thing] on a computer**" with no
-  improvement to the computer itself
-- AI/ML invention where the claim is the **function** (recommend, classify,
-  predict) without the specific technical means that improves how the computer
-  performs the function
+**Red flags (🔴) — likely excluded under art. 10:**
+- Pure **business/financial method** ("esquema, plano, princípio ou método
+  comercial, contábil, financeiro") without technical implementation
+- **Mathematical method** on its own — even dressed up in pseudocode
+- **Software "as such"** (*programa de computador em si*, art. 10 V) — patentable
+  in Brazil only when part of a technical process/product that solves a technical
+  problem, not the program code itself (which is protected by copyright, Lei
+  9.609/1998)
+- **Rules of games, presentations of information, mental methods** — organizing
+  human activity without a technical improvement
+- AI/ML invention claimed as the **function** (recommend, classify, predict)
+  without the specific technical means that improves how the machine performs it
 
 **Green flags (✓) for software/AI inventions:**
-- Technical improvement to the **computer itself** — new architecture, new
-  training technique, new hardware/software interface, new security mechanism
-- Specific technical means, not just results
+- Technical improvement to the **machine/process itself** — new architecture,
+  new training technique, new hardware/software interface, new security mechanism
+- Specific technical means solving a technical problem, not just results
 - Improvement to a **technical field** (image processing, compression,
-  cryptography, robotics) with the technical means described
+  cryptography, robotics) with the technical means described — this is what takes
+  a software-related invention out of art. 10 V ("as such") and into
+  patentability, consistent with INPI's exam guidelines for computer-implemented
+  inventions `[model knowledge — verify against current INPI guidelines]`
 
-**Anything borderline gets a 🟡 with "§ 101 — route to specialist for
-Alice/Mayo analysis."** A non-specialist should not call a close § 101
-question.
+**Anything borderline gets a 🟡 with "art. 10/18 — route to specialist / agente
+da PI."** A non-specialist should not call a close eligibility question.
 
-For **biotech / diagnostic** inventions, also flag for § 101 if the claim
-recites:
-- A natural correlation ("if level of X is above Y, patient has Z")
+For **biotech / diagnostic** inventions, flag under art. 10 (IX — natural living
+beings and biological material found in nature, incl. genome/germplasm) and art.
+18 (III — living beings, except transgenic microorganisms) if the claim recites:
 - A naturally occurring substance (isolated gene, natural product) without
-  significant human modification
+  significant human modification / non-natural transgenic construct
+- A method of surgery/therapy/diagnosis practiced on the human/animal body (art.
+  10 VIII)
 
-> **§101 is a US standard. Other patent offices are different.** The EPO's "technical effect" test (Art. 52 EPC) is materially more permissive for software and AI inventions than US §101 post-*Alice*. JPO and CNIPA also apply different standards. An invention that screens 🔴 under *Alice* may be perfectly eligible at EPO/JPO/CNIPA.
->
-> When the practice profile includes non-US jurisdictions: "This §101 screen is US-only. If you file internationally, the eligibility posture may be different — particularly for software, AI/ML, and business methods, which EPO is more permissive on. Don't decline based on US §101 alone if you have EP/JP/CN filing plans."
+> **This screen is the Brazilian standard (LPI). Other patent offices differ.**
+> The EPO's "technical effect" test (Art. 52 EPC), US §101 post-*Alice*, JPO and
+> CNIPA all apply their own standards — an invention 🔴 under LPI art. 10 may be
+> eligible at EPO, or vice versa. When the practice profile includes non-BR
+> jurisdictions: "This eligibility screen is LPI-only. If you file abroad, the
+> posture may differ — particularly for software, AI/ML, and business methods.
+> Don't decline based on LPI art. 10 alone if you have EP/JP/CN/US filing plans."
 
 #### Screen 4: Public disclosure / bar dates
 
@@ -260,24 +280,26 @@ absolutely, or start a clock that cannot be stopped.
 Categorize the disclosure status:
 
 **🔴 Likely barred:**
-- Publicly disclosed, sold, or offered for sale **more than 12 months ago**
-  in the US — 35 U.S.C. § 102(b) one-year grace period has run
-- **Any** public disclosure, anywhere, before filing — absolute novelty bar in
-  the EU, China, Japan, and most countries outside the US. If the business
-  cares about foreign rights, this is potentially fatal even if US is still
-  open.
+- Publicly disclosed, sold, or offered for sale **more than 12 months ago** —
+  Brazil's *período de graça* of 12 months (LPI, Lei 9.279/1996, art. 12) has
+  run, so the inventor's own prior disclosure now counts as *estado da técnica*
+  and destroys *novidade* (LPI art. 11) `[settled — last confirmed 2026-07-02]`.
+- **Any** public disclosure before filing, if foreign rights matter — most
+  countries outside Brazil/US (EU, China, Japan) apply an absolute-novelty bar
+  with no grace period. Potentially fatal to foreign rights even while Brazil is
+  still open under art. 12. `[model knowledge — verify per target jurisdiction]`
 
 **🟡 Clock is running:**
-- Publicly disclosed within the last 12 months — US one-year clock is running,
-  foreign rights may already be lost. Urgent. Confirm the disclosure date and
-  route to filing immediately.
+- Publicly disclosed within the last 12 months — the BR *período de graça* (art.
+  12) still covers it, but the clock is running and foreign rights may already be
+  lost. Urgent. Confirm the disclosure date and route to filing immediately.
 
 **✓ Clear:**
 - No public disclosure. Confidential customer demonstrations under NDA, internal
   use, beta releases to named parties under NDA, draft papers not yet submitted
-  — usually not "public" for § 102 purposes, but depends on the facts. When the
-  disclosure was to a customer or external party, even under NDA, flag the
-  specifics for the prosecution team to assess.
+  — usually not "public" for *estado da técnica* purposes (LPI art. 11), but
+  depends on the facts. When the disclosure was to a customer or external party,
+  even under NDA, flag the specifics for the prosecution team to assess.
 
 **Ask specifically about:**
 - Papers submitted to journals or conferences (submission ≠ publication; but
@@ -289,9 +311,11 @@ Categorize the disclosure status:
 - Sales activity including quotes, RFP responses, and offers for sale
 - Disclosures to investors or board members who are not under NDA
 
-The **on-sale bar** catches offers for sale of a product embodying the
-invention, not just completed sales. An RFP response describing the invention
-can trigger it.
+A **sale or offer for sale** that publicly reveals the invention counts as
+prior disclosure too, not just completed sales — an RFP response describing the
+invention can start the *período de graça* clock (or, past 12 months, bar it).
+Brazil has no separate "on-sale bar" doctrine distinct from *estado da técnica*;
+what matters is whether the offer made the invention public. `[review]`
 
 #### Screen 5: Detectability
 
@@ -368,7 +392,7 @@ Format:
 > |---|---|---|
 > | Novelty signals | [✓ / 🟡 / 🔴] | [one-line reasoning] |
 > | Obviousness flags | [✓ / 🟡 / 🔴] | [one-line reasoning] |
-> | § 101 eligibility | [✓ / 🟡 / 🔴] | [one-line reasoning] |
+> | Eligibility (LPI arts. 10/18) | [✓ / 🟡 / 🔴] | [one-line reasoning] |
 > | Public disclosure / bar dates | [✓ / 🟡 / 🔴] | [one-line reasoning + dates] |
 > | Detectability | [✓ / 🟡 / 🔴] | [one-line reasoning] |
 > | Strategic value | [✓ / 🟡 / 🔴] | [one-line reasoning, referenced to profile] |
@@ -393,7 +417,7 @@ Format:
 >    technology classification, and any known references.
 > 2. **Go back to the inventor for more facts** — I'll draft the follow-up
 >    questions on [specific open items above].
-> 3. **Route to outside counsel for § 101 / patent-vs-trade-secret judgment** —
+> 3. **Route to outside counsel / agente da PI for eligibility (art. 10/18) or patent-vs-trade-secret judgment** —
 >    I'll draft a transmittal summarizing what the screen found and what
 >    specialist judgment is needed.
 > 4. **Decline and send the standard thank-you** — I'll draft the inventor
@@ -418,13 +442,15 @@ The bottom line is one of three:
   inventor before a pursue/decline decision can be made. Name the specific
   open item.
 - **DECLINE** — a screen hit a fatal flag (barred by disclosure over 12
-  months old with no foreign rights concern, plainly obvious, plainly abstract
-  under Alice, outside the company's technology areas of interest, fundamentally
+  months old with no foreign rights concern, plainly obvious, plainly excluded
+  from patentability under LPI art. 10 (not an invention) or art. 18 (not
+  patentable), outside the company's technology areas of interest, fundamentally
   undetectable with no trade-secret path). State the reason clearly.
 
 A DECLINE should always be backed by a concrete reason the inventor can
 understand. "Not patentable" is not an acceptable decline reason; "barred by
-your paper at NeurIPS 2023 — the US one-year bar ran in December 2024" is.
+your paper at NeurIPS 2023 — the 12-month *período de graça* (LPI art. 12) ran
+out in December 2024" is.
 
 ## Guardrails
 
@@ -439,18 +465,20 @@ user can also run. If you want to sanity-check novelty, say so explicitly
 ("quick web check — the technique was discussed in [X] — this is not a prior-
 art search, it's context for the screen") and flag it as `[web — verify]`.
 
-**Defer on § 101 calls.** For anything borderline under Alice/Mayo, flag for
-specialist review. § 101 is where practitioners routinely disagree and where
-a non-specialist's confident call ages badly.
+**Defer on patentable-subject-matter calls.** For anything borderline under LPI
+art. 10 (what is not considered an invention — e.g., abstract methods, business
+schemes, software "as such") or art. 18 (what is not patentable), flag for
+specialist review. This is where practitioners routinely disagree and where a
+non-specialist's confident call ages badly.
 
 **Flag detectability before strategic value.** An undetectable invention that
 would be "high strategic value" as a patent is usually higher strategic value
 as a trade secret. Do not recommend PURSUE on an undetectable invention
 without addressing the trade-secret alternative.
 
-**Urgent cases get urgent flagging.** If the screen hits a within-one-year
-public disclosure in the US, or any public disclosure with foreign rights in
-scope, say so at the top of the memo. Bottom line, then: "**Time-sensitive —
+**Urgent cases get urgent flagging.** If the screen hits a public disclosure
+within the 12-month *período de graça* (LPI art. 12), or any public disclosure
+with foreign rights in scope, say so at the top of the memo. Bottom line, then: "**Time-sensitive —
 US bar runs [date], foreign rights already at risk.**" This is the kind of
 finding a lawyer needs to see in the first three seconds.
 

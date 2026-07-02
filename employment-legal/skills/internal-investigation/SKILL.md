@@ -24,23 +24,27 @@ Prepend the work-product header from `~/.claude/plugins/config/claude-for-legal/
 
 > **Distribution discipline.** Every file this skill creates — log entries, memo drafts, audience summaries, document notes — inherits the privilege and confidentiality status of the underlying investigation. Distribution beyond the privilege circle (forwarding to non-attorneys outside the investigation team, cc'ing HR without scoping, handing to the business side) can waive privilege over the entire investigation. Store these files where privileged materials live, label per the work-product header, and make every distribution decision deliberately.
 
-## ⚠️ Privilege notice — read before proceeding
+## ⚠️ Aviso de sigilo profissional — ler antes de prosseguir
 
-**Marking does not create privilege.** The header above reflects the intended
-protection and is important to include — but it does not itself establish
-privilege. Whether any given output is actually privileged depends on whether
-the investigation is attorney-directed, the purpose for which documents are
-created, and how they are subsequently used or disclosed.
+**A marcação não cria o sigilo.** O cabeçalho acima reflete a proteção
+pretendida e é importante incluir — mas não estabelece, por si só, o sigilo
+profissional do advogado (Lei 8.906/1994, art. 7º, II e XIX, e art. 34, VII).
+A proteção efetiva de qualquer output depende de o advogado inscrito na OAB
+ter dirigido ou supervisionado a investigação, da finalidade para a qual os
+documentos foram criados, e de como são posteriormente usados ou divulgados.
 
-**Before opening a matter, confirm:** Is this investigation attorney-directed?
-If it is not — if HR is running it with legal in an advisory role, or if it was
-not initiated at the direction of counsel for the purpose of obtaining legal advice —
-the privilege analysis changes materially and this skill's default labeling may
-be misleading. Flag that question to the attorney before creating any log or file.
+**Antes de abrir um caso, confirme:** a investigação é dirigida por advogado?
+Se não — se o RH ou a comissão interna (Lei 14.457/2022) está conduzindo com o
+jurídico em papel apenas consultivo, ou se não foi iniciada sob orientação de
+advogado para fins de aconselhamento jurídico — a análise de sigilo muda
+materialmente, e o rótulo padrão deste skill pode ser enganoso. Um relatório de
+apuração conduzido só pelo RH pode ser requisitado em fiscalização do trabalho
+(auditores fiscais, Lei 10.593/2002) ou exibido na Justiça do Trabalho. Sinalize
+essa questão ao advogado antes de criar qualquer log ou arquivo.
 
-If there is any doubt about privilege applicability, the attorney should resolve it
-before investigation files are created. Improperly labeled materials can create
-problems in discovery if privilege is later challenged.
+Havendo qualquer dúvida sobre a aplicabilidade do sigilo, o advogado deve
+resolvê-la antes de os arquivos da investigação serem criados. Material rotulado
+indevidamente pode criar problemas se o sigilo for depois contestado. `[settled — last confirmed 2026-07-02]`
 
 ---
 
@@ -53,9 +57,24 @@ gathered, processes document dumps to surface what matters without burying
 the attorney, and maintains a structured log that can be turned into a
 privileged memo at any point.
 
+The Brazilian frame. An internal investigation here sits on three pillars:
+the employer's **poder diretivo e disciplinar** (CLT art. 2º — the employer
+directs and bears the risk of the enterprise, which grounds the authority to
+apurar and to discipline); the legal **dever de apurar** condutas de assédio
+moral e sexual e de manter canal de denúncia e procedimento apuratório, agora
+expresso para a CIPA/comissão interna (Lei 14.457/2022, que alterou a Lei
+6.019/1974 e incluiu medidas de prevenção e combate ao assédio no regime da
+CIPA); a **proteção do denunciante** contra retaliação; e o **devido processo
+interno** — apuração imparcial, contraditório proporcional e sigilo — que
+sustenta a validade de uma eventual dispensa por justa causa (CLT art. 482)
+e reduz a exposição a dano moral. `[settled — last confirmed 2026-07-02]`
+Limites de LGPD (Lei 13.709/2018) sobre dados do empregado permeiam toda a
+coleta: e-mails corporativos, mensagens, registros de acesso e dados sensíveis
+(art. 5º, II) exigem base legal e finalidade específica.
+
 ## Privilege note
 
-All files created by this skill carry the privilege marking above.
+All files created by this skill carry the sigilo marking above.
 See the notice at the top of this skill for the full caveat on what that
 marking does and does not do.
 
@@ -82,33 +101,58 @@ Ask the following in a single block:
 >   manager observation)?
 > - Who is the respondent or subject?
 > - What is the approximate timeframe the alleged conduct occurred?
-> - Is this attorney-directed? (If yes: work product protection applies.
->   If no: flag privilege risk before proceeding.)
+> - Is this investigation attorney-directed? (If yes: sigilo profissional do
+>   advogado may attach — Lei 8.906/1994, art. 7º. If no — HR or the CIPA/
+>   comissão interna is running it — flag the sigilo-formation risk before
+>   proceeding; see the notice at the top of this skill.)
 >
 > **Investigation type** (helps me suggest the right sources checklist)
-> - HR: harassment / discrimination / retaliation
-> - Financial misconduct: expense fraud / procurement irregularities / embezzlement
-> - Executive misconduct: COI / undisclosed relationships / governance failures
-> - Whistleblower: retaliation for protected activity
+> - Assédio moral / assédio sexual (Lei 14.457/2022 — canal de denúncia e
+>   procedimento apuratório via CIPA/comissão interna)
+> - Discriminação / retaliação
+> - Financial misconduct: fraude em despesas / irregularidades em compras / desvio
+> - Executive misconduct: conflito de interesses / relações não declaradas / falhas de governança
+> - Denúncia (whistleblower): retaliação por atividade protegida / denúncia de irregularidade
 > - Other: describe briefly
 >
-> **Representation and employer status** (surfaces parallel legal frameworks
-> that change interview procedure)
-> - Is the respondent, the complainant, or any anticipated witness represented
->   by a union or covered by a collective bargaining agreement? (If yes, flag
->   for Weingarten research — representational rights at investigatory
->   interviews may apply and change the interview protocol.)
-> - Is the company a public employer (government entity, public university,
->   state or municipal agency) or otherwise acting under color of state law?
->   (If yes, flag for Garrity research — compelled statements in public-sector
->   investigations have special use-immunity consequences and change how
->   interviews must be conducted and documented.)
+> **Devido processo interno e proteção do denunciante** (define o protocolo de
+> apuração e entrevista)
+> - A denúncia é de assédio moral ou sexual? (Se sim, aplique o procedimento
+>   apuratório da Lei 14.457/2022: apuração imparcial, sigilo, proteção do
+>   denunciante e das testemunhas contra retaliação, e prazo/registro perante
+>   a CIPA ou comissão interna. Confirme o regulamento interno e o canal de
+>   denúncia da empresa.)
+> - Há empregado estável, dirigente sindical, membro da CIPA, gestante, ou
+>   afastado por acidente entre os envolvidos? (Se sim, qualquer medida
+>   disciplinar posterior tem barreiras de estabilidade — sinalize antes de
+>   concluir; ver flags de rescisão na CLAUDE.md deste plugin.)
+> - Há previsão de dispensa por justa causa (CLT art. 482) como desfecho
+>   possível? (Se sim, o devido processo interno — apuração completa,
+>   contraditório proporcional, imediatidade — é o que sustenta a justa causa
+>   e reduz a exposição a reversão e dano moral na Justiça do Trabalho.)
 
-If either flag fires, research the applicable rules (NLRA / state
-public-sector labor statutes for Weingarten; 5th Amendment and the Garrity
-line of cases, plus any state analogs) before conducting interviews. Cite
-primary sources. Verify currency. Do not interview until the protocol is
-adjusted.
+Para apurações de assédio, siga o procedimento da Lei 14.457/2022 (canal de
+denúncia, apuração imparcial, sigilo e proteção do denunciante) antes de
+conduzir entrevistas. Para dados do empregado coletados na apuração (e-mails,
+mensagens, registros de acesso, dados sensíveis), observe a LGPD (Lei
+13.709/2018): base legal, finalidade específica e minimização. Cite fontes
+primárias. Verifique atualidade. Não entreviste até o protocolo estar ajustado.
+
+<!-- US-workforce fallback — GATED. Use ONLY if the company has US-based
+     employees or the investigation reaches US workers. Otherwise ignore. -->
+> **US-workforce fallback (gated — US employees only).** If the respondent,
+> complainant, or any witness is a US-based employee, additional US doctrines
+> may apply and change the interview protocol:
+> - **Weingarten (NLRA):** unionized/CBA-covered US workers may have a right to
+>   a representative at an investigatory interview.
+> - **Garrity (5th Amendment):** compelled statements from public-sector US
+>   employees carry use-immunity consequences.
+> - **Upjohn warnings:** US attorney-conducted interviews are typically preceded
+>   by an Upjohn warning to preserve corporate privilege.
+> These have **no equivalent in Brazilian labor law** and do not apply to CLT
+> employees. Research NLRA / 5th Amendment / Upjohn only for the US-worker
+> subset, cite US primary sources, and keep the Brazilian protocol for BR
+> employees. `[model knowledge — verify]`
 
 ### Step 2 — Create the matter directory and files
 
@@ -208,8 +252,16 @@ sources:
     status: open
     notes: ""
   - id: 11
-    source: "Upjohn warning documentation — confirm interviews were preceded
-             by Upjohn warnings and documented"
+    source: "Registro do procedimento apuratório — canal de denúncia acionado,
+             atas da CIPA/comissão interna, medidas de proteção ao denunciante,
+             garantia de sigilo (Lei 14.457/2022); confirmar que o devido
+             processo interno está documentado"
+    status: open
+    notes: ""
+  - id: 12
+    source: "Base legal LGPD para coleta de dados do empregado (e-mails,
+             mensagens, registros de acesso, dados sensíveis) — finalidade
+             específica e minimização (Lei 13.709/2018)"
     status: open
     notes: ""
 ```
@@ -258,7 +310,10 @@ sources:
     status: open
     notes: ""
   - id: 11
-    source: "Upjohn warning documentation"
+    source: "Registro do devido processo interno — apuração imparcial, sigilo,
+             proteção do denunciante (Lei 14.457/2022 quando houver denúncia);
+             base legal LGPD para acesso a dados financeiros e de acesso do
+             empregado (Lei 13.709/2018)"
     status: open
     notes: ""
 ```
@@ -308,7 +363,9 @@ sources:
     status: open
     notes: ""
   - id: 11
-    source: "Upjohn warning documentation"
+    source: "Registro do devido processo interno — apuração imparcial e sigilo;
+             base legal LGPD para acesso a comunicações e dados do executivo
+             (Lei 13.709/2018)"
     status: open
     notes: ""
 ```
@@ -357,7 +414,9 @@ sources:
     status: open
     notes: ""
   - id: 10
-    source: "Upjohn warning documentation"
+    source: "Registro da proteção do denunciante contra retaliação e do
+             procedimento apuratório (Lei 14.457/2022 quando aplicável);
+             base legal LGPD para dados coletados na apuração (Lei 13.709/2018)"
     status: open
     notes: ""
 ```
@@ -383,7 +442,7 @@ Ask (if not clear from context):
 - Interview notes (whose interview?)
 - Document batch (emails, records, files)
 - Attorney notes or observations
-- Upjohn warning confirmation
+- Registro do procedimento apuratório / proteção do denunciante (Lei 14.457/2022)
 
 ### Step 3 — Document pull criteria
 
@@ -454,7 +513,7 @@ For each surfaced item, append to `log.yaml`:
   corroborates_entry: [entry_id or null]
   credibility_note: ""
   pull_criterion: "[which criterion triggered — for documents]"
-  privilege: attorney-work-product
+  privilege: sigilo-profissional-advogado
 ```
 
 For evidentiary gaps:
@@ -507,9 +566,11 @@ For each issue in the log, identify: the highest-significance log entries,
 any documentary corroboration, and any unresolved conflicts. Present
 issue by issue.
 
-**Upjohn query** ("have we documented Upjohn warnings"):
-Check checklist item and any log entries tagged as Upjohn documentation.
-Flag if not yet completed.
+**Devido-processo query** ("já documentamos o procedimento apuratório / proteção do denunciante"):
+Check the Lei 14.457/2022 / devido-processo-interno checklist item and any log
+entries tagged as procedimento apuratório or proteção do denunciante. Flag if
+not yet completed. (US-workforce fallback: if US employees are involved, also
+check Upjohn-warning documentation for the US-worker subset.)
 
 ---
 
@@ -637,7 +698,10 @@ Cite the version. Do not cite policies that were adopted after the conduct.]
 | [Issue 1] | Sustained / Not Sustained / Inconclusive | [One sentence] |
 | [Issue 2] | ... | ... |
 
-*Findings are based on a preponderance of the evidence standard.*
+*As conclusões baseiam-se no conjunto probatório apurado (apuração interna, não
+processo judicial). Cada finding — Procedente / Improcedente / Inconclusivo —
+deve estar amparado no devido processo interno e no contraditório proporcional
+concedido ao investigado.*
 
 ---
 
@@ -729,19 +793,19 @@ support?
 
 ## Consequential-action gate (respond to a demand or complaint)
 
-**Before producing a summary, memo, or content intended for an external response (EEOC/DFEH/state agency charge response, plaintiff's-counsel demand letter response, regulator response, or any formal complaint reply):** Read `## Who's using this` in `~/.claude/plugins/config/claude-for-legal/employment-legal/CLAUDE.md`. If the Role is **Non-lawyer**:
+**Before producing a summary, memo, or content intended for an external response (resposta a notificação/inquérito do MPT — Ministério Público do Trabalho, resposta à fiscalização do trabalho / auditor fiscal, defesa em reclamatória trabalhista, resposta a notificação sindical, ou qualquer réplica formal a denúncia externa):** Read `## Who's using this` in `~/.claude/plugins/config/claude-for-legal/employment-legal/CLAUDE.md`. If the Role is **Non-lawyer**:
 
-> Responding to a demand, charge, or complaint has legal consequences — positions taken here are admissions in later proceedings, waivers of defenses can be inadvertent, and privilege over the underlying investigation can be lost. Have you reviewed this response with an attorney? If yes, proceed. If no, here's a brief to bring to them:
+> Responder a uma notificação, inquérito ou reclamação tem consequências jurídicas — posições assumidas aqui viram confissão em processo posterior, defesas podem ser renunciadas por inadvertência, e o sigilo profissional sobre a investigação subjacente pode ser perdido. Você revisou esta resposta com um advogado? Se sim, prossiga. Se não, aqui vai um resumo para levar a ele:
 >
-> - The allegation, the forum, and the deadline
-> - What the investigation surfaced (findings by allegation; documents reviewed; witnesses interviewed; Upjohn warnings given or not)
-> - Any unresolved evidentiary threads or credibility contests
-> - What the proposed response says and what it implicitly concedes
-> - Open questions and what's unresolved
-> - What could go wrong (privilege waiver, inconsistent factual statements, missed affirmative defense)
-> - What to ask the attorney (is this the right theory; are we preserving defenses; should an outside firm take this over; what needs redaction or a privilege log)
+> - A alegação, o órgão/foro (MPT, fiscalização do trabalho, Justiça do Trabalho, sindicato) e o prazo
+> - O que a apuração levantou (findings por alegação; documentos revisados; testemunhas ouvidas; devido processo interno e proteção do denunciante documentados ou não, Lei 14.457/2022)
+> - Qualquer thread probatório em aberto ou disputa de credibilidade
+> - O que a resposta proposta diz e o que concede implicitamente
+> - Questões abertas e o que ficou irresolvido
+> - O que pode dar errado (quebra de sigilo, declarações fáticas inconsistentes, defesa/preliminar perdida)
+> - O que perguntar ao advogado (é a tese certa; estamos preservando defesas; escritório externo deve assumir; o que precisa de tarja/redação; há dado pessoal sensível a proteger sob LGPD antes de exibir)
 >
-> If you need to find an attorney, solicitor, barrister, or other authorised legal professional: contact your professional regulator (state bar in the US, SRA/Bar Standards Board in England & Wales, Law Society in Scotland/NI/Ireland/Canada/Australia, or your jurisdiction's equivalent) for a referral service. Agency and demand-letter responses are a place where untrained replies regularly create more exposure than the underlying allegation did.
+> Se precisar encontrar um advogado inscrito na OAB: contate a seccional da OAB (Ordem dos Advogados do Brasil) do seu estado para serviço de referência. Respostas a órgãos fiscalizadores e a notificações são justamente onde réplicas sem assessoria costumam criar mais exposição do que a alegação original.
 
 Do not produce an external-response draft past this gate without an explicit yes. Internal memos, HR summaries, and leadership briefings used only within the organization do not trip this gate (but the privilege-formation caveat at the top of this skill still applies).
 
@@ -751,13 +815,14 @@ Do not produce an external-response draft past this gate without an explicit yes
 
 - Make disciplinary decisions — it supports the attorney's findings,
   not HR's action
-- Guarantee privilege — privilege depends on how the investigation is
-  structured, not on how the memo is labeled
+- Guarantee sigilo — o sigilo profissional depende de como a investigação é
+  estruturada (advogado dirigindo/supervisionando), não de como o memo é rotulado
 - Process documents it cannot read — if files are in formats that cannot
   be parsed, flag them for manual review
 - Conduct interviews — it logs interview notes, it does not interview witnesses
-- Replace Upjohn warnings — it tracks whether they were given, it does not
-  give them
+- Substituir o procedimento apuratório da Lei 14.457/2022 — rastreia se o devido
+  processo interno e a proteção do denunciante foram documentados, não os conduz
+  (e, no US-workforce fallback, rastreia Upjohn warnings sem dá-las)
 
 ## Close with the next-steps decision tree
 

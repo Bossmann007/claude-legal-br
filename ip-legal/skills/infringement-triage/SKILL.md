@@ -13,10 +13,11 @@ argument-hint: "[describe the facts and which right — or just the facts and I'
 
 **This is a triage, not a finding of infringement or non-infringement.**
 Infringement analysis is fact-intensive and legally complex. Acting on a
-triage — sending a cease-and-desist, refusing to stop, filing suit, or
+triage — sending a notificação extrajudicial, refusing to stop, filing suit, or
 deciding not to — without attorney review is how companies end up on the
-wrong side of fee awards, Rule 11 sanctions, declaratory-judgment actions,
-and (for patents) treble damages.
+wrong side of honorários sucumbenciais, litigância de má-fé (CPC arts. 79-81),
+ação declaratória de não-infração, and (for patents) perdas e danos (LPI
+art. 210) plus injunction.
 
 ## Instructions
 
@@ -77,13 +78,14 @@ not drop it. Do not soften it.**
 > conclude. A conclusion that something does or does not infringe is a legal
 > opinion that requires an attorney's judgment on the facts, the claim or
 > right scope, the relevant jurisdiction's law, and the likely defenses.
-> Acting on a triage — sending a cease-and-desist, refusing to stop, filing
-> suit, or deciding not to — without attorney review is how companies end up
-> on the wrong side of fee awards, Rule 11 sanctions, declaratory-judgment
-> actions, and (for patents) treble damages.
+> Acting on a triage — sending a notificação extrajudicial, refusing to stop,
+> filing suit, or deciding not to — without attorney review is how companies end
+> up on the wrong side of honorários sucumbenciais, litigância de má-fé (CPC
+> arts. 79-81), ação declaratória de não-infração, and (for patents) perdas e
+> danos (LPI art. 210).
 
-Under-calling a conflict is a one-way door — a C&D not sent and a mark goes
-generic in the market; a claim not chased and the statute of limitations runs;
+Under-calling a conflict is a one-way door — a notificação not sent and a mark
+goes generic in the market; a claim not chased and prescrição runs;
 a copied copyrighted work kept on the site. Over-calling is a two-way door —
 the attorney narrows. Stay on the two-way door side.
 

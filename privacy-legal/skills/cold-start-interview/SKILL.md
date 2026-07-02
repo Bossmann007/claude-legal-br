@@ -208,9 +208,10 @@ Write `## Who's using this` and `## Available integrations` sections immediately
 - B2B, B2C, or both? Enterprise or SMB customers?
 
 **Regulatory footprint:**
-- Which regulations actually apply? GDPR? CCPA/CPRA? HIPAA? FERPA? Sector-specific? (This feeds `/reg-gap-analysis` — every new reg gets diffed against this list to see if it reaches you, and `/use-case-triage` uses it to spot which regimes apply to a new processing activity.)
-- Any regulators who know you by name yet? Open inquiries, consent decrees, anything?
-- Where does the data physically live? US only? EU? Multi-region?
+- Which regulations actually apply? Start with the baseline: **LGPD (Lei 13.709/2018)** applies to essentially any company processing personal data in Brazil or offering goods/services to people here — treat it as the default, not an option. Then the **setoriais**: BCB Res. 4.658/2018 + Open Finance if you handle financial/payment data; ANS regulation if you're a health-plan operator; the **ECA (Lei 8.069/1990)** plus LGPD art. 14 if you process children's/adolescents' data; **Marco Civil da Internet (Lei 12.965/2014)** for connection/access logs and internet-application obligations. Which of these reach you? (This feeds `/reg-gap-analysis` — every new reg gets diffed against this list to see if it reaches you, and `/use-case-triage` uses it to spot which regimes apply to a new processing activity.) `[settled — last confirmed 2026-07-02]`
+- **Additional (foreign) footprint** — only if it actually reaches you: **GDPR** if you process data of people in the EU/EEA; **CCPA/CPRA** if you have California consumers and hit the thresholds; **HIPAA** if you're a US covered entity/business associate; other US or foreign sectoral regimes. These are *layered on top of* LGPD, not substitutes for it. Don't assume any of them applies — ask whether you actually have data subjects in that jurisdiction.
+- Any regulators who know you by name yet? Open inquiries with the **ANPD**, TACs, or anything else? (Plus any foreign regulator if the foreign footprint above applies.)
+- Where does the data physically live? Brazil only? Multi-region? Any **transferência internacional de dados** (LGPD art. 33) in play?
 
 **The team:**
 - How many privacy people? Is there a DPO? In-house or outside?
@@ -306,9 +307,11 @@ If outputs aren't saved anywhere yet:
 [regions]. Privacy team is [N] people. [DPO name or "no formal DPO"]. Escalation
 goes to [GC / CPO / name].
 
-**Regulatory footprint:** [GDPR / CCPA / HIPAA / etc. — only list what applies]
+**Regulatory footprint:** LGPD (Lei 13.709/2018) — baseline, sempre aplicável a empresa operando no Brasil. Setoriais aplicáveis: [BCB Res. 4.658/Open Finance / ANS / ECA (Lei 8.069/1990) + LGPD art. 14 para menores / Marco Civil (Lei 12.965/2014) — listar só o que aplica]. Footprint estrangeiro adicional (só se alcançar): [GDPR se titulares na UE / CCPA se consumidores na CA / HIPAA se covered entity nos EUA — layered on top of LGPD, não substituto]
 
-**Open regulatory matters:** [none / list]
+**Autoridade de fiscalização:** ANPD (Autoridade Nacional de Proteção de Dados)
+
+**Open regulatory matters:** [none / list — inquéritos ANPD, TACs]
 
 ---
 
@@ -446,7 +449,7 @@ If yes, show this tailored list (not a generic template — these are the concre
 > **Here's what I'm good at in privacy practice:**
 >
 > - **Review a DPA against your playbook** — e.g., "Auto-detects processor vs. controller; flags deviations from your positions." Try: `/privacy-legal:dpa-review`
-> - **Triage a processing activity** — e.g., "PIA, mandatory GDPR DPIA, or proceed — with privacy-policy conflict surfaces." Try: `/privacy-legal:use-case-triage`
+> - **Triage a processing activity** — e.g., "PIA, análise de RIPD/DPIA (relatório de impacto à proteção de dados, LGPD art. 38 + Res. CD/ANPD nº 18/2024 — não é mandato universal; a ANPD pode exigir, e os gatilhos seguem a Res. 18/2024), or proceed — with privacy-policy conflict surfaces." Try: `/privacy-legal:use-case-triage`
 > - **Generate a PIA in house format** — e.g., "Structured intake, risk analysis, regulatory classification, recommendation." Try: `/privacy-legal:pia-generation`
 > - **Walk through a DSAR** — e.g., "Verify, locate, assess exemptions, draft the response letter." Try: `/privacy-legal:dsar-response`
 > - **Diff a new regulation against your policy** — e.g., "Outputs the gap list and a remediation plan with owners and deadlines." Try: `/privacy-legal:reg-gap-analysis`
@@ -493,6 +496,6 @@ This solves the cold-start problem (the supervisor doesn't know what to do first
 
 ## Failure modes
 
-- **Don't assume GDPR applies.** Lots of US-only B2B companies are told they "should probably care about GDPR" — ask whether they actually have EU data subjects.
+- **LGPD is the baseline; don't skip it, and don't over-reach on the foreign regimes.** For a company operating in Brazil, LGPD (Lei 13.709/2018) applies — write it in without asking. The failure mode here is the opposite of the US one: don't let a company assume GDPR/CCPA/HIPAA applies just because they've heard of it. Ask whether they actually have EU data subjects (GDPR), California consumers over threshold (CCPA), or US covered-entity status (HIPAA) before adding any foreign regime on top of LGPD.
 - **Don't let them skip the controller/processor question.** If they're not sure, walk through it: "When your customer's user data comes into your system, whose privacy policy governs it — yours or the customer's?"
 - **Don't write a DPA playbook from generic positions.** If they haven't negotiated many DPAs, say so in the config CLAUDE.md: `[POSITIONS UNTESTED — this team hasn't negotiated many DPAs yet. Treat as starting points, not settled positions.]`

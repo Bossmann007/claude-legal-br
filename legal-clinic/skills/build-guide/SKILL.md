@@ -136,7 +136,7 @@ If the supervisor names a cross-plugin skill they want, record: skill name, when
 
 > What court(s) does your clinic practice in? Any local rules or forms students need to use?
 
-Check `CLAUDE.md` → `## Jurisdiction` — the state and primary court are already set at cold-start. This step is for practice-area-specific local rules and forms (e.g., "Housing Court standing order on summary process answers," "USCIS filing address for the local field office," "Family Court self-help center forms and where to find them"). Offer to capture a short list of pointers the student-facing skills should use when drafting or advising.
+Check `CLAUDE.md` → `## Jurisdiction` — the comarca and primary vara/juizado are already set at cold-start. This step is for practice-area-specific local rules and forms (e.g., "provimento da vara de família local sobre audiência de conciliação," "endereço e horário do CRAS que encaminha os assistidos," "modelos e balcão de atendimento do juizado especial cível da comarca," "orientações da Defensoria Pública para o encaminhamento"). Offer to capture a short list of pointers the student-facing skills should use when drafting or advising.
 
 ### Step 8: Write the guide
 

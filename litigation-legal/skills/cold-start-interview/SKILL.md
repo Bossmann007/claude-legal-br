@@ -9,8 +9,8 @@ argument-hint: "[--redo | --check-integrations]"
 1. Check `~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md`. If already populated and no `--redo`, ask before overwriting.
 2. Follow the workflow and reference below.
 3. Run Part 0 (role, side, integration check). The interview branches by role and side.
-   - **Role** routes the practice profile structure: **in-house** (portfolio of matters, outside counsel oversight, reserve methodology, board/audit reporting), **firm associate** (case work — matter context, case theory and pivot fact, seed brief in house style, eDiscovery/priv-log setup), or **solo** (caseload + contingency or retainer economics + client expectations + SOL tracking, then the case-theory and brief-style sections).
-   - **Side** routes calibration vocabulary: **plaintiff** (asserting, case value, contingency, SOL cliff), **defense** (responding, exposure, reserves where applicable, insurance tender), or **both/varies** (captures a default and lets per-matter skills re-ask).
+   - **Role** routes the practice profile structure: **in-house** (portfolio of matters, outside counsel oversight, reserve methodology, board/audit reporting), **firm associate** (case work — matter context, case theory and pivot fact, seed brief in house style, eDiscovery/priv-log setup), or **solo** (caseload + honorários contratuais/êxito or retainer economics + client expectations + controle de prescrição, then the case-theory and brief-style sections).
+   - **Side** routes calibration vocabulary: **autor/requerente** (asserting, case value, honorários sucumbenciais + custas, prescrição), **réu/requerido** (responding, exposure, reserves where applicable, denunciação da lide / seguro), or **both/varies** (captures a default and lets per-matter skills re-ask).
 
    After Part 0, walk the sections that match the selected role. Do not run the in-house path for solo users — reserves, ASC 450, and board-memo framing are not the right frame for a solo practice. Offer defaults; capture freeform overrides. Ask for seed documents at each section (non-pushy; note that sharing sharpens every downstream skill).
 4. Surface gaps. If the user doesn't have an articulated risk framework or reporting threshold, note it and offer to think through it now or leave `[PLACEHOLDER]` to fill later.
@@ -35,7 +35,7 @@ Every matter intake, every chronology build, every brief draft, every status rol
 
 The plugin serves three distinct litigation roles — in-house counsel managing a portfolio of matters, firm associates doing the underlying brief / deposition / discovery work, and solo practitioners running a caseload directly. The vocabulary is different for each, and the interview branches to match. Solo practitioners do not get the in-house path compressed — they get a dedicated solo path (caseload, contingency or retainer economics, client expectations) plus the brief / case-theory sections that apply to anyone who drafts.
 
-The interview also asks which side the user mostly represents — plaintiff (asserting claims), defense (responding to claims), both, or varies by matter. Risk calibration, demand-letter posture, discovery stance, and chronology framing all differ by side, and the practice profile carries the default so downstream skills don't have to ask every time.
+The interview also asks which side the user mostly represents — autor/requerente (asserting claims), réu/requerido (responding to claims), both, or varies by matter. Risk calibration, demand-letter posture, production-of-evidence stance (pedido de exibição — CPC arts. 396-404), and chronology framing all differ by side, and the practice profile carries the default so downstream skills don't have to ask every time.
 
 **Tone:** socratic, not checklist. If the user doesn't have a written framework, this is often the thing that forces articulation. Lean into that. Don't rush past gaps — name them, offer to think through, allow "leave for later."
 
@@ -157,22 +157,22 @@ Record the answer in the practice profile's `## Role` section at the top (`in-ho
 
 ### Which side do you mostly represent?
 
-Ask this right after the role question. It's load-bearing for risk-calibration framing, demand-letter posture, discovery stance, and the way chronologies are built.
+Ask this right after the role question. It's load-bearing for risk-calibration framing, demand-letter posture, evidence-production stance (pedido de exibição — CPC arts. 396-404), and the way chronologies are built.
 
-> **Which side do you mostly represent?** (This feeds /demand-draft, /demand-received, /subpoena-triage, /chronology, and /claim-chart — plaintiff framing treats demand letters as assertions and discovery as offensive, defense framing treats them as received and responsive.)
+> **Which side do you mostly represent?** (This feeds /demand-draft, /demand-received, /subpoena-triage, /chronology, and /claim-chart — autor framing treats demand letters as assertions and evidence-gathering as offensive, réu framing treats them as received and responsive.)
 >
-> **(a) Plaintiff / claimant** — you bring claims for individuals or businesses. Demand letters are assertions you draft and send. Discovery is offensive. Statute of limitations is a cliff you work against. Economics are often contingency.
+> **(a) Autor / requerente / reclamante** — you bring claims for individuals or businesses. Notificações e demandas are assertions you draft and send. You go on the offensive with pedidos de exibição (CPC arts. 396-404) and requerimentos de prova. Prescrição is the deadline you work against — plead the pretensão before it prescreve. Economics turn on honorários sucumbenciais (CPC art. 85) plus custas.
 >
-> **(b) Defense / respondent** — you defend businesses or individuals against claims. Demand letters are received and triaged. Discovery is defensive. Exposure is assessed, reserved (in-house), tendered to insurance (where applicable).
+> **(b) Réu / requerido / reclamado** — you defend businesses or individuals against claims. Demandas are received and triaged. Your posture is defensive — contestação, impugnação, defesas processuais, resisting or narrowing pedidos de exibição, and (where applicable) denunciação da lide or acionamento do seguro. Exposure is assessed, reserved (in-house).
 >
-> **(c) Both** — your practice regularly includes both. Ask for a default (plaintiff or defense); individual skills will ask per-matter when it matters.
+> **(c) Both** — your practice regularly includes both. Ask for a default (autor or réu); individual skills will ask per-matter when it matters.
 >
 > **(d) Varies by matter** — no strong default; every matter gets asked.
 
-Record under `## Side` in the practice profile (`plaintiff | defense | both [default plaintiff/defense] | varies`). Branching rules for calibration that follows:
+Record under `## Side` in the practice profile (`plaintiff | defense | both [default plaintiff/defense] | varies` — the config keys keep the plaintiff/defense labels for cross-plugin consistency; read them as autor/réu). Branching rules for calibration that follows:
 
-- **Plaintiff:** risk calibration is about case value, contingency economics, client expectations, statute of limitations exposure. Demand letters are the assertion. Discovery is offensive. Settlement-authority conversations are with the client, not a GC/board. (For firm-associate plaintiff-side: partner review replaces GC escalation.)
-- **Defense:** risk calibration is about exposure, reserves (in-house only), settlement authority, insurance coverage. Demand letters are received and triaged. Discovery is defensive — responding, asserting privilege, narrowing.
+- **Autor / plaintiff:** risk calibration is about case value, honorários sucumbenciais (CPC art. 85) plus custas, client expectations, and prescrição exposure (getting the pretensão filed before the prazo prescricional runs). Notificações e demandas are the assertion. Evidence-gathering is offensive — pedidos de exibição, requerimentos de prova. Settlement-authority conversations are with the client, not a GC/board. (For firm-associate autor-side: partner/sócio review replaces GC escalation.)
+- **Réu / defense:** risk calibration is about exposure, reserves (in-house only), settlement authority, e cobertura de seguro / denunciação da lide onde cabível. Demandas are received and triaged. Posture is defensive — contestação, defesas processuais, resisting or narrowing pedidos de exibição, invoking sigilo profissional.
 - **Both / varies:** the interview captures the default and the skills (`demand-draft`, `subpoena-triage`, `matter-intake`, `chronology`, `claim-chart`) ask per-matter when the side changes the output.
 
 ### Practice setting
@@ -344,7 +344,7 @@ If not:
 
 *Skip any question where the answer is obvious from earlier context.*
 
-- **Statute of limitations tracking** — how do you track SOL cutoffs across the caseload? (Calendar, case-management software, a paper docket, memory — whatever's real.) This is the solo equivalent of the in-house "materiality / reserve trigger" because missing a SOL is the failure mode that ends a solo career.
+- **Controle de prescrição e prazos** — how do you track prazos prescricionais and processual deadlines across the caseload? (Calendar, case-management software, a paper docket, memory — whatever's real.) This is the solo equivalent of the in-house "materiality / reserve trigger" because deixar prescrever a pretensão de um cliente is the failure mode that ends a solo career (and grounds a claim before the tribunal de ética da OAB).
 - **Case management software** — Clio, MyCase, PracticePanther, Smokeball, Rocket Matter, paper files, spreadsheets, other.
 - **Document storage** — Google Drive, Dropbox, OneDrive, local filesystem, the case-management tool's storage. Where do matter documents actually live?
 - **Frequent fora** — courts you actually appear in.
@@ -374,11 +374,11 @@ After Section S3, continue to the **Firm-associate path** below. Solo practition
 
 ### Part A: The matter (2 min)
 
-- Matter name, client, case number, court
-- Our side (plaintiff / defendant)
-- Partner and senior associate (skip if solo / small without hierarchy)
-- Stage (pleadings, discovery, summary judgment, trial prep)
-- Key dates coming up
+- Matter name, client, número do processo, juízo/vara
+- Our side (autor / réu)
+- Sócio and advogado sênior responsible (skip if solo / small without hierarchy)
+- Fase processual (petição inicial / contestação; saneamento — CPC art. 357; instrução; sentença; recursos)
+- Key dates coming up (audiências, prazos, expiração de prazo prescricional se ainda pendente)
 
 ### Part B: The theory — this is everything (3–4 min)
 
@@ -433,7 +433,7 @@ Write the completed practice profile to the plugin config, using the template at
 
 - `in-house` → full in-house structure (Company profile, Risk calibration with ASC 450 / reserve / board-memo rows, Outside counsel bench, Board/audit committee memo). Omit or mark N/A for solo-only sections (fee structure, retainer, contingency).
 - `firm-associate` → firm-world structure (case theory, pivot fact, partner review, seed brief). Omit reserve / board-memo / ASC 450 sections; omit solo fee / retainer sections.
-- `solo` → solo structure (caseload, fee structure, client expectations, SOL tracking, retainer or contingency, office management) **plus** the firm-associate sections (case theory, seed brief). Omit in-house reserve / ASC 450 / board-memo / settlement-authority-ladder-to-GC sections entirely — they are not the right frame for a solo practice and including them as placeholders adds noise rather than structure.
+- `solo` → solo structure (caseload, fee structure, client expectations, controle de prescrição, retainer or honorários de êxito, office management) **plus** the firm-associate sections (case theory, seed brief). Omit in-house reserve / ASC 450 / board-memo / settlement-authority-ladder-to-GC sections entirely — they are not the right frame for a solo practice and including them as placeholders adds noise rather than structure.
 
 Where a template section carries in-house-only vocabulary ("ASC 450 reserves", "board / audit committee memo"), either omit the section for non-in-house roles or translate the vocabulary into the equivalent solo or firm-associate concept. Solo equivalent of "board memo" is "client update letter." Solo equivalent of "reserve methodology" is "case-value read" (plaintiff) or "exposure read" (defense). Do not carry the accounting-standard language into a solo profile.
 

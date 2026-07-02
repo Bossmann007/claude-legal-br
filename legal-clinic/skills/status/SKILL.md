@@ -63,7 +63,7 @@ Case notes for facts.
 *Review label for the student (not for the client — strip before sending):*
 `[AI-ASSISTED DRAFT — requires student review and supervision step per plugin config]`
 
-Check your jurisdiction's student practice rule for required law-student sign-off language; some jurisdictions require specific forms.
+Check the clinic's student-practice authority (o convênio do NPJ com a Defensoria Pública, o Provimento OAB sobre estágio de prática forense, ou a regra local aplicável) for required estagiário sign-off language; some seccionais/varas require specific forms. `[review]`
 
 ```markdown
 Dear [Client],
@@ -83,8 +83,8 @@ let you know when we need something from you."]
 **How to reach us:** [Clinic phone, hours, student name]
 
 [Student name]
-Law Student, Certified Legal Intern
-Under the supervision of [Supervising Attorney]
+Estagiário(a) de Direito — Núcleo de Prática Jurídica (NPJ)
+Sob a supervisão de [Advogado(a) Supervisor(a)], OAB [nº/seccional]
 [Clinic name]
 ```
 
@@ -137,11 +137,11 @@ that's your thinking, not a summary of notes]
 
 **Include:**
 - Procedural history (briefly)
-- Current status of discovery/motions/settlement
+- Current status of the instrução probatória / pending petições/incidentes / conciliation or acordo
 - What's outstanding
 - Proposed next steps or scheduling
 
-**Format:** Per local rules. Caption, signature block, certificate of service if filed.
+**Format:** Per the comarca's rules and the CPC. Endereçamento (juízo/vara), qualificação das partes, and signature block. `[review]`
 
 ```markdown
 ═══════════════════════════════════════════════════════════════════════
@@ -149,30 +149,31 @@ that's your thinking, not a summary of notes]
   Court filings ALWAYS require professor review before filing
 ═══════════════════════════════════════════════════════════════════════
 
-[Caption per jurisdiction — VERIFY against current local rules]
+[Endereçamento ao juízo/vara + qualificação das partes — VERIFY against current CPC / local rules]
 
-STATUS REPORT
+PETIÇÃO DE INFORMAÇÃO SOBRE O ANDAMENTO DO PROCESSO
 
-[Party] respectfully submits this status report pursuant to [the court's
-order of [date] / local rule [X] / in advance of the status conference
-scheduled for [date]].
+[Parte] respeitosamente informa o andamento do feito [em cumprimento à
+determinação de [data] / nos termos do art. [X] / previamente à audiência
+designada para [data]].
 
-1. Procedural history: [brief]
+1. Breve histórico processual: [brief]
 
-2. Current status: [discovery status / motion status / settlement status]
+2. Situação atual: [fase da instrução / petições ou incidentes pendentes /
+   estado da conciliação/acordo]
 
-3. Outstanding matters: [what's pending]
+3. Pendências: [what's pending]
 
-4. Proposed next steps: [scheduling, if the court wants input]
+4. Requerimentos / próximos passos: [designação de audiência, prazos, se o
+   juízo solicitar manifestação]
 
-[Signature block — student attorney under supervision of [Professor]]
-
-[Certificate of service if filing]
+[Bloco de assinatura — estagiário(a) sob a supervisão de [Professor(a)/
+Advogado(a) Supervisor(a)], OAB [nº/seccional]]
 
 ---
 
-[VERIFY: caption format, local status report requirements, service
-requirements — per current [Court] rules]
+[VERIFY: endereçamento, requisitos do CPC/regras da comarca para a
+manifestação, forma de protocolo (PJe/e-SAJ) — per current [Court] rules]
 ```
 
 ## Supervision routing
