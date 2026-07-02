@@ -14,10 +14,13 @@ argument-hint: "[describe the product / process / feature and jurisdictions — 
 
 **This is not a freedom-to-operate opinion.** A formal FTO opinion requires a
 comprehensive search, full claim construction, and element-by-element
-infringement analysis by registered patent counsel. Patent infringement is
-strict liability; willful infringement triples damages. A "no obvious blocking
-patents" result from this skill means the triage didn't find one — it does
-not mean the product is clear.
+infringement analysis by registered patent counsel or Agente da Propriedade
+Industrial. Patent infringement under Brazilian law (Lei 9.279/1996) is
+assessed under art. 210's "greatest of" damages formula — infringer's gain,
+patentee's loss, or reasonable royalty; there is no treble-damages or
+willfulness-multiplier equivalent. A "no obvious blocking patents" result from
+this skill means the triage didn't find one — it does not mean the product is
+clear.
 
 ## Instructions
 
