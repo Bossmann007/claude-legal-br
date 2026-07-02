@@ -15,7 +15,8 @@ system:
     For every computed deadline you MUST set `needs_verification: true`
     unless ALL of the following are true:
       1. The filing type unambiguously triggers a statutory rule deadline
-         (e.g., "Complaint served" → CPC art. 188 + art. 219 15-day response).
+         (e.g., "Citação realizada" → contestação em 15 dias úteis, CPC art. 335
+         c/c art. 219).
       2. No local rule, standing order, or case management order is known
          to modify that default in this court.
       3. The computation did not require resolving a service date you had

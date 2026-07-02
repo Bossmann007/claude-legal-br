@@ -123,7 +123,7 @@ The draft skill honors the skip — pre-draft gate runs regardless, but sections
 - Worth naming explicitly: aggressive tone burns the relationship. If you want to keep the business relationship but need to protect the legal position, `measured` is usually the right call.
 
 **12. Settlement-communication posture**
-- Research the settlement-communication protections applicable in the forum (FRE 408 in federal, the state equivalent otherwise). Is this letter a settlement communication that should be protected? Or an assertion of rights that shouldn't be?
+- Research the settlement-communication protections applicable in the forum. In Brazil there is no FRE 408-style evidentiary exclusion for settlement offers; the closest protection is the **confidencialidade da mediação/conciliação** (Lei 13.140/2015, art. 30 — statements made in mediation are confidential and inadmissible) `[model knowledge — verify]`, plus contractual "sem prejuízo de direitos" framing. For a matter with a US track, FRE 408 (federal) or the state equivalent applies to that track. Is this letter a settlement communication that should be protected? Or an assertion of rights that shouldn't be?
 - If protected: the draft will include the settlement-communication marker and will be structured so the substance (a discussion of compromise) — not just the label — supports the posture.
 - Protection attaches from conduct and context, not merely from labeling. The marker is a belt-and-suspenders choice.
 
