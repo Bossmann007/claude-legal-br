@@ -229,11 +229,11 @@ in Step 2. Items inherited from the closing checklist are pre-populated.
 **Day 1 — legal-owns:**
 - Entity name change filing (if acquired entity is being renamed) [priority: critical]
 - Bank account signatory updates — notify bank with closing documentation [priority: critical]
-- Registered agent notification of ownership change [priority: high]
+- Contador/administrador responsável notification of ownership change [priority: high]
 - Key IP assignment execution — if any IP assignments were deferred from closing [priority: critical]
 - Domain name and social media account transfer [priority: high]
 - D&O insurance — confirm tail policy is bound for acquired entity directors [priority: critical]
-- Secretary of State ownership notifications where required by state law [priority: high]
+- Junta Comercial ownership notifications where required by state/federal law [priority: high]
 
 **Day 1 — legal-supports:**
 - Employee announcement and communications (HR owns, legal reviews) [priority: critical]

@@ -61,11 +61,11 @@ For each past exam:
 
 - Format (number of questions, length, time limit, open/closed book)
 - Subject coverage (which topics tested, in what proportion)
-- Question style (issue-spotter, single-issue deep, policy essay, short-answer MBE-style, mix)
+- Question style (issue-spotter, single-issue deep, policy essay, short-answer questões objetivas, mix)
 - Fact pattern density (fact-heavy hypos, sparse facts with doctrinal focus, or policy prompts with no facts)
 - Recurring traps (e.g., professor always hides the jurisdictional issue in an otherwise-clean fact pattern; professor always asks about the exception rather than the rule)
 - Policy vs. doctrine ratio
-- Unusual structures (essays + MBE hybrid, moot court scenario, etc.)
+- Unusual structures (essays + questões objetivas hybrid, moot court scenario, etc.)
 
 ### Step 3: Cross-exam pattern analysis
 
@@ -149,7 +149,7 @@ Write to `~/.claude/plugins/config/claude-for-legal/law-student/exam-forecasts/[
 
 - **outline-builder:** forecast weights feed into outline depth decisions — weight depth on heavy topics
 - **flashcards:** forecast-heavy topics get more cards generated
-- **bar-prep-questions:** irrelevant for bar prep (that has its own forecast model); exam-forecast is for class-specific finals
+- **bar-prep-questions:** irrelevant for Exame de Ordem prep (that has its own forecast model); exam-forecast is for class-specific finals
 - **irac-practice:** use forecast topics as the subject areas for IRAC practice hypos
 
 ## Close with the next-steps decision tree

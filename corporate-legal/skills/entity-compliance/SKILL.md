@@ -68,7 +68,7 @@ Lives at `~/.claude/plugins/config/claude-for-legal/corporate-legal/entities/com
 # Entity Compliance Tracker
 # Generated: [date]
 # Last updated: [date]
-# Disclaimer: deadlines are reference only — confirm with registered agent or Secretary of State
+# Disclaimer: deadlines are reference only — confirm with contador/administrador responsável or Junta Comercial
 
 metadata:
   company: "[Company Name]"
@@ -86,7 +86,7 @@ entities:
     cnpj: "[CNPJ ou null]"
     formation_date: "[data ou null]"
     status: "[ativa / dormant / em dissolução]"
-    registered_agent: "[contador/advogado responsável / escritório / interno / outro]"
+    registered_agent: "[contador/administrador responsável / escritório / interno / outro]"
     notes: ""
 
     jurisdictions:
@@ -126,13 +126,13 @@ ask the user to either run the cold-start module or provide the entity list.
 
 ### Step 2: For each entity × jurisdiction, confirm the filing requirements
 
-For each entity, confirm the current filing schedule with the registered agent or the relevant Secretary of State. State filing schedules change (some states move from fixed dates to anniversary-based schedules and back, fee structures are revised, filing categories are reclassified). Do not rely on a cached schedule. The tracker below records the dates you confirm; update them when your registered agent sends reminders.
+For each entity, confirm the current filing schedule with the contador/administrador responsável or the relevant Junta Comercial. Filing schedules change (some jurisdictions move from fixed dates to anniversary-based schedules and back, fee structures are revised, filing categories are reclassified). Do not rely on a cached schedule. The tracker below records the dates you confirm; update them when your contador/administrador sends reminders.
 
 For each jurisdiction where the entity is registered (domestic or foreign):
 
-1. Ask the user whether they have a current compliance report from the registered agent — that's the most authoritative source.
+1. Ask the user whether they have a current compliance report from the contador/administrador responsável — that's the most authoritative source.
 2. If not, ask the user what they know (filing type, due-date basis, last filed date, typical fee). Record what they provide.
-3. For anything the user does not know, flag the entity × jurisdiction entry as `unknown` — do not populate dates from a cached reference. The user's next step is to confirm with the registered agent or Secretary of State.
+3. For anything the user does not know, flag the entity × jurisdiction entry as `unknown` — do not populate dates from a cached reference. The user's next step is to confirm with the contador/administrador responsável or Junta Comercial.
 
 **Capture details in the tracker rather than a reference table:**
 
@@ -143,7 +143,7 @@ For each jurisdiction where the entity is registered (domestic or foreign):
 > 1. What type of filing is required? (Declarações à Junta Comercial, Alteração Contratual, AGO, DEFIS, DFP/ITR, Formulário de Referência, ou outro?)
 > 2. When is it due? (Fixed date like May 1, anniversary month, or other?)
 > 3. What's the typical fee? (Approximate is fine — or "unknown".)
-> 4. Who is your registered agent or local filing agent there?
+> 4. Who is your contador/administrador responsável or local filing agent there?
 
 Store the answer in a `custom_jurisdictions` block in the tracker:
 

@@ -3,7 +3,7 @@ name: customize
 description: >
   Guided customization of your law-student study profile — change one thing
   without re-running the whole cold-start interview. Adjust current classes,
-  learning style, outline preferences, bar prep subjects, seed materials,
+  learning style, outline preferences, Exame de Ordem subjects, seed materials,
   or study session cadence. Use when the user says "change my [thing]",
   "add a class", "update my profile", "new semester", or "customize".
 argument-hint: "[section name, or describe what you want to change]"
@@ -14,7 +14,7 @@ argument-hint: "[section name, or describe what you want to change]"
 ## When this runs
 
 The user typed `/law-student:customize`. They want to change something in
-their study profile — a class, a learning style preference, a bar prep
+their study profile — a class, a learning style preference, an Exame de Ordem
 subject — without re-running the whole cold-start interview and without
 hand-editing YAML.
 
@@ -31,19 +31,18 @@ hand-editing YAML.
 2. **Show the customizable map.** List what's in the profile, grouped, with a
    one-line summary of the current value:
 
-   - **Student profile** — name, school, year (1L/2L/3L/LLM), jurisdiction
-     for bar, enrolled clinics or journals
+   - **Student profile** — name, school, year (1º ao 10º período/LLM), área jurídica da 2ª fase, enrolled clinics or journals
    - **Current classes** — class name, professor, syllabus path, exam format
-     (closed/open book, essay/MBE/mixed), cold-call style
+     (closed/open book, essay/questões objetivas/mixed), cold-call style
    - **Learning style** — Socratic vs. summary, how much pushback you want,
      whether the plugin rewrites your work or only critiques structurally
    - **Outline preferences** — outline format (IRAC/CREAC/case-briefing
      style), level of rule detail, whether to include policy discussion,
      saved outline templates
-   - **Bar prep** — which exam (UBE/state), subjects in rotation, weak-
-     subject flagging, MBE vs. essay cadence
+   - **Bar prep** — which exam (OAB-FGV/national), subjects in rotation, weak-
+     subject flagging, 1ª fase vs. 2ª fase cadence
    - **Seed materials** — casebook paths, prior outlines, graded essays, old
-     exams, MBE sets, syllabi, papers
+     exams, questões objetivas da 1ª fase, syllabi, papers
    - **Study workflow** — session length, flashcard Leitner bucket schedule,
      exam forecast cadence, cold-call prep timing
    - **Integrations** — document storage / flashcard app (if any) status,
@@ -64,7 +63,7 @@ hand-editing YAML.
    - *Learning style Socratic → summary-first:* "`/socratic-drill` won't ask you to
      answer first — it'll present the rule and example, then quiz you on
      application."
-   - *Adding a bar subject:* "`/bar-prep-questions` will include this subject in
+   - *Adding an Exame de Ordem subject:* "`/bar-prep-questions` will include this subject in
      rotation and weight it higher if you mark it weak."
 
 5. **Close.**

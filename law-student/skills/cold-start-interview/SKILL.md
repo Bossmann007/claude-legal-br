@@ -1,9 +1,9 @@
 ---
 name: cold-start-interview
 description: >
-  About-you interview and materials intake — classes, bar jurisdiction,
+  About-you interview and materials intake — classes, área jurídica escolhida,
   learning style (drill-me vs explain-to-me), past outlines, graded essays,
-  old exams, MBE sets, syllabi, papers. Use on a fresh install, when the user
+  old exams, questões objetivas da 1ª fase, syllabi, papers. Use on a fresh install, when the user
   says "set up" or "get started", or with --check-integrations to re-probe
   connectors.
 argument-hint: "[--redo] [--check-integrations]"
@@ -61,7 +61,7 @@ Show this preamble first (3-4 short lines, nothing more):
 
 > **`law-student` is for law students studying for class or the bar.** Not your area? `/legal-builder-hub:related-skills-surfacer`.
 >
-> **2 minutes** gets you year in school (1L/2L/3L/bar prep), current classes, and bar exam date if applicable. **15 minutes** adds your learning style default (drill-me vs. explain-to-me), weak areas, past materials (outlines, graded essays, old exams), professor exam history from uploads, and flashcard subjects.
+> **2 minutes** gets you ano da faculdade (1º-5º ano / preparação para o Exame de Ordem), matérias atuais, e data do Exame de Ordem se aplicável. **15 minutes** adds your learning style default (drill-me vs. explain-to-me), weak areas, past materials (outlines, graded essays, old exams), professor exam history from uploads, and flashcard subjects.
 >
 > Quick or full? (Upgrade any time with `/law-student:cold-start-interview --full`.)
 
@@ -90,7 +90,7 @@ The student picked quick or full in the preamble. Branch:
 **Pause for real answers.** Part 1 has quick tap-through answers. Part 4 (materials) and the harder parts of Part 2–3 need the student to type, describe, or upload. When a question needs more than a quick tap:
 
 - **Ask the question and wait.** Say explicitly: "This one needs a typed answer — I'll wait." Do not move to the next question until the student responds.
-- **For uploads (syllabi, outlines, graded essays, old exams, MBE sets):** "Paste the contents, share a file path, or say 'skip for now.' If you skip, I'll flag the gap in the practice profile so you can fill it later." Then actually wait. Don't silently move on.
+- **For uploads (syllabi, outlines, graded essays, old exams, questões objetivas da 1ª fase):** "Paste the contents, share a file path, or say 'skip for now.' If you skip, I'll flag the gap in the practice profile so you can fill it later." Then actually wait. Don't silently move on.
 - **Before writing the practice profile:** review the interview. List every question that was skipped or answered with a placeholder. Say: "Before I write your practice profile, here's what's still open: [list]. Want to fill any of these now, or leave them as placeholders?" Then wait for the answer.
 - **Never** write a practice profile with silent gaps. Every placeholder should be a deliberate choice the student made to skip — not a question that scrolled past because they paused to think.
 - **Pause and resume.** Tell the student up front: "If you need to stop, say 'pause' (or 'stop', or 'let me come back to this') and I'll save your progress. Run `/law-student:cold-start-interview` again later and I'll pick up where you left off." When the student pauses, write a partial configuration to `~/.claude/plugins/config/claude-for-legal/law-student/CLAUDE.md` with a `<!-- SETUP PAUSED AT: [section name] — run /law-student:cold-start-interview to resume -->` comment at the top and `[PENDING]` markers (distinct from `[PLACEHOLDER]`) on unanswered fields. When setup re-runs and finds a paused config, greet the student: "Welcome back. You paused at [section]. Your earlier answers are saved. Pick up where we left off, or start over?" Do not re-ask questions already answered.
@@ -112,15 +112,15 @@ Two quick questions before we learn how you study. These shape how the plugin wo
 
 #### Who's using this?
 
-> Are you a law student, a recent grad studying for the bar, or someone else using this for legal study? (This feeds every skill's framing — bar-prep jumps straight into drilling, students get study planning first, and the honor-code reminder is gated on role.)
+> Are you a law student, a recent grad studying for the Exame de Ordem, or someone else using this for legal study? (This feeds every skill's framing — exam prep jumps straight into drilling, students get study planning first, and the honor-code reminder is gated on role.)
 >
-> 1. **Law student** — 1L, 2L, 3L, LLM; currently enrolled.
-> 2. **Recent grad studying for the bar** — graduated, prepping for a bar exam.
+> 1. **Law student** — 1º ao 10º período, LLM; currently enrolled.
+> 2. **Recent grad studying for the Exame de Ordem** — graduated, prepping for an Exame de Ordem exam.
 > 3. **Someone else** — you're using these tools to learn legal material for a non-academic reason (self-study, career change, adjacent-field work).
 
 If the answer is 1 or 2 (student or recent grad), say this once:
 
-> Two reminders on using this for school or bar prep:
+> Two reminders on using this for school or Exame de Ordem prep:
 >
 > 1. **Check your school's honor code and your professor's AI policy before using this on any graded work.** Most schools distinguish study tools (fine) from exam / graded-paper assistance (often restricted or prohibited). This plugin is built for study — drilling, outlining, IRAC practice, exam forecasting — not for producing work you turn in. When in doubt, ask.
 > 2. **Don't paste real client facts into this plugin.** If you're in a clinic, externship, or summer job and a study question ends up touching a real matter, stop — that's a supervised-practice situation, not study. Use your clinic or job's approved workflow, or talk to your supervising attorney. See the real-client-matter check below.
@@ -172,7 +172,7 @@ Write Part 0 answers to the plugin config under `## Who's using this` and `## Av
 - Year (1L, 2L, 3L, LLM)
 - School type — T1 / T2 / T3 / T4. (This calibrates difficulty in downstream drill and exam-forecast skills; the school *name* isn't needed.)
 - This semester's classes — name, exam format, where you are in the syllabus
-- Bar jurisdiction and target date (if known) (This feeds `/law-student:bar-prep-questions` — schedules MBE sets and essay practice backward from this date, filtered to your jurisdiction's essay subjects.)
+- Área jurídica da 2ª fase e data-alvo (se conhecida) (This feeds `/law-student:bar-prep-questions` — schedules questões objetivas e prático-profissionais backward from this date, filtered to your jurisdiction's exam subjects.)
 
 **Situations that don't fit the boxes.** If your situation doesn't match the standard options (non-US law school, JD/LLM hybrid, dual-degree, part-time evening program, self-study for a non-UBE state, foreign-trained attorney preparing for a US bar, visiting scholar, PhD candidate auditing courses, or anything else the standard categories assume away), say so. I'll shift: "It sounds like your program doesn't fit my usual categories. Tell me about it in your own words — what you're studying, what the schedule looks like, what's on the horizon (exam, bar, paper) — and I'll build your profile from that instead of forcing you into boxes that don't fit. I'll skip or adapt the questions that don't apply." Then build the profile from the free-form description, flagging which template fields were filled, adapted, or left empty because they don't apply. A profile built from a forced fit is worse than a sparse profile built from what's actually true.
 
@@ -204,7 +204,7 @@ Write Part 0 answers to the plugin config under `## Who's using this` and `## Av
 
 Say this first, once, as a single ask:
 
-> **Paste or link anything you've got: outlines (yours or commercial), class syllabi, past exams, graded essays, MBE question sets, class notes. The more I have, the more I can tailor. Professor names on past exams help me match patterns — if the professor's name is on an exam you upload, I'll use it. You don't need to type it.**
+> **Paste or link anything you've got: outlines (yours or commercial), class syllabi, past exams, graded essays, questões objetivas da 1ª fase, class notes. The more I have, the more I can tailor. Professor names on past exams help me match patterns — if the professor's name is on an exam you upload, I'll use it. You don't need to type it.**
 
 Then walk the categories below, capturing what the student has. More is always better for the downstream skills.
 
@@ -222,8 +222,8 @@ Then walk the categories below, capturing what the student has. More is always b
 - Old exams from the same professors (especially same-professor; those are highest signal)
 - Syllabi for current classes
 - Reading assignments / casebooks for current classes
-- Practice MBE question sets with answer explanations (Barbri/Themis/Kaplan — full sets if you have them)
-- Bar prep course outlines if you're at that stage
+- Practice questões objetivas da 1ª fase with answer explanations (cursinho preparatório — full sets if you have them)
+- Exame de Ordem course outlines if you're at that stage
 
 **Class specifics:**
 - Anything a professor has said about what they emphasize
@@ -262,19 +262,19 @@ If yes, show this tailored list (not a generic template — these are the concre
 > - **Build or extend a class outline** — e.g., "Your format, your subject, iteratively built as you go." Try: `/law-student:outline-builder`
 > - **Cold-call prep for tomorrow's class** — e.g., "Predict your professor's questions and drill them." Try: `/law-student:cold-call-prep`
 > - **Flashcards by subject with Leitner buckets** — e.g., "Generate, drill, and promote / demote across sessions." Try: `/law-student:flashcards`
-> - **Bar prep questions targeted at weak subjects** — e.g., "MBE or essay, drawn from your weak-subject list." Try: `/law-student:bar-prep-questions`
+> - **Exame de Ordem questions targeted at weak subjects** — e.g., "1ª fase or 2ª fase, drawn from your weak-subject list." Try: `/law-student:bar-prep-questions`
 >
 > **My suggestion for your first one:** Run `/law-student:case-brief` on the next case you have to read — it'll tell you whether the brief format matches how you actually study. Or tell me what's on your plate and I'll pick.
 
 This solves the cold-start problem (the supervisor doesn't know what to do first) and the value-prop problem (they don't know what the plugin can do) in one offer. Make the list specific. Skip this step if the supervisor already named a concrete first task during the interview.
 
 
-**If the student is in bar prep mode** (Role is "Law student studying for bar," or they told you they're prepping for a bar exam): jump straight into questions — that's what bar prep users want.
+**If the student is in Exame de Ordem prep mode** (Role is "Law student studying for Exame de Ordem," or they told you they're prepping for an Exame de Ordem exam): jump straight into questions — that's what exam prep users want.
 
-- "What's the MBE subject you're most worried about? Let's drill that."
+- "What's the 1ª fase subject you're most worried about? Let's drill that."
 - If drill-me mode: "Okay. [Subject]. First question: [ask something about the subject]. Don't look it up."
 
-**If the student is a regular law student** (not in bar prep): suggest a plan before a drill. Plans beat cold-drilling for a semester.
+**If the student is a regular law student** (not in exam prep): suggest a plan before a drill. Plans beat cold-drilling for a semester.
 
 - **Start here:** `/law-student:study-plan` — builds a study schedule from your classes, exam dates, and weak areas. It'll suggest when to drill, when to outline, and when to do practice exams.
 
