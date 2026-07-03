@@ -15,6 +15,13 @@ if ! python3 "$ROOT/scripts/lint-tool-scope.py"; then
   fail=1
 fi
 
+# Guardrail lint: assert every plugin CLAUDE.md carries the retrieved-content-trust
+# and documento-ilegível guardrails — a drop must break the build, not ship silently.
+if ! python3 "$ROOT/scripts/lint-guardrails.py"; then
+  echo "  ✗ guardrail lint" >&2
+  fail=1
+fi
+
 for d in "$ROOT"/managed-agent-cookbooks/*/; do
   slug=$(basename "$d")
   if ! bash "$ROOT/scripts/deploy-managed-agent.sh" "$slug" --dry-run 2>&1 | tail -n +2 | python3 -c "
