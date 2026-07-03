@@ -449,7 +449,7 @@ If yes, show this tailored list (not a generic template — these are the concre
 > **Here's what I'm good at in privacy practice:**
 >
 > - **Review a DPA against your playbook** — e.g., "Auto-detects processor vs. controller; flags deviations from your positions." Try: `/privacy-legal:dpa-review`
-> - **Triage a processing activity** — e.g., "PIA, análise de RIPD/DPIA (relatório de impacto à proteção de dados, LGPD art. 38 + Res. CD/ANPD nº 18/2024 — não é mandato universal; a ANPD pode exigir, e os gatilhos seguem a Res. 18/2024), or proceed — with privacy-policy conflict surfaces." Try: `/privacy-legal:use-case-triage`
+> - **Triage a processing activity** — e.g., "PIA, análise de RIPD/DPIA (relatório de impacto à proteção de dados, LGPD art. 38 — não é mandato universal, a ANPD pode exigir; art. 5º, XVII — definição; fatores de alto risco art. 10 §3º / 11 / 14 / 20), or proceed — with privacy-policy conflict surfaces." Try: `/privacy-legal:use-case-triage`
 > - **Generate a PIA in house format** — e.g., "Structured intake, risk analysis, regulatory classification, recommendation." Try: `/privacy-legal:pia-generation`
 > - **Walk through a DSAR** — e.g., "Verify, locate, assess exemptions, draft the response letter." Try: `/privacy-legal:dsar-response`
 > - **Diff a new regulation against your policy** — e.g., "Outputs the gap list and a remediation plan with owners and deadlines." Try: `/privacy-legal:reg-gap-analysis`

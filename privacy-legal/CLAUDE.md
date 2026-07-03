@@ -34,7 +34,7 @@ Rules for every skill, command, and agent in this plugin:
 
 **Regulatory footprint:** [PLACEHOLDER — LGPD (Lei 13.709/2018) sempre aplicável a empresa operando no Brasil; avaliar também GDPR se tratar dados de titulares na UE, CCPA se EUA/CA] *(From company-profile.md — edit there to change across all plugins)*
 
-**Autoridade de fiscalização:** ANPD (Autoridade Nacional de Proteção de Dados) — Resoluções CD/ANPD nº 1 a 19/2023-2024 regulamentam agentes de tratamento de pequeno porte, dosimetria e aplicação de sanções administrativas (Res. 4/2023), e relatório de impacto à proteção de dados (Res. 18/2024).
+**Autoridade de fiscalização:** ANPD (Autoridade Nacional de Proteção de Dados) — Resoluções CD/ANPD nº 1 a 19/2023-2024 regulamentam, entre outros, agentes de tratamento de pequeno porte (Res. 2/2022), dosimetria e aplicação de sanções administrativas (Res. 4/2023), atuação do encarregado/DPO (Res. 18/2024) e cláusulas-padrão contratuais para transferência internacional (Res. 19/2024). *(O RIPD é regido pela LGPD Art. 38 + Art. 5º, XVII; regulamento dedicado ainda não vigente — verificar norma atual.)*
 
 **Open regulatory matters:** [PLACEHOLDER]
 

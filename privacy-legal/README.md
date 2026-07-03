@@ -1,6 +1,6 @@
 # Plugin de Privacidade e Proteção de Dados (LGPD)
 
-Fluxos de trabalho para equipe de privacidade in-house sob a **LGPD (Lei 13.709/2018)**: revisão de contratos de tratamento de dados (equivalente brasileiro à DPA), atendimento a requisições de titular (Art. 18), geração de Relatório de Impacto à Proteção de Dados (RIPD/DPIA — Art. 38 e Res. CD/ANPD nº 18/2024), e análise de gap regulatório frente à ANPD. Construído em torno de um perfil de prática aprendido a partir da sua política de privacidade real, modelo de contrato de tratamento e um RIPD de referência.
+Fluxos de trabalho para equipe de privacidade in-house sob a **LGPD (Lei 13.709/2018)**: revisão de contratos de tratamento de dados (equivalente brasileiro à DPA), atendimento a requisições de titular (Art. 18), geração de Relatório de Impacto à Proteção de Dados (RIPD/DPIA — Art. 38, que dá à ANPD o poder de exigi-lo, e Art. 5º, XVII, que o define; regulamento dedicado de RIPD ainda não vigente — verificar norma atual da ANPD), e análise de gap regulatório frente à ANPD. Construído em torno de um perfil de prática aprendido a partir da sua política de privacidade real, modelo de contrato de tratamento e um RIPD de referência.
 
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
@@ -89,7 +89,7 @@ Conduz: classificar direito invocado → verificar identidade → localizar dado
 /privacy-legal:pia-generation "Funcionalidade de compartilhamento de localização"
 ```
 
-Perguntas de intake → RIPD no seu formato de casa (Art. 38 LGPD + Res. CD/ANPD nº 18/2024) → diff de política → lista de condições.
+Perguntas de intake → RIPD no seu formato de casa (Art. 38 LGPD — ANPD pode exigir; Art. 5º, XVII — definição) → diff de política → lista de condições.
 
 ## Como o plugin aprende
 
