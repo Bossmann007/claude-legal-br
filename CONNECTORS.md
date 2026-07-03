@@ -8,7 +8,10 @@ Os plugins são **agnósticos de ferramenta** — descrevem fluxos em termos de 
 
 ## Conector local: DataJud (CNJ)
 
-Diferente dos demais (servidores HTTP de terceiros), o **DataJud** é um conector MCP **local e próprio**, em `connectors/datajud/` — Node puro, sem dependências, já registrado no `.mcp.json` da raiz. Dá acesso read-only aos metadados de processos públicos da API pública do CNJ (capa, movimentos, pesquisa filtrada para jurimetria). Sem barreira de autenticação paga: usa a chave pública do CNJ (sobreponível via `DATAJUD_API_KEY`). Ver `connectors/datajud/README.md`. Ferramentas: `datajud_buscar_processo`, `datajud_pesquisar`.
+Diferente dos demais (servidores HTTP de terceiros), o **DataJud** e o **DJEN** são conectores MCP **locais e próprios**, em `connectors/` — Node puro, sem dependências, já registrados no `.mcp.json` da raiz.
+
+- **DataJud** (`connectors/datajud/`) — metadados de processos públicos da API pública do CNJ (capa, movimentos, pesquisa filtrada para jurimetria). Usa a chave pública do CNJ (sobreponível via `DATAJUD_API_KEY`). Ferramentas: `datajud_buscar_processo`, `datajud_pesquisar`. Ver `connectors/datajud/README.md`.
+- **DJEN** (`connectors/djen/`) — comunicações/intimações do Diário de Justiça Eletrônico Nacional via API pública Comunica do CNJ, por OAB / nome do advogado / processo. Base do watcher de intimações; combina com `/litigation-legal:djen-watcher` e `/litigation-legal:prazos-cpc`. Sem chave. Ferramentas: `djen_consultar`, `djen_por_processo`. Ver `connectors/djen/README.md`.
 
 ## Conectores deste plugin
 

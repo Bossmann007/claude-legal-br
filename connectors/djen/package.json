@@ -1,0 +1,14 @@
+{
+  "name": "djen-mcp",
+  "version": "1.0.0",
+  "description": "MCP connector (read-only) for the CNJ DJEN public Comunica API — Brazilian court communications / intimações by OAB, lawyer name, or process number.",
+  "type": "module",
+  "bin": { "djen-mcp": "./server.mjs" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {},
+  "license": "MIT"
+}
