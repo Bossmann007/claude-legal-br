@@ -100,6 +100,28 @@ Flag this. Don't block it — but flag it.
 - [ ] Acknowledgment process (if required)
 ```
 
+## Consequential-action gate (before publishing handbook changes)
+
+**Before publishing an updated handbook or sending it to employees:** Read `## Who's using this` in ~/.claude/plugins/config/claude-for-legal/employment-legal/CLAUDE.md. If the Role is **Non-lawyer**:
+
+> Publishing a handbook change affects your entire workforce and can have legal consequences. It establishes (or modifies) terms of employment that may be deemed contractual or that trigger compliance obligations. Have you reviewed this with an attorney? If yes, proceed. If no, here's a brief to bring to them:
+>
+> - What changed and why (cost savings, legal requirement, policy refinement, etc.)
+> - Whether this change reduces, maintains, or improves employee benefits or protections
+> - If reducing a benefit (PTO, insurance, severance, leave policy, etc.) — what is the legal notice required, what is the effective date, and do existing employees need consent or consideration?
+> - Whether the change affects different employee populations differently (e.g., remote vs. in-office, unionized vs. non-union, different states/countries)
+> - Whether the change triggers any regulatory notice requirement (state leave laws, federal WARN Act if relevant, union notification if applicable)
+> - Whether the change could be perceived as retaliatory or discriminatory against a protected class or individual
+> - State-specific risks (some states, like California, limit reductions in handbook-promised benefits and may imply a contract from a handbook policy)
+> - What could go wrong (wage claims, misclassification claims, regulatory audit of the accuracy of the handbook vs. actual practice, grievances)
+> - What to ask the attorney (is this change legally enforceable; do we need employee acknowledgment; should we phase it in; should we offer something in exchange for the change)
+>
+> If you need to find a lawyer: the OAB (Ordem dos Advogados do Brasil) seccional of your estado is the starting point — its service for referral or the local subsecção can point you to counsel. (For a US or multi-country policy: contact the bar or professional body in the relevant jurisdiction.)
+
+Do not publish a final handbook change past this gate without an explicit yes. A marked-DRAFT for attorney review is fine.
+
+---
+
 ## What this skill does not do
 
 - Approve handbook changes. HR/legal leadership does.

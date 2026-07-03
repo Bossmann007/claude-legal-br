@@ -1,7 +1,7 @@
 # Renewal Watcher — managed-agent cookbook
 
 name: renewal-watcher
-model: claude-opus-4-7
+model: claude-sonnet-4-6
 
 system:
   file: ../../commercial-legal/agents/renewal-watcher.md

@@ -496,6 +496,27 @@ Baseado na recomendação e confirmação do usuário:
 
 Conforme `## Postura de decisão em questões jurídicas subjetivas` no perfil de prática: quando incerto se há infração, se uma marca é confusamente semelhante, se uma obra é substancialmente semelhante, se uma alegação é plausível, ou se enviar é seguro — não decida silenciosamente que está tudo bem. Sinalize para revisão de advogado, mostre os fatores que pesam em ambas direções, anote a incerteza. Enviar notificação com base em suposição é porta de mão única; expor a dúvida é porta de duas mãos.
 
+## Consequential-action gate (modo envio — antes de enviar notificação extrajudicial)
+
+**Antes de enviar a notificação redigida à contraparte — e sempre antes de executar uma demanda ou pressão formal:** Leia `## Quem está usando isso` em ~/.claude/plugins/config/claude-for-legal/ip-legal/CLAUDE.md. Se o Role é **Não-advogado** (seja com ou sem acesso a advogado):
+
+> Enviar uma notificação extrajudicial afirmando direito é um ato jurídico com consequências. É uma afirmação formal do seu direito, fica registrado em processo futuro contra você, e posições tomadas aqui prendem a empresa e podem ser usadas contra ela em procedimentos posteriores. Você conversou com um advogado? Se sim, prossiga. Se não, aqui está um briefing para levar a ele/ela:
+>
+> - O direito afirmado (marca no INPI, direito autoral, segredo industrial, etc.) — está registrado/protegido nas jurisdições onde a contraparte atua?
+> - A conduta infratora — é claro o bastante para uma notificação, ou há ambiguidade sobre intenção/infração?
+> - A contraparte — é uma pessoa física, empresa, concorrente, cliente, aliado, ou desconhecida? Essa relação muda o tom e a estratégia.
+> - Desproporcionalidade — o benefício de enviar notificação agora supera o risco de transformar uma situação cinzenta em contencioso agressivo?
+> - Prazos — há prazo para agir (decadência de marca, prescrição, caducidade), ou podemos esperar para avaliar?
+> - Risco colateral — a empresa pode ser processada com ação declaratória negativa em foro da contraparte? Pode sofrer represálias comerciais? Pode prejudicar relação com cliente/parceiro?
+> - O que pode dar errado (litigância de má-fé — CPC art. 80 — se a alegação for infundada, abuso de direito, ação declaratória negativa em foro desfavorável)
+> - O que perguntar ao advogado (devemos enviar? Devemos suavizar o tom? Devemos enviar em conjunto via associação profissional? Há posições que NÃO devemos tomar?)
+>
+> Se precisa encontrar um advogado: a OAB (Ordem dos Advogados do Brasil) seccional do seu estado é o ponto de partida — sua Comissão de sociedade/serviço de referência ou a subsecção local pode encaminhá-lo(a). (Para matéria de PI estrangeira: entre em contato com correspondente local ou escritório com experiência naquela jurisdição.)
+
+Não redija nem envie notificação definitiva após este gate sem um sim explícito do usuário. Um rascunho marcado PARA REVISÃO DE ADVOGADO é aceitável.
+
+---
+
 ## What this skill does not do
 
 - **Enviar a carta.** Apenas redação. O usuário envia, após aprovação.

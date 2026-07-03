@@ -84,13 +84,96 @@ Prep structure differs by posture. Identify the witness posture before writing a
 - **Adverse / hostile** — cross-examination style: closed, leading, one fact at a time. Build the box.
 - **Friendly / your own** — direct-examination style: open questions that let the witness tell the story. Closed leading questions with your own witness are usually improper and undercut credibility with the factfinder.
 - **Neutral third-party** — mix; often open to get the story, closed to pin specifics.
-- **Preposto / representante da pessoa jurídica (art. 385, §1º CPC)** — the closest BR analog to a 30(b)(6) corporate designee: the company designates a preposto to give the depoimento pessoal on its behalf. The preposto need not have direct personal knowledge of every fact but must be able to answer for the company; confirm scope of the designation and who was named before the audiência.
+- **Preposto / representante da pessoa jurídica (art. 385, §1º CPC)** — the closest BR analog to a 30(b)(6) corporate designee: the company designates a preposto to give the depoimento pessoal on its behalf. The preposto need not have direct personal knowledge of every fact but must be able to answer for the company; confirm scope of the designation and who was named before the audiência. **Important:** Súmula 377 TST holds that a preposto who is unable to answer questions about facts the company is expected to know risks a finding of *confissão ficta* (deemed admission of the company) — the preposto's silence or "I don't know" can be treated by the tribunal as an admission `[model knowledge — verify]`. Prep the preposto thoroughly on critical facts or argue narrow scope on out-of-scope questions.
 
-**Research the applicable procedure for the forum and witness type** (CPC arts. 385-388 e 442-463, conforme o caso; provimentos do juízo sobre a condução da audiência; local practice of the vara/comarca). Cite primary sources. Don't apply a one-size prep structure — the question form, the approach to documents, and the use of impeachment material all depend on posture.
+#### Preposto-specific prep (when witness is a corporate designee)
+
+When the witness is a preposto designated to testify on the company's behalf (CPC art. 385, §1º depoimento pessoal, or CLT arts. 847-850 audiência una):
+
+**Scope of designation:**
+- The company's attorney should have written confirmation of what facts the preposto is authorized to testify about.
+- Any fact within scope that the preposto cannot answer risks Súmula 377 TST — deemed admission by the company `[model knowledge — verify]`.
+- **Strategy:** either (1) armor the preposto fully on all critical facts ("I am authorized and I know"), or (2) explicitly claim out-of-scope ("I was not designated on that topic") — but out-of-scope claims carry tactical cost (adverse inference).
+
+**Outline structure for preposto:**
+- **Background & scope:** company role, how long in position, explicit scope of designation per written authority
+- **Facts within scope — good:** facts the preposto can confidently testify to on company behalf, with supporting documents
+- **Facts within scope — bad:** facts the preposto will be asked about that hurt the company — get the company's version in the witness's mouth first, using documents to anchor
+- **Out-of-scope boundary:** if cross-exam goes outside scope, preposto says "I was not designated to speak about that" — flag in outline as calculated risk
+- **Impeachment material:** documents that might be shown to preposto to elicit contradiction or establish company knowledge despite witness silence
+
+---
+
+**Research the applicable procedure for the forum and witness type.** Choose your branching based on jurisdiction and procedural regime:
+
+**CLT (Labor, audiência una) — CPC arts. 847-850, CLT arts. 847-850:**
+- Single consolidated hearing (audiência una) in the labor court (vara trabalhista / TRT)
+- Examination of parties and witnesses in sequence, judge-controlled
+- Depoimento pessoal of parties (both plaintiff and defendant) is mandatory if present (CLT art. 850, §3º)
+- Oitiva de testemunhas (witness examination) follows, also judge-controlled
+- Perito (expert) examination, if any, in same hearing
+- No pretrial depositions; everything is in the single hearing
+- Use closed/controlled questions; the judge may intervene
+- Preposto (company representative) testifies under Súmula 377 TST rules (see above)
+
+**CPC (Civil, audiência de instrução) — CPC arts. 358-368, 385-388, 442-463:**
+- Separate pretrial hearing — audiência de conciliação ou mediação (arts. 358-368) first
+- If no settlement, audiência de instrução e julgamento (arts. 385-388 for party testimony; 442-463 for witness examination)
+- Judge has more limited control over question form (parties' attorneys ask, judge supervises)
+- Direct-exam and cross-exam structure is more formal than CLT's unified judge-controlled hearing
+- Perito reports in writing (arts. 464-480); oral examination at trial if disputed
+- Preposto testifies under CPC art. 385, §1º; Súmula 377 applies (deemed admission risk) `[model knowledge — verify]`
+
+**Key procedural distinctions:**
+- **CLT (audiência una):** judge controls timing, asks questions directly, consolidates all evidence in one hearing. Witness prep emphasizes short, clear answers and document support.
+- **CPC (audiência de instrução):** parties' attorneys conduct direct and cross; judge supervises. More formal question-and-answer structure; longer examinations possible; prep emphasizes narrative control and document anchoring.
+
+**Research the applicable rules** (CPC arts. 385-388, 442-463 for civil; CLT arts. 847-850 + local TRT provimentos for labor). Cite primary sources. Don't apply a one-size prep structure — the question form, the approach to documents, and the use of impeachment material all depend on both posture AND jurisdiction.
 
 **No silent supplement.** If a research query to the configured legal research tool (JusBrasil, Escavador, PJe, or firm platform) returns few or no results for the forum's rules on depoimento/oitiva or a cite you need for impeachment, report what was found and stop. Do NOT fill the gap from web search or model knowledge without asking. Say: "The search returned [N] results from [tool]. Coverage appears thin for [rule / authority]. Options: (1) broaden the search query, (2) try a different research tool, (3) search the web — results will be tagged `[web search — verify]` and should be checked against a primary source before relying, or (4) leave the `[UNCERTAIN]` marker and stop here. Which would you like?" A lawyer decides whether to accept lower-confidence sources; the skill does not decide for them.
 
 **Source attribution.** Tag every rule reference, case cite, and authority in the outline with where it came from: `[JusBrasil]`, `[Escavador]`, `[PJe]`, or the MCP tool name for citations retrieved from a legal research connector; `[web search — verify]` for web-search citations; `[model knowledge — verify]` for citations recalled from training data; `[user provided]` for citations the partner or senior associate supplied. Document citations (numeração de páginas dos autos) retain their native source. Citations tagged `verify` carry higher fabrication risk and should be checked before the audiência. Never strip or collapse the tags.
+
+### Step 1b: Contradita de testemunha — impedimento e suspeição (CPC art. 457 §1º)
+
+Before the audiência, check whether the opposing party's witness may have a legal impediment or bias that can be challenged via contradita (CPC art. 457, §1º).
+
+**Impedimento (disqualifying circumstances):**
+- Relationships: spouse, ascendant, descendant, sibling (CPC art. 457, I, "a")
+- Professional confidentiality: lawyer, physician, priest, psychologist (CPC art. 457, I, "b") `[model knowledge — verify]`
+- Financial interest: the witness stands to gain or lose from the judgment (CPC art. 457, I, "c")
+- Official capacity conflict: judge of the case or official party to it (CPC art. 457, I, "d")
+- Bail or pledge made for one party (CPC art. 457, I, "e")
+
+**Suspeição (bias-based challenges):** `[model knowledge — verify]`
+- The witness is a subordinate, employee, or creditor of a party (CPC art. 457, II, "a")
+- The witness has animosity or personal interest unrelated to the case (CPC art. 457, II, "b")
+- The witness received gifts or favors from a party (CPC art. 457, II, "c")
+- Other facts that suggest bias or partiality
+
+**Timing & procedure:**
+- Contradita must be raised **at the time the witness is called to testify** — before or immediately after swearing in (CPC art. 457, §1º)
+- The judge rules (no separate motion needed)
+- If sustained, the witness cannot testify on the challenged fact(s)
+- If overruled, the testimony stands but the contradita is noted on the record
+
+**Outline prep — contradita flags:**
+If you anticipate the opposing party will call a witness with a potential impedimento or suspeição, surface it in your outline:
+
+> **Contradita candidate — [Witness Name]:**
+> - **Basis:** [relationship / professional confidentiality / financial interest / bias]
+> - **Authority:** CPC art. 457, [section] `[model knowledge — verify]`
+> - **Timing:** Raise at swearing-in
+> - **Effect if sustained:** Witness cannot testify on [facts]
+
+Or, if your own witness is at risk of being challenged by opposing counsel:
+
+> **Defense against anticipated contradita:**
+> - **Expected challenge:** Opposing counsel may argue [bias / relationship / interest]
+> - **Response:** [why it doesn't qualify / why it's not material to credibility / other defenses]
+> - **Prep the witness:** Brief on the anticipated challenge so they're not surprised
+
+---
 
 ### Step 2: Pull their documents
 

@@ -61,6 +61,14 @@ Rules for every skill, command, and agent in this plugin:
 
 ---
 
+## Antes de colar dados de cliente
+
+**Proteção de dados pessoais.** Antes de colar neste assistente qualquer dados de cliente, usuário, ou pessoa (nomes, e-mails, telefones, IPs, UUIDs de conta, histórico de transações, dados sensíveis por art. 11 LGPD), execute `/privacy-legal:pii-scrub` primeiro. O skill pseudonymiza o texto para você analisar em segurança, e mantém uma tabela de de-para local para você re-identificar depois.
+
+**Base legal obrigatória.** Flag: sua empresa tem base legal para passar dados pessoais para este assistente (ex.: contrato de processamento, consentimento, legítimo interesse, cumprimento de lei)? LGPD art. 7 `[model knowledge — verify]` exige base legal. Se não tem, o assistente não deveria ver esses dados mesmo pseudonymizados. Consulte seu DPO ou advogado(a) antes de colar.
+
+---
+
 ## DPA playbook
 
 ### Quando somos operador (Art. 5º, VII, LGPD)

@@ -168,6 +168,27 @@ Preface (not in the brief — a note to the reviewing attorney):
 **Draft only — not a filing.** Filing this section initiates (or participates in) a proceeding and carries Rule 11 / Rule 3.3 exposure. A licensed attorney reviews, edits, and takes professional responsibility before it goes on the docket. Do not file unreviewed.
 ```
 
+## Consequential-action gate (before filing)
+
+**Before filing a brief or section and always before submitting to a tribunal:** Read `## Who's using this` in ~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md. If the Role is **Non-lawyer**:
+
+> Filing a brief section is a legal action with consequences. It enters the record of the proceeding, becomes part of the court file, and makes legal arguments that bind the party and the attorney who signs. Have you reviewed this with an attorney? If yes, proceed. If no, here's a brief to bring to them:
+>
+> - The court, docket, judge, and procedural stage (motion, opposition, trial brief, etc.)
+> - The legal theory advanced in this section and whether it's viable given the facts and controlling law
+> - Whether every citation in the section has been verified against a primary source (primary risk: AI-fabricated citations)
+> - Whether every fact cited to the record actually appears in the record at the pinpoint cited
+> - Whether the argument is qualified (e.g., "to the extent X applies") or makes a flat assertion you can't back up
+> - What the opposing side's strongest counterargument is and whether the section addresses it
+> - Whether there are inconsistencies with your other filings in this proceeding or prior proceedings
+> - What to ask the attorney (should we press this point or concede it; do we have a good-faith basis in fact and law; will this survive sanctions review)
+>
+> If you need to find a lawyer: the OAB (Ordem dos Advogados do Brasil) seccional of your estado is the starting point — its service for referral or the local subsecção can point you to counsel. (For a US or foreign matter: that jurisdiction's professional body — state bar in the US; SRA/Bar Standards Board in England & Wales; or the local equivalent.)
+
+Do not file this section past this gate without an explicit yes. A marked-DRAFT for attorney review is fine.
+
+---
+
 ## Statement of facts specifics
 
 The statement of facts is advocacy through selection and sequence, not argument.

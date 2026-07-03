@@ -1,5 +1,5 @@
 name: docket-reader
-model: claude-opus-4-7
+model: claude-haiku-4-5
 system:
   text: |
     You pull new docket entries from JusBrasil / Escavador (case-law and

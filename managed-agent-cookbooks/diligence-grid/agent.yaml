@@ -6,7 +6,7 @@
 # typed extraction, a normalization pass, and Write isolated to a single leaf.
 
 name: diligence-grid
-model: claude-opus-4-7
+model: claude-sonnet-4-6
 
 system:
   text: |

@@ -96,6 +96,14 @@ This file is the house-level frame every matter is triaged against. Risk calibra
 
 ---
 
+## Antes de colar dados de cliente
+
+**Proteção de dados processual.** Antes de colar neste assistente qualquer conteúdo de processos, despachos, ou dados de cliente (nomes, CPF, endereços, números de celular, contas bancárias), execute `/privacy-legal:pii-scrub` primeiro. O skill pseudonymiza o texto para você carregar em segurança, e mantém uma tabela de de-para local para você re-identificar depois.
+
+**Segredo de justiça e LGPD.** Pergunte: este processo corre em segredo de justiça (CPC art. 189 `[model knowledge — verify]`)? Envolve dados sensíveis (LGPD art. 11 `[model knowledge — verify]` — saúde, orientação sexual, origem étnica, dados biométricos)? Se sim, cuidado extra: nem mesmo pseudonymizado, dados sensíveis têm base legal restrita. Revise com advogado(a) antes de colar.
+
+---
+
 ## Outputs
 
 **Work-product header** (prepended to every internal analysis, briefing, triage, or review this plugin generates):

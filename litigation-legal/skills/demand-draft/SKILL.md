@@ -342,6 +342,28 @@ If user declines: update intake `status: drafted` (later `sent` when user confir
 
 Never overwrite a draft that has been sent. If revising after send, `draft-v2.docx`. The sent-version history is itself the record of what the counterparty received.
 
+## Consequential-action gate (before sending to counterparty)
+
+**Before producing a sendable draft and always before the user sends the letter to the counterparty:** Read `## Who's using this` in ~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md. If the Role is **Non-lawyer**:
+
+> Sending a demand letter is a legal action with consequences. It constitutes a formal assertion of a claim. The demand may be used against you later — repudiation, acknowledgment of debt, waiver of rights by implication. Have you reviewed this with an attorney? If yes, proceed. If no, here's a brief to bring to them:
+>
+> - The counterparty's jurisdiction and what law applies (choice of law in the contract if any; otherwise, where did the breach occur?)
+> - The core claim (payment, cure, cease-and-desist, etc.) and the damages or relief sought
+> - The relationship history with the counterparty (repeat customer? one-off? hostile?)
+> - The strength of the legal position — where does the law cut differently than this draft assumes?
+> - The tone and deadline — is the demand being punitive, or is it negotiation leverage?
+> - Settlement implications — is "without prejudice" needed given the nature of the dispute?
+> - Insurance implications — does the claim trigger a duty to notify the insurance carrier?
+> - What could go wrong (countersuit, declaratory judgment action, reputational harm, relationship loss)
+> - What to ask the attorney (should we send at all; should we soften the tone; should we expect litigation; should we involve insurance)
+>
+> If you need to find a lawyer: the OAB (Ordem dos Advogados do Brasil) seccional of your estado is the starting point — its service for referral or the local subsecção can point you to counsel. (For a US or foreign matter: that jurisdiction's professional body — state bar in the US; SRA/Bar Standards Board in England & Wales; or the local equivalent.)
+
+Do not produce a sendable draft past this gate without an explicit yes. A marked-DRAFT for attorney review is fine.
+
+---
+
 ## What this skill does not do
 
 - **Send the letter.** Drafting only. The user sends.

@@ -1,0 +1,110 @@
+name: agente-juiz
+model: claude-sonnet-4-6
+system:
+  text: |
+    You are a Brazilian civil judge (juiz de direito) reviewing a draft petição
+    (complaint / contestação / reconvenção) for threshold defects that could result
+    in early dismissal (moção para extinguir sem análise de mérito, arts. 337, 485 CPC
+    [model knowledge — verify]).
+
+    Your role is NOT to opine on the merits. Your role is to flag procedural
+    gatekeeping issues:
+
+    1. **Competência (jurisdiction):** Does the tribunal have power over parties
+       and subject matter? Check territorial, functional, and personal jurisdiction
+       per CPC arts. 42–63 [model knowledge — verify].
+
+    2. **Legitimidade ad causam (standing):** Are the real parties in interest named
+       as parties? Party-capacity issues (incapacity, improper representation)?
+
+    3. **Interesse de agir (case or controversy):** Does plaintiff have a live,
+       concrete dispute? Or is the claim abstract, moot, or speculative?
+
+    4. **Pedido claro e determinado (clarity of relief):** Is relief specific
+       enough? "Condemnation of defendant" is vague; "R$ 50,000" is clear.
+       Flag pedido genérico where relief is unmeasurable (CPC art. 324
+       [model knowledge — verify]).
+
+    5. **Capacidade e representação (capacity and representation):** Are parties
+       and attorneys properly identified? Is mandatory representation present?
+
+    For each defect found, return structured JSON with:
+    - **issue:** name of procedural defect
+    - **rule:** applicable CPC article(s) [model knowledge — verify]
+    - **defect_description:** what is defective in the draft
+    - **severity:** 🔴 blocking / 🟠 high / 🟡 medium
+    - **suggested_fix:** what text or clarification would cure it
+    - **effort:** trivial / 1 hour / half-day / escalate
+
+    Do NOT opine on merits, make arguments for/against plaintiff, read counterparty
+    filings (draft only), or flag issues outside CPC procedural framework.
+
+    If specialist knowledge is needed, flag and route.
+
+    Return ONLY valid JSON. No free text outside the JSON.
+
+tools:
+  - type: agent_toolset_20260401
+    default_config: { enabled: false }
+    configs:
+      - { name: read, enabled: true }
+      - { name: grep, enabled: true }
+mcp_servers: []
+skills: []
+callable_agents: []
+output_schema:
+  type: object
+  required: [peticion_summary, findings]
+  additionalProperties: false
+  properties:
+    peticion_summary:
+      type: object
+      required: [parties, jurisdiction, dispute_category, claim_value]
+      properties:
+        parties:
+          type: string
+          maxLength: 500
+          description: "Plaintiff(s) and defendant(s) as stated in draft"
+        jurisdiction:
+          type: string
+          maxLength: 200
+          description: "Tribunal named in draft (TJSP, TRF-1, etc.)"
+        dispute_category:
+          type: string
+          maxLength: 100
+          description: "Contract / Labor / Consumer / Property / Other"
+        claim_value:
+          type: string
+          maxLength: 100
+          description: "Monetary value or non-monetary relief sought"
+    findings:
+      type: array
+      maxItems: 20
+      items:
+        type: object
+        additionalProperties: false
+        required: [issue, severity, rule]
+        properties:
+          issue:
+            type: string
+            maxLength: 100
+          severity:
+            type: string
+            maxLength: 20
+            pattern: "^(🔴 blocking|🟠 high|🟡 medium)$"
+          rule:
+            type: string
+            maxLength: 200
+            description: "E.g., 'CPC art. 46 [model knowledge — verify]'"
+          defect_description:
+            type: string
+            maxLength: 500
+            description: "What is defective in the draft"
+          suggested_fix:
+            type: string
+            maxLength: 500
+            description: "How to cure it"
+          effort:
+            type: string
+            maxLength: 20
+            pattern: "^(trivial|1 hour|half-day|escalate)$"
