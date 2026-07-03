@@ -6,7 +6,7 @@ Os arquivos do plugin usam `~~categoria` como placeholder para a ferramenta que 
 
 Os plugins são **agnósticos de ferramenta** — descrevem fluxos em termos de categorias (armazenamento em nuvem, chat, suíte de escritório etc.) em vez de produtos específicos. O `.mcp.json` pré-configura servidores MCP específicos, mas qualquer servidor MCP daquela categoria funciona.
 
-## Conector local: DataJud (CNJ)
+## Conectores locais (CNJ): DataJud + DJEN
 
 Diferente dos demais (servidores HTTP de terceiros), o **DataJud** e o **DJEN** são conectores MCP **locais e próprios**, em `connectors/` — Node puro, sem dependências, já registrados no `.mcp.json` da raiz.
 

@@ -87,6 +87,11 @@ export function parseComunicacao(item = {}) {
       })
     : [];
   const texto = (item.texto ?? "").toString();
+  // A single intimação body can be several pages. 100 of them × full text would
+  // flood the context (and enlarge the injection surface). Cap the full text and
+  // keep `link` so the whole document is still reachable.
+  const MAX_TEXTO = 4000;
+  const textoTruncado = texto.length > MAX_TEXTO;
   return {
     id: item.id ?? item.hash ?? null,
     dataDisponibilizacao: item.data_disponibilizacao ?? item.dataDisponibilizacao ?? null,
@@ -98,9 +103,10 @@ export function parseComunicacao(item = {}) {
     meio: item.meiocompleto ?? item.meio ?? null,
     link: item.link ?? null,
     advogados: advs,
-    // Text can be long; keep a preview plus full text so the model can decide.
+    // Preview for scanning; capped full text for reading; link for the entire doc.
     textoPreview: texto.replace(/\s+/g, " ").trim().slice(0, 400),
-    texto,
+    texto: textoTruncado ? texto.slice(0, MAX_TEXTO) : texto,
+    ...(textoTruncado ? { textoTruncado: true, textoTamanhoOriginal: texto.length } : {}),
   };
 }
 

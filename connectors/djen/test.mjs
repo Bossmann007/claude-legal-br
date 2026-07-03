@@ -69,4 +69,20 @@ assert.equal(c.advogados[0].oab, "12345");
 assert.deepEqual(parseItems({}), []); // empty response
 assert.equal(parseItems({ items: [{ siglaTribunal: "TRF4" }] })[0].tribunal, "TRF4");
 
+// long text is truncated and flagged (context/injection cap)
+const longo = parseComunicacao({ id: 1, texto: "x".repeat(5000) });
+assert.equal(longo.texto.length, 4000);
+assert.equal(longo.textoTruncado, true);
+assert.equal(longo.textoTamanhoOriginal, 5000);
+// short text untouched, no truncation flags
+const curto = parseComunicacao({ id: 2, texto: "curto" });
+assert.equal(curto.texto, "curto");
+assert.equal(curto.textoTruncado, undefined);
+
+// malformed/absent envelope shapes don't throw
+assert.deepEqual(parseItems({ items: "nope" }), []);
+assert.deepEqual(parseItems(null), []);
+assert.equal(parseComunicacao({}).id, null);
+assert.equal(parseComunicacao({}).advogados.length, 0);
+
 console.log("ok — all DJEN lib checks passed");

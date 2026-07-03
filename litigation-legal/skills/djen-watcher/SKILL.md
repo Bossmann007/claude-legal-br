@@ -51,6 +51,12 @@ vistas:
 
 Intimações cujo `id` já está em `vistas` não reaparecem no resumo (a não ser com `--todas`). Só as novas são processadas e anexadas.
 
+**LGPD — este arquivo é um data store de dados pessoais.** `intimacoes-vistas.yaml` guarda números de processo, datas e partes — dado pessoal sob a LGPD. Consequências práticas:
+- **Retenção:** purgue entradas com `status: respondida` ou `perdida` há mais de 12 meses — não acumule indefinidamente (LGPD art. 15-16, fim do tratamento). O watcher deve oferecer essa limpeza ao rodar.
+- **Registro de tratamento:** este arquivo entra no registro de operações de tratamento do escritório (LGPD art. 37). Documente-o lá.
+- **Local, não em nuvem compartilhada:** mantenha em disco local do escritório; já está no `.gitignore` da raiz para não ser versionado por acidente.
+- **Sem sigiloso:** processos em segredo de justiça não vêm da API pública, então não caem aqui — mas se um número sensível for adicionado manualmente, trate-o com o mesmo cuidado.
+
 **Cálculo de prazo.** Para cada nova intimação, aplica a lógica de `/litigation-legal:prazos-cpc`: identifica o tipo de ato no texto, o prazo aplicável (em dias úteis), o termo inicial (dia útil seguinte à disponibilização), e a data-limite — sinalizando recesso/feriado/dobra quando aplicável. Todo prazo calculado é **rascunho**; a tabela de feriados forenses é específica do tribunal e deve ser confirmada (calibração — ver `prazos-cpc`).
 
 ## Resumo diário

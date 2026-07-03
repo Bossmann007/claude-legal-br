@@ -27,6 +27,32 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 COOKBOOKS_DIR = ROOT / "managed-agent-cookbooks"
+CONNECTORS_DIR = ROOT / "connectors"
+
+# The local MCP connectors are meant to be strictly read-only against public
+# CNJ APIs. A GET/search POST is fine; any mutating HTTP verb would mean the
+# connector grew write power it must not have. We grep the server sources for
+# mutating fetch verbs and fail if one appears.
+_MUTATING_VERBS = ('"PUT"', "'PUT'", '"DELETE"', "'DELETE'", '"PATCH"', "'PATCH'")
+
+
+def _lint_connectors() -> tuple[list[str], list[str]]:
+    """Return (violations, clean_slugs) for connectors/*/server.mjs."""
+    errs: list[str] = []
+    clean: list[str] = []
+    if not CONNECTORS_DIR.is_dir():
+        return errs, clean
+    for server in sorted(CONNECTORS_DIR.glob("*/server.mjs")):
+        src = server.read_text()
+        hits = [v for v in _MUTATING_VERBS if v in src]
+        if hits:
+            errs.append(
+                f"{server}: read-only connector must not issue mutating HTTP "
+                f"verbs; found {', '.join(sorted(set(hits)))}"
+            )
+        else:
+            clean.append(server.parent.name)
+    return errs, clean
 
 
 def _lint_one(path: Path) -> list[str]:
@@ -93,6 +119,8 @@ def main() -> int:
             total_errs.extend(errs)
         else:
             clean.append(agent_yaml.parent.name)
+    conn_errs, conn_clean = _lint_connectors()
+    total_errs.extend(conn_errs)
     if total_errs:
         print("tool-scope lint FAILED:", file=sys.stderr)
         for e in total_errs:
@@ -100,6 +128,8 @@ def main() -> int:
         return 1
     for slug in clean:
         print(f"  ✓ {slug:24s} orchestrator tool scope clean")
+    for slug in conn_clean:
+        print(f"  ✓ {slug:24s} connector read-only (no mutating verbs)")
     return 0
 
 

@@ -149,12 +149,13 @@ Recalculate the table with 2× the dias úteis.
 
 **Adjustment B: Recesso judiciário (20 Dec–20 Jan)**
 
-If the prazo spans 20 Dec–20 Jan, the deadline does NOT move, but the deadline must land on or after 21 Jan (the court reopens). Specifically:
+CPC art. 220 **suspends the running of prazos processuais** from 20 Dec to 20 Jan (inclusive). "Suspends," not "postpones the deadline": the days inside the window simply do not count. The clock stops on 20 Dec and resumes on the first dia útil on/after 21 Jan. `[model knowledge — verify]`
 
-- If the data-limite (before adjustment) falls between 20 Dec–20 Jan, the deadline is postponed until 21 Jan (the next dia útil after recesso).
-- Any act filed during recesso is deemed filed on 21 Jan (the reopening date) for prazo purposes.
+- The days between 20 Dec and 20 Jan are **not counted** as dias úteis — subtract them and continue the count after reopening.
+- **Filing (protocolo) is still possible during recesso**, especially electronically (PJe stays open). An act filed during recesso is **valid on the actual date it was filed** — it is NOT deemed filed on 21 Jan. What is suspended is the *running of the prazo against you*, which only helps; it never invalidates an early filing.
+- Urgent measures (tutelas de urgência, plantão) are decided during recesso — recesso suspends prazos, not the court's emergency function.
 
-Example: prazo of 15 dias úteis starting 05 Dec 2026. The 15th dia útil would be ~21 Dec. But that falls in recesso. So the deadline is moved to 21 Jan 2027 (the reopening date). `[model knowledge — verify]`
+Example: prazo of 15 dias úteis whose count reaches its 10th dia útil on 19 Dec 2026. The clock stops on 20 Dec; the remaining 5 dias úteis resume on the first dia útil on/after 21 Jan 2027. If the lawyer files on 08 Jan 2027 (during recesso), the filing is valid on 08 Jan — the recesso only means the deadline hadn't run out. `[model knowledge — verify]`
 
 **Adjustment C: Suspensão por indisponibilidade de sistema**
 

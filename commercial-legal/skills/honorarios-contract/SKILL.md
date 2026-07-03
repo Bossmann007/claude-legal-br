@@ -16,7 +16,7 @@ argument-hint: "[tipo de caso ou descrição da relação de mandato]"
 1. Load `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` → firm position on fee arrangements, escalation chain.
 2. Run the workflow below.
 3. Determinar a hipótese legal de honorários (sucumbência, êxito, pró-labore, tabela, porcentagem, combinada).
-4. Checar limites éticos: quota litis é de última ratio — proibida em maioria dos casos, exceção restrita (Art. 32-37, Código de Ética OAB).
+4. Checar limites éticos: quota litis é **permitida, porém restrita** (CED-OAB art. 50 [model knowledge — verify]) — em regra apenas por escrito, honorários não podem ser superiores às vantagens do cliente, e são vedados o aviltamento e a assunção de despesas pelo advogado como condição. Não é "proibida na maioria dos casos"; é excepcional e regulada.
 5. Draftar cláusulas: estrutura, reajuste, hipótese de revogação/suspensão, confidencialidade, resolução de conflitos.
 6. Aplicar consequential-action gate antes de entregar rascunho.
 

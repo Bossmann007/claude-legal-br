@@ -40,11 +40,15 @@ Montar uma **matriz de prazos prescritivos** que o advogado preenche com:
 
 - **Prescrição (extinção da ação, não do direito):** CC arts. 205-206 (prescrição) + CC arts. 202-203 (causas interruptivas/suspensivas) `[model knowledge — verify]`
 - **Decadência (extinção do direito):** CC arts. 207-209 — mais rara, aplica-se a prazos de exercício de direitos potestivos (p.ex., rescisão contratual, anulabilidade de negócio jurídico, revogação de doação) `[model knowledge — verify]`
-- **Prescrição geral:** 10 anos (CC art. 205, caput) `[model knowledge — verify]`
-- **Prescrições especiais:** CC art. 206 — exemplos: 5 anos (remuneração de trabalho, aluguel, renda vitalícia, ações de reparação por ato ilícito); 1 ano (vício da coisa, enxovia); 3 anos (ações rescisórias); outros conforme Lei `[model knowledge — verify]`
-- **Prescrição trabalhista:** CLT art. 7º, XXIX CF — 5 anos na **constância do vínculo**, limitado a 2 anos **após a extinção do vínculo** (Súmula 161 TST) `[model knowledge — verify]`
-- **Prescrição CDC:** Lei 8.078/1990 art. 26 (decadência, 30 dias para vício aparente/oculto) e art. 27 (prescrição, 5 anos da lesão) `[model knowledge — verify]`
-- **Prescrição tributária:** CTN art. 150 (5 anos para lançamento); CTN art. 173 (5 anos de prescrição do crédito tributário) `[model knowledge — verify]`
+- **Prescrição geral (residual):** 10 anos (CC art. 205, caput) — só quando a lei não fixa prazo menor `[model knowledge — verify]`
+- **Prescrições especiais (CC art. 206):** os prazos abaixo são os do rol; confira o § e inciso na fonte antes de usar `[model knowledge — verify]`:
+  - **1 ano** (§1º): hospedagem, alimentos fornecidos, segurado/segurador, tabeliães/serventuários
+  - **3 anos** (§3º): aluguéis; juros/dividendos; ressarcimento de enriquecimento sem causa; **reparação civil (inc. V)** — extracontratual e contratual
+  - **5 anos** (§5º): dívidas líquidas de instrumento público/particular (inc. I); honorários; vencedor contra vencido por custas
+  - Não confundir com **decadência** de 2 anos da **ação rescisória** (CPC art. 975 — é decadência, não prescrição do art. 206)
+- **Prescrição trabalhista:** CF art. 7º, XXIX + CLT art. 11 — 5 anos na **constância do vínculo**, limitado a 2 anos **após a extinção do vínculo** (Súmula 308 TST para a quinquenal) `[model knowledge — verify]`
+- **Prescrição CDC:** Lei 8.078/1990 art. 26 (decadência — 30 dias produto/serviço não durável, 90 dias durável, do vício aparente; oculto conta da evidência) e art. 27 (prescrição — 5 anos, fato do produto/serviço) `[model knowledge — verify]`
+- **Prescrição tributária:** CTN art. 173 (decadência — 5 anos para constituir/lançar); CTN art. 150 §4º (homologação — 5 anos); CTN art. 174 (prescrição — 5 anos para cobrar o crédito já constituído) `[model knowledge — verify]`
 - **Causas interruptivas (CC art. 202):** ação judicial, confissão da dívida, reconhecimento de responsabilidade, protesto `[model knowledge — verify]`
 - **Causas suspensivas (CC art. 203):** incapacidade legal, impossibilidade material, impossibilidade de agir `[model knowledge — verify]`
 
@@ -82,12 +86,12 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 
 ---
 
-#### Reivindicações Trabalhistas (CLT art. 7º XXIX CF / Súmula 161 TST)
+#### Reivindicações Trabalhistas (CF art. 7º, XXIX + CLT art. 11 / Súmula 308 TST)
 
 **Regra geral:** 5 anos na **constância do vínculo** (durante o trabalho), limitado a 2 anos **após a extinção do vínculo** (após rescisão).
 
 **Aplicação prática:**
-- **Salário, 13º, férias não pagos:** prazo é 5 anos se o vínculo ainda existe (pode cobrar atraso de até 5 anos passados). Após a rescisão, prazo = 2 anos da data da rescisão (Súmula 161 TST) `[model knowledge — verify]`.
+- **Salário, 13º, férias não pagos:** prazo é 5 anos se o vínculo ainda existe (pode cobrar atraso de até 5 anos passados — quinquenal, Súmula 308 TST). Após a rescisão, ajuizamento deve ocorrer em até 2 anos da data da rescisão (bienal, CF art. 7º XXIX) `[model knowledge — verify]`.
 - **FGTS não recolhido:** 5 anos durante vínculo, 2 anos após. Lei 8.036/1990 art. 23 pode ter prazos especiais — flag para advogado.
 - **Dano moral trabalhista:** CC arts. 186, 927 (prescrição geral 10 anos) OU CLT prazo especial? Jurisprudência em conflito — **flag como incerto** `[model knowledge — verify]`.
 - **Horas extras:** 2 anos da rescisão se já rescindido; 5 anos se vínculo ativo.
@@ -102,21 +106,21 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 
 ---
 
-#### Reivindicações Cíveis — Responsabilidade Civil Extracontratual (CC art. 205 + arts. 202-203)
+#### Reivindicações Cíveis — Responsabilidade Civil (CC art. 206 §3º V + arts. 202-203)
 
-**Prescrição geral:** 10 anos (CC art. 205, caput).
+**Regra que mais erra na prática:** reparação civil **não** prescreve em 10 anos. Os 10 anos do art. 205 são **residuais** — só quando nenhum prazo menor se aplica.
 
-**Prescrições especiais (CC art. 206):**
-- **5 anos:** remuneração de trabalho, aluguel, renda vitalícia; ações de reparação de dano por ato ilícito (quando não há lei especial); vício da coisa `[model knowledge — verify]`.
-- **1 ano:** vício da coisa (direito de reparação); agravo de enxovia; ações possessórias.
-- **3 anos:** ações rescisórias; reivindicação de terras.
-- **Outros:** consultar Lei específica (Lei 4.898/1965 para habeas corpus — 20 anos; Lei 4.117/1962 para delito de imprensa — 1 ano).
+**Prazos do art. 206 (confirme § e inciso na fonte):**
+- **3 anos (§3º):** **reparação civil — inciso V** (extracontratual E contratual, entendimento hoje predominante); aluguéis (inc. I); juros/dividendos (inc. III); ressarcimento por enriquecimento sem causa (inc. IV) `[model knowledge — verify]`.
+- **1 ano (§1º):** hospedagem; alimentos fornecidos; segurado contra segurador (e vice-versa); tabeliães/serventuários. **Não** há prazo de 1 ano para possessórias (isso é "força nova"/ano-e-dia do CPC art. 558 — instituto diverso) `[model knowledge — verify]`.
+- **5 anos (§5º):** dívidas líquidas de instrumento (inc. I); honorários (inc. II) `[model knowledge — verify]`.
+
+**Decadência que costuma ser confundida:** ação **rescisória** = 2 anos (CPC art. 975 — decadência); anulação de negócio jurídico por vício = 4 anos (CC art. 178).
 
 **Aplicação a dano material / lucros cessantes / dano moral:**
-- **Dano material (emergente / lucros cessantes):** CC art. 206, III — **5 anos** da lesão (data do evento danoso, não da descoberta, salvo exceção: vício oculto começar a contar quando descoberto) `[model knowledge — verify]`.
-- **Dano moral:** CC art. 206, III — **5 anos** da lesão OU **10 anos** (prescrição geral)? **Jurisprudência conflitante — flag como incerta** `[model knowledge — verify]`. Tema STJ pode ter clarificado (verificar Tema 905 STJ sobre termo inicial de juros, que pode afetar prescrição) `[model knowledge — verify]`.
+- **Dano material (emergente / lucros cessantes) e dano moral por ato ilícito:** CC art. 206, **§3º V** — **3 anos**, salvo lei especial (CDC: 5 anos, art. 27; Fazenda: 5 anos, Dec. 20.910/1932) `[model knowledge — verify]`.
 
-**Termo inicial (actio nata):** data da lesão / evento danoso (quando o dano se produziu, não quando descoberto — regra geral); exceção: vício oculto conta desde descoberta (CC art. 206, III, "a") `[model knowledge — verify]`.
+**Termo inicial (actio nata):** data em que a pretensão nasce — regra geral, data da lesão; teoria da actio nata em sentido subjetivo (STJ): conta da ciência inequívoca do dano e de sua autoria (relevante em dano oculto/continuado) `[model knowledge — verify]`. Confirme o marco no caso concreto.
 
 **Causas interruptivas:** ação judicial (protesto, denúncia, demanda), confissão da dívida, reconhecimento de responsabilidade (escrito), protesto contra responsabilidade.
 
