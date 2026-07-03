@@ -16,10 +16,15 @@ This skill surfaces open participation periods and records decisions.
 Under Brazil's Lei Geral das Agências Reguladoras (Lei 13.848/2019), the
 agências reguladoras must open the regulatory process to social
 participation: **consulta pública** (written contributions on a proposed act,
-art. 9 `[model knowledge — verify]`) and **tomada de subsídios** (early-stage
-input to inform the agency before a proposal is drafted, art. 10 `[model
-knowledge — verify]`). The ANPD runs its own tomadas de subsídio and consultas
-públicas on data-protection regulamentações under the LGPD. Participation is
+art. 9 `[settled — last confirmed 2026-07-03]`) and **audiência pública** (an
+oral public hearing the agency may convene on a relevant matter, art. 10
+`[settled — last confirmed 2026-07-03]`). Beyond these statutory instruments,
+agencies may create others by regimento interno (art. 11) — the **tomada de
+subsídios** (early-stage input-gathering before a proposal is drafted) is one
+such regimental instrument that the **ANPD** in particular uses, alongside its
+consultas públicas, on data-protection regulamentações under the LGPD `[model
+knowledge — verify — tomada de subsídios is agency-regimental, not in Lei
+13.848]`. Participation is
 generally written, submitted via the agency's electronic portal (Participa +
 Brasil / the agency's own consulta system) within the published prazo.
 
