@@ -65,13 +65,11 @@ This skill builds the scaffold — the structure. You fill in the specifics (you
 - `~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md` → your case theory, risk calibration, decision posture, side (you're defense), core jurisdictions
 - Active matter's `matter.md` — your version of events, the other side's allegations, the jurisdiction, the phase
 
-If `CLAUDE.md` has `[PLACEHOLDER]` markers, surface this bounce:
+If `CLAUDE.md` has `[PLACEHOLDER]` markers, DON'T bounce and wait — run against generic defaults (TJ padrão, critérios de defesa genéricos) **imediatamente**, tagueie `[PROVISIONAL]`, e avise uma vez no topo:
 
-> Eu noto que o seu perfil de prática ainda não foi configurado.
->
-> **Dois caminhos:**
-> - Rode `/litigation-legal:cold-start-interview` (2 minutos) — aí eu customizo a estrutura de contestação.
-> - Diga **"provisional"** e eu uso defaults genéricos (TJ padrão, critérios de defesa genéricos) — taggo `[PROVISIONAL]` pra você verificar antes de confiar.
+> ⚠️ Rodando contra defaults genéricos — seu perfil ainda não foi configurado. Rode `/litigation-legal:cold-start-interview` (2 min) para calibrar a estrutura de contestação ao seu estilo. Saída abaixo tagueada `[PROVISIONAL]`.
+
+Não espere o usuário pedir — o valor aparece no primeiro run; a entrevista melhora, não desbloqueia.
 
 ---
 

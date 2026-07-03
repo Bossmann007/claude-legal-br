@@ -57,13 +57,11 @@ Good quesitos are **nested, specific, sequenced, and tied to the case theory.** 
 - Active matter's `matter.md` — the thesis, the phase, the jurisdiction (comarca / tribunal)
 - `references/quesito-templates-by-area.md` if it exists in this skill's directory (baseline quesito language by expert domain)
 
-If `CLAUDE.md` has `[PLACEHOLDER]` markers, surface this bounce:
+If `CLAUDE.md` has `[PLACEHOLDER]` markers, DON'T bounce and wait — run against generic defaults (TJ padrão, quesitos genéricos por área) **imediatamente**, tagueie `[PROVISIONAL]`, e avise uma vez no topo:
 
-> Eu noto que o seu perfil de prática ainda não foi configurado — é aí que eu calibro a estrutura de quesitos para seu estilo e sua base jurisprudencial.
->
-> **Dois caminhos:**
-> - Rode `/litigation-legal:cold-start-interview` (2 minutos) para configurar seu perfil — aí eu customizo a estrutura de quesitos.
-> - Diga **"provisional"** e eu uso defaults genéricos (TJ padrão, quesitos genéricos por área) — e taggo `[PROVISIONAL]` pra você verificar antes de confiar.
+> ⚠️ Rodando contra defaults genéricos — seu perfil ainda não foi configurado. Rode `/litigation-legal:cold-start-interview` (2 min) para calibrar a estrutura de quesitos ao seu estilo. Saída abaixo tagueada `[PROVISIONAL]`.
+
+Não espere o usuário pedir — o valor aparece no primeiro run; a entrevista melhora, não desbloqueia.
 
 ---
 

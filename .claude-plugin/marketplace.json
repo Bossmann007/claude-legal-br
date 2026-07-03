@@ -1,0 +1,170 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-legal-br",
+  "description": "Marketplace curado de plugins jurídicos para direito brasileiro. Acelere revisão de contratos, compliance, contencioso e gestão de conhecimento jurídico — adaptado para Código Civil, LGPD, CLT, CDC e leis federais. Inclui conectores públicos do CNJ (DataJud, DJEN) e padrões de banca pequena/in-house.",
+  "owner": {
+    "name": "Enzo Bossmann"
+  },
+  "plugins": [
+    {
+      "name": "commercial-legal",
+      "displayName": "Direito Comercial",
+      "source": "./commercial-legal",
+      "description": "Revise contratos comerciais (compra e venda, distribuidora, agência), NDAs, SaaS e subscrições contra playbook vendedor ou comprador. Gerencie renovações e prazos de cancelamento, escalone para aprovador e traduza análises em sumários para stakeholders.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["comercial", "contencioso", "advocacia-geral"]
+    },
+    {
+      "name": "privacy-legal",
+      "displayName": "Privacidade e Proteção de Dados",
+      "source": "./privacy-legal",
+      "description": "Faça triagem de atividades de processamento, gere PIAs (Avaliações de Impacto à Privacidade), revise DPAs como controlador ou processador, redija respostas a DSARs dentro de prazos legais e monitore desvios de política.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["privacidade", "lgpd"]
+    },
+    {
+      "name": "product-legal",
+      "displayName": "Direito de Produto",
+      "source": "./product-legal",
+      "description": "Revise lançamentos de produtos contra calibragem de risco, resolva 'isto é um problema?' em minutos, valide claims em copy de marketing e sinalize lançamentos que precisam de análise antes de qualquer um perguntar.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["digital", "startup", "ecommerce"]
+    },
+    {
+      "name": "corporate-legal",
+      "displayName": "Direito Corporativo",
+      "source": "./corporate-legal",
+      "description": "Rode due diligence em M&A com revisão tabular citada, construa disclosure schedules e checklists de fechamento, redija consents e atas em formato da casa, gerencie compliance de entidades entre jurisdições.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["corporativo", "regulatorio", "m&a"]
+    },
+    {
+      "name": "employment-legal",
+      "displayName": "Direito do Trabalho",
+      "source": "./employment-legal",
+      "description": "Revise admissões e demissões contra flags de risco por jurisdição (CLT, convenções, acordos coletivos), classifique trabalhadores vs. contratados, rastreie prazos de afastamento, execute investigações internas e redija políticas com ajustes por estado.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["trabalhista", "contencioso"]
+    },
+    {
+      "name": "regulatory-legal",
+      "displayName": "Compliance Regulatório",
+      "source": "./regulatory-legal",
+      "description": "Monitore feeds regulatórios, diferencie novas regras contra sua biblioteca de políticas, rastreie prazos de comentário e gaps, redija o digest que seu time lê na segunda-feira.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["regulatorio", "compliance"]
+    },
+    {
+      "name": "ai-governance-legal",
+      "displayName": "Governança de IA",
+      "source": "./ai-governance-legal",
+      "description": "Faça triagem de casos de uso de IA contra seu registry, rode avaliações de impacto entre regimes em escopo, revise termos IA de vendors (training-on-data, gaps de responsabilidade), mantenha política de IA atualizada.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["corporativo", "regulatorio"]
+    },
+    {
+      "name": "litigation-legal",
+      "displayName": "Litígios e Contencioso",
+      "source": "./litigation-legal",
+      "description": "Gerencie carteira de litígios — processos, prazos, preservação, petições, defesa — e execute: mapas de alegações, cronologias, prep para depoimentos, índices de privilegiados, redação de petições. Adapte-se ao seu fluxo: in-house, banca ou solo.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["contencioso", "advocacia-geral"]
+    },
+    {
+      "name": "law-student",
+      "displayName": "Estudante de Direito",
+      "source": "./law-student",
+      "description": "Estude com Sócrates: resolva casos pelo método, monte roteiros, prepare sessões para seu exame (OAB, especialização), corrija IRAC e organize cronograma de estudo — sem escrever para você.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["faculdade", "estudante"]
+    },
+    {
+      "name": "legal-clinic",
+      "displayName": "Clínica Jurídica",
+      "source": "./legal-clinic",
+      "description": "Configure clínica, onboarde alunos, rode intake estruturado, gerencie prazos com cautela (malpractice-aware), transfira casos ao fim do semestre — alinhado a normativas de ensino jurídico.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["faculdade", "clinica"]
+    },
+    {
+      "name": "legal-builder-hub",
+      "displayName": "Hub de Builder Jurídico",
+      "source": "./legal-builder-hub",
+      "description": "Encontre, avalie e instale skills jurídicas comunitárias — com gate de revisão de segurança antes de qualquer coisa aterrissar no seu ambiente.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["ferramentas", "builder"]
+    },
+    {
+      "name": "ip-legal",
+      "displayName": "Direito de Propriedade Intelectual",
+      "source": "./ip-legal",
+      "description": "Rode busca de patentes, triagem de FTO (freedom-to-operate), avalie potencial de patentabilidade em divulgações de invenção, redija e triage cartas de cessação e DMCA, revise compliance open-source, audite cláusulas de PI, gerencie registros e prazos.",
+      "author": {
+        "name": "Anthropic"
+      },
+      "keywords": ["propriedade-intelectual", "marcas", "patentes"]
+    },
+    {
+      "name": "anti-injection",
+      "displayName": "Anti-Injection (Defesa contra Prompt Injection)",
+      "source": "./anti-injection",
+      "description": "Proteja contra prompt injection em documentos de terceiros. Hook que escaneia saídas de ferramentas por instruções embutidas (EN/PT), tags fake e unicode invisível. Skill de revisão em quarentena.",
+      "author": {
+        "name": "Enzo Bossmann"
+      },
+      "keywords": ["seguranca", "infra"]
+    },
+    {
+      "name": "banking-fintech-legal",
+      "displayName": "Direito Bancário e Fintech",
+      "source": "./banking-fintech-legal",
+      "description": "Revise estruturas de fintech, comply com normas do Banco Central, audite contratos de crédito e derivativos, gerencie kyc/aml, analise riscos cripto e tokens. Adapte a padrões BR (Resolução BC, Lei 11.033/2021).",
+      "author": {
+        "name": "Enzo Bossmann"
+      },
+      "keywords": ["bancario", "fintech", "cripto"]
+    },
+    {
+      "name": "health-medical-legal",
+      "displayName": "Direito Médico e Saúde",
+      "source": "./health-medical-legal",
+      "description": "Revise compliance de clínicas/consultórios (Lei 8.080/90, Código de Ética Médica, ANS), audite prontuários eletrônicos, gerencie consentimento e privacidade do paciente, prepare defesa em casos de malpractice.",
+      "author": {
+        "name": "Enzo Bossmann"
+      },
+      "keywords": ["medico", "saude", "lgpd"]
+    },
+    {
+      "name": "digital-ecommerce-legal",
+      "displayName": "Direito Digital e E-commerce",
+      "source": "./digital-ecommerce-legal",
+      "description": "Revise termos de uso, políticas de privacidade e cookies, comply com Lei de Proteção do Consumidor Digital (Lei 14.034/20), gerencie fraudes e chargebacks, audite integridade de plataforma e termos de marketplace.",
+      "author": {
+        "name": "Enzo Bossmann"
+      },
+      "keywords": ["digital", "startup", "ecommerce", "privacidade", "lgpd"]
+    }
+  ]
+}

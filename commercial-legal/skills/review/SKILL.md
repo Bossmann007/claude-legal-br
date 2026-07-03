@@ -16,7 +16,7 @@ Reviews an inbound agreement against the playbook in `~/.claude/plugins/config/c
 
 ## Instructions
 
-1. **Load `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md`.** If placeholders present, stop and prompt: "Run `/commercial-legal:cold-start-interview` first — I need to learn your playbook before I can review against it."
+1. **Load `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md`.** If placeholders are still present, DON'T stop — run against sensible defaults (neutral risk posture, no side preset, standard market terms) and tag the output: "⚠️ Run against defaults — no playbook configured yet. Run `/commercial-legal:cold-start-interview` (2 min) so I review against YOUR positions instead of generic ones." The review is useful now; the interview makes it yours. Only ask a blocking question if the missing piece actually changes the answer (e.g., which side you're on isn't inferable from the paper) — and infer it from the document first before asking.
 
    Also read `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` → `## Review preferences` → `confirm_routing`. If the field is missing, treat it as `true`.
 

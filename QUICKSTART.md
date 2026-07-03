@@ -39,22 +39,29 @@ It's counterintuitive: project scope feels safer. But project scope blocks the p
 
 If you already installed project-scoped and want to switch: `/plugin uninstall <plugin>`, then `/plugin install <plugin>@claude-for-legal` from your home directory.
 
-## Which plugin is for me?
+## Qual sua área? Instale só o que precisa
 
-| You are a… | Install… | First command |
+```
+/plugin install litigation-legal@claude-legal-br
+```
+
+| Sua área | Instale | Primeiro comando |
 |---|---|---|
-| Privacy lawyer / DPO | `privacy-legal` | `/privacy-legal:use-case-triage` |
-| Commercial / contracts lawyer | `commercial-legal` | `/commercial-legal:review` |
-| Corporate / M&A lawyer | `corporate-legal` | `/corporate-legal:diligence-issue-extraction` |
-| Employment lawyer / HR counsel | `employment-legal` | `/employment-legal:wage-hour-qa` |
-| Product counsel | `product-legal` | `/product-legal:is-this-a-problem` |
-| IP lawyer / patent agent | `ip-legal` | `/ip-legal:clearance` |
-| Litigator (in-house or firm) | `litigation-legal` | `/litigation-legal:matter-intake` |
-| Regulatory / compliance counsel | `regulatory-legal` | `/regulatory-legal:reg-feed-watcher` |
-| AI governance lead | `ai-governance-legal` | `/ai-governance-legal:use-case-triage` |
-| Clinic supervisor (law school) | `legal-clinic` | `/legal-clinic:cold-start-interview` |
-| Law student | `law-student` | `/law-student:cold-start-interview` |
-| Legal ops / looking for skills | `legal-builder-hub` | `/legal-builder-hub:registry-browser` |
+| Contencioso / advocacia geral | `litigation-legal`, `commercial-legal` | `/litigation-legal:matter-intake` |
+| Trabalhista | `employment-legal`, `litigation-legal` | `/employment-legal:wage-hour-qa` |
+| Privacidade / LGPD | `privacy-legal`, `digital-ecommerce-legal` | `/privacy-legal:use-case-triage` |
+| Digital / e-commerce / startup | `digital-ecommerce-legal`, `product-legal` | `/digital-ecommerce-legal:cold-start-interview` |
+| Médico / saúde | `health-medical-legal` | `/health-medical-legal:cold-start-interview` |
+| Bancário / fintech / cripto | `banking-fintech-legal` | `/banking-fintech-legal:cold-start-interview` |
+| Corporativo / M&A / regulatório | `corporate-legal`, `regulatory-legal`, `ai-governance-legal` | `/corporate-legal:diligence-issue-extraction` |
+| Propriedade intelectual / marcas | `ip-legal` | `/ip-legal:clearance` |
+| Estudante / clínica / faculdade | `law-student`, `legal-clinic` | `/law-student:cold-start-interview` |
+
+**Recomendado para todos:** instale também `anti-injection@claude-legal-br` — camada de detecção que rotula texto de terceiros (peças da contraparte, e-mails, PDFs) como dado, não instrução.
+
+**Conectores CNJ (DataJud/DJEN):** já vêm no `.mcp.json` da raiz do repositório — consulta pública read-only de processos e intimações. Não precisam de install separado; o Claude Code os detecta ao abrir o repositório. Veja `CONNECTORS.md`.
+
+**Não instale tudo.** Cada plugin carregado gasta contexto. Instale sua área; adicione outra depois se precisar — `/plugin install <nome>@claude-legal-br`.
 
 ## What you're installing
 

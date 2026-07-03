@@ -58,17 +58,15 @@ Brasil: jurimetria é prática relativamente recente (últimos ~10 anos), basead
 - Active matter's `matter.md` — the case thesis, the side (plaintiff / defendant), the jurisdiction and forum, the phase (pleadings / discovery / trial)
 - If the practice profile has `## Frequent fora` listed, offer those as quick-start options
 
-If `CLAUDE.md` has `[PLACEHOLDER]` markers, surface this bounce:
+If `CLAUDE.md` has `[PLACEHOLDER]` markers, DON'T bounce and wait — run in provisional mode **by default, immediately**, and tell the user once at the top:
 
-> Eu noto que o seu perfil de prática ainda não foi configurado — é aí que eu calibro a análise de risco, a paisagem jurisprudencial local, e o estilo da sua prática.
->
-> **Dois caminhos:**
-> - Rode `/litigation-legal:cold-start-interview` (2 minutos) para configurar seu perfil — aí eu executo isso calibrado à SUA prática.
-> - Diga **"provisional"** e eu executo isso contra defaults genéricos (Justiça Estadual, risco médio, critérios de procedência generalizados) — e taggo todo output `[PROVISIONAL — configure seu perfil para saída calibrada]` pra você ver o que eu faço antes de confiar.
+> ⚠️ Rodando contra defaults genéricos (Justiça Estadual, risco médio, critérios de procedência generalizados) — seu perfil de prática ainda não foi configurado. Rode `/litigation-legal:cold-start-interview` (2 min) para calibrar à SUA prática (sua avaliação de risco, sua paisagem local, seu estilo). Resultado abaixo tagueado `[PROVISIONAL]`.
+
+Não espere o usuário pedir — o valor tem que aparecer no primeiro run. A entrevista melhora, não desbloqueia.
 
 ### Provisional mode
 
-If the user says "provisional," run the jurimetry normally using generic defaults: Justiça Estadual in their core jurisdiction(s) if listed, generic risk thresholds, no practice-level playbook. Tag the methodology line and the final output with `[PROVISIONAL]`. At the end, append:
+Run the jurimetry using generic defaults: Justiça Estadual in their core jurisdiction(s) if listed, generic risk thresholds, no practice-level playbook. Tag the methodology line and the final output with `[PROVISIONAL]`. At the end, append:
 
 > "Esse foi um run genérico contra defaults. Rode `/litigation-legal:cold-start-interview` para output calibrado à SUA prática — sua avaliação de risco, sua paisagem jurisprudencial local, seu estilo. 2 minutos."
 

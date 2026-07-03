@@ -15,7 +15,7 @@ Reviews the IP clauses in an agreement against the practice profile in `~/.claud
 
 ## Instructions
 
-1. **Load `~/.claude/plugins/config/claude-for-legal/ip-legal/CLAUDE.md`.** If placeholders present, stop and prompt: "Run `/ip-legal:cold-start-interview` first — I need to learn your practice profile before I can review IP clauses against it."
+1. **Load `~/.claude/plugins/config/claude-for-legal/ip-legal/CLAUDE.md`.** If placeholders are still present, DON'T stop — run against sensible defaults and tag the output: "⚠️ Run against defaults — no practice profile configured yet. Run `/ip-legal:cold-start-interview` (2 min) so I review against YOUR positions instead of generic ones." This matches the plugin's own rule (see `## Ad-hoc questions` in the profile: give the answer anyway, tagged unconfigured). Only ask a blocking question when the missing piece changes the answer — and infer the side (granting/receiving) from the document first before asking.
 
 2. **Get the agreement:** From file path, Drive link, or pasted text. If none provided, ask.
 
