@@ -2,6 +2,9 @@
 
 Product legal workflows: launch review, marketing claims review, feature risk assessment, and fast "is this a problem?" triage. Built around a risk calibration learned from your actual launch review history — what blocks at *your* company, not generically.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
 ## Who this is for

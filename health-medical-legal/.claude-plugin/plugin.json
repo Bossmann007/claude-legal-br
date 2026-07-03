@@ -1,0 +1,8 @@
+{
+  "name": "health-medical-legal",
+  "version": "1.0.0",
+  "description": "Direito médico e da saúde: implementação de programas de privacidade para clínicas/hospitais, defesa em responsabilidade civil por erro médico, triagem de negativas de procedimento e disputa de cobertura vs. operadoras de planos de saúde.",
+  "author": {
+    "name": "Anthropic"
+  }
+}

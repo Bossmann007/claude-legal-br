@@ -9,6 +9,9 @@ CLT (Decreto-Lei 5.452/1943, com as alterações da Reforma Trabalhista Lei 13.4
 Constituição Federal art. 7º-11, FGTS (Lei 8.036/1990), eSocial, jurisprudência do TST,
 e Convenções/Acordos Coletivos de Trabalho (CCT/ACT) por categoria e base territorial.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Todo output é um rascunho para revisão do advogado — citado, sinalizado e com gate — não é uma conclusão jurídica.** O plugin faz o trabalho: lê os documentos, aplica seu playbook, encontra os problemas, redige o memorando. O advogado revisa, verifica e decide. Citações são marcadas por fonte para saber quais vieram de ferramenta de pesquisa e quais precisam de checagem. Marcadores de sigilo profissional são aplicados de forma conservadora para que nada seja perdido por acidente. Ações consequentes — protocolar, enviar, executar — ficam com gate atrás de confirmação explícita.
 
 ## Who this is for

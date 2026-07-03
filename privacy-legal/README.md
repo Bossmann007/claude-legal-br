@@ -2,6 +2,9 @@
 
 Fluxos de trabalho para equipe de privacidade in-house sob a **LGPD (Lei 13.709/2018)**: revisão de contratos de tratamento de dados (equivalente brasileiro à DPA), atendimento a requisições de titular (Art. 18), geração de Relatório de Impacto à Proteção de Dados (RIPD/DPIA — Art. 38, que dá à ANPD o poder de exigi-lo, e Art. 5º, XVII, que o define; regulamento dedicado de RIPD ainda não vigente — verificar norma atual da ANPD), e análise de gap regulatório frente à ANPD. Construído em torno de um perfil de prática aprendido a partir da sua política de privacidade real, modelo de contrato de tratamento e um RIPD de referência.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Every output is a draft for attorney review — cited, flagged, and gated — not a legal conclusion.** The plugin does the work: reads the documents, applies your playbook, finds the issues, drafts the memo. A lawyer reviews, verifies, and decides. Citations are tagged by source so you know which ones came from a research tool and which ones need checking. Privilege markers are applied conservatively so nothing waives by accident. Consequential actions — filing, sending, executing — are gated behind explicit confirmation.
 
 ## Who this is for

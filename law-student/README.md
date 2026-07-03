@@ -8,6 +8,9 @@ partir de provas antigas do mesmo professor. Calibrado a você — suas
 disciplinas, seu objetivo no Exame de Ordem, se você quer ser sabatinado ou
 receber explicação.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Toda saída é um andaime de estudo, não uma resposta modelo. O plugin
 estrutura seu raciocínio, sabatina socraticamente, e sinaliza o que você
 errou. Ele não escreve o esquema, o resumo, ou a peça por você — isso

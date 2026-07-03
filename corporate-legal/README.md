@@ -2,6 +2,9 @@
 
 Fluxos de trabalho de jurídico corporativo in-house em quatro áreas: operações de M&A, conselho e secretaria societária, governança de companhia aberta, e gestão de entidades. Ativa só os módulos relevantes para sua função. A entrevista de cold-start é modular — pergunta o necessário por área ativa e escreve só as seções relevantes no seu perfil de prática.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Toda saída é um rascunho para revisão de advogado — citado, sinalizado e aprovado — não uma conclusão legal.** O plugin faz o trabalho: lê os documentos, aplica seu manual, identifica os problemas, redige o memorando. Um advogado revisa, verifica e decide. Citações são marcadas pela fonte. Marcadores de sigilo são aplicados conservadoramente. Ações consequentes — protocolo, envio, execução — são controladas atrás de confirmação explícita.
 
 ## Quem deve usar

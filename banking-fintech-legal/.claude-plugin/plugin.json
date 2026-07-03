@@ -1,0 +1,8 @@
+{
+  "name": "banking-fintech-legal",
+  "version": "1.0.0",
+  "description": "Revisão especializada em Direito Bancário, Fintech, Finanças e Criptoativos — compliance com normas do BCB, lei de instituições de pagamento, Open Finance, LGPD e Marco Legal dos Criptoativos. Construído em torno de um perfil de prática da equipe — o plugin aprende seus manuais de procedimento para transações, regulamentações e riscos específicos do setor.",
+  "author": {
+    "name": "Anthropic"
+  }
+}

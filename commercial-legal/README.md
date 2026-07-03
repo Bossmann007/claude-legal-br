@@ -2,6 +2,9 @@
 
 Fluxos de contratos comerciais em-house: análise de acordos com fornecedores, triagem de NDAs, análise de assinaturas SaaS, rastreamento de renovações, roteamento de escalações e resumos para stakeholders comerciais. Construído em torno de um perfil de prática da equipe escrito por uma entrevista de inicialização fria — o plugin aprende *seu* manual de procedimentos, não um genérico.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Toda saída é um rascunho para revisão de advogado — citado, sinalizado e aprovado — não uma conclusão legal.** O plugin faz o trabalho: lê os documentos, aplica seu manual de procedimentos, identifica os problemas, redige o memorando. Um advogado revisa, verifica e decide. Citações são marcadas pela fonte para você saber quais vieram de uma ferramenta de pesquisa e quais precisam de verificação. Marcadores de sigilo são aplicados conservadoramente para que nada seja renunciado acidentalmente. Ações consequentes — arquivamento, envio, execução — são controladas atrás de confirmação explícita.
 
 ## Quem deve usar

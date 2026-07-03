@@ -8,6 +8,9 @@ seus principais contratos de fornecedores de IA. Framework: LGPD (Lei 13.709/201
 especialmente Art. 20 — decisão automatizada), PL 2338/2023 (marco legal de IA, em
 tramitação), regulação setorial (BCB/CMN, Anvisa, CVM) e ABNT NBR ISO/IEC 42001.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Todo output é um rascunho para revisão do advogado — citado, sinalizado e com gate — não é uma conclusão jurídica.** O plugin faz o trabalho: lê os documentos, aplica seu playbook, encontra os problemas, redige o memorando. O advogado revisa, verifica e decide. Citações são marcadas por fonte para saber quais vieram de ferramenta de pesquisa e quais precisam de checagem. Marcadores de sigilo profissional são aplicados de forma conservadora para que nada seja perdido por acidente. Ações consequentes — protocolar, enviar, executar — ficam com gate atrás de confirmação explícita.
 
 ## Who this is for

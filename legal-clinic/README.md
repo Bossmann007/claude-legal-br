@@ -4,6 +4,9 @@
 
 A plugin for law school clinics — the institutions where law students, supervised by clinical professors, provide free legal services to people who can't afford representation. Immigration, housing, family law, consumer protection, criminal defense, civil rights.
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Every output is a draft for student analysis and attorney review — marked, gated, and logged. The plugin scaffolds the work; a student reasons through it; a supervising attorney reviews. Nothing leaves the clinic without going through the supervision model the professor set at setup.**
 
 ## The problem this solves

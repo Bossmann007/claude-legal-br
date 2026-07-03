@@ -56,3 +56,7 @@ output_schema:
           rule_basis:          { type: string, maxLength: 240, pattern: "^[A-Za-z0-9 .,&()§/_-]+$" }
           confidence:          { type: string, enum: [high, medium, low] }
           needs_verification:  { type: boolean }
+          suspensao_prorrogacao:
+            type: [string, "null"]
+            maxLength: 240
+            description: "Prazo suspenso/prorrogado por indisponibilidade certificada do sistema — CPC art. 224 §1º e Res. CNJ [model knowledge — verify]"

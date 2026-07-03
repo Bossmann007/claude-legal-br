@@ -165,6 +165,12 @@ A reviewer-note shorthand like "JusBrasil/Escavador verified" is honest only whe
 
 These rules apply to every skill in this plugin. Skills may repeat them in their own instructions, but this is the canonical statement — when a skill's text conflicts, this section controls.
 
+## Documento ilegível ou parcial
+
+Quando um documento enviado é uma imagem digitalizada sem OCR, tem carimbos sobre o texto, está corrompido, ou faltam páginas ou metadados, PARE. Relate exatamente o que não foi possível ler — NUNCA infera ou fabrique conteúdo de trechos ilegíveis ou ausentes. Este é o risco mais alto em trabalho jurídico.
+
+---
+
 **No silent supplement — three values, not two.** When a skill needs information it doesn't have (a rule's full text, a jurisdiction's position, a current effective date), it has three valid responses, not two:
 
 1. **Supplement with a flag.** Pull from web search, model knowledge, or another source the user can inspect, tag the item (`[web search — verify]`, `[model knowledge — verify]`), and proceed.

@@ -2,6 +2,9 @@
 
 Prática de propriedade intelectual: marca, direito autoral, patente, segredo industrial e software livre. Redige e triagem notificações extrajudiciais e takedowns de conteúdo (enviando e respondendo), roda busca de anterioridade/colidência de marca e triagem de liberdade para operar (FTO), revisa cláusulas de PI em contratos, acompanha registros e prazos de renovação no INPI, e checa conformidade de licença open source. Construído em torno de um perfil de prática escrito no cold-start interview — o plugin aprende *sua* postura de enforcement, seu portfólio e sua matriz de aprovação, não uma genérica. Framework: Lei da Propriedade Industrial (Lei 9.279/1996), Lei de Direitos Autorais (Lei 9.610/1998), Lei do Software (Lei 9.609/1998), INPI, Decreto 10.033/2019 (adesão do Brasil ao Protocolo de Madri), Estatuto OAB (Lei 8.906/1994).
 
+**Este plugin não inclui conector automático para PJe/e-SAJ/Projudi/DataJud; os dados são inseridos manualmente (colados ou enviados como upload).**
+
+
 **Todo output é um rascunho para revisão do advogado — citado, sinalizado e com gate — não é uma conclusão jurídica.** O plugin faz o trabalho: lê os documentos, aplica seu playbook, encontra os problemas, redige o memorando. O advogado revisa, verifica e decide. Citações são marcadas por fonte para saber quais vieram de ferramenta de pesquisa e quais precisam de checagem. Marcadores de sigilo profissional são aplicados de forma conservadora para que nada seja perdido por acidente. Ações consequentes — protocolar no INPI, enviar, executar — ficam com gate atrás de confirmação explícita.
 
 ## Who this is for

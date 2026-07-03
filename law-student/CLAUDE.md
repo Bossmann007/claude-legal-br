@@ -177,6 +177,12 @@ Estas regras se aplicam a toda habilidade deste plugin. Habilidades podem
 repeti-las nas suas próprias instruções, mas esta é a declaração canônica —
 quando o texto de uma habilidade conflita, esta seção controla.
 
+## Documento ilegível ou parcial
+
+Quando um documento enviado é uma imagem digitalizada sem OCR, tem carimbos sobre o texto, está corrompido, ou faltam páginas ou metadados, PARE. Relate exatamente o que não foi possível ler — NUNCA infera ou fabrique conteúdo de trechos ilegíveis ou ausentes. Este é o risco mais alto em trabalho jurídico.
+
+---
+
 **Sem suplemento silencioso — três valores, não dois.** Quando uma habilidade
 precisa de informação que não tem (texto integral de uma súmula, posição de
 um tribunal, data de vigência atual), tem três respostas válidas, não duas:
