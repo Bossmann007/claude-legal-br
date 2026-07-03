@@ -1,0 +1,14 @@
+{
+  "name": "datajud-mcp",
+  "version": "1.0.0",
+  "description": "MCP connector (read-only) for the CNJ DataJud public case-metadata API — Brazilian court process lookup + jurimetria search.",
+  "type": "module",
+  "bin": { "datajud-mcp": "./server.mjs" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {},
+  "license": "MIT"
+}

@@ -1,5 +1,12 @@
 {
   "mcpServers": {
+    "datajud": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["connectors/datajud/server.mjs"],
+      "title": "DataJud (CNJ)",
+      "description": "Consulta read-only de metadados processuais na API pública do DataJud/CNJ — capa, movimentos e pesquisa filtrada para jurimetria. Conector local (node, sem dependências). Use DATAJUD_API_KEY para sobrepor a chave pública."
+    },
     "slack": {
       "type": "http",
       "url": "https://mcp.slack.com/mcp",

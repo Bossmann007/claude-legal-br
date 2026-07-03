@@ -3,7 +3,7 @@ name: jurimetria
 description: >
   Estrutura um protocolo de pesquisa de jurimetria: dada uma tese jurídica + tribunal/vara/relator, produz um plano de pesquisa para DataJud (API pública CNJ) / JusBrasil / Escavador a estimar taxa de procedência, tempo médio de tramitação, faixa de condenação, tendências de relator/câmara. Planeja e estrutura a query; interpreta resultados que o advogado cola de volta. Não inventa estatísticas. Saída orienta precificação de acordo / avaliação de risco.
 user-invocable: true
-argument-hint: "[--dataoud | --jusbrasil | --escavador] [--vara <slug>] [--relator <nome>]"
+argument-hint: "[--datajud | --jusbrasil | --escavador] [--vara <slug>] [--relator <nome>]"
 ---
 
 # /jurimetria
@@ -28,7 +28,9 @@ Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `�
 
 ## Purpose
 
-Jurimetry answers: "Given my thesis and this tribunal, what does the historical case law tell me about my odds?" The output is a **research plan** — a structured set of queries you'll run in DataJud / JusBrasil / Escavador and a framework for interpreting what you get back. The skill does not access DataJud / JusBrasil directly (those are your tools); instead, it tells you what to search for and how to read the results statistically.
+Jurimetry answers: "Given my thesis and this tribunal, what does the historical case law tell me about my odds?" The output is a **research plan** — a structured set of queries you'll run in DataJud / JusBrasil / Escavador and a framework for interpreting what you get back.
+
+**Se o conector DataJud estiver instalado** (`connectors/datajud/` — ferramentas `datajud_pesquisar` e `datajud_buscar_processo`), esta skill pode puxar os metadados **diretamente**, sem você colar resultados: use `datajud_pesquisar` com filtros (`classe_codigo`, `assunto_codigo`, `orgao_julgador`, `data_ajuizamento_de/ate`, `tribunal`) e `agregacoes` (aggregations Elasticsearch) para computar contagens — ex.: distribuição por órgão julgador, volume por classe/assunto, série temporal por ano de ajuizamento. **Limite crítico:** o DataJud traz *metadados e movimentos*, não o *resultado de mérito* — não há campo "procedente/improcedente". Taxa de procedência real só sai de leitura de dispositivos (JusBrasil/Escavador ou leitura manual). Use o DataJud para volume, tempo de tramitação (diferença entre movimentos de distribuição e baixa/arquivamento) e distribuição por órgão; para taxa de êxito, combine com pesquisa de teor. Nunca reporte procedência inferida de metadados como se fosse aferida. Sem o conector, a skill apenas monta o plano de queries que você roda manualmente e interpreta o que você cola de volta.
 
 This produces strategic facts: **taxa de procedência** (plaintiff success rate), **tempo médio de tramitação** (how long it takes), **faixa de condenação** (typical award range), and **relator / câmara tendencies** (does this judge or appellate chamber tend to rule for or against your side on claims like yours). These inform: settlement pricing, litigation risk modeling, reserve estimates, and the decision to settle vs. fight.
 

@@ -6,6 +6,10 @@ Os arquivos do plugin usam `~~categoria` como placeholder para a ferramenta que 
 
 Os plugins são **agnósticos de ferramenta** — descrevem fluxos em termos de categorias (armazenamento em nuvem, chat, suíte de escritório etc.) em vez de produtos específicos. O `.mcp.json` pré-configura servidores MCP específicos, mas qualquer servidor MCP daquela categoria funciona.
 
+## Conector local: DataJud (CNJ)
+
+Diferente dos demais (servidores HTTP de terceiros), o **DataJud** é um conector MCP **local e próprio**, em `connectors/datajud/` — Node puro, sem dependências, já registrado no `.mcp.json` da raiz. Dá acesso read-only aos metadados de processos públicos da API pública do CNJ (capa, movimentos, pesquisa filtrada para jurimetria). Sem barreira de autenticação paga: usa a chave pública do CNJ (sobreponível via `DATAJUD_API_KEY`). Ver `connectors/datajud/README.md`. Ferramentas: `datajud_buscar_processo`, `datajud_pesquisar`.
+
 ## Conectores deste plugin
 
 | Categoria | Placeholder | Servidores incluídos | Outras opções |
