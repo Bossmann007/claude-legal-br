@@ -4,9 +4,13 @@ import assert from "node:assert";
 import {
   isValidTribunal,
   indexUrl,
+  PUBLIC_KEY_FALLBACK,
   digitsOnly,
   isValidCnj,
   isSigiloso,
+  normalizeTribunaisPermitidos,
+  isTribunalPermitido,
+  filterHitsPorTribunaisPermitidos,
   sanitizeAggs,
   MAX_MOVIMENTOS,
   buildProcessoQuery,
@@ -14,6 +18,8 @@ import {
   parseProcessoHit,
   parseHits,
 } from "./lib.mjs";
+
+const LIVE = process.argv.includes("--live");
 
 // tribunal validation is the SSRF guard
 assert.equal(isValidTribunal("tjsp"), true);
@@ -25,6 +31,28 @@ assert.equal(isValidTribunal("stj"), true);
 assert.equal(isValidTribunal("../secret"), false);
 assert.equal(isValidTribunal("tjsp/_search?x=1"), false);
 assert.equal(isValidTribunal(""), false);
+
+// optional active-court allowlist
+const allowTjsp = normalizeTribunaisPermitidos(["TJSP"]);
+assert.equal(isTribunalPermitido({ tribunal: "TJSP" }, allowTjsp), true);
+assert.equal(isTribunalPermitido({ siglaTribunal: "TJPR" }, allowTjsp), false);
+assert.equal(isTribunalPermitido({ tribunal: "TJPR" }, normalizeTribunaisPermitidos([])), true);
+assert.equal(isTribunalPermitido({ tribunal: "TJPR" }, undefined), true);
+const scoped = filterHitsPorTribunaisPermitidos(
+  [{ numeroProcesso: "1", tribunal: "TJSP" }, { numeroProcesso: "2", tribunal: "TJPR" }],
+  ["tjsp"],
+);
+assert.equal(scoped.hits.length, 1);
+assert.equal(scoped.hits[0].numeroProcesso, "1");
+assert.equal(scoped.resultadosForaDoEscopo, 1);
+assert.equal(
+  filterHitsPorTribunaisPermitidos([{ tribunal: "TJPR" }], []).resultadosForaDoEscopo,
+  0,
+);
+assert.equal(
+  filterHitsPorTribunaisPermitidos([{ tribunal: "TJPR" }], undefined).hits.length,
+  1,
+);
 
 // url building rejects bad siglas, accepts good ones
 assert.equal(
@@ -106,4 +134,34 @@ assert.throws(
   /profundidade/,
 ); // nesting past MAX_AGG_DEPTH
 
+async function liveSmoke() {
+  const baseUrl =
+    process.env.DATAJUD_BASE_URL || "https://api-publica.datajud.cnj.jus.br";
+  const timeoutMs = Number(process.env.DATAJUD_TIMEOUT_MS) || 20000;
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  let res;
+  try {
+    res = await fetch(`${baseUrl}/api_publica_tjsp/_search`, {
+      method: "POST",
+      headers: {
+        Authorization: `APIKey ${process.env.DATAJUD_API_KEY || PUBLIC_KEY_FALLBACK}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ size: 1, query: { match_all: {} } }),
+      signal: ctrl.signal,
+    });
+  } finally {
+    clearTimeout(timer);
+  }
+  if (res.status === 200 || res.status === 429) {
+    const note = res.status === 429 ? " (reachable)" : "";
+    console.log(`LIVE: datajud ${res.status}${note}`);
+    return;
+  }
+  if (res.status >= 500) throw new Error(`DataJud unreachable: HTTP ${res.status}`);
+  console.log(`LIVE: datajud ${res.status} (reachable)`);
+}
+
 console.log("ok — all DataJud lib checks passed");
+if (LIVE) await liveSmoke();

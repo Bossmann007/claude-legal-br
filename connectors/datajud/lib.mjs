@@ -5,6 +5,12 @@
 // against a strict pattern is the SSRF guard: the sigla goes into the request URL
 // path, so only [a-z0-9] tokens that match a real tribunal alias are allowed.
 // Covers: 27 TJs, TRF1-6, TRT1-24, TREs (tre + UF), and superior courts.
+// CNJ publishes the public API key openly on the Datajud wiki and rotates it at
+// will. It is NOT a secret. server.mjs prefers an env override and falls back to
+// this published key as of 2026-07.
+export const PUBLIC_KEY_FALLBACK =
+  "cDZHYzlZa0JadVREZDJCendQbXY6SkJlTzNjLV9TRENyQk1RdnFKZGRQdw==";
+
 const TRIBUNAL_RE =
   /^(tj(ac|al|am|ap|ba|ce|dft|es|go|ma|mg|ms|mt|pa|pb|pe|pi|pr|rj|rn|ro|rr|rs|sc|se|sp|to)|trf[1-6]|trt([1-9]|1\d|2[0-4])|tre(ac|al|am|ap|ba|ce|df|es|go|ma|mg|ms|mt|pa|pb|pe|pi|pr|rj|rn|ro|rr|rs|sc|se|sp|to)|stj|tst|tse|stm)$/;
 
@@ -14,6 +20,30 @@ export function normalizeTribunal(sigla) {
 
 export function isValidTribunal(sigla) {
   return TRIBUNAL_RE.test(normalizeTribunal(sigla));
+}
+
+export function normalizeTribunaisPermitidos(tribunaisPermitidos) {
+  if (!Array.isArray(tribunaisPermitidos) || tribunaisPermitidos.length === 0) return undefined;
+  const values = tribunaisPermitidos
+    .map(normalizeTribunal)
+    .filter((sigla) => sigla.length > 0);
+  return values.length ? new Set(values) : undefined;
+}
+
+export function tribunalDoHit(source = {}) {
+  return normalizeTribunal(source.tribunal ?? source.siglaTribunal ?? source.sigla_tribunal);
+}
+
+export function isTribunalPermitido(source = {}, tribunaisPermitidos) {
+  if (!tribunaisPermitidos) return true;
+  return tribunaisPermitidos.has(tribunalDoHit(source));
+}
+
+export function filterHitsPorTribunaisPermitidos(hits, tribunaisPermitidos) {
+  const allowed = normalizeTribunaisPermitidos(tribunaisPermitidos);
+  if (!allowed) return { hits, resultadosForaDoEscopo: 0 };
+  const scoped = hits.filter((h) => isTribunalPermitido(h, allowed));
+  return { hits: scoped, resultadosForaDoEscopo: hits.length - scoped.length };
 }
 
 export function indexUrl(baseUrl, sigla) {

@@ -10,6 +10,8 @@ import {
   parseItems,
 } from "./lib.mjs";
 
+const LIVE = process.argv.includes("--live");
+
 // UF validation
 assert.equal(isValidUf("pr"), true);
 assert.equal(isValidUf("SP"), true);
@@ -85,4 +87,35 @@ assert.deepEqual(parseItems(null), []);
 assert.equal(parseComunicacao({}).id, null);
 assert.equal(parseComunicacao({}).advogados.length, 0);
 
+async function liveSmoke() {
+  const baseUrl =
+    process.env.DJEN_BASE_URL || "https://comunicaapi.pje.jus.br/api/v1/comunicacao";
+  const timeoutMs = Number(process.env.DJEN_TIMEOUT_MS) || 45000;
+  const query = buildQuery({
+    siglaTribunal: "TJSP",
+    numeroOab: "000000",
+    ufOab: "SP",
+    itensPorPagina: 1,
+  });
+  const ctrl = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), timeoutMs);
+  let res;
+  try {
+    res = await fetch(buildUrl(baseUrl, query), {
+      method: "GET",
+      headers: { Accept: "application/json" },
+      signal: ctrl.signal,
+    });
+  } finally {
+    clearTimeout(timer);
+  }
+  if (res.status === 200) {
+    console.log(`LIVE: djen ${res.status}`);
+    return;
+  }
+  if (res.status >= 500) throw new Error(`DJEN unreachable: HTTP ${res.status}`);
+  throw new Error(`DJEN unexpected live status: HTTP ${res.status}`);
+}
+
 console.log("ok — all DJEN lib checks passed");
+if (LIVE) await liveSmoke();

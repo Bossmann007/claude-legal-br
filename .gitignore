@@ -18,3 +18,7 @@ npm-debug.log*
 # SO / editor
 .DS_Store
 *.swp
+
+# python
+__pycache__/
+*.pyc

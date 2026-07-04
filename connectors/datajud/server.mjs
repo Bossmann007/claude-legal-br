@@ -7,6 +7,7 @@
 import readline from "node:readline";
 import {
   indexUrl,
+  PUBLIC_KEY_FALLBACK,
   buildProcessoQuery,
   buildPesquisaQuery,
   parseProcessoHit,
@@ -14,13 +15,12 @@ import {
   digitsOnly,
   isValidCnj,
   isSigiloso,
+  filterHitsPorTribunaisPermitidos,
 } from "./lib.mjs";
 
 // CNJ publishes the public API key openly on the Datajud wiki and rotates it at
 // will. It is NOT a secret. Prefer an env override so a rotated key needs no code
 // change; fall back to the key published as of 2026-07 with a verify note.
-const PUBLIC_KEY_FALLBACK =
-  "cDZHYzlZa0JadVREZDJCendQbXY6SkJlTzNjLV9TRENyQk1RdnFKZGRQdw==";
 const API_KEY = process.env.DATAJUD_API_KEY || PUBLIC_KEY_FALLBACK;
 const BASE_URL =
   process.env.DATAJUD_BASE_URL || "https://api-publica.datajud.cnj.jus.br";
@@ -133,11 +133,17 @@ async function pesquisar(args = {}) {
   const json = await datajudPost(args.tribunal, body);
   const rawHits = parseHits(json);
   const sigilososRemovidos = rawHits.filter(isSigiloso).length;
-  const sources = rawHits.filter((h) => !isSigiloso(h)).map(parseProcessoHit);
+  const publicHits = rawHits.filter((h) => !isSigiloso(h));
+  const { hits: scopedHits, resultadosForaDoEscopo } = filterHitsPorTribunaisPermitidos(
+    publicHits,
+    args.tribunaisPermitidos,
+  );
+  const sources = scopedHits.map(parseProcessoHit);
   return {
     total: json?.hits?.total?.value ?? sources.length,
     retornados: sources.length,
     ...(sigilososRemovidos > 0 ? { sigilosos_removidos: sigilososRemovidos } : {}),
+    ...(resultadosForaDoEscopo > 0 ? { resultadosForaDoEscopo } : {}),
     processos: sources,
     ...(json?.aggregations ? { aggregations: json.aggregations } : {}),
     nota: "Metadados públicos DataJud/CNJ. Processos sigilosos não aparecem. Verifique dados críticos na fonte oficial (PJe/tribunal) antes de agir.",
@@ -185,6 +191,12 @@ const TOOLS = [
           type: "object",
           description:
             "Objeto de aggregations Elasticsearch (opcional) para estatísticas de jurimetria.",
+        },
+        tribunaisPermitidos: {
+          type: "array",
+          items: { type: "string" },
+          description:
+            "Allowlist opcional de siglas de tribunal aceitas no resultado (ex.: ['tjsp']). Hits fora do escopo são filtrados após remover sigilosos.",
         },
       },
       required: ["tribunal"],
