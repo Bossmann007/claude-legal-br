@@ -46,8 +46,9 @@ Brazilian procedure uses **dias úteis** (business days Monday–Friday, excludi
 
 - **Art. 219:** Prazos são contados em dias úteis (Monday–Friday).
 - **Art. 220:** Recesso judiciário: 20 Dec–20 Jan. Any act served during that window has the prazo extended (a automatic extension kicks in when the court reopens). `[model knowledge — verify]`
-- **Art. 222:** Prazo começa a contar a partir do dia útil seguinte ao evento que o dispara (service date, judgment date, etc.).
-- **Art. 223:** Se o dia final cair em dia não útil (feriado, Sunday), o prazo se estende até o próximo dia útil. `[model knowledge — verify]`
+- **Art. 224:** Na contagem, exclui-se o dia do começo e inclui-se o do vencimento; o prazo só começa a correr no primeiro dia útil seguinte à publicação/intimação (art. 224, §§2º-3º). `[model knowledge — verify]`
+- **Art. 224 §1º:** Se o dia do começo ou o vencimento cair em dia não útil (feriado, fim de semana, dia sem expediente), prorroga-se para o próximo dia útil. `[model knowledge — verify]`
+- **Art. 231:** Fixa o termo inicial conforme o meio da intimação (carta, oficial de justiça, edital, meio eletrônico). `[model knowledge — verify]`
 - **Arts. 180, 183, 186:** Fazenda Pública, MP, and Defensoria Pública get automatic doubling of prazos (dobra de prazo) — whatever prazo applies to a private party, they get 2× `[model knowledge — verify]`.
 - **Art. 229:** If there are multiple defendants with separate counsel in a physical case file, the prazo for ALL defendants is extended (dobra) because not all can be served simultaneously. For electronic service (now standard), this is less commonly invoked. `[model knowledge — verify]`
 - **Art. 224 §1º:** Suspensão por indisponibilidade de sistema — if PJe or other required system is down, deadlines don't run. `[model knowledge — verify]`
@@ -170,7 +171,7 @@ Example: System down 10–12 July. Your prazo deadline would have been 11 July. 
 
 For each dia in the calculation table, check: is it a feriado forense in [tribunal]? If yes, mark it as "Não" (not useful).
 
-National holidays (apply everywhere): Ano Novo (01/01), Tiradentes (21/04), Dia do Trabalho (01/05), Corpus Christi (varies, ~May/June), Finados (02/11), Proclamação (07/09), Consciência Negra (20/11), Natal (25/12).
+National holidays (apply everywhere): Ano Novo (01/01), Tiradentes (21/04), Dia do Trabalho (01/05), Independência (07/09), Nossa Senhora Aparecida (12/10), Finados (02/11), Proclamação da República (15/11), Consciência Negra (20/11), Natal (25/12). Corpus Christi (móvel, ~maio/junho) e Sexta-feira Santa costumam ser ponto facultativo/feriado forense — confirme no calendário do tribunal. `[model knowledge — verify]`
 
 State-level holidays (vary by TJ):
 - **SP:** Corpus Christi, Dia de Zumbi (20/11), Consciência Negra (20/11 — often observed on a Friday).

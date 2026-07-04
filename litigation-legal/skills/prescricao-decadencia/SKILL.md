@@ -50,7 +50,7 @@ Montar uma **matriz de prazos prescritivos** que o advogado preenche com:
 - **Prescrição CDC:** Lei 8.078/1990 art. 26 (decadência — 30 dias produto/serviço não durável, 90 dias durável, do vício aparente; oculto conta da evidência) e art. 27 (prescrição — 5 anos, fato do produto/serviço) `[model knowledge — verify]`
 - **Prescrição tributária:** CTN art. 173 (decadência — 5 anos para constituir/lançar); CTN art. 150 §4º (homologação — 5 anos); CTN art. 174 (prescrição — 5 anos para cobrar o crédito já constituído) `[model knowledge — verify]`
 - **Causas interruptivas (CC art. 202):** ação judicial, confissão da dívida, reconhecimento de responsabilidade, protesto `[model knowledge — verify]`
-- **Causas suspensivas (CC art. 203):** incapacidade legal, impossibilidade material, impossibilidade de agir `[model knowledge — verify]`
+- **Causas impeditivas/suspensivas (CC arts. 197-201):** ex. entre cônjuges na constância do casamento, contra incapazes (art. 198, I), pendência de condição/prazo. **Atenção: art. 203 trata de QUEM pode interromper, não de causa suspensiva** `[model knowledge — verify]`
 
 ---
 
@@ -150,8 +150,8 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 **Lei 8.078/1990 — Código de Defesa do Consumidor:**
 
 - **Art. 26 — Decadência (extinção do direito do consumidor):** 
-  - 30 dias (contados da aquisição) para reclamação de vício aparente ou que se manifeste no momento da venda `[model knowledge — verify]`.
-  - 30 dias (contados da descoberta) para reclamação de vício oculto `[model knowledge — verify]`.
+  - **30 dias** (produto/serviço **não durável**) / **90 dias** (produto/serviço **durável**) para reclamar do vício aparente ou de fácil constatação — contados da entrega efetiva (art. 26, I-II) `[model knowledge — verify]`.
+  - Vício **oculto**: o prazo (30 ou 90 dias, conforme durabilidade) conta-se do momento em que ficar evidenciado o defeito (art. 26, §3º) `[model knowledge — verify]`.
   - **Importante:** Decadência extingue o DIREITO (não apenas a ação) — após 30 dias, consumidor não pode reclamar de vício (não há ação rescisória ou reparação).
 
 - **Art. 27 — Prescrição:** 5 anos (contados da lesão) para ações de responsabilidade por produto defeituoso ou serviço inadequado (reparação, substituição, indenização) `[model knowledge — verify]`.
@@ -173,17 +173,16 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 
 #### Reivindicações Tributárias (CTN arts. 150, 173-175)
 
-**CTN art. 150 — Lançamento:**
-- Prazo para a **autoridade tributária lançar o crédito:** 5 anos a contar da data em que se iniciou a omissão da receita (quando a obrigação entrou em atraso — exemplo: tributo vencido em janeiro, prazo começa em janeiro; até dezembro do 5º ano) `[model knowledge — verify]`.
-- **Exceção:** 10 anos se há dolo, fraude, simulação (CTN art. 150, §4º) `[model knowledge — verify]`.
+**CTN art. 173 — Decadência (direito de constituir/lançar o crédito):**
+- Prazo de **5 anos** para a Fazenda **constituir o crédito** pelo lançamento, contados do **1º dia do exercício seguinte** àquele em que o lançamento poderia ter sido efetuado (art. 173, I) `[model knowledge — verify]`.
 
-**CTN art. 173 — Prescrição do crédito tributário:**
-- Crédito tributário **lançado** prescreve em **5 anos** contados da data em que se iniciou a obrigação principal (data do vencimento original, não do lançamento) `[model knowledge — verify]`.
-- **Importante:** Distinção entre **prescritibilidade (direito de lançar)** e **prescrição (extinção do crédito já lançado)**.
+**CTN art. 150, §4º — Decadência no lançamento por homologação:**
+- **5 anos** a contar do **fato gerador**; findo o prazo sem manifestação da Fazenda, considera-se homologado. Ressalva de dolo, fraude ou simulação `[model knowledge — verify]`.
 
-**Causas interruptivas (CTN art. 174):** ação judicial (execução fiscal), confissão (reconhecimento de dívida), protesto contra débito.
+**CTN art. 174 — Prescrição (cobrança do crédito já constituído):**
+- Crédito **já lançado** prescreve em **5 anos** contados da constituição definitiva; interrompida por despacho que ordena a citação em execução fiscal, protesto judicial, ato de constituição em mora, reconhecimento do débito (art. 174, p.u.) `[model knowledge — verify]`.
 
-**Causas suspensivas (CTN art. 175):** moratória concedida pela administração, incapacidade legal do sujeito passivo (pessoa incapaz), impossibilidade de agir.
+**CTN art. 151 — Suspensão da exigibilidade:** moratória, depósito integral, reclamação/recurso administrativo, liminar/tutela, parcelamento `[model knowledge — verify]`. *(CTN art. 175 trata de EXCLUSÃO do crédito — isenção e anistia — não de suspensão.)*
 
 ---
 

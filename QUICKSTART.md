@@ -13,13 +13,13 @@ https://github.com/user-attachments/assets/51394f0a-5277-4fe2-b81c-5c5e9ac876b5
 
 1. **Open Claude Code** (in your terminal) or **Claude Cowork** (the desktop app). Not sure which you have? If you have a terminal window open with Claude in it, that's Claude Code.
 
-2. **Add the marketplace.** In Claude Code, type `/plugin marketplace add ` (with a space at the end), then **drag the unzipped `claude-for-legal` folder onto the terminal window** — it'll fill in the path. Then press Enter.
+2. **Add the marketplace.** In Claude Code, type `/plugin marketplace add ` (with a space at the end), then **drag the unzipped `claude-legal-br` folder onto the terminal window** — it'll fill in the path. Then press Enter.
 
-   (Or type the full path: `/plugin marketplace add /Users/you/Desktop/claude-for-legal`)
+   (Or type the full path: `/plugin marketplace add /Users/you/Desktop/claude-legal-br`)
 
 3. **Install your plugin.** Pick the one that matches your work from the table below, then:
    ```
-   /plugin install privacy-legal@claude-for-legal
+   /plugin install privacy-legal@claude-legal-br
    ```
 
 4. **⚠️ Restart Claude Code.** Close and reopen. This step is not optional — the plugin isn't live until you restart.
@@ -28,6 +28,7 @@ https://github.com/user-attachments/assets/51394f0a-5277-4fe2-b81c-5c5e9ac876b5
    ```
    /privacy-legal:cold-start-interview
    ```
+   *(Opcional — cada skill já roda genérico de cara; o setup só calibra ao seu perfil.)*
 
 6. **Connect a research tool.** Citations are flagged unverified without one. In Cowork: Settings → Connectors → add JusBrasil/Escavador/PJe (or INPI for IP matters). In Claude Code: the plugin already lists the research MCP in its config; you'll be prompted to authorize it the first time a skill needs it.
 
@@ -37,7 +38,7 @@ When you run `/plugin install`, you may be asked whether to install for this pro
 
 It's counterintuitive: project scope feels safer. But project scope blocks the plugin from reading files outside the project folder — your outlines in Downloads, your contract in Documents, your client file in Dropbox. Most skills need to read your files. User scope doesn't give the plugin any extra access to your files — the plugin can only read files you explicitly point it at or that are in the current directory. It just means the plugin works from any folder instead of one.
 
-If you already installed project-scoped and want to switch: `/plugin uninstall <plugin>`, then `/plugin install <plugin>@claude-for-legal` from your home directory.
+If you already installed project-scoped and want to switch: `/plugin uninstall <plugin>`, then `/plugin install <plugin>@claude-legal-br` from your home directory.
 
 ## Qual sua área? Instale só o que precisa
 
@@ -71,7 +72,7 @@ Each plugin learns your playbook through a setup interview, writes it to a pract
 
 ## What's in the box
 
-12 practice-area plugins, 5 managed-agent cookbooks, 16+ connectors. The full reference is in [README.md](README.md).
+16 plugins (12 áreas de prática + 4 originais BR, incluindo `anti-injection`), managed-agent cookbooks, e 2 conectores CNJ locais (DataJud, DJEN). A referência completa está no [README.md](README.md).
 
 ## Stuck?
 

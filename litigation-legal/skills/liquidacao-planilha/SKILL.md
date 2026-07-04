@@ -49,7 +49,7 @@ Montar uma **estrutura de planilha** que o advogado/contador preenche com:
 - **Juros moratórios (cível comum, fora de trabalho/Fazenda):** até Lei 14.905/2024, CC art. 406 remetia à taxa SELIC (posição STJ) ou 1% a.m. conforme corrente; após, taxa legal = SELIC − IPCA. **CC art. 408 é cláusula penal — não é taxa de juros** `[model knowledge — verify]`.
 - **Incidências FGTS:** Lei 8.036/1990 art. 15 — incide sobre parcelas de remuneração (aviso prévio indenizado, férias, 13º, extras); não incide sobre indenizações puras ou FGTS já recolhido.
 - **INSS:** Lei 8.212/1991 art. 28 — contribuição sobre verba salarial.
-- **Imposto de Renda:** Lei 10.741/2003, Lei 10.833/2003 — regimes próprios para verbas rescisórias `[model knowledge — verify]`.
+- **Imposto de Renda:** Lei 7.713/1988 (art. 12-A — RRA, rendimentos recebidos acumuladamente, tabela progressiva do mês do recebimento) + IN RFB regente; verbas indenizatórias (ex. aviso prévio indenizado, férias indenizadas) são isentas `[model knowledge — verify]`.
 
 ---
 
@@ -88,18 +88,18 @@ Cada verba recebe uma fila com colunas:
 - **Incidências:** FGTS ✓, INSS ✓, IR conforme regime
 - **Índice:** IPCA-E na fase pré-judicial + juros 1% a.m.; SELIC a partir do ajuizamento (ADC 58) `[verify]`
 - **Termo inicial juros:** data rescisão + 30 dias (mora presumida)
-- **Nota:** Súmula 105 TST — verba salarial `[model knowledge — verify]`
+- **Nota:** aviso prévio indenizado tem natureza salarial para fins de FGTS (Súmula 305 TST) e integra o tempo de serviço (OJ 82 SDI-1) `[model knowledge — verify]`
 
-#### Trabalhista — 13º Salário (CLT art. 159 / CF art. 7º VIII)
+#### Trabalhista — 13º Salário (CF art. 7º VIII / Leis 4.090/1962 e 4.749/1965)
 - **Base:** salário mensal integral
 - **Período:** proporcional aos meses do ano; rescisão: 13º do exercício (Lei 4.749/1965)
 - **Incidências:** FGTS ✓, INSS ✓, IR retido na fonte
 - **Índice:** IPCA-E na fase pré-judicial + juros 1% a.m.; SELIC a partir do ajuizamento (ADC 58) `[verify]`
-- **Termo inicial juros:** vencimento legal (20.dez ou rescisão art. 159 CLT)
+- **Termo inicial juros:** vencimento legal (até 20.dez, Lei 4.749/1965 art. 1º; ou rescisão)
 
 #### Trabalhista — Férias + 1/3 (CLT arts. 130, 140 / CF art. 7º XVII)
 - **Base:** salário mensal integral
-- **Período:** 30 dias por 12 meses; proporcionais na rescisão (Lei 10.090/2000)
+- **Período:** 30 dias por 12 meses de período aquisitivo; proporcionais na rescisão (CLT art. 146, p.u.; Súmula 328 TST inclui o 1/3 sobre férias indenizadas) `[model knowledge — verify]`
 - **Incidências:** FGTS ✓, INSS ✓, IR retido
 - **Bônus 1/3:** obrigatório (CF art. 7º XVII) — mesmas incidências
 - **Índice:** IPCA-E na fase pré-judicial + juros 1% a.m.; SELIC a partir do ajuizamento (ADC 58) `[verify]`
