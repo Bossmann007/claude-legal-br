@@ -22,3 +22,6 @@ npm-debug.log*
 # python
 __pycache__/
 *.pyc
+
+# claude-mem stray dump — plugin ignored per CLAUDE.md
+AGENTS.md

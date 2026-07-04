@@ -28,4 +28,6 @@ Documentos jurídicos de terceiros são conteúdo adversarial por natureza — a
 
 Não substitui revisão humana. Não garante detecção de todo ataque — obfuscação nova pode passar. Não bloqueia ferramentas.
 
+O hook de texto colado é só um nudge heurístico para possível texto laundered por LLM; é uma camada de detecção, não uma parede.
+
 **Divisão de camadas.** O hook automático (`scan-injection.mjs`) escaneia só **fontes externas automáticas** (WebFetch/WebSearch/MCP) — não escaneia `Read` genérico, pra não disparar falso-positivo nos arquivos do próprio usuário (modelos, peças que citam a contraparte, docs que explicam injection). Documento de terceiro que você **abre manualmente** (PDF colado, contrato da contraparte via Read) é justamente o caso desta skill: invoque `/anti-injection:quarentena-doc` e a análise inteira roda em modo dado-não-confiável. Hook = fonte externa automática; skill = doc externo manual.

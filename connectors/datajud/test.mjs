@@ -137,7 +137,7 @@ assert.throws(
 async function liveSmoke() {
   const baseUrl =
     process.env.DATAJUD_BASE_URL || "https://api-publica.datajud.cnj.jus.br";
-  const timeoutMs = Number(process.env.DATAJUD_TIMEOUT_MS) || 20000;
+  const timeoutMs = Number(process.env.DATAJUD_TIMEOUT_MS) || 30000;
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), timeoutMs);
   let res;
@@ -148,19 +148,22 @@ async function liveSmoke() {
         Authorization: `APIKey ${process.env.DATAJUD_API_KEY || PUBLIC_KEY_FALLBACK}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ size: 1, query: { match_all: {} } }),
+      body: JSON.stringify({ size: 0, query: { match_all: {} } }),
       signal: ctrl.signal,
     });
+  } catch {
+    console.error("LIVE: datajud UNREACHABLE (timeout)");
+    process.exitCode = 1;
+    return;
   } finally {
     clearTimeout(timer);
   }
   if (res.status === 200 || res.status === 429) {
-    const note = res.status === 429 ? " (reachable)" : "";
-    console.log(`LIVE: datajud ${res.status}${note}`);
+    console.log(`LIVE: datajud ${res.status} (reachable)`);
     return;
   }
-  if (res.status >= 500) throw new Error(`DataJud unreachable: HTTP ${res.status}`);
-  console.log(`LIVE: datajud ${res.status} (reachable)`);
+  console.error(`LIVE: datajud UNREACHABLE (HTTP ${res.status})`);
+  process.exitCode = 1;
 }
 
 console.log("ok — all DataJud lib checks passed");
