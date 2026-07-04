@@ -59,8 +59,12 @@ O texto das intimações e os nomes/movimentos vindos dos conectores são escrit
 
 ## Resumo do dia
 
+**O banner de aviso é obrigatório** — emita-o sempre no topo do resumo, mesmo em dias sem nada novo. Não é opcional nem removível.
+
 ```markdown
 ## ☀️ Bom dia — [data] · OAB [n/UF]
+
+> ⚠️ **Não é fonte oficial de prazo.** Índices do CNJ (DataJud/DJEN) atrasam e podem estar incompletos — ausência aqui **não** prova ausência de intimação. Confirme sempre no PJe / Domicílio Judicial Eletrônico. Uso por conta e risco do(a) advogado(a) — ver [AVISO-E-RISCOS.md](../../../AVISO-E-RISCOS.md).
 
 **Intimações novas:** [N]  ·  **Processos com movimento novo:** [N]  ·  **Prazo vencendo em ≤3 dias úteis:** [N]
 

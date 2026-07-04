@@ -113,4 +113,8 @@ Se você não concorda com qualquer termo acima, **não use** este software. O u
 
 ---
 
+Ver também o [TERMO-DE-USO.md](TERMO-DE-USO.md), que integra este aviso.
+
+---
+
 *Este documento é um aviso de risco e limitação de responsabilidade do software, não um parecer jurídico. Última revisão: 2026-07-03.*
