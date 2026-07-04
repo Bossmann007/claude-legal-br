@@ -3,6 +3,8 @@
 Marketplace curado de plugins de IA para advocacia brasileira — banca pequena e jurídico interno. Fork do [claude-for-legal](https://github.com/anthropics) da Anthropic, adaptado do direito dos EUA para o direito brasileiro (Código Civil, LGPD, CLT, CDC, CPC, LPI, Lei 14.133/2021). Roda no [Claude Code](https://claude.com/claude-code) e no [Cowork](https://claude.com/product/cowork).
 
 > **Aviso:** auxilia fluxos jurídicos, **não substitui aconselhamento jurídico**. Toda saída é rascunho para revisão de advogado(a) inscrito(a) na OAB antes de embasar qualquer decisão. Citações vêm tagueadas por proveniência (`[model knowledge — verify]`, `[settled — data]`, `[JusBrasil]`, etc.) — a tag descreve de onde veio, não que está certa. Verifique contra fonte primária antes de protocolar.
+>
+> **⚠️ Antes de usar, leia [AVISO-E-RISCOS.md](AVISO-E-RISCOS.md)** — riscos por componente (falso-negativo de prazo, LGPD, rate-limit, segredo de justiça) e limitação de responsabilidade. O uso é por conta e risco exclusivo do(a) usuário(a).
 
 ---
 
