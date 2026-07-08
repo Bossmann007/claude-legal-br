@@ -24,7 +24,7 @@ It identifies what's missing, what's wrong, and what needs legal opinion before 
 
 ## Jurisdiction assumption
 
-**Premissa de jurisdição (Brasil):** O Decreto 7.962/2013 regulamenta o comércio eletrônico e a relação entre fornecedor de produtos ou serviços (online) e o consumidor (comprador final, Art. 2º CDC). A loja deve fornecer informações obrigatórias (Art. 5º, Decreto 7.962/2013 — identidade do fornecedor, descrição do produto, preço total, frete, prazos, condições de pagamento, garantia legal, direito de arrependimento, atendimento); o consumidor tem direito de arrependimento de 7 dias (Art. 49 CDC [model knowledge — verify]); a responsabilidade por entrega é do fornecedor (Art. 15 Decreto 7.962/2013 [model knowledge — verify]); notificação de problemas no pedido deve ser feita pelo fornecedor (Art. 17 [model knowledge — verify]). Se a loja envolver dados pessoais (nome, email, endereço), a LGPD (Lei 13.709/2018) é aplicável de forma adicional. Ver `privacy-legal:pia-generation` para análise detalhada. Se houver marketplace (loja dentro de plataforma terceira), analisar arts. 19 Marco Civil (isenção do provedor) — mas Marco Civil isenção não afasta responsabilidade pela conformidade própria da loja.
+**Premissa de jurisdição (Brasil):** O Decreto 7.962/2013 regulamenta o comércio eletrônico e a relação entre fornecedor de produtos ou serviços (online) e o consumidor (comprador final, Art. 2º CDC). A loja deve fornecer informações obrigatórias (Art. 5º, Decreto 7.962/2013 — identidade do fornecedor, descrição do produto, preço total, frete, prazos, condições de pagamento, garantia legal, direito de arrependimento, atendimento); o consumidor tem direito de arrependimento de 7 dias (Art. 49 CDC [verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm]); a responsabilidade por entrega é do fornecedor (Art. 15 Decreto 7.962/2013 [CORRECTION NEEDED: fonte não contém Art. 15; Decreto 7.962/2013 Art. 2º, V trata de "forma e prazo ... da entrega ou disponibilização do produto" — https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm]); notificação de problemas no pedido deve ser feita pelo fornecedor (Art. 17 [CORRECTION NEEDED: Decreto 7.962/2013 não contém Art. 17 — https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm]). Se a loja envolver dados pessoais (nome, email, endereço), a LGPD (Lei 13.709/2018) é aplicável de forma adicional. Ver `privacy-legal:pia-generation` para análise detalhada. Se houver marketplace (loja dentro de plataforma terceira), analisar arts. 19 Marco Civil (isenção do provedor) — mas Marco Civil isenção não afasta responsabilidade pela conformidade própria da loja.
 
 > **No silent supplement.** If a research query to the configured legal research tool (JusBrasil, Escavador) returns few or no results for a requirement under Decreto 7.962/2013, CDC articles, or Marco Civil, report what was found and stop. Do NOT fill the gap from web search or model knowledge without asking. Say: "The search returned [N] results from [tool]. Coverage appears thin for [requirement]. Options: (1) broaden the search query, (2) try a different research tool, (3) search the web — results will be tagged `[web search — verify]` and should be checked against a primary source before relying, or (4) flag as unverified and stop. Which would you like?" A lawyer decides whether to accept lower-confidence sources.
 >
@@ -53,7 +53,7 @@ Run through each item below. For each MISSING or WRONG item, flag it. For each i
 - [ ] **Características técnicas** (tamanho, cor, compatibilidade, se aplicável)
 - [ ] **Preço total destacado** (incluindo impostos, frete)
 - [ ] **Disponibilidade** ("em estoque" vs. "sob encomenda"; prazo claro)
-- [ ] **Garantia legal** (prazo de 30 dias para produtos, 90 dias para serviços — CDC Art. 26 [model knowledge — verify])
+- [ ] **Garantia legal** (prazo de 30 dias para produtos, 90 dias para serviços — CDC Art. 26 [CORRECTION NEEDED: fonte diz "trinta dias, tratando-se de fornecimento de serviço e de produtos não duráveis; noventa dias, tratando-se de fornecimento de serviço e de produtos duráveis" — https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm])
 
 ### 3. Direito de arrependimento (CDC Art. 49)
 
@@ -74,7 +74,7 @@ Run through each item below. For each MISSING or WRONG item, flag it. For each i
 - [ ] **Múltiplas opções** (cartão, boleto, Pix, etc.)
 - [ ] **HTTPS / SSL** (loja usa certificado?)
 - [ ] **Aviso de segurança** ("seus dados são criptografados")
-- [ ] **Não armazena dados sensíveis** (loja armazena CVV? Não deve — violação LGPD [model knowledge — verify])
+- [ ] **Não armazena dados sensíveis** (loja armazena CVV? Não deve — violação LGPD [unverified: not found in primary source])
 
 ### 6. Política de privacidade (LGPD Art. 5, II / Marco Civil Art. 7º, II)
 
@@ -87,7 +87,7 @@ Run through each item below. For each MISSING or WRONG item, flag it. For each i
 
 - [ ] **Acesso fácil** (não enterrado em FAQ inacessível)
 - [ ] **Email de resposta efetiva** (não inválido)
-- [ ] **Prazo de resposta** (ANPD recomenda ≤15 dias para SARs [model knowledge — verify])
+- [ ] **Prazo de resposta** (ANPD recomenda ≤15 dias para SARs [verified: https://www.gov.br/anpd/pt-br/assuntos/titular-de-dados-1/direito-dos-titulares])
 - [ ] **Forma de registro de reclamação** (loja registra ticket?)
 
 ### 8. Condições de pagamento e crédito (Art. 39, CDC)
