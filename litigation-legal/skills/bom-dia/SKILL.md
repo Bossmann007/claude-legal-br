@@ -18,7 +18,7 @@ Se o perfil ainda tem `[PLACEHOLDER]`, NÃO pare. Peça só o mínimo que falta 
 
 ## Premissa de jurisdição (Brasil)
 
-A **data de disponibilização** no DJEN inicia a contagem: a publicação considera-se feita no **primeiro dia útil seguinte** à disponibilização, e o prazo começa a correr no dia útil seguinte a esse (Lei 11.419/2006, art. 4º §§3º-4º `[model knowledge — verify]`). Contagem em **dias úteis** para prazos processuais (CPC art. 219 `[model knowledge — verify]`), com recesso (art. 220), feriados forenses e dobra tratados por `/litigation-legal:prazos-cpc`. Todo prazo é **rascunho** — a tabela de feriados é específica do tribunal; confirme antes de confiar.
+A **data de disponibilização** no DJEN inicia a contagem: a publicação considera-se feita no **primeiro dia útil seguinte** à disponibilização, e o prazo começa a correr no dia útil seguinte a esse (Lei 11.419/2006, art. 4º §§3º-4º `[verified: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11419.htm]`). Contagem em **dias úteis** para prazos processuais (CPC art. 219 `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`), com recesso (art. 220), feriados forenses e dobra tratados por `/litigation-legal:prazos-cpc`. Todo prazo é **rascunho** — a tabela de feriados é específica do tribunal; confirme antes de confiar.
 
 ---
 

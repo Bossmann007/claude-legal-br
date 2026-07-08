@@ -26,7 +26,7 @@ Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `�
 
 ## Premissa de jurisdição (Brasil)
 
-A **data de disponibilização** no DJEN inicia a contagem: a publicação considera-se feita no **primeiro dia útil seguinte** à disponibilização, e o prazo começa a correr no dia útil seguinte a esse (Lei 11.419/2006, art. 4º §§3º-4º `[model knowledge — verify]`). A contagem é em **dias úteis** para prazos processuais (CPC art. 219 `[model knowledge — verify]`), com as ressalvas de recesso, feriados forenses e dobra que a skill `/litigation-legal:prazos-cpc` trata. O tipo de ato (contestar, manifestar, recorrer, cumprir) define o prazo aplicável — confirme o prazo de cada ato; o DJEN traz o texto, não o prazo calculado.
+A **data de disponibilização** no DJEN inicia a contagem: a publicação considera-se feita no **primeiro dia útil seguinte** à disponibilização, e o prazo começa a correr no dia útil seguinte a esse (Lei 11.419/2006, art. 4º §§3º-4º `[verified: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11419.htm]`). A contagem é em **dias úteis** para prazos processuais (CPC art. 219 `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`), com as ressalvas de recesso, feriados forenses e dobra que a skill `/litigation-legal:prazos-cpc` trata. O tipo de ato (contestar, manifestar, recorrer, cumprir) define o prazo aplicável — confirme o prazo de cada ato; o DJEN traz o texto, não o prazo calculado.
 
 ---
 
@@ -52,7 +52,7 @@ vistas:
 Intimações cujo `id` já está em `vistas` não reaparecem no resumo (a não ser com `--todas`). Só as novas são processadas e anexadas.
 
 **LGPD — este arquivo é um data store de dados pessoais.** `intimacoes-vistas.yaml` guarda números de processo, datas e partes — dado pessoal sob a LGPD. Consequências práticas:
-- **Retenção:** purgue entradas com `status: respondida` ou `perdida` há mais de 12 meses — não acumule indefinidamente (LGPD art. 15-16, fim do tratamento). O watcher deve oferecer essa limpeza ao rodar. [model knowledge — verify]
+- **Retenção:** purgue entradas com `status: respondida` ou `perdida` há mais de 12 meses — não acumule indefinidamente (LGPD art. 15-16, fim do tratamento). O watcher deve oferecer essa limpeza ao rodar. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
 - **Registro de tratamento:** este arquivo entra no registro de operações de tratamento do escritório (LGPD art. 37). Documente-o lá.
 - **Local, não em nuvem compartilhada:** mantenha em disco local do escritório; já está no `.gitignore` da raiz para não ser versionado por acidente.
 - **Sem sigiloso:** processos em segredo de justiça não vêm da API pública, então não caem aqui — mas se um número sensível for adicionado manualmente, trate-o com o mesmo cuidado.
