@@ -41,4 +41,26 @@ print(f'  ✓ {sys.argv[1]:24s} {len(b)} bodies')
     fail=1
   fi
 done
+
+if node "$ROOT/connectors/datajud/test.mjs"; then
+  echo "  ✓ datajud connector test"
+else
+  echo "  ✗ datajud connector test" >&2
+  fail=1
+fi
+
+if node "$ROOT/connectors/djen/test.mjs"; then
+  echo "  ✓ djen connector test"
+else
+  echo "  ✗ djen connector test" >&2
+  fail=1
+fi
+
+if node "$ROOT/anti-injection/hooks/test.mjs"; then
+  echo "  ✓ anti-injection hook test"
+else
+  echo "  ✗ anti-injection hook test" >&2
+  fail=1
+fi
+
 exit $fail
