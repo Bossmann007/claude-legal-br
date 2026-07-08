@@ -129,11 +129,11 @@ Maintenance mechanics vary by jurisdiction and asset type:
 - **Brazilian trademarks (INPI, LPI arts. 133, 142-143):** 10-year term
   from grant, renewable indefinitely for further 10-year periods; renewal
   request window opens in the last year of the term, with a 6-month grace
-  period after expiry at a surcharged fee (LPI art. 143 §1º). No US-style
+  period after expiry at a surcharged fee (LPI art. 133, §2º). No US-style
   mid-term declaration of use — Brazil does not require a use affidavit
   during the term, though non-use for 5+ consecutive years exposes the
   registration to a third-party *caducidade* (lapse-for-non-use) action
-  under LPI art. 143. `[CORRECTION NEEDED: LPI Art. 143 confirma caducidade por falta de uso por 5 anos; a janela de prorrogação de 6 meses após o termo final do registro consta do Art. 133, §2º, não do Art. 143, §1º — https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`
+  under LPI art. 143. `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`
 - **Brazilian patents (INPI, LPI arts. 40, 84-86):** Annual fees (*retribuição
   anual*/annuities) due starting in the 3rd year from filing, payable within
   the prior year or in a 6-month grace window with surcharge (LPI art. 84).

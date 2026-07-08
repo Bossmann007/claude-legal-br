@@ -24,7 +24,7 @@ This skill reviews a contract against your playbook positions and flags deviatio
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-- **Código Civil (Lei 10.406/2002)** — general contract law, Arts. 421-480 (contratos em geral); arts. 591-592 on loan (empréstimo/mútuo), with services/empreitada in the following provisions rather than "financing" as a single block. `[CORRECTION NEEDED: Código Civil Arts. 421-480 tratam de contratos em geral; Arts. 591-592 tratam do mútuo/empréstimo de coisas fungíveis, enquanto Arts. 593-609 tratam de prestação de serviço/empreitada; a faixa 591-608 não é bloco de empréstimo e financiamento — https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]`
+- **Código Civil (Lei 10.406/2002)** — general contract law, Arts. 421-480 (contratos em geral); arts. 591-592 on loan (empréstimo/mútuo), with services/empreitada in the following provisions rather than "financing" as a single block. `[verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]`
 - **CDC (Lei 8.078/1990)** — consumer protection law; applies when borrower is a consumer (destinatário final, Art. 2º); makes many contract terms abusive/void (Art. 51) `[verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm]`
 - **Lei de Usura (Decreto 22.626/1933)** — antediluvian usury law; its rules do not apply to rates/charges in operations by institutions in the national financial system under STF Súmula 596. `[verified: https://www.planalto.gov.br/ccivil_03/decreto/d22626.htm; https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=30&sumula=2017]`
 - **BCB Resolutions** — specific rules for crédito consignado (CCB), financiamento imobiliário, etc. `[unverified: not found in primary source]`

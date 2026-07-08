@@ -30,7 +30,7 @@ The critical question: **Is this asset a virtual asset (VASP-regulated) or a sec
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-- **Lei 14.478/2022** — Marco Legal dos Criptoativos; authorization for VASP operation appears in Art. 2º and the definition of "ativo virtual" appears in Art. 3º. `[CORRECTION NEEDED: Lei 14.478/2022 Art. 2º trata da autorização prévia para prestadoras de serviços de ativos virtuais funcionarem no País; a definição de "ativo virtual" está no Art. 3º, não no Art. 2º — https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14478.htm]`
+- **Lei 14.478/2022** — Marco Legal dos Criptoativos; authorization for VASP operation appears in Art. 2º and the definition of "ativo virtual" appears in Art. 3º. `[verified: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14478.htm]`
 - **BCB regulation** — BCB is the VASP supervisor (resolutions pending or recently issued) `[unverified: not found in primary source]`
 - **Lei 6.385/1976** — Lei do Mercado de Capitais; defines "valor mobiliário" (security); CVM regulates securities `[verified: https://www.planalto.gov.br/ccivil_03/leis/l6385compilada.htm]`
 - **Lei 9.613/1998** — Lei de Prevenção à Lavagem de Dinheiro (AML/PLD); applies to VASP operators after inclusion by Lei 14.478/2022 `[verified: https://www.planalto.gov.br/ccivil_03/LEIS/L9613compilado.htm; https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14478.htm]`
@@ -54,7 +54,7 @@ If blank, I'll flag what you need to decide with a lawyer before onboarding any 
 
 ### 1. Is this a virtual asset (VASP-regulated)?
 
-**Lei 14.478/2022 definition** `[CORRECTION NEEDED: a definição de ativo virtual está no Art. 3º e fala em representação digital de valor que pode ser negociada ou transferida por meios eletrônicos e utilizada para realização de pagamentos ou com propósito de investimento; a lei exclui moeda nacional/estrangeira, moeda eletrônica da Lei 12.865/2013, pontos de fidelidade e ativos cuja emissão/escrituração/negociação/liquidação esteja prevista em lei ou regulamento, como valores mobiliários e ativos financeiros — https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14478.htm]`: An "ativo virtual" is a representation of value that can be negotiated or transferred electronically and used for payments or investment, excluding the categories listed in Art. 3º.
+**Lei 14.478/2022 definition** `[verified: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14478.htm]`: An "ativo virtual" is a representation of value that can be negotiated or transferred electronically and used for payments or investment, excluding the categories listed in Art. 3º.
 
 **Examples:**
 - ✓ Bitcoin, Ethereum, and major cryptocurrencies
@@ -89,7 +89,7 @@ A token can be both a virtual asset (VASP-regulated) AND a security (CVM-regulat
 
 ### 3. Custody and safekeeping
 
-**Lei 14.478/2022 custody scope** `[CORRECTION NEEDED: Lei 14.478/2022 lista "custódia ou administração de ativos virtuais ou de instrumentos que possibilitem controle sobre ativos virtuais" como serviço de ativo virtual, mas a fonte primária não confirmou nesta lei a lista de deveres abaixo sobre segregação, armazenamento seguro, seguro/bonding e audit trail — https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14478.htm]`: If you hold customer assets in custody, treat the items below as controls to verify against current regulation/playbook, not as duties confirmed in Lei 14.478/2022:
+**Lei 14.478/2022 custody scope** `[verified: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/L14478.htm]`: If you hold customer assets in custody, treat the items below as controls to verify against current regulation/playbook, not as duties confirmed in Lei 14.478/2022:
 - Segregate customer assets from your own
 - Hold keys/credentials in secure storage (hardware wallet, multi-sig, custodian bank)
 - Have insurance or bonding for loss/theft

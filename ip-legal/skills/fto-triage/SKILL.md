@@ -611,7 +611,7 @@ Before issuing the output, read `## Who's using this`. If the Role is Non-lawyer
 > work, representation before INPI is through an **Agente da Propriedade
 > Industrial** (Lei 9.279/1996, art. 216) — the INPI registry lists qualified
 > agents, and the OAB (Ordem dos Advogados do Brasil) can refer a patent
-> litigator for court proceedings `[CORRECTION NEEDED: LPI Art. 216 diz que os atos previstos na lei serão praticados pelas partes ou por seus procuradores devidamente qualificados; não diz que representação perante o INPI é através de Agente da Propriedade Industrial nem confirma o encaminhamento OAB para litígio — https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`. For US patent
+> litigator for court proceedings `[unverified: LPI Art. 216 estabelece que os atos são praticados por partes ou procuradores qualificados perante o INPI; não confirma sigilo agente-cliente — https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`. For US patent
 > work, a registered patent attorney or patent agent is required (not every
 > lawyer is registered — the USPTO Office of Enrollment and Discipline
 > maintains a directory). For other jurisdictions, use the relevant patent
