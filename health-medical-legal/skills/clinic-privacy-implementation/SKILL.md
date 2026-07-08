@@ -18,8 +18,8 @@ Estrutura um Plano de Privacidade e Proteção de Dados (equivalente ao RIPD sob
 4. Fluxos de dados (coleta, armazenamento, acesso, compartilhamento com terceiros).
 5. Direitos do titular (acesso, correção, portabilidade, eliminação).
 6. Riscos específicos a saúde (vazamento de dados genéticos, re-identificação, discriminação) e mitigações.
-7. Guarda de prontuário e prazos de retenção conforme CFM [model knowledge — verify].
-8. Conformidade com Lei 9.656 (se operadora de plano de saúde) [model knowledge — verify].
+7. Guarda de prontuário e prazos de retenção conforme CFM [unverified: not found in primary source].
+8. Conformidade com Lei 9.656 (se operadora de plano de saúde) [verified: https://www.planalto.gov.br/ccivil_03/leis/l9656.htm].
 
 **Output:** rascunho de Plano de Privacidade com estrutura, riscos identificados, matriz de mitigações, nomeação de responsáveis, prazos.
 
@@ -41,11 +41,11 @@ Este skill estrutura essa conversa e escreve a output no formato desta equipe �
 
 ## Jurisdição e regime
 
-**Premissa:** LGPD (Lei 13.709/2018, Art. 11 — dados sensíveis). Dados de saúde são sempre sensíveis. Processamento exige **consentimento específico e destacado** (Art. 11, I) OU uma das exceções taxativas do Art. 11, II-III (vida/saúde do titular, profissional de saúde no exercício de profissão). [model knowledge — verify]
+**Premissa:** LGPD (Lei 13.709/2018, Art. 11 — dados sensíveis). Dados de saúde são sempre sensíveis. Processamento exige **consentimento específico e destacado** (Art. 11, I) OU uma das exceções taxativas do Art. 11, II-III (vida/saúde do titular, profissional de saúde no exercício de profissão). [CORRECTION NEEDED: fonte define dado referente à saúde como sensível no Art. 5º, II; Art. 11, I exige consentimento específico e destacado, e Art. 11, II lista exceções, incluindo proteção da vida/incolumidade e tutela da saúde por profissionais/serviços/autoridade de saúde; não há Art. 11, III — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 
-Sigilo médico é independente da LGPD: Código de Ética Médica (Res. CFM 2.217/2018, arts. 73-79 `[model knowledge — verify]`) + violação de segredo profissional (Código Penal art. 154 `[model knowledge — verify]`) tornam a divulgação de informação médica ilegal sem consentimento ou justa causa, mesmo que a LGPD permitisse o tratamento.
+Sigilo médico é independente da LGPD: Código de Ética Médica (Res. CFM 2.217/2018, arts. 73-79 `[unverified: not found in primary source]`) + violação de segredo profissional (Código Penal art. 154 `[verified: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm]`) tornam a divulgação de informação médica ilegal sem consentimento ou justa causa, mesmo que a LGPD permitisse o tratamento.
 
-Se a clínica/hospital também opera plano de saúde, Lei 9.656/1998 + ANS (Agência Nacional de Saúde) adiciona requisitos. Verificar regulação ANS atual sobre guarda e acesso a dados [model knowledge — verify].
+Se a clínica/hospital também opera plano de saúde, Lei 9.656/1998 + ANS (Agência Nacional de Saúde) adiciona requisitos. Verificar regulação ANS atual sobre guarda e acesso a dados [unverified: not found in primary source].
 
 ---
 
@@ -82,7 +82,7 @@ Sob LGPD, um RIPD (análise de impacto) é mandatório quando:
 - Qualquer atividade de **alto risco às liberdades civis e direitos fundamentais** (Art. 38, que autoriza a ANPD exigir RIPD).
 
 Para saúde, o padrão é **sempre** fazer um Plano porque:
-1. Dados são sensíveis (Art. 11). [model knowledge — verify]
+1. Dados são sensíveis (Art. 11). [CORRECTION NEEDED: fonte define dado referente à saúde como dado pessoal sensível no Art. 5º, II; Art. 11 regula hipóteses de tratamento de dados sensíveis — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 2. Vazamento causa dano grave (discriminação, exposição, re-identificação).
 3. Não-conformidade é risco regulatório (ANPD, CFM, ANS).
 

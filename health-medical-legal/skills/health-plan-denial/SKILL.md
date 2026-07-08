@@ -16,7 +16,7 @@ Cobre:
 1. Tipo de negativa (exclusão de procedimento? Incompatibilidade com rol? Limite de sessões? Falta de autorização prévia?)
 2. Rol ANS (Lei 14.454/2022 — rol é exemplarivo, não taxativo [modelo conhecimento — verificar]; negativa com base em "não consta do rol" é débil).
 3. Lei 9.656/1998 — regime de planos de saúde; direitos do beneficiário.
-4. CDC — consumidor é categoria legal; cláusulas abusivas (Art. 51) são nulas. [model knowledge — verify]
+4. CDC — consumidor é categoria legal; cláusulas abusivas (Art. 51) são nulas. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm]
 5. Súmulas STJ sobre cobertura, rol, cancelamento, reajuste [modelo conhecimento — verificar].
 6. Urgência médica (saúde em risco? Tutela de urgência pode ser necessária?).
 7. Opções de resposta (resposta administrativa, tutela, reclamação à ANS, ação judicial).
@@ -42,15 +42,15 @@ This skill reads the denial letter and the policy, does the legal mapping, and s
 ## Premissa de jurisdição (Brasil)
 
 **Lei 9.656/1998 — Planos de Saúde:**
-- **Art. 10:** Plano deve oferecer cobertura básica de procedimentos. [model knowledge — verify]
+- **Art. 10:** Plano deve oferecer cobertura básica de procedimentos. [verified: https://www.planalto.gov.br/ccivil_03/leis/l9656.htm]
 - **Rol (Art. 12):** ANS mantém rol exemplarivo de procedimentos [modelo conhecimento — verificar].
 - **Exemplarivo não taxativo:** Negativa com base em "não consta do rol" é fraca. Rol é exemplo, não limite.
-- **Art. 35 C:** Cancelamento unilateral é proibido (salvo não-pagamento). [model knowledge — verify]
+- **Art. 35 C:** Cancelamento unilateral é proibido (salvo não-pagamento). [CORRECTION NEEDED: fonte diz que Art. 35-C trata da cobertura obrigatória de urgência/emergência; vedação de denúncia unilateral em planos individuais/familiares, salvo fraude ou inadimplência superior a 60 dias, está no Art. 13, parágrafo único, II, b — https://www.planalto.gov.br/ccivil_03/leis/l9656.htm]
 - **Reajuste:** Limitado a 2x ao ano [modelo conhecimento — verificar Lei 14.454/2022].
 
 **CDC (Lei 8.078/1990) — Aplicável a planos de saúde:**
 - Beneficiário é consumidor; operadora é fornecedora.
-- **Art. 51:** Cláusulas abusivas são nulas. [model knowledge — verify]
+- **Art. 51:** Cláusulas abusivas são nulas. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm]
 
 **Súmulas STJ [modelo conhecimento — verificar]:**
 - "Cobertura de procedimento ainda que não listado em rol se prescrito por médico contratado e essencial para saúde."
@@ -91,7 +91,7 @@ Se disponível, ler:
 
 2. **"Exclusão contratual."**
    - **Força:** Se exclusão é específica e em letras claras, é mais defensável.
-   - **Fraqueza sob CDC:** Cláusula abusiva (Art. 51) é nula mesmo se contrato diz. [model knowledge — verify]
+   - **Fraqueza sob CDC:** Cláusula abusiva (Art. 51) é nula mesmo se contrato diz. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm]
 
 3. **"Limite de sessões atingido."**
    - **Força:** Se contrato especifica.
