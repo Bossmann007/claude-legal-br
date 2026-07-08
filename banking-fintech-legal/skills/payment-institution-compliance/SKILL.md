@@ -27,8 +27,8 @@ It runs against your playbook positions from `~/.claude/plugins/config/claude-fo
 Lei das Instituições de Pagamento (Lei 12.865/2013) governs payment institutions and payment arrangements in Brazil. Regulated by Banco Central do Brasil (BCB). Key statutes and resolutions `[verified: https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Lei/l12865.htm]`:
 
 - **Lei 12.865/2013** — defines Instituição de Pagamento and Arranjo de Pagamento in Art. 6º; Art. 7º sets principles for payment arrangements and institutions. `[verified: https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Lei/l12865.htm]`
-- **Resolução BCB 4.658/2018** (and updates) — governance and operational requirements for Instituições de Pagamento `[unverified: not found in primary source]`
-- **Resolução BCB 32/2020** — Open Finance requirements for participant institutions `[unverified: not found in primary source]`
+- **Resolução CMN 4.658/2018** (and updates) — política de segurança cibernética e requisitos para contratação de processamento/armazenamento de dados e computação em nuvem, observada pelas instituições autorizadas a funcionar pelo BCB (é resolução do CMN, não "Resolução BCB") `[verified: https://normativos.bcb.gov.br/Lists/Normativos/Attachments/50581/Res_4658_v1_O.pdf]`
+- **Open Finance** — o marco de implementação é a **Resolução Conjunta CMN/BCB nº 1/2020**; a **Resolução BCB nº 32/2020** trata da estrutura responsável pela governança do processo de implementação `[verified: https://normativos.bcb.gov.br/Lists/Normativos/Attachments/51028/Res_Conj_0001_v4_P.pdf]`
 - **Pix Resolution** — BCB rules for Pix participants, settlement on D+0 `[unverified: not found in primary source]`
 
 ---

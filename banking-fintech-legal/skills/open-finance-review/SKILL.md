@@ -30,7 +30,7 @@ The consent model is **critical**: Open Finance requires affirmative, revocable 
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-- **Resolução BCB 32/2020** (Diretrizes de Implementação do Programa de Segurança Financeira do Banco Central do Brasil) and amendments establish the Open Finance framework `[unverified: not found in primary source]`
+- **Resolução Conjunta CMN/BCB nº 1/2020** dispõe sobre a implementação do Open Finance por instituições financeiras, de pagamento e demais autorizadas pelo BCB; a **Resolução BCB nº 32/2020** trata da estrutura responsável pela governança do processo de implementação (não é um "Programa de Segurança Financeira") `[verified: https://normativos.bcb.gov.br/Lists/Normativos/Attachments/51028/Res_Conj_0001_v4_P.pdf]`
 - **Lei 13.709/2018 (LGPD)** — Lei Geral de Proteção de Dados — governs personal data sharing; LGPD rights (acesso, portabilidade, retificação) interplay with Open Finance disclosure `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]`
 - **Banco Central guidance documents** (BCB.gov.br/openbanking) elaborate on phased implementation timeline and technical standards `[unverified: not found in primary source]`
 
