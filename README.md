@@ -59,11 +59,13 @@ Depois de instalar, cada plugin roda genérico de cara; rode o `cold-start-inter
 
 ---
 
-## Os plugins (16)
+## Os plugins (16 + base)
 
 **Áreas de prática** — `litigation-legal` · `commercial-legal` · `employment-legal` · `privacy-legal` · `corporate-legal` · `ip-legal` · `product-legal` · `regulatory-legal` · `ai-governance-legal` · `law-student` · `legal-clinic` · `legal-builder-hub`
 
 **Originais BR** (não existem no upstream) — `banking-fintech-legal` (BCB/Pix/Open Finance/cripto Lei 14.478) · `health-medical-legal` (clínica-LGPD/erro médico/operadoras ANS) · `digital-ecommerce-legal` (Decreto 7.962/Marco Civil/CDC digital) · `anti-injection` (defesa transversal)
+
+**Plugin raiz/base** — `legal-br` (`.claude-plugin/plugin.json`, Anthropic) carrega os 9 comandos core em `skills/`: `brief`, `compliance-check`, `legal-response`, `legal-risk-assessment`, `meeting-briefing`, `review-contract`, `signature-request`, `triage-nda`, `vendor-check`.
 
 Plus `managed-agent-cookbooks/` (subagentes orquestrados: docket-watcher, reg-monitor, banca-simulada) e `external_plugins/cocounsel-legal` (Thomson Reuters, terceiro — fora de escopo de adaptação).
 
