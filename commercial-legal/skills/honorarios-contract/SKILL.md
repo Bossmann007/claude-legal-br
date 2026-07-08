@@ -36,7 +36,7 @@ A fee agreement is where client expectations and lawyer obligations meet. It des
 
 ## Premissa de jurisdição (Brasil)
 
-Honorários advocatícios no Brasil são regidos pelo Estatuto da Ordem dos Advogados do Brasil (Lei 8.906/1994) — especialmente Art. 23, que confirma que honorários incluídos na condenação pertencem ao advogado. O Art. 20 do Estatuto trata da jornada do advogado empregado, não de forma/conteúdo obrigatório de contrato de honorários. O Código de Ética e Disciplina da OAB (Res. CFOAB 170/2015, com emendas) não foi confirmado em fonte whitelist para esta skill. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm] [unverified: not found in primary source]. Tabela de honorários de cada seccional da OAB é um piso orientativo, não teto — advocate pode cobrar acima da tabela, mas abaixo é censurável. Sucumbência decorre de sentença (Art. 85 CPC) e é direito do advogado, não sujeito a acordo de renúncia antecipada.
+Honorários advocatícios no Brasil são regidos pelo Estatuto da Ordem dos Advogados do Brasil (Lei 8.906/1994) — especialmente Art. 23, que confirma que honorários incluídos na condenação pertencem ao advogado. O Art. 20 do Estatuto trata da jornada do advogado empregado, não de forma/conteúdo obrigatório de contrato de honorários. O Código de Ética e Disciplina da OAB (Res. CFOAB 170/2015, com emendas) também disciplina honorários, incluindo tabela mínima seccional e quota litis. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm; https://www.oab.org.br/publicacoes/AbrirPDF?LivroId=0000004085]. Tabela de honorários de cada seccional da OAB é um piso orientativo, não teto — advocate pode cobrar acima da tabela, mas abaixo é censurável. Sucumbência decorre de sentença (Art. 85 CPC) e é direito do advogado, não sujeito a acordo de renúncia antecipada.
 
 O Art. 422 CC exige que contratantes guardem probidade e boa-fé na conclusão e execução do contrato; ele não menciona reajuste por inflação ou preservação do valor real da prestação. [verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]
 
@@ -66,7 +66,7 @@ Antes de draftar, identifique qual(is) das hipóteses legais se aplicam:
 
 3. **Honorários por êxito.** O advogado cobra uma porcentagem do valor obtido (litígio vencido, negociação bem-sucedida, transação). Hipótese legítima quando há risco compartilhado — cliente paga menos se perde, advogado recebe contingency. Deve ser EXPLÍCITO no contrato o que constitui "êxito" (vencer a demanda? Obter um acordo? Que valor mínimo?). Combinada com pró-labore é comum — tabela + porcentagem do resultado.
 
-4. **Quota litis.** O advogado recebe uma COTA (fração) do valor obtido, SEM cobrar adiantado ou honorários contratuais. Extremamente restrito: proibido em maioria dos casos sob Código de Ética OAB, permitido APENAS quando: (a) cliente é economicamente hipossuficiente; (b) não há outra forma viável de acesso à justiça; (c) risco é substancial para o advogado. Limite ético: quota litis nunca pode exceder os honorários de sucumbência ou os honorários contratuais somados à vantagem econômica obtida para o cliente (Art. 32 CED OAB) [unverified: not found in primary source]. Praticamente nenhum caso contemporâneo enquadra-se — é de última ratio. **SE o cliente menciona quota litis, PARE, flagge como consequential-action, e escalate.**
+4. **Quota litis.** O advogado recebe uma COTA (fração) do valor obtido, SEM cobrar adiantado ou honorários contratuais. Extremamente restrito: sob o Código de Ética OAB vigente, quota litis deve ser representada por pecúnia e, somada aos honorários de sucumbência, não pode superar as vantagens advindas em favor do cliente (Art. 50 CED OAB). A participação em bens particulares do cliente só é admitida em caráter excepcional, quando o cliente comprovadamente não tiver condições pecuniárias e a forma for ajustada em instrumento contratual. [verified: https://www.oab.org.br/publicacoes/AbrirPDF?LivroId=0000004085]. **SE o cliente menciona quota litis, PARE, flagge como consequential-action, e escalate.**
 
 ---
 
@@ -109,7 +109,7 @@ Antes de draftar, converse com o cliente / responsável pela relação sobre:
 
 ## Step 2: Verificar conformidade ética — tabela OAB como piso
 
-Pesquise a tabela de honorários da seccional OAB relevante (ex.: OAB/SP, OAB/RJ, OAB/MG). [unverified: not found in primary source] A tabela é UM PISO, não um teto — advogado pode cobrar acima. Cobrar abaixo é falta ética — é "dumping" de honorários, prejudicial à profissão.
+Pesquise a tabela de honorários da seccional OAB relevante (ex.: OAB/SP, OAB/RJ, OAB/MG). O Código de Ética exige observar o valor mínimo da Tabela de Honorários do Conselho Seccional onde for realizado o serviço, sob pena de caracterizar aviltamento de honorários. [verified: https://www.oab.org.br/publicacoes/AbrirPDF?LivroId=0000004085] A tabela é UM PISO, não um teto — advogado pode cobrar acima. Cobrar abaixo é falta ética — é "dumping" de honorários, prejudicial à profissão.
 
 Se a estrutura proposta cai abaixo da tabela, sinalize: "A tabela OAB seccional para [tipo de trabalho] é [valor/faixa]. A estrutura proposta ([valor proposto]) cai abaixo da tabela. Isso pode ser censurável sob Código de Ética. Confirmar se há motivo especial (pro bono, cliente de longa data, caso piloto) — ou aumentar os honorários até o piso."
 
@@ -121,7 +121,7 @@ Se o cliente ou a relação mencionar quota litis:
 
 1. **PARE a redação do contrato.**
 2. **Flagge como consequential-action — requer aprovação de advogado.**
-3. **Pesquise** Art. 32-37 do Código de Ética OAB para confirmar se há hipótese aplicável (cliente hipossuficiente, sem alternativa viável, risco substancial). [unverified: not found in primary source]
+3. **Pesquise** Art. 50 do Código de Ética OAB para confirmar se há hipótese aplicável e os limites da quota litis. [verified: https://www.oab.org.br/publicacoes/AbrirPDF?LivroId=0000004085]
 4. **Se a hipótese se aplica:** redações alternativas de quota litis (fração máxima permitida, carve-outs de custas/perícias/sucumbência).
 5. **Se não se aplica:** decline and offer alternative (pró-labore + êxito combinados, ou sucumbência adicional sem pré-pagamento).
 
@@ -340,7 +340,7 @@ Segundo Provimento CFOAB 205/2021 `[verified: https://eticaedisciplina.oab.org.b
 > This is a legal contract that governs payment and the lawyer-client relationship. Have a licensed attorney review it before your client signs. Here's a brief for them:
 >
 > **Fee arrangement type:** [selected type — pró-labore / êxito / quota litis / combined]
-> **Key risk:** [If quota litis: "Quota litis is heavily restricted — verify it complies with Código de Ética OAB Art. 32-37"; if contingency: "Define 'success' explicitly or dispute will arise"; if below-table: "Verify it meets OAB tabela piso"]
+> **Key risk:** [If quota litis: "Quota litis is heavily restricted — verify it complies with Código de Ética OAB Art. 50"; if contingency: "Define 'success' explicitly or dispute will arise"; if below-table: "Verify it meets OAB tabela piso"]
 > **Negotiated terms:** [List any deviations from firm standard]
 > **Next step:** Have the attorney confirm this complies with professional ethics and your firm's risk tolerance before the client signs.
 
