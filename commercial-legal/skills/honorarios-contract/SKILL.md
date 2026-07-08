@@ -16,7 +16,7 @@ argument-hint: "[tipo de caso ou descrição da relação de mandato]"
 1. Load `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` → firm position on fee arrangements, escalation chain.
 2. Run the workflow below.
 3. Determinar a hipótese legal de honorários (sucumbência, êxito, pró-labore, tabela, porcentagem, combinada).
-4. Checar limites éticos: quota litis é **permitida, porém restrita** (CED-OAB art. 50 [model knowledge — verify]) — em regra apenas por escrito, honorários não podem ser superiores às vantagens do cliente, e são vedados o aviltamento e a assunção de despesas pelo advogado como condição. Não é "proibida na maioria dos casos"; é excepcional e regulada.
+4. Checar limites éticos: quota litis é **permitida, porém restrita** (CED-OAB art. 50 [unverified: not found in primary source]) — em regra apenas por escrito, honorários não podem ser superiores às vantagens do cliente, e são vedados o aviltamento e a assunção de despesas pelo advogado como condição. Não é "proibida na maioria dos casos"; é excepcional e regulada.
 5. Draftar cláusulas: estrutura, reajuste, hipótese de revogação/suspensão, confidencialidade, resolução de conflitos.
 6. Aplicar consequential-action gate antes de entregar rascunho.
 
@@ -36,9 +36,9 @@ A fee agreement is where client expectations and lawyer obligations meet. It des
 
 ## Premissa de jurisdição (Brasil)
 
-Honorários advocatícios no Brasil são regidos pelo Estatuto da Ordem dos Advogados do Brasil (Lei 8.906/1994) — especialmente Art. 20 (forma, conteúdo obrigatório) e Art. 23 (sucumbência, honorários contratuais e por êxito). O Código de Ética e Disciplina da OAB (Res. CFOAB 170/2015, com emendas) fixa limites éticos: quota litis é permitida apenas em circunstâncias excecionais, sob condições (Art. 32-37 CED OAB) [model knowledge — verify]. Tabela de honorários de cada seccional da OAB é um piso orientativo, não teto — advocate pode cobrar acima da tabela, mas abaixo é censurável. Sucumbência decorre de sentença (Art. 85 CPC) e é direito do advogado, não sujeito a acordo de renúncia antecipada.
+Honorários advocatícios no Brasil são regidos pelo Estatuto da Ordem dos Advogados do Brasil (Lei 8.906/1994) — especialmente Art. 20 (forma, conteúdo obrigatório) e Art. 23 (sucumbência, honorários contratuais e por êxito). O Código de Ética e Disciplina da OAB (Res. CFOAB 170/2015, com emendas) fixa limites éticos: quota litis é permitida apenas em circunstâncias excecionais, sob condições (Art. 32-37 CED OAB) [CORRECTION NEEDED: fonte primária confirma Estatuto OAB Art. 23 sobre honorários incluídos na condenação pertencentes ao advogado, mas Art. 20 trata da jornada do advogado empregado, não forma/conteúdo obrigatório; CED OAB não foi confirmado em fonte whitelist — https://www.planalto.gov.br/ccivil_03/leis/l8906.htm]. Tabela de honorários de cada seccional da OAB é um piso orientativo, não teto — advocate pode cobrar acima da tabela, mas abaixo é censurável. Sucumbência decorre de sentença (Art. 85 CPC) e é direito do advogado, não sujeito a acordo de renúncia antecipada.
 
-Reajuste por inflação é válido (Art. 422 CC — boa-fé contratual + preservação do valor real da prestação). [model knowledge — verify]
+Reajuste por inflação é válido (Art. 422 CC — boa-fé contratual + preservação do valor real da prestação). [CORRECTION NEEDED: fonte diz que contratantes devem guardar probidade e boa-fé na conclusão e execução do contrato; não menciona reajuste por inflação ou preservação do valor real da prestação no Art. 422 — https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]
 
 ---
 
@@ -60,13 +60,13 @@ Se o CLAUDE.md não tiver posição sobre fee structure, pergunte:
 
 Antes de draftar, identifique qual(is) das hipóteses legais se aplicam:
 
-1. **Sucumbência.** O advogado tem direito a honorários de sucumbência fixados em sentença (Art. 85 CPC, Lei 13.327/2016 estabeleceu piso de 10% do valor da condenação, limitado a 20% em regra). Sucumbência é um DIREITO, não uma renúncia — não pode ser contratualmente removida. Se a relação inclui litigação, o contrato de honorários deve EXPLICITAR que sucumbência é adicional aos honorários contratuais. Se o cliente disser "quero contrato fechado, não quero pagar sucumbência além," PARE e flagge: essa cláusula é potencialmente nula sob Estatuto OAB. Escalate conforme necessário. [model knowledge — verify]
+1. **Sucumbência.** O advogado tem direito a honorários de sucumbência fixados em sentença (Art. 85 CPC, Lei 13.327/2016 estabeleceu piso de 10% do valor da condenação, limitado a 20% em regra). Sucumbência é um DIREITO, não uma renúncia — não pode ser contratualmente removida. Se a relação inclui litigação, o contrato de honorários deve EXPLICITAR que sucumbência é adicional aos honorários contratuais. Se o cliente disser "quero contrato fechado, não quero pagar sucumbência além," PARE e flagge: essa cláusula é potencialmente nula sob Estatuto OAB. Escalate conforme necessário. [CORRECTION NEEDED: fonte confirma CPC Art. 85, §2º fixa honorários entre 10% e 20%; Estatuto OAB Art. 23 confirma direito autônomo do advogado aos honorários de sucumbência e Art. 24, §3º confirma nulidade de disposição que retire esse direito; a faixa 10-20% não vem da Lei 13.327/2016 — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm; https://www.planalto.gov.br/ccivil_03/leis/l8906.htm]
 
 2. **Honorários contratuais puros** (pró-labore, tabela OAB, porcentagem fixa). Cliente paga advogado pela prestação de serviços, período definido (hora, tarifa, mês), independente do resultado. Estrutura mais comum em consultoria, contencioso de valor baixo, revisional.
 
 3. **Honorários por êxito.** O advogado cobra uma porcentagem do valor obtido (litígio vencido, negociação bem-sucedida, transação). Hipótese legítima quando há risco compartilhado — cliente paga menos se perde, advogado recebe contingency. Deve ser EXPLÍCITO no contrato o que constitui "êxito" (vencer a demanda? Obter um acordo? Que valor mínimo?). Combinada com pró-labore é comum — tabela + porcentagem do resultado.
 
-4. **Quota litis.** O advogado recebe uma COTA (fração) do valor obtido, SEM cobrar adiantado ou honorários contratuais. Extremamente restrito: proibido em maioria dos casos sob Código de Ética OAB, permitido APENAS quando: (a) cliente é economicamente hipossuficiente; (b) não há outra forma viável de acesso à justiça; (c) risco é substancial para o advogado. Limite ético: quota litis nunca pode exceder os honorários de sucumbência ou os honorários contratuais somados à vantagem econômica obtida para o cliente (Art. 32 CED OAB) [model knowledge — verify]. Praticamente nenhum caso contemporâneo enquadra-se — é de última ratio. **SE o cliente menciona quota litis, PARE, flagge como consequential-action, e escalate.**
+4. **Quota litis.** O advogado recebe uma COTA (fração) do valor obtido, SEM cobrar adiantado ou honorários contratuais. Extremamente restrito: proibido em maioria dos casos sob Código de Ética OAB, permitido APENAS quando: (a) cliente é economicamente hipossuficiente; (b) não há outra forma viável de acesso à justiça; (c) risco é substancial para o advogado. Limite ético: quota litis nunca pode exceder os honorários de sucumbência ou os honorários contratuais somados à vantagem econômica obtida para o cliente (Art. 32 CED OAB) [unverified: not found in primary source]. Praticamente nenhum caso contemporâneo enquadra-se — é de última ratio. **SE o cliente menciona quota litis, PARE, flagge como consequential-action, e escalate.**
 
 ---
 
@@ -109,7 +109,7 @@ Antes de draftar, converse com o cliente / responsável pela relação sobre:
 
 ## Step 2: Verificar conformidade ética — tabela OAB como piso
 
-Pesquise a tabela de honorários da seccional OAB relevante (ex.: OAB/SP, OAB/RJ, OAB/MG). [model knowledge — verify — a tabela varia por seccional e é atualizada anualmente.] A tabela é UM PISO, não um teto — advogado pode cobrar acima. Cobrar abaixo é falta ética — é "dumping" de honorários, prejudicial à profissão.
+Pesquise a tabela de honorários da seccional OAB relevante (ex.: OAB/SP, OAB/RJ, OAB/MG). [unverified: not found in primary source] A tabela é UM PISO, não um teto — advogado pode cobrar acima. Cobrar abaixo é falta ética — é "dumping" de honorários, prejudicial à profissão.
 
 Se a estrutura proposta cai abaixo da tabela, sinalize: "A tabela OAB seccional para [tipo de trabalho] é [valor/faixa]. A estrutura proposta ([valor proposto]) cai abaixo da tabela. Isso pode ser censurável sob Código de Ética. Confirmar se há motivo especial (pro bono, cliente de longa data, caso piloto) — ou aumentar os honorários até o piso."
 
@@ -121,7 +121,7 @@ Se o cliente ou a relação mencionar quota litis:
 
 1. **PARE a redação do contrato.**
 2. **Flagge como consequential-action — requer aprovação de advogado.**
-3. **Pesquise** Art. 32-37 do Código de Ética OAB para confirmar se há hipótese aplicável (cliente hipossuficiente, sem alternativa viável, risco substancial). [model knowledge — verify — os critérios são interpretativos; jurisprudência CFOAB é escassa.]
+3. **Pesquise** Art. 32-37 do Código de Ética OAB para confirmar se há hipótese aplicável (cliente hipossuficiente, sem alternativa viável, risco substancial). [unverified: not found in primary source]
 4. **Se a hipótese se aplica:** redações alternativas de quota litis (fração máxima permitida, carve-outs de custas/perícias/sucumbência).
 5. **Se não se aplica:** decline and offer alternative (pró-labore + êxito combinados, ou sucumbência adicional sem pré-pagamento).
 
@@ -317,7 +317,7 @@ _________________________     _______________________
 
 ## Nota ética: captação indevida é vedada
 
-Segundo Provimento CFOAB 205/2021 [model knowledge — verify], publicidade de serviços jurídicos é permitida (derrogando proibição histórica), mas **captação indevida** é proibida — marketing agressivo, coação, promessas de resultado garantido, ou honorários contingentes não-explícitos podem caracterizar falta ética. O contrato de honorários, se resultante de captação indevida, é eticamente comprometido.
+Segundo Provimento CFOAB 205/2021 [unverified: not found in primary source], publicidade de serviços jurídicos é permitida (derrogando proibição histórica), mas **captação indevida** é proibida — marketing agressivo, coação, promessas de resultado garantido, ou honorários contingentes não-explícitos podem caracterizar falta ética. O contrato de honorários, se resultante de captação indevida, é eticamente comprometido.
 
 **Consequential-action gate:** se há indício de que o cliente foi captado de forma agressiva ou coagido a assinar, flagge o contrato antes de entregar.
 

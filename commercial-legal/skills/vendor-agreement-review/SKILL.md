@@ -173,10 +173,10 @@ When the playbook position conflicts with the contract's governing-law enforceab
 
 **Divergências no Brasil:**
 - **Não-concorrência/não-solicitação:** válida se limitada em tempo e território (Art. 5º XIII CF, Art. 421 CC) — sem limite, sinalizar `[jurisdiction — verify]`.
-- **Exclusão de responsabilidade:** nula se a relação for de consumo (Art. 51, I CDC); entre empresas, válida dentro dos limites de boa-fé objetiva (Art. 422 CC) — não afasta dolo ou culpa grave. [model knowledge — verify]
+- **Exclusão de responsabilidade:** nula se a relação for de consumo (Art. 51, I CDC); entre empresas, válida dentro dos limites de boa-fé objetiva (Art. 422 CC) — não afasta dolo ou culpa grave. [CORRECTION NEEDED: fonte confirma CDC Art. 51, I e CC Art. 422 sobre boa-fé, mas esses dispositivos não dizem expressamente que a limitação entre empresas é válida nem a ressalva de dolo ou culpa grave — https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm; https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]
 - **Indenização/regresso:** contrato pode prever indenização entre as partes, mas não pode blindar responsabilidade por dolo (Art. 404 CC c/c Art. 51 CDC quando consumo).
 - **Confidencialidade "perpétua":** Judiciário tende a mitigar prazo indefinido sem justificativa técnica (função social do contrato, Art. 421 CC).
-- **Multa penal/cláusula penal:** limitada ao valor da obrigação principal (Art. 412 CC) — multa desproporcional é sinalizada RED. [model knowledge — verify]
+- **Multa penal/cláusula penal:** limitada ao valor da obrigação principal (Art. 412 CC) — multa desproporcional é sinalizada RED. [verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]
 
 ### Step 4: Favorable terms and gaps
 
@@ -347,4 +347,3 @@ Do not proceed past this gate without an explicit yes.
 ## Close with the next-steps decision tree
 
 End with the next-steps decision tree per CLAUDE.md `## Outputs`. Customize the options to what this skill just produced — the five default branches (draft the X, escalate, get more facts, watch and wait, something else) are a starting point, not a lock-in. The tree is the output; the lawyer picks.
-
