@@ -36,7 +36,7 @@ claude mcp add djen -- node /caminho/para/connectors/djen/server.mjs
 
 ## Prazo (importante)
 
-A **data de disponibilização** (`dataDisponibilizacao`) inicia a contagem do prazo. A intimação considera-se realizada no **dia útil seguinte** à disponibilização, e o prazo começa a correr no dia útil seguinte a esse (Lei 11.419/2006, art. 4º §§3º-4º `[model knowledge — verify]`). Combine com `/litigation-legal:prazos-cpc` para calcular a data-limite em dias úteis (CPC art. 219).
+A **data de disponibilização** (`dataDisponibilizacao`) inicia a contagem do prazo. A intimação considera-se realizada no **dia útil seguinte** à disponibilização, e o prazo começa a correr no dia útil seguinte a esse (Lei 11.419/2006, art. 4º §§3º-4º `[verified: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11419.htm]`). Combine com `/litigation-legal:prazos-cpc` para calcular a data-limite em dias úteis (CPC art. 219).
 
 ## Segurança e limites
 
