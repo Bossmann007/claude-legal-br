@@ -30,7 +30,8 @@ PROVENANCE = re.compile(
     r"modelo conhecimento — verificar|review|"
     r"JusBrasil|Escavador|PJe|INPI|ANPD|Planalto|site do regulador|"
     r"user provided|fornecido pelo usuário|statute|premise flagged|jurisdiction|"
-    r"busca web — verificar"
+    r"busca web — verificar|"
+    r"verified|unverified|CORRECTION NEEDED"
     r")",
     re.IGNORECASE,
 )
