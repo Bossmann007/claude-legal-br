@@ -45,7 +45,7 @@ This file is the house-level frame every analysis in this plugin is triaged agai
 - **Resoluções CFM sobre prontuário eletrônico e guarda** — verificar Res. CFM atual sobre prazo mínimo de guarda de prontuário [unverified: not found in primary source].
 - **Lei 9.656/1998** — planos de saúde (se você advoga contra operadoras).
 - **CDC (Lei 8.078/1990)** — consumidor é categoria legal para pacientes/segurados contra provedores/operadoras.
-- **ANS (Agência Nacional de Saúde)** — regulador de operadoras, rol de procedimentos (Lei 14.454/2022 sobre caráter exemplificativo [CORRECTION NEEDED: fonte não usa "caráter exemplificativo"; diz que o rol é "referência básica" e que, em caso de tratamento/procedimento fora do rol, a cobertura deverá ser autorizada se atendidas as condições do §13 — https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14454.htm]).
+- **ANS (Agência Nacional de Saúde)** — regulador de operadoras, rol de procedimentos (Lei 14.454/2022: o rol é "referência básica"; procedimento fora do rol deve ser coberto se atendidas as condições do §13 — não usar "caráter exemplificativo") [verified: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14454.htm].
 - **Código Civil (Lei 10.406/2002)** — obrigação de meio vs. resultado (Arts. 389-405), culpa, responsabilidade civil (Arts. 186, 927, 951).
 - **Súmulas STJ** — consenso jurisprudencial sobre erro médico, cobertura, cancelamento de planos [unverified: not found in primary source].
 

@@ -41,7 +41,7 @@ Este skill estrutura essa conversa e escreve a output no formato desta equipe �
 
 ## Jurisdição e regime
 
-**Premissa:** LGPD (Lei 13.709/2018, Art. 11 — dados sensíveis). Dados de saúde são sempre sensíveis. Processamento exige **consentimento específico e destacado** (Art. 11, I) OU uma das exceções taxativas do Art. 11, II-III (vida/saúde do titular, profissional de saúde no exercício de profissão). [CORRECTION NEEDED: fonte define dado referente à saúde como sensível no Art. 5º, II; Art. 11, I exige consentimento específico e destacado, e Art. 11, II lista exceções, incluindo proteção da vida/incolumidade e tutela da saúde por profissionais/serviços/autoridade de saúde; não há Art. 11, III — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
+**Premissa:** LGPD (Lei 13.709/2018). Dado referente à saúde é dado pessoal **sensível** (Art. 5º, II); seu tratamento é regido pelo Art. 11. Exige **consentimento específico e destacado** (Art. 11, I) OU uma das hipóteses do Art. 11, II — entre elas, proteção da vida ou da incolumidade física do titular/terceiro e tutela da saúde por profissionais, serviços ou autoridade sanitária. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 
 Sigilo médico é independente da LGPD: Código de Ética Médica (Res. CFM 2.217/2018, arts. 73-79 `[unverified: not found in primary source]`) + violação de segredo profissional (Código Penal art. 154 `[verified: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm]`) tornam a divulgação de informação médica ilegal sem consentimento ou justa causa, mesmo que a LGPD permitisse o tratamento.
 
@@ -82,7 +82,7 @@ Sob LGPD, um RIPD (análise de impacto) é mandatório quando:
 - Qualquer atividade de **alto risco às liberdades civis e direitos fundamentais** (Art. 38, que autoriza a ANPD exigir RIPD).
 
 Para saúde, o padrão é **sempre** fazer um Plano porque:
-1. Dados são sensíveis (Art. 11). [CORRECTION NEEDED: fonte define dado referente à saúde como dado pessoal sensível no Art. 5º, II; Art. 11 regula hipóteses de tratamento de dados sensíveis — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
+1. Dado de saúde é dado pessoal sensível (Art. 5º, II); o tratamento é regido pelo Art. 11. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 2. Vazamento causa dano grave (discriminação, exposição, re-identificação).
 3. Não-conformidade é risco regulatório (ANPD, CFM, ANS).
 
