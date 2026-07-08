@@ -11,26 +11,32 @@ https://github.com/user-attachments/assets/51394f0a-5277-4fe2-b81c-5c5e9ac876b5
 
 ## Install in Claude Code
 
-1. **Open Claude Code** (in your terminal) or **Claude Cowork** (the desktop app). Not sure which you have? If you have a terminal window open with Claude in it, that's Claude Code.
+1. **Baixe este repositório.** Na página do GitHub, clique no botão verde **`Code` → `Download ZIP`**. Salve na Área de Trabalho e **descompacte** (dois cliques no arquivo `.zip`). Você terá uma pasta `claude-legal-br`.
 
-2. **Add the marketplace.** In Claude Code, type `/plugin marketplace add ` (with a space at the end), then **drag the unzipped `claude-legal-br` folder onto the terminal window** — it'll fill in the path. Then press Enter.
+   *(Quem usa git: `git clone https://github.com/Bossmann007/claude-legal-br.git`.)*
+
+   **Pré-requisito para os conectores CNJ (DataJud/DJEN):** o `/bom-dia` e a consulta a processos rodam em Node. Se `node --version` no terminal der erro, instale o [Node.js LTS](https://nodejs.org) (instalador padrão, next-next-finish) antes de usar esses comandos. Os demais plugins funcionam sem Node.
+
+2. **Open Claude Code** (in your terminal) or **Claude Cowork** (the desktop app). Not sure which you have? If you have a terminal window open with Claude in it, that's Claude Code.
+
+3. **Add the marketplace.** In Claude Code, type `/plugin marketplace add ` (with a space at the end), then **drag the unzipped `claude-legal-br` folder onto the terminal window** — it'll fill in the path. Then press Enter.
 
    (Or type the full path: `/plugin marketplace add /Users/you/Desktop/claude-legal-br`)
 
-3. **Install your plugin.** Pick the one that matches your work from the table below, then:
+4. **Install your plugin.** Pick the one that matches your work from the table below, then:
    ```
    /plugin install privacy-legal@claude-legal-br
    ```
 
-4. **⚠️ Restart Claude Code.** Close and reopen. This step is not optional — the plugin isn't live until you restart.
+5. **⚠️ Restart Claude Code.** Close and reopen. This step is not optional — the plugin isn't live until you restart.
 
-5. **Run setup.** Takes 2 minutes (quick start) or 10-15 minutes (full).
+6. **Run setup.** Takes 2 minutes (quick start) or 10-15 minutes (full).
    ```
    /privacy-legal:cold-start-interview
    ```
    *(Opcional — cada skill já roda genérico de cara; o setup só calibra ao seu perfil.)*
 
-6. **Connect a research tool.** Citations are flagged unverified without one. In Cowork: Settings → Connectors → add JusBrasil/Escavador/PJe (or INPI for IP matters). In Claude Code: the plugin already lists the research MCP in its config; you'll be prompted to authorize it the first time a skill needs it.
+7. **Connect a research tool.** Citations are flagged unverified without one. In Cowork: Settings → Connectors → add JusBrasil/Escavador/PJe (or INPI for IP matters). In Claude Code: the plugin already lists the research MCP in its config; you'll be prompted to authorize it the first time a skill needs it.
 
 ## Install user-scoped, not project-scoped
 
@@ -76,8 +82,9 @@ Each plugin learns your playbook through a setup interview, writes it to a pract
 
 ## Stuck?
 
-- **"Command not found"** after install → you forgot step 4. Restart Claude Code.
+- **"Command not found"** after install → you forgot step 5. Restart Claude Code.
 - **"Run setup first"** → run `/<plugin>:cold-start-interview` before any other command.
-- **Citations flagged `[verify]`** → connect a research tool (step 6). Without one, every cite is from training data, not a current database.
+- **`/bom-dia` ou consulta de processo falha / conector "não conecta"** → falta Node. Rode `node --version`; se der erro, instale o [Node.js LTS](https://nodejs.org) e reabra o Claude Code (passo 1).
+- **Citations flagged `[verify]`** → connect a research tool (step 7). Without one, every cite is from training data, not a current database.
 - **"I can't read [file]"** → most often this means the plugin is project-scoped and the file is outside the project folder. See "Install user-scoped, not project-scoped" above — reinstall user-scoped or move the file into the project folder.
 - **The plugin doesn't do X** → run `/legal-builder-hub:related-skills-surfacer` to find a better match, or check the plugin's README for "What this plugin does not do."
