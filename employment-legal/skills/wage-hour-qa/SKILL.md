@@ -70,7 +70,7 @@ para verificar vigência — especialmente para:
 - Enquadramento no art. 62 CLT (gestão/confiança vs. atividade externa
   incompatível) e o benchmark de gratificação de função (~40% do salário-base,
   entendimento consolidado — não literal na lei).
-- Prazo de pagamento de verbas rescisórias (CLT art. 477 §6º) e penalidade
+- Prazo de pagamento de verbas rescisórias (CLT art. 477 §6º) e penalidade [model knowledge — verify]
   por atraso (§8º).
 - Direito a intervalo intrajornada/interjornada e consequência de supressão
   (CLT art. 71, Súmula 437 TST).

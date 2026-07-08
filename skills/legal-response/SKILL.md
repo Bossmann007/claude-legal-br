@@ -117,7 +117,7 @@ Pergunte ao usuário os detalhes necessários para customizar a resposta:
 - Tipo de solicitação (acesso, eliminação, correção, portabilidade, revogação de consentimento)
 - Quais dados estão envolvidos
 - Base legal aplicável (LGPD, art. 7º/11)
-- Prazo de resposta (art. 19, §3º — até 15 dias, prorrogável)
+- Prazo de resposta (art. 19, §3º — até 15 dias, prorrogável) [model knowledge — verify]
 
 **Preservação de Provas:**
 - Nome e número de referência da questão

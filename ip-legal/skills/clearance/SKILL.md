@@ -172,19 +172,19 @@ com clareza e sinalize. Não racionalize um problema evidente.
 
 | Óbice | O que significa | Sinalize quando |
 |---|---|---|
-| **Genérico** | O termo É a categoria (ex.: "Sabão" para sabão) — Lei 9.279/1996 art. 124, VI | A marca nomeia o que a coisa é |
+| **Genérico** | O termo É a categoria (ex.: "Sabão" para sabão) — Lei 9.279/1996 art. 124, VI | A marca nomeia o que a coisa é | [model knowledge — verify]
 | **Descritivo** | Descreve diretamente característica, função, qualidade ou ingrediente — art. 124, VI | Consumidor lê a marca e sabe o que o produto faz sem esforço imaginativo |
 | **Enganoso** | Falsa indicação de procedência, natureza, qualidade ou utilidade — art. 124, X | Marca sugere qualidade que o produto não tem e essa qualidade importaria |
 | **Indicação geográfica** | Reprodução/imitação de indicação geográfica ou nome geográfico que induza falsa procedência — art. 124, IX e X | Marca = local + genérico; ou local + produto onde consumidor assumiria origem |
 | **Sobrenome/nome civil de terceiro** | Reprodução de nome civil ou pseudônimo de terceiro sem autorização — art. 124, XV | Marca reproduz nome/assinatura/imagem de terceiro identificável |
 | **Reprodução/imitação de símbolo oficial** | Brasão, armas, medalha, bandeira, emblema, monumento oficial — art. 124, I | Marca contém elemento oficial protegido |
-| **Sinal contrário à moral e aos bons costumes** | Ofensivo, atenta contra liberdade de consciência, crença, culto religioso ou ideia de defesa nacional — art. 124, III | Marca é ofensiva ou atenta contra esses valores |
+| **Sinal contrário à moral e aos bons costumes** | Ofensivo, atenta contra liberdade de consciência, crença, culto religioso ou ideia de defesa nacional — art. 124, III | Marca é ofensiva ou atenta contra esses valores | [model knowledge — verify]
 | **Marca de alto renome de terceiro** | Proteção especial em todos os ramos de atividade — art. 125 | Marca colide com marca reconhecidamente de alto renome, mesmo em classe distinta |
 | **Marca notoriamente conhecida de terceiro (CUP art. 6º bis)** | Proteção independente de registro no Brasil, no mesmo ramo de atividade | Marca colide com marca estrangeira notoriamente conhecida no mesmo ramo |
 | **Forma necessária/funcional (para marca tridimensional)** | Forma necessária, comum, vulgar, ou decorrente de função técnica — art. 124, XXI | Marca tridimensional — e a forma tem função técnica |
 
 Nota sobre marca de alto renome (art. 125) e marca notoriamente conhecida
-(art. 126, incorporando CUP art. 6º bis): são regimes distintos. A marca de
+(art. 126, incorporando CUP art. 6º bis): são regimes distintos. A marca de [model knowledge — verify]
 alto renome tem registro no Brasil e proteção estendida a todas as classes,
 reconhecida em processo específico perante o INPI. A marca notoriamente
 conhecida pode não ter registro no Brasil e ainda assim ter proteção no

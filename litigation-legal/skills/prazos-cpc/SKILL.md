@@ -44,7 +44,7 @@ Brazilian procedure uses **dias úteis** (business days Monday–Friday, excludi
 
 **CPC arts. 219–224** `[model knowledge — verify]` govern prazo calculation:
 
-- **Art. 219:** Prazos são contados em dias úteis (Monday–Friday).
+- **Art. 219:** Prazos são contados em dias úteis (Monday–Friday). [model knowledge — verify]
 - **Art. 220:** Recesso judiciário: 20 Dec–20 Jan. Any act served during that window has the prazo extended (a automatic extension kicks in when the court reopens). `[model knowledge — verify]`
 - **Art. 224:** Na contagem, exclui-se o dia do começo e inclui-se o do vencimento; o prazo só começa a correr no primeiro dia útil seguinte à publicação/intimação (art. 224, §§2º-3º). `[model knowledge — verify]`
 - **Art. 224 §1º:** Se o dia do começo ou o vencimento cair em dia não útil (feriado, fim de semana, dia sem expediente), prorroga-se para o próximo dia útil. `[model knowledge — verify]`

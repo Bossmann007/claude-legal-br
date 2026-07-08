@@ -31,7 +31,7 @@ argument-hint: "[opcional: área do escritório — administrativo, litigação,
 
 **This skill is for the firm itself, not a client.** It inverts the typical privacy-advice model: instead of a privacy-legal team advising a company-client on handling customer data, this skill helps the **law firm** audit what data it holds about clients, opposing parties, witnesses, and staff — and map the firm's own compliance obligations.
 
-O escritório é um CONTROLADOR de dados pessoais (Art. 5º, VI LGPD) — dados de cliente (nome, e-mail, telefone, CPF, endereço, informações sensíveis sobre litígios) são coletados e processados pelo escritório no exercício do mandato.
+O escritório é um CONTROLADOR de dados pessoais (Art. 5º, VI LGPD) — dados de cliente (nome, e-mail, telefone, CPF, endereço, informações sensíveis sobre litígios) são coletados e processados pelo escritório no exercício do mandato. [model knowledge — verify]
 
 Este skill NÃO substitui um DPA/encarregado — é um diagnóstico de entrada para alertar o sócio sobre o que precisa ser mapeado, regulado, e asegurado.
 
@@ -53,23 +53,23 @@ Objective: help the firm spot gaps so it can fix them before the ANPD (Autoridad
 
 ## Premissa de jurisdição (Brasil)
 
-A LGPD (Lei 13.709/2018) aplica-se a qualquer operação de tratamento de dados pessoais realizada por pessoa natural ou jurídica de direito privado ou público — inclui escritórios de advocacia (Art. 1º LGPD). Um escritório é um CONTROLADOR quando:
+A LGPD (Lei 13.709/2018) aplica-se a qualquer operação de tratamento de dados pessoais realizada por pessoa natural ou jurídica de direito privado ou público — inclui escritórios de advocacia (Art. 1º LGPD). Um escritório é um CONTROLADOR quando: [model knowledge — verify]
 
 - Determina as finalidades e meios do tratamento (Art. 5º, VI);
 - Coleta dados de cliente, partes, testemunhas, staff e os processa.
 
-Sigilo profissional do advogado (Art. 7º, XIX Estatuto OAB, Lei 8.906/1994) é uma **proteção contra divulgação involuntária**, não uma base legal de tratamento. O Estatuto diz: "é inviolável a correspondência profissional do advogado" — protege contra apreensão sem a presença de membro da OAB. Sigilo NÃO dispensa:
+Sigilo profissional do advogado (Art. 7º, XIX Estatuto OAB, Lei 8.906/1994) é uma **proteção contra divulgação involuntária**, não uma base legal de tratamento. O Estatuto diz: "é inviolável a correspondência profissional do advogado" — protege contra apreensão sem a presença de membro da OAB. Sigilo NÃO dispensa: [model knowledge — verify]
 
 - Uma base legal sob LGPD art. 7 (consentimento, obrigação legal, execução de contrato, legítimo interesse com teste de balanceamento, proteção de vida, tutela de saúde, pesquisa, proteção de crédito).
-- Medidas de segurança (Art. 46 LGPD) — sigilo profissional + criptografia em repouso é melhor que sigilo profissional sozinho.
+- Medidas de segurança (Art. 46 LGPD) — sigilo profissional + criptografia em repouso é melhor que sigilo profissional sozinho. [model knowledge — verify]
 - Direitos do titular (Art. 18 LGPD) — cliente pode pedir acesso, exclusão (certos casos), portabilidade.
 
 **Base legal típica do escritório:**
-- **Execução de contrato (mandato)** — dados do cliente são necessários para executar o contrato de prestação de serviços jurídicos (Art. 7º, V LGPD).
+- **Execução de contrato (mandato)** — dados do cliente são necessários para executar o contrato de prestação de serviços jurídicos (Art. 7º, V LGPD). [model knowledge — verify]
 - **Obrigação legal** — Estatuto OAB, CPC, Lei 13.140 (mediação) e outras exigem que advogado mantenha registros de cliente (Art. 7º, II LGPD).
 - **Legítimo interesse** — cobranças, contato para aviso de vencimento, análise de risco do cliente (se balanceado e documentado).
 
-**Para dados ALÉM do mandato** (ex.: newsletter, marketing, comunicações promocionais), **consentimento explícito é exigido** (Art. 7º, I LGPD) — e pode ser revogado a qualquer tempo.
+**Para dados ALÉM do mandato** (ex.: newsletter, marketing, comunicações promocionais), **consentimento explícito é exigido** (Art. 7º, I LGPD) — e pode ser revogado a qualquer tempo. [model knowledge — verify]
 
 **RIPD obrigatória (Art. 38 LGPD)?** Sim, quando:
 - Tratamento é fundado em legítimo interesse (exige teste de balanceamento documentado);
@@ -80,7 +80,7 @@ A RIPD de um escritório é rara mas recomendável quando: (a) guarda dados sens
 
 **Prazos de retenção:** Estatuto OAB Art. 1º exige que advogado guarde documentação do cliente "enquanto durar o relacionamento e após", mas não fixa prazo específico. Jurisprudência e Provimentos CFOAB citam **5 anos após fim do mandato** como praxe [model knowledge — verify — buscar Provimento CFOAB específico sobre guarda de autos]. CPC art. 204 autoriza condenação por destruição de documentos — destruição prematura é risco profissional. **LGPD exige que retenção respeite princípio de minimização: guardar por prazo legítimo, não indefinido.** Balanço: 5 anos é defensável sob ambas as normas.
 
-**Incidente de dados (Art. 48 LGPD):** Controlador deve comunicar à ANPD incidente que gere risco aos direitos fundamentais em "prazo razoável" — a jurisprudência e a Res. CD/ANPD nº 3/2024 interpretam como **sem demora, no máximo 72 horas da detecção** (análogo a GDPR). Deve também comunicar ao titular afetado, salvo risco mínimo confirmado. Aviso falso positivo é melhor que aviso tardio.
+**Incidente de dados (Art. 48 LGPD):** Controlador deve comunicar à ANPD incidente que gere risco aos direitos fundamentais em "prazo razoável" — a jurisprudência e a Res. CD/ANPD nº 3/2024 interpretam como **sem demora, no máximo 72 horas da detecção** (análogo a GDPR). Deve também comunicar ao titular afetado, salvo risco mínimo confirmado. Aviso falso positivo é melhor que aviso tardio. [model knowledge — verify]
 
 ---
 
@@ -140,7 +140,7 @@ Para CADA finalidade de tratamento, identificar qual é a base legal:
 |---|---|---|---|
 | Execução do mandato (servir o cliente) | Art. 7º, V (execução de contrato) | Sim (contrato de prestação) | N/A |
 | Cobranças e aviso de vencimento | Art. 7º, II ou V (obrigação legal / contrato) | Sim (contrato) | N/A |
-| Retenção para fins de guarda obrigatória (Estatuto OAB) | Art. 7º, II (obrigação legal) | Sim | N/A |
+| Retenção para fins de guarda obrigatória (Estatuto OAB) | Art. 7º, II (obrigação legal) | Sim | N/A | [model knowledge — verify]
 | Newsletter / marketing jurídico | Art. 7º, I (consentimento) | Quem deu consentimento? | N/A |
 | Análise de risco do cliente (ex.: possível lavagem de dinheiro) | Art. 7º, IX (legítimo interesse) | Recomendado documentar | SIM — teste de balanceamento necessário |
 
@@ -148,8 +148,8 @@ Para CADA finalidade de tratamento, identificar qual é a base legal:
 
 - **Estatuto OAB:** Guarda "enquanto durar o relacionamento e após" (vago).
 - **Jurisprudência OAB:** 5 anos após fim do mandato (recomendado, citado em Provimentos) [model knowledge — verify].
-- **LGPD Art. 15-16:** Direito de exclusão — dados podem ser eliminados se fins foram atendidos, exceto se há obrigação legal de guarda.
-- **CPC Art. 204 e correlatos:** Guarda de processos é obrigação — destruição prematura gera responsabilidade.
+- **LGPD Art. 15-16:** Direito de exclusão — dados podem ser eliminados se fins foram atendidos, exceto se há obrigação legal de guarda. [model knowledge — verify]
+- **CPC Art. 204 e correlatos:** Guarda de processos é obrigação — destruição prematura gera responsabilidade. [model knowledge — verify]
 
 **Política do escritório:**
 - Definir: guardar 5 anos após fim do mandato (padrão defensável)?
@@ -242,7 +242,7 @@ Produza tabela de retenção final:
 | Backups de dados | Recuperação de desastres | N/A (não é "retenção" mas cópia de segurança) | Máximo 6 meses além da data de eliminação prevista | Destruir backups após prazo |
 ```
 
-**Nota importante:** Após expiração do prazo, eliminação é uma **obrigação LGPD** (Art. 15-16) — manter dados além do necessário viola princípio de minimização. Documentar processo de eliminação (trituração de papel, apagamento seguro de dados digitais com certificado).
+**Nota importante:** Após expiração do prazo, eliminação é uma **obrigação LGPD** (Art. 15-16) — manter dados além do necessário viola princípio de minimização. Documentar processo de eliminação (trituração de papel, apagamento seguro de dados digitais com certificado). [model knowledge — verify]
 
 ---
 

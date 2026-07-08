@@ -173,10 +173,10 @@ When the playbook position conflicts with the contract's governing-law enforceab
 
 **Divergências no Brasil:**
 - **Não-concorrência/não-solicitação:** válida se limitada em tempo e território (Art. 5º XIII CF, Art. 421 CC) — sem limite, sinalizar `[jurisdiction — verify]`.
-- **Exclusão de responsabilidade:** nula se a relação for de consumo (Art. 51, I CDC); entre empresas, válida dentro dos limites de boa-fé objetiva (Art. 422 CC) — não afasta dolo ou culpa grave.
+- **Exclusão de responsabilidade:** nula se a relação for de consumo (Art. 51, I CDC); entre empresas, válida dentro dos limites de boa-fé objetiva (Art. 422 CC) — não afasta dolo ou culpa grave. [model knowledge — verify]
 - **Indenização/regresso:** contrato pode prever indenização entre as partes, mas não pode blindar responsabilidade por dolo (Art. 404 CC c/c Art. 51 CDC quando consumo).
 - **Confidencialidade "perpétua":** Judiciário tende a mitigar prazo indefinido sem justificativa técnica (função social do contrato, Art. 421 CC).
-- **Multa penal/cláusula penal:** limitada ao valor da obrigação principal (Art. 412 CC) — multa desproporcional é sinalizada RED.
+- **Multa penal/cláusula penal:** limitada ao valor da obrigação principal (Art. 412 CC) — multa desproporcional é sinalizada RED. [model knowledge — verify]
 
 ### Step 4: Favorable terms and gaps
 

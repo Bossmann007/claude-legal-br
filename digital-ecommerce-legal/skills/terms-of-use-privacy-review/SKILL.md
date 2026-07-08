@@ -18,7 +18,7 @@ argument-hint: "[cola Termos + Política, ou link para arquivo]"
 
 ## Purpose
 
-Termos de Uso de plataforma digital (loja online, SaaS, marketplace) e sua Política de Privacidade devem estar alinhados com duas leis: o Marco Civil da Internet (Lei 12.965/2014) e a LGPD (Lei 13.709/2018).
+Termos de Uso de plataforma digital (loja online, SaaS, marketplace) e sua Política de Privacidade devem estar alinhados com duas leis: o Marco Civil da Internet (Lei 12.965/2014) e a LGPD (Lei 13.709/2018). [model knowledge — verify]
 
 Esta skill revisa ambos os documentos contra esse framework. Identifica gaps, conflitos, e riscos regulatórios.
 

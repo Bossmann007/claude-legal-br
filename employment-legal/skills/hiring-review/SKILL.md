@@ -164,7 +164,7 @@ Ler o documento. Verificar:
 
 **Não existe "at-will" no Brasil.** A CLT não permite dispensa sem aviso
 prévio e sem verbas rescisórias — mesmo em contrato por prazo indeterminado,
-a dispensa exige aviso prévio (Lei 12.506/2011, proporcional ao tempo de
+a dispensa exige aviso prévio (Lei 12.506/2011, proporcional ao tempo de [model knowledge — verify]
 serviço) e pagamento das verbas legais. Nunca recomende linguagem de "at-will"
 em um contrato brasileiro — é juridicamente sem efeito aqui e sinaliza para o
 advogado do empregado que quem redigiu não entende a CLT.

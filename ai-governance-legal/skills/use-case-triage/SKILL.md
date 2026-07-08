@@ -133,7 +133,7 @@ preliminar de risco e rotear para a AIA.
 A triagem geralmente fica em alto nível, mas se a classificação depende de citar
 lei, resolução, norma, ou guia — marcar a citação. Não emitir citações
 regulatórias sem tag no raciocínio da triagem, na explicação de linha vermelha,
-ou na lista de condições. Uma triagem que diz "LGPD Art. 20" sem tag é exatamente
+ou na lista de condições. Uma triagem que cita um gatilho de revisão automatizada sem tag é exatamente
 onde uma citação pinpoint fabricada passa despercebida pelo leitor.
 
 **Tiering de atribuição de fonte.** Para citações de conhecimento do modelo, usar

@@ -14,7 +14,7 @@ argument-hint: "[describe the data processing activity or feature]"
 
 1. Read `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md`. Confirm privacy practice is configured — if not, stop and direct to setup.
 2. Run the workflow below. Clarify the activity if vague.
-3. House trigger check → RIPD-trigger check (LGPD art. 38 — ANPD may require; high-risk factors art. 10 §3º / art. 11 / art. 14 / art. 20) (mandatory assessment may be required) / GDPR DPIA check (if GDPR also in footprint) → privacy policy conflict check.
+3. House trigger check → RIPD-trigger check (LGPD art. 38 — ANPD may require; high-risk factors art. 10 §3º / art. 11 / art. 14 / art. 20) (mandatory assessment may be required) / GDPR DPIA check (if GDPR also in footprint) → privacy policy conflict check. [model knowledge — verify]
 4. Output: classification (PROCEED / PIA REQUIRED / DPIA MANDATORY / STOP), reasoning, conditions table if required, cross-plugin handoffs.
 5. Offer to continue into PIA generation if assessment is required.
 

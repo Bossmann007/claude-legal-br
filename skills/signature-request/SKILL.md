@@ -101,4 +101,4 @@ Levante os detalhes de assinatura:
 
 1. **Verifique nomes de entidade com cuidado** — O erro de assinatura mais comum é nome de entidade incorreto.
 2. **Verifique a autoridade** — Confirme que cada signatário está autorizado a vincular sua organização.
-3. **Guarde uma cópia** — Cópias executadas devem ser arquivadas em ~~armazenamento em nuvem ou ~~CLM imediatamente após a execução. Para validade jurídica plena no Brasil, prefira assinatura com certificado ICP-Brasil (MP 2.200-2/2001) ou, quando admitida, assinatura eletrônica simples/avançada nos termos da Lei 14.063/2020 — confirme com o jurídico qual nível de assinatura é exigido para o tipo de documento.
+3. **Guarde uma cópia** — Cópias executadas devem ser arquivadas em ~~armazenamento em nuvem ou ~~CLM imediatamente após a execução. Para validade jurídica plena no Brasil, prefira assinatura com certificado ICP-Brasil (MP 2.200-2/2001) ou, quando admitida, assinatura eletrônica simples/avançada nos termos da Lei 14.063/2020 — confirme com o jurídico qual nível de assinatura é exigido para o tipo de documento. [model knowledge — verify]

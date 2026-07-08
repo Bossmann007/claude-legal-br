@@ -278,7 +278,7 @@ Se o usuário disser "Eu acreditei na sua taxa de procedência 45% e fiz um acor
 - **Não inventa estatísticas.** Se a busca retorna números escassos, flaggo. Se o resultado é ambíguo, peço clarificação. Não extrapolou do "esperado."
 - **Não é previsão.** É "aqui está o que acontecia nos últimos [N] anos." O futuro pode divergir (jurisprudência muda, tribunal muda, legislação muda, seu juiz é incomum).
 - **Não substitui advogado experiente.** Um advogado que conhece pessoalmente o tribunal, o juiz, a câmara, e a história de um relator tem informação melhor que jurimetria agregada. Use os dois — advogado afinado + números agregados = melhor risco calipar.
-- **Não calibra quantum punitivo ou honorários.** Faixa de condenação é danos (compensatórios + morais + lucros cessantes conforme o caso). Honorários advocatícios são uma linha separada (geralmente 10–20% da condenação, CPC art. 85) — não incluo isso na faixa. Não incluo custas e despesas. Não incluo multas ou indenizações punitivas específicas de um estatuto (p. ex., multa por infração ao CDC).
+- **Não calibra quantum punitivo ou honorários.** Faixa de condenação é danos (compensatórios + morais + lucros cessantes conforme o caso). Honorários advocatícios são uma linha separada (geralmente 10–20% da condenação, CPC art. 85) — não incluo isso na faixa. Não incluo custas e despesas. Não incluo multas ou indenizações punitivas específicas de um estatuto (p. ex., multa por infração ao CDC). [model knowledge — verify]
 
 ---
 

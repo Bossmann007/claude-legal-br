@@ -45,7 +45,7 @@ Montar uma **matriz de prazos prescritivos** que o advogado preenche com:
   - **1 ano** (§1º): hospedagem, alimentos fornecidos, segurado/segurador, tabeliães/serventuários
   - **3 anos** (§3º): aluguéis; juros/dividendos; ressarcimento de enriquecimento sem causa; **reparação civil (inc. V)** — extracontratual e contratual
   - **5 anos** (§5º): dívidas líquidas de instrumento público/particular (inc. I); honorários; vencedor contra vencido por custas
-  - Não confundir com **decadência** de 2 anos da **ação rescisória** (CPC art. 975 — é decadência, não prescrição do art. 206)
+  - Não confundir com **decadência** de 2 anos da **ação rescisória** (CPC art. 975 — é decadência, não prescrição do art. 206) [model knowledge — verify]
 - **Prescrição trabalhista:** CF art. 7º, XXIX + CLT art. 11 — 5 anos na **constância do vínculo**, limitado a 2 anos **após a extinção do vínculo** (Súmula 308 TST para a quinquenal) `[model knowledge — verify]`
 - **Prescrição CDC:** Lei 8.078/1990 art. 26 (decadência — 30 dias produto/serviço não durável, 90 dias durável, do vício aparente; oculto conta da evidência) e art. 27 (prescrição — 5 anos, fato do produto/serviço) `[model knowledge — verify]`
 - **Prescrição tributária:** CTN art. 173 (decadência — 5 anos para constituir/lançar); CTN art. 150 §4º (homologação — 5 anos); CTN art. 174 (prescrição — 5 anos para cobrar o crédito já constituído) `[model knowledge — verify]`
@@ -108,7 +108,7 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 
 #### Reivindicações Cíveis — Responsabilidade Civil (CC art. 206 §3º V + arts. 202-203)
 
-**Regra que mais erra na prática:** reparação civil **não** prescreve em 10 anos. Os 10 anos do art. 205 são **residuais** — só quando nenhum prazo menor se aplica.
+**Regra que mais erra na prática:** reparação civil **não** prescreve em 10 anos. Os 10 anos do art. 205 são **residuais** — só quando nenhum prazo menor se aplica. [model knowledge — verify]
 
 **Prazos do art. 206 (confirme § e inciso na fonte):**
 - **3 anos (§3º):** **reparação civil — inciso V** (extracontratual E contratual, entendimento hoje predominante); aluguéis (inc. I); juros/dividendos (inc. III); ressarcimento por enriquecimento sem causa (inc. IV) `[model knowledge — verify]`.
@@ -149,7 +149,7 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 
 **Lei 8.078/1990 — Código de Defesa do Consumidor:**
 
-- **Art. 26 — Decadência (extinção do direito do consumidor):** 
+- **Art. 26 — Decadência (extinção do direito do consumidor):**  [model knowledge — verify]
   - **30 dias** (produto/serviço **não durável**) / **90 dias** (produto/serviço **durável**) para reclamar do vício aparente ou de fácil constatação — contados da entrega efetiva (art. 26, I-II) `[model knowledge — verify]`.
   - Vício **oculto**: o prazo (30 ou 90 dias, conforme durabilidade) conta-se do momento em que ficar evidenciado o defeito (art. 26, §3º) `[model knowledge — verify]`.
   - **Importante:** Decadência extingue o DIREITO (não apenas a ação) — após 30 dias, consumidor não pode reclamar de vício (não há ação rescisória ou reparação).
@@ -157,7 +157,7 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 - **Art. 27 — Prescrição:** 5 anos (contados da lesão) para ações de responsabilidade por produto defeituoso ou serviço inadequado (reparação, substituição, indenização) `[model knowledge — verify]`.
 
 **Aplicação:**
-- **Vício de produto (aparente):** 30 dias para devolver/trocar; se não feito, direito de reparação decai. **MAS** se há dano à pessoa/patrimônio, ação por dano (art. 27) prescreve em 5 anos a partir da lesão.
+- **Vício de produto (aparente):** 30 dias para devolver/trocar; se não feito, direito de reparação decai. **MAS** se há dano à pessoa/patrimônio, ação por dano (art. 27) prescreve em 5 anos a partir da lesão. [model knowledge — verify]
 - **Vício oculto:** 30 dias desde a descoberta para reclamar do vício; se descobrir após 30 dias, decadência consumada — mas ação por dano ainda corre (5 anos desde lesão).
 - **Responsabilidade por defeito (vício que causa dano):** prescrição de 5 anos para ação de indenização.
 
@@ -173,7 +173,7 @@ Para cada **verba / reivindicação**, abre-se uma FILA na matriz com colunas:
 
 #### Reivindicações Tributárias (CTN arts. 150, 173-175)
 
-**CTN art. 173 — Decadência (direito de constituir/lançar o crédito):**
+**CTN art. 173 — Decadência (direito de constituir/lançar o crédito):** [model knowledge — verify]
 - Prazo de **5 anos** para a Fazenda **constituir o crédito** pelo lançamento, contados do **1º dia do exercício seguinte** àquele em que o lançamento poderia ter sido efetuado (art. 173, I) `[model knowledge — verify]`.
 
 **CTN art. 150, §4º — Decadência no lançamento por homologação:**

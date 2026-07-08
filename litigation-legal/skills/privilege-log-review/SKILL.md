@@ -61,7 +61,7 @@ When this skill cites a rule, local variant, or authority for a sigilo profissio
 
 > "I don't see [matter slug] in the matter log. Run `/litigation-legal:matter-intake` first so the conflicts check runs and the matter workspace is set up. I won't review a recusa de exibição on a matter that hasn't been intaken — the conflicts check is the gate, and this review is work product that needs to live in the matter file."
 
-**Jurisdiction matters.** Sigilo profissional scope, waiver/renúncia doctrine, and the form of a valid recusa vary by tribunal and by whether the matter touches non-Brazilian jurisdictions. This review applies CPC art. 404 and OAB art. 7º, XIX as the default. If the matter involves a foreign forum, cross-border production, or a choice-of-law question on privilege/sigilo, the calls here may not transfer — re-run against the controlling regime.
+**Jurisdiction matters.** Sigilo profissional scope, waiver/renúncia doctrine, and the form of a valid recusa vary by tribunal and by whether the matter touches non-Brazilian jurisdictions. This review applies CPC art. 404 and OAB art. 7º, XIX as the default. If the matter involves a foreign forum, cross-border production, or a choice-of-law question on privilege/sigilo, the calls here may not transfer — re-run against the controlling regime. [model knowledge — verify]
 
 ## Step 0: Research the applicable sigilo/recusa rules
 

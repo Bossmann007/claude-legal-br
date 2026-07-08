@@ -13,7 +13,7 @@ description: >
 
 # Ata de Reunião / Assembleia
 
-**Base legal:** Ltda. — deliberação de sócios rege-se pelos Arts. 1.071-1.080, Código Civil. S.A. — Assembleia Geral rege-se pelos Arts. 121-137, Lei 6.404/1976; reunião de Conselho de Administração pelos Arts. 138-142 da mesma lei.
+**Base legal:** Ltda. — deliberação de sócios rege-se pelos Arts. 1.071-1.080, Código Civil. S.A. — Assembleia Geral rege-se pelos Arts. 121-137, Lei 6.404/1976; reunião de Conselho de Administração pelos Arts. 138-142 da mesma lei. [statute]
 
 ## Matter context
 
@@ -131,7 +131,7 @@ CNPJ nº [XX.XXX.XXX/0001-XX]
 [Local / Videoconferência — Art. 1.072, §7º, CC ou Art. 121, parágrafo único, LSA]
 ```
 
-**Registro:** ata de Ltda. registra-se na Junta Comercial em até 30 dias da assinatura (Art. 36, Lei 8.934/1994) para produzir efeitos perante terceiros desde a data do ato; ata de AGO/AGE de S.A. também é arquivada na Junta Comercial (Art. 135, Lei 6.404/1976) e, se S.A. aberta, publicada (Art. 289, salvo dispensa para companhias de capital fechado sob certas condições, Lei 14.195/2021).
+**Registro:** ata de Ltda. registra-se na Junta Comercial em até 30 dias da assinatura (Art. 36, Lei 8.934/1994) para produzir efeitos perante terceiros desde a data do ato; ata de AGO/AGE de S.A. também é arquivada na Junta Comercial (Art. 135, Lei 6.404/1976) e, se S.A. aberta, publicada (Art. 289, salvo dispensa para companhias de capital fechado sob certas condições, Lei 14.195/2021). [model knowledge — verify]
 
 **Opening:**
 - Meeting called to order by [Chair name] at [time]

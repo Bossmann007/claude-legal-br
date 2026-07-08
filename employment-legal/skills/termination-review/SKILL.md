@@ -15,7 +15,7 @@ argument-hint: "[descreva a rescisão, ou anexe documentação]"
 1. Carregar `~/.claude/plugins/config/claude-for-legal/employment-legal/CLAUDE.md` → gatilhos de revisão de rescisão, flags de alto risco, prática de verbas rescisórias, regras de base territorial.
 2. Usar o workflow abaixo.
 3. Percorrer o checklist. Verificar toda flag de alto risco.
-4. Prazo de pagamento das verbas conforme CLT art. 477 (10 dias corridos). Verbas rescisórias + homologação/assistência sindical se aplicável.
+4. Prazo de pagamento das verbas conforme CLT art. 477 (10 dias corridos). Verbas rescisórias + homologação/assistência sindical se aplicável. [model knowledge — verify]
 5. Se qualquer flag de alto risco disparar: escalar conforme tabela, não prosseguir sem aprovação.
 
 ---
@@ -123,7 +123,7 @@ de a rescisão prosseguir.** Não depois. Antes.
 > **Pesquisar as regras aplicáveis à base territorial do empregado antes de
 > finalizar o plano.** Especificamente:
 >
-> - Prazo de pagamento das verbas rescisórias — CLT art. 477, §6º: 10 dias
+> - Prazo de pagamento das verbas rescisórias — CLT art. 477, §6º: 10 dias [model knowledge — verify]
 >   corridos a contar do término do contrato, para qualquer modalidade de
 >   rescisão. Atraso gera multa de 1 salário do empregado (art. 477, §8º).
 >   Pesquisar se há regra adicional na CCT aplicável.

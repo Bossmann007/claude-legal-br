@@ -107,7 +107,7 @@ For each allegation, ask yourself (and flag in the matrix):
 | Allegation | Type | Impugnable? | How to respond |
 |---|---|---|---|
 | "Contrato de compra e venda foi celebrado" | Fact | ✅ Yes | Admit, deny, or say "don't know" |
-| "Lei 10.406/2002 (CC) art. 427 allows rescission" | Law / legal conclusion | ❌ No | Don't deny; instead, distinguish or argue the law applies differently |
+| "Lei 10.406/2002 (CC) art. 427 allows rescission" | Law / legal conclusion | ❌ No | Don't deny; instead, distinguish or argue the law applies differently | [model knowledge — verify]
 | "Prazo para performance was 30 dias" | Fact (what the contract said) | ✅ Yes | Admit or deny; may quote the contract |
 | "Réu was negligent" | Legal characterization | ❌ No — it's shorthand for facts you deny | Counter: deny the underlying facts ("I took all reasonable care") |
 

@@ -21,7 +21,7 @@ argument-hint: "[descrição da empresa, ou link para PRD / Matriz de Atividades
 Implementar um programa de privacidade (ou "plano de adequação à LGPD") é estructurar como a empresa trata dados pessoais em conformidade com a Lei 13.709/2018. Este skill guia a empresa através de:
 
 1. **Mapeamento de dados** — quais dados coleta, onde trata, com quem compartilha, por quanto tempo
-2. **Base legal** — para cada finalidade de tratamento, qual é o artigo 7º (consentimento? legítimo interesse? contrato?) aplicável
+2. **Base legal** — para cada finalidade de tratamento, qual é o artigo 7º (consentimento? legítimo interesse? contrato?) aplicável [model knowledge — verify]
 3. **Nomeação de Encarregado** — DPO/Encarregado de Proteção de Dados (Art. 41 LGPD [model knowledge — verify])
 4. **Avaliação de Impacto (RIPD)** — em quais atividades (Art. 38 LGPD [model knowledge — verify])
 5. **Políticas internas** — documento de conformidade documentando tudo acima

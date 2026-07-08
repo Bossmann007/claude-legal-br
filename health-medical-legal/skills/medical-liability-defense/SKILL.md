@@ -48,7 +48,7 @@ A triage read, not an opinion. The team decides whether to fight, settle, or wat
 - **Art. 927:** Culpa (negligência, imprudência, imperícia) é elemento necessário [modelo conhecimento — verificar].
 - **Arts. 951:** Profissional liberal responde por culpa [modelo conhecimento — verificar].
 
-**CDC (Lei 8.078/1990) — se paciente é consumidor:**
+**CDC (Lei 8.078/1990) — se paciente é consumidor:** [statute]
 - Médico/hospital são fornecedores. Paciente é consumidor se destinatário final do serviço.
 - Art. 6º: direitos de consumidor (segurança, informação clara).
 - Art. 20–22: serviços com defeito; responsabilidade objetiva se dano [modelo conhecimento — verificar].
@@ -58,7 +58,7 @@ A triage read, not an opinion. The team decides whether to fight, settle, or wat
 - Negativa de cobertura pode gerar ação contra operadora paralelamente à ação contra médico/hospital.
 
 **Sigilo médico — inviolável:**
-- Código de Ética Médica Arts. 73–80 + Estatuto OAB Art. 7º: informação de paciente é confidencial.
+- Código de Ética Médica Arts. 73–80 + Estatuto OAB Art. 7º: informação de paciente é confidencial. [model knowledge — verify]
 - Pronunciamento público sobre diagnóstico / tratamento do paciente é violação de sigilo.
 
 ---

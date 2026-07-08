@@ -41,7 +41,7 @@ Este skill estrutura essa conversa e escreve a output no formato desta equipe �
 
 ## Jurisdição e regime
 
-**Premissa:** LGPD (Lei 13.709/2018, Art. 11 — dados sensíveis). Dados de saúde são sempre sensíveis. Processamento exige **consentimento específico e destacado** (Art. 11, I) OU uma das exceções taxativas do Art. 11, II-III (vida/saúde do titular, profissional de saúde no exercício de profissão).
+**Premissa:** LGPD (Lei 13.709/2018, Art. 11 — dados sensíveis). Dados de saúde são sempre sensíveis. Processamento exige **consentimento específico e destacado** (Art. 11, I) OU uma das exceções taxativas do Art. 11, II-III (vida/saúde do titular, profissional de saúde no exercício de profissão). [model knowledge — verify]
 
 Sigilo médico é independente da LGPD: Código de Ética Médica (Res. CFM 2.217/2018, arts. 73-79 `[model knowledge — verify]`) + violação de segredo profissional (Código Penal art. 154 `[model knowledge — verify]`) tornam a divulgação de informação médica ilegal sem consentimento ou justa causa, mesmo que a LGPD permitisse o tratamento.
 
@@ -82,7 +82,7 @@ Sob LGPD, um RIPD (análise de impacto) é mandatório quando:
 - Qualquer atividade de **alto risco às liberdades civis e direitos fundamentais** (Art. 38, que autoriza a ANPD exigir RIPD).
 
 Para saúde, o padrão é **sempre** fazer um Plano porque:
-1. Dados são sensíveis (Art. 11).
+1. Dados são sensíveis (Art. 11). [model knowledge — verify]
 2. Vazamento causa dano grave (discriminação, exposição, re-identificação).
 3. Não-conformidade é risco regulatório (ANPD, CFM, ANS).
 

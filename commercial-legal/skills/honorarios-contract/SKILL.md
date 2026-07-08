@@ -38,7 +38,7 @@ A fee agreement is where client expectations and lawyer obligations meet. It des
 
 Honorários advocatícios no Brasil são regidos pelo Estatuto da Ordem dos Advogados do Brasil (Lei 8.906/1994) — especialmente Art. 20 (forma, conteúdo obrigatório) e Art. 23 (sucumbência, honorários contratuais e por êxito). O Código de Ética e Disciplina da OAB (Res. CFOAB 170/2015, com emendas) fixa limites éticos: quota litis é permitida apenas em circunstâncias excecionais, sob condições (Art. 32-37 CED OAB) [model knowledge — verify]. Tabela de honorários de cada seccional da OAB é um piso orientativo, não teto — advocate pode cobrar acima da tabela, mas abaixo é censurável. Sucumbência decorre de sentença (Art. 85 CPC) e é direito do advogado, não sujeito a acordo de renúncia antecipada.
 
-Reajuste por inflação é válido (Art. 422 CC — boa-fé contratual + preservação do valor real da prestação).
+Reajuste por inflação é válido (Art. 422 CC — boa-fé contratual + preservação do valor real da prestação). [model knowledge — verify]
 
 ---
 
@@ -60,7 +60,7 @@ Se o CLAUDE.md não tiver posição sobre fee structure, pergunte:
 
 Antes de draftar, identifique qual(is) das hipóteses legais se aplicam:
 
-1. **Sucumbência.** O advogado tem direito a honorários de sucumbência fixados em sentença (Art. 85 CPC, Lei 13.327/2016 estabeleceu piso de 10% do valor da condenação, limitado a 20% em regra). Sucumbência é um DIREITO, não uma renúncia — não pode ser contratualmente removida. Se a relação inclui litigação, o contrato de honorários deve EXPLICITAR que sucumbência é adicional aos honorários contratuais. Se o cliente disser "quero contrato fechado, não quero pagar sucumbência além," PARE e flagge: essa cláusula é potencialmente nula sob Estatuto OAB. Escalate conforme necessário.
+1. **Sucumbência.** O advogado tem direito a honorários de sucumbência fixados em sentença (Art. 85 CPC, Lei 13.327/2016 estabeleceu piso de 10% do valor da condenação, limitado a 20% em regra). Sucumbência é um DIREITO, não uma renúncia — não pode ser contratualmente removida. Se a relação inclui litigação, o contrato de honorários deve EXPLICITAR que sucumbência é adicional aos honorários contratuais. Se o cliente disser "quero contrato fechado, não quero pagar sucumbência além," PARE e flagge: essa cláusula é potencialmente nula sob Estatuto OAB. Escalate conforme necessário. [model knowledge — verify]
 
 2. **Honorários contratuais puros** (pró-labore, tabela OAB, porcentagem fixa). Cliente paga advogado pela prestação de serviços, período definido (hora, tarifa, mês), independente do resultado. Estrutura mais comum em consultoria, contencioso de valor baixo, revisional.
 

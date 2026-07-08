@@ -109,7 +109,7 @@ When the witness is a preposto designated to testify on the company's behalf (CP
 **CLT (Labor, audiência una) — CPC arts. 847-850, CLT arts. 847-850:**
 - Single consolidated hearing (audiência una) in the labor court (vara trabalhista / TRT)
 - Examination of parties and witnesses in sequence, judge-controlled
-- Depoimento pessoal of parties (both plaintiff and defendant) is mandatory if present (CLT art. 850, §3º)
+- Depoimento pessoal of parties (both plaintiff and defendant) is mandatory if present (CLT art. 850, §3º) [model knowledge — verify]
 - Oitiva de testemunhas (witness examination) follows, also judge-controlled
 - Perito (expert) examination, if any, in same hearing
 - No pretrial depositions; everything is in the single hearing

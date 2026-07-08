@@ -101,14 +101,14 @@ Cada verba recebe uma fila com colunas:
 - **Base:** salário mensal integral
 - **Período:** 30 dias por 12 meses de período aquisitivo; proporcionais na rescisão (CLT art. 146, p.u.; Súmula 328 TST inclui o 1/3 sobre férias indenizadas) `[model knowledge — verify]`
 - **Incidências:** FGTS ✓, INSS ✓, IR retido
-- **Bônus 1/3:** obrigatório (CF art. 7º XVII) — mesmas incidências
+- **Bônus 1/3:** obrigatório (CF art. 7º XVII) — mesmas incidências [model knowledge — verify]
 - **Índice:** IPCA-E na fase pré-judicial + juros 1% a.m.; SELIC a partir do ajuizamento (ADC 58) `[verify]`
 - **Termo inicial juros:** vencimento da férias (última concessão ou data devida)
 - **Nota:** Cálculo = (salário × 30/30 × 1/3) × períodos aquisitivos
 
 #### Trabalhista — FGTS + 40% (Lei 8.036/1990 arts. 18, 20)
 - **Base:** saldo FGTS (depósitos + correção pela Caixa)
-- **Complementação 40%:** art. 18, §1º (rescisão sem justa causa) — é indenização
+- **Complementação 40%:** art. 18, §1º (rescisão sem justa causa) — é indenização [model knowledge — verify]
 - **Período:** toda vigência do vínculo
 - **Incidências:** FGTS já recolhido; complementação 40% não incide FGTS/INSS/IR
 - **Índice:** saldo FGTS: IPCA-E pré-judicial, SELIC do ajuizamento (ADC 58) `[verify]`; complementação 40%: idem

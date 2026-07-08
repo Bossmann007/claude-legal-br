@@ -27,7 +27,7 @@ These orders arrive with deadlines. The failure modes: missing the deadline, ove
 
 ## Jurisdiction assumption
 
-The rule cited in Step 0 is the operative one for this order in this forum. Practice varies materially: which CPC article applies (art. 401 exibição de terceiro vs. art. 455 intimação de testemunha), local provimentos, the vara/comarca's practice, and whether the matter is civil, trabalhista, or penal all change objection deadlines, escopo, requisitos de sigilo, and who bears costs. Every rule output here is a starting-point heuristic — confirm currency and the local variant before asserting in writing.
+The rule cited in Step 0 is the operative one for this order in this forum. Practice varies materially: which CPC article applies (art. 401 exibição de terceiro vs. art. 455 intimação de testemunha), local provimentos, the vara/comarca's practice, and whether the matter is civil, trabalhista, or penal all change objection deadlines, escopo, requisitos de sigilo, and who bears costs. Every rule output here is a starting-point heuristic — confirm currency and the local variant before asserting in writing. [model knowledge — verify]
 
 ## Side context
 

@@ -415,10 +415,10 @@ The rest of this mode assumes the asserted patent is a **utility patent**
   transgenic microorganisms meeting the three patentability requirements),
   and insufficient disclosure (art. 24 — the closest BR analogue to §112
   written description/enablement; a claim not fully and clearly supported by
-  the specification is invalid). **Administrative nullity** (art. 51,
+  the specification is invalid). **Administrative nullity** (art. 51, [model knowledge — verify]
   INPI-initiated or third-party petition, no deadline) and **judicial
   nullity action** (art. 56 — anytime during the patent's term, filed in the
-  federal courts, **with INPI as a mandatory co-defendant per art. 57** — a
+  federal courts, **with INPI as a mandatory co-defendant per art. 57** — a [model knowledge — verify]
   nullity claim or contention that omits INPI as a party is procedurally
   defective). There is no LPI equivalent to inter partes review (IPR) or
   post-grant review (PGR) — Brazil's administrative and judicial nullity
