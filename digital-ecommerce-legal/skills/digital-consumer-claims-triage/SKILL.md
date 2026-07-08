@@ -48,7 +48,7 @@ Read `~/.claude/plugins/config/claude-for-legal/digital-ecommerce-legal/CLAUDE.m
 |---|---|---|
 | **Cobrança indevida** | Art. 42, parágrafo único | Was the customer charged for something they didn't owe? |
 | **Propaganda enganosa** | Art. 37 | Did our ad claim something the product doesn't do? |
-| **Alteração de preço no checkout** | `[unverified: not found in primary source]` | Did we show one price in the catalog and a different price in the cart/invoice? |
+| **Alteração de preço no checkout** | CDC Arts. 30, 35 e 37; Decreto 7.962/2013 Art. 2º, IV `[verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm; https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm]` | Did we show one price in the catalog and a different price in the cart/invoice? |
 | **Falha na entrega** | Decreto 7.962/2013 Art. 2º, V | Did we fail to state the promised delivery or availability deadline? |
 | **Produto defeituoso / não conforme** | CDC Art. 20 | Is the product broken or not what was promised? |
 | **Recusa de devolução / arrependimento** | CDC Art. 49 | Did we refuse to allow a 7-day return? |
@@ -66,7 +66,7 @@ Read `~/.claude/plugins/config/claude-for-legal/digital-ecommerce-legal/CLAUDE.m
 **Medium-risk claims** (defense exists but gray):
 
 - "The package arrived 8 days late; I want compensation" → Depend on what Termos says; if "3-5 days" promised and it took 13, we're liable for breach but damages are unclear. `[review]`
-- "You said 'free shipping' but added a $10 fee at checkout" → Do not classify this as Art. 39, II on this source alone; Art. 39, II treats refusal to meet consumer demand. `[unverified: not found in primary source]`
+- "You said 'free shipping' but added a $10 fee at checkout" → Do not classify this as Art. 39, II on this source alone; analyze as offer/publicity and disclosure of delivery expenses (CDC Arts. 30, 35 and 37; Decreto 7.962/2013 Art. 2º, IV). `[verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm; https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm]`
 
 **Low-risk claims** (we have a defense):
 
