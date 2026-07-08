@@ -131,7 +131,7 @@ CNPJ nº [XX.XXX.XXX/0001-XX]
 [Local / Videoconferência — Art. 1.072, §7º, CC ou Art. 121, parágrafo único, LSA]
 ```
 
-**Registro:** ata de Ltda. registra-se na Junta Comercial em até 30 dias da assinatura (Art. 36, Lei 8.934/1994) para produzir efeitos perante terceiros desde a data do ato; ata de AGO/AGE de S.A. também é arquivada na Junta Comercial (Art. 135, Lei 6.404/1976) e, se S.A. aberta, publicada (Art. 289, salvo dispensa para companhias de capital fechado sob certas condições, Lei 14.195/2021). [CORRECTION NEEDED: Lei 8.934/1994 Art. 36 confirma arquivamento em 30 dias; Lei 6.404/1976 Art. 135 trata de AGE que reforma estatuto e sujeita atos de reforma às formalidades de arquivamento/publicação, não de toda ata de AGO/AGE; Art. 289 trata publicações ordenadas pela lei — https://www.planalto.gov.br/ccivil_03/leis/l8934.htm; https://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm]
+**Registro:** ata de Ltda. registra-se na Junta Comercial em até 30 dias da assinatura (Art. 36, Lei 8.934/1994) para produzir efeitos perante terceiros desde a data do ato; em S.A., o Art. 135 da Lei 6.404/1976 trata de AGE que reforma estatuto e sujeita atos de reforma às formalidades de arquivamento/publicação, não de toda ata de AGO/AGE. O Art. 289 trata das publicações ordenadas pela lei. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8934.htm; https://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm]
 
 **Opening:**
 - Meeting called to order by [Chair name] at [time]
