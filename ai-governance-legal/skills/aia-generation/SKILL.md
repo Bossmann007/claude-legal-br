@@ -43,7 +43,7 @@ essa conversa e escreve o output no formato deste time — o aprendido da
 avaliação-semente durante o cold-start.
 
 Uma AIA não é o mesmo que uma RIPD (Relatório de Impacto à Proteção de Dados
-Pessoais, LGPD Art. 38). A RIPD pergunta se dado pessoal é tratado licitamente. A [model knowledge — verify]
+Pessoais, LGPD Art. 38). A RIPD pergunta se dado pessoal é tratado licitamente. A [CORRECTION NEEDED: fonte diz que a ANPD poderá determinar ao controlador que elabore RIPD e que o relatório deve conter tipos de dados coletados, metodologia de coleta/segurança e análise de medidas de mitigação; não formula a obrigação geral como "pergunta se dado pessoal é tratado licitamente" — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 AIA pergunta se o sistema de IA é projetado e implantado de forma responsável.
 Frequentemente precisam rodar em paralelo; não são substitutas uma da outra. Se o
 sistema envolve dado pessoal, a RIPD é obrigatória sob a LGPD **independentemente**
@@ -88,7 +88,7 @@ Se nenhum dos itens acima e o gatilho da casa não é atendido:
 Antes do intake, determinar qual trilha rodar. As definições de nível e os critérios de trilha rápida vêm de `~/.claude/plugins/config/claude-for-legal/ai-governance-legal/CLAUDE.md` (`## Use case registry` e `## Governance tiers`), não de um framework hardcoded de um regime específico.
 
 Pesquisar o framework de classificação de risco aplicável para cada regime no escopo regulatório do usuário:
-- **LGPD Art. 20** — direito à revisão de decisão automatizada. Não tem "níveis de risco" por si, mas se aplica sempre que a decisão for automatizada e afetar interesse do titular. [model knowledge — verify]
+- **LGPD Art. 20** — direito à revisão de decisão automatizada. Não tem "níveis de risco" por si, mas se aplica sempre que a decisão for automatizada e afetar interesse do titular. [CORRECTION NEEDED: fonte diz "decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem seus interesses"; falta o requisito "unicamente" na formulação da skill — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 - **PL 2338/2023** — propõe taxonomia de risco (excessivo/proibido, alto risco, risco geral), similar em espírito ao AI Act europeu mas com texto ainda em tramitação. `[verificar status atual — pode ter sido sancionado, alterado, ou ainda pendente de votação]`.
 - **Setorial** — Res. CMN/BCB 4.658 trata gestão de risco em instituições financeiras (inclui scoring de crédito por IA); RDC Anvisa 657/2022 classifica SaMD por classe de risco; CVM tem regras específicas para robo-advisors.
 
@@ -159,7 +159,7 @@ bom — isso não é formulário para enviar.
   (Se a resposta é "raramente" — o humano não está revisando de verdade; está
   carimbando.)
 - Há processo de recurso ou correção para pessoas afetadas pelos outputs da IA?
-  (LGPD Art. 20 garante isso quando a decisão é automatizada.) [model knowledge — verify]
+  (LGPD Art. 20 garante isso quando a decisão é automatizada.) [CORRECTION NEEDED: fonte garante direito de solicitar revisão de decisões tomadas unicamente com base em tratamento automatizado de dados pessoais que afetem interesses do titular, não qualquer decisão automatizada — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 - Quem é responsável pelos outputs do sistema de IA — há um dono nomeado?
 
 ### Acurácia e falha
