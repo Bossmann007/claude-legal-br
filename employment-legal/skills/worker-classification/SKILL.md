@@ -328,7 +328,7 @@ triggers recorded in that config:
 
 > **Research-connector pre-flight.** Before emitting the analysis, check whether a legal research connector is reachable for this session — JusBrasil, Escavador, PJe, or any firm-configured research MCP. Collect this into the reviewer note per CLAUDE.md `## Outputs`: if no connector returns results in Step 2 (or none is configured at run time), record it in the **Sources:** line of the reviewer note — e.g., `not connected — cites from training knowledge; the highest-fabrication pinpoints in classification analyses are os requisitos do art. 3º da CLT (subordinação, pessoalidade, habitualidade, onerosidade), a distinção pejotização vs. autonomia real, e a jurisprudência do TST sobre o tema — spot-check those first`. Per-citation `[model knowledge — verify]` tags remain inline. Do not emit a standalone banner above the output.
 
-> **Jurisdiction assumption.** This analysis applies the tests operative in the jurisdiction(s) identified in intake. CLT art. 3º's four-element test is federal (national) in Brazil, but sector-specific statutes (e.g., Lei 6.019/1974 for trabalho temporário, Lei 4.886/1965 for representantes comerciais) and convenções/acordos coletivos can layer additional or divergent standards. If the work will be performed outside Brazil, or under a foreign-law arrangement, or if a new purpose is added later, this analysis may not apply as written. [model knowledge — verify]
+> **Jurisdiction assumption.** This analysis applies the tests operative in the jurisdiction(s) identified in intake. CLT art. 3º's four-element test is federal (national) in Brazil, but sector-specific statutes (e.g., Lei 6.019/1974 for trabalho temporário, Lei 4.886/1965 for representantes comerciais) and convenções/acordos coletivos can layer additional or divergent standards. If the work will be performed outside Brazil, or under a foreign-law arrangement, or if a new purpose is added later, this analysis may not apply as written. [verified: https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452compilado.htm; https://www.planalto.gov.br/ccivil_03/leis/l6019.htm; https://www.planalto.gov.br/ccivil_03/leis/l4886.htm]
 
 ```markdown
 [WORK-PRODUCT HEADER — per plugin config ## Outputs — differs by role; see `## Who's using this`]
@@ -433,4 +433,3 @@ Do not produce a final "IC viable" / "use this classification" output past this 
 ## Close with the next-steps decision tree
 
 End with the next-steps decision tree per CLAUDE.md `## Outputs`. Customize the options to what this skill just produced — the five default branches (draft the X, escalate, get more facts, watch and wait, something else) are a starting point, not a lock-in. The tree is the output; the lawyer picks.
-

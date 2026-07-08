@@ -48,7 +48,7 @@ For each base sindical (and country, if there are expatriados) in the footprint,
 | Tema | Variância |
 |---|---|
 | Piso salarial e reajuste | Cada CCT define piso e data-base próprios — a política salarial core não pode contrariar o piso da base |
-| Banco de horas / compensação | CLT art. 59 permite acordo individual (6 meses) ou coletivo (1 ano); CCTs frequentemente restringem ou detalham | [model knowledge — verify]
+| Banco de horas / compensação | CLT art. 59 permite acordo individual (6 meses) ou coletivo (1 ano); CCTs frequentemente restringem ou detalham | [verified: https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452compilado.htm]
 | Vale-refeição / benefícios | Muitas CCTs tornam obrigatórios benefícios que a CLT não exige |
 | Teletrabalho | CLT arts. 75-A a 75-E + cláusulas de CCT sobre custeio de infraestrutura |
 | Adicional de horas extras | Mínimo constitucional 50% (CF art. 7º, XVI); CCTs frequentemente fixam 60–100% |
