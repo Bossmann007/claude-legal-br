@@ -42,7 +42,7 @@ This file is the house-level frame every analysis in this plugin is triaged agai
 **Applicable regimes:**
 - **LGPD (Lei 13.709/2018)** — Lei Geral de Proteção de Dados, sempre. Art. 11 (dados sensíveis — saúde é exemplo) exige consentimento específico e destacado OU uma hipótese legal restrita (saúde do titular, etc.).
 - **Código de Ética Médica (CFM)** — sigilo profissional Art. 73-80 é inviolável.
-- **Resoluções CFM sobre prontuário eletrônico e guarda** — verificar Res. CFM atual sobre prazo mínimo de guarda de prontuário [unverified: not found in primary source].
+- **Resoluções CFM sobre prontuário eletrônico e guarda** — prazo mínimo de guarda de prontuário é de 20 anos a partir do último registro (Res. CFM 1.821/2007, art. 8º; Lei 13.787/2018) `[verified: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2007/1821]`.
 - **Lei 9.656/1998** — planos de saúde (se você advoga contra operadoras).
 - **CDC (Lei 8.078/1990)** — consumidor é categoria legal para pacientes/segurados contra provedores/operadoras.
 - **ANS (Agência Nacional de Saúde)** — regulador de operadoras, rol de procedimentos (Lei 14.454/2022: o rol é "referência básica"; procedimento fora do rol deve ser coberto se atendidas as condições do §13 — não usar "caráter exemplificativo") [verified: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14454.htm].

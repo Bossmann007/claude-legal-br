@@ -18,7 +18,7 @@ Estrutura um Plano de Privacidade e Proteção de Dados (equivalente ao RIPD sob
 4. Fluxos de dados (coleta, armazenamento, acesso, compartilhamento com terceiros).
 5. Direitos do titular (acesso, correção, portabilidade, eliminação).
 6. Riscos específicos a saúde (vazamento de dados genéticos, re-identificação, discriminação) e mitigações.
-7. Guarda de prontuário e prazos de retenção conforme CFM [unverified: not found in primary source].
+7. Guarda de prontuário e prazos de retenção — mínimo de 20 anos a partir do último registro (Res. CFM 1.821/2007, art. 8º; Lei 13.787/2018) `[verified: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2007/1821]`.
 8. Conformidade com Lei 9.656 (se operadora de plano de saúde) [verified: https://www.planalto.gov.br/ccivil_03/leis/l9656.htm].
 
 **Output:** rascunho de Plano de Privacidade com estrutura, riscos identificados, matriz de mitigações, nomeação de responsáveis, prazos.
@@ -43,7 +43,7 @@ Este skill estrutura essa conversa e escreve a output no formato desta equipe �
 
 **Premissa:** LGPD (Lei 13.709/2018). Dado referente à saúde é dado pessoal **sensível** (Art. 5º, II); seu tratamento é regido pelo Art. 11. Exige **consentimento específico e destacado** (Art. 11, I) OU uma das hipóteses do Art. 11, II — entre elas, proteção da vida ou da incolumidade física do titular/terceiro e tutela da saúde por profissionais, serviços ou autoridade sanitária. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/L13709compilado.htm]
 
-Sigilo médico é independente da LGPD: Código de Ética Médica (Res. CFM 2.217/2018, arts. 73-79 `[unverified: not found in primary source]`) + violação de segredo profissional (Código Penal art. 154 `[verified: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm]`) tornam a divulgação de informação médica ilegal sem consentimento ou justa causa, mesmo que a LGPD permitisse o tratamento.
+Sigilo médico é independente da LGPD: Código de Ética Médica (Res. CFM 2.217/2018, arts. 73-79 `[verified: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217]`) + violação de segredo profissional (Código Penal art. 154 `[verified: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm]`) tornam a divulgação de informação médica ilegal sem consentimento ou justa causa, mesmo que a LGPD permitisse o tratamento.
 
 Se a clínica/hospital também opera plano de saúde, Lei 9.656/1998 + ANS (Agência Nacional de Saúde) adiciona requisitos. Verificar regulação ANS atual sobre guarda e acesso a dados [unverified: not found in primary source].
 

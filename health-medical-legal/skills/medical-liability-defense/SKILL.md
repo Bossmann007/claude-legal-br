@@ -58,7 +58,7 @@ A triage read, not an opinion. The team decides whether to fight, settle, or wat
 - Negativa de cobertura pode gerar ação contra operadora paralelamente à ação contra médico/hospital.
 
 **Sigilo médico — inviolável:**
-- Informação de paciente é confidencial. Sigilo do advogado: Estatuto OAB Art. 7º (inviolabilidade no exercício da advocacia) [verified: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm]. Dever de sigilo médico: Código de Ética Médica (Res. CFM 2.217/2018) [unverified: not found in primary source]; e Código Penal Art. 154 (violação de segredo profissional) [model knowledge — verify].
+- Informação de paciente é confidencial. Sigilo do advogado: Estatuto OAB Art. 7º (inviolabilidade no exercício da advocacia) [verified: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm]. Dever de sigilo médico: Código de Ética Médica (Res. CFM 2.217/2018, arts. 73-79) `[verified: https://sistemas.cfm.org.br/normas/visualizar/resolucoes/BR/2018/2217]`; e Código Penal Art. 154 (violação de segredo profissional) [model knowledge — verify].
 - Pronunciamento público sobre diagnóstico / tratamento do paciente é violação de sigilo.
 
 ---
