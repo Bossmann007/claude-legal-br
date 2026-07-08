@@ -30,9 +30,9 @@ The consent model is **critical**: Open Finance requires affirmative, revocable 
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-- **Resolução BCB 32/2020** (Diretrizes de Implementação do Programa de Segurança Financeira do Banco Central do Brasil) and amendments establish the Open Finance framework `[model knowledge — verify]`
-- **Lei 13.709/2018 (LGPD)** — Lei Geral de Proteção de Dados — governs personal data sharing; LGPD rights (acesso, portabilidade, retificação) interplay with Open Finance disclosure `[model knowledge — verify]`
-- **Banco Central guidance documents** (BCB.gov.br/openbanking) elaborate on phased implementation timeline and technical standards `[model knowledge — verify]`
+- **Resolução BCB 32/2020** (Diretrizes de Implementação do Programa de Segurança Financeira do Banco Central do Brasil) and amendments establish the Open Finance framework `[unverified: not found in primary source]`
+- **Lei 13.709/2018 (LGPD)** — Lei Geral de Proteção de Dados — governs personal data sharing; LGPD rights (acesso, portabilidade, retificação) interplay with Open Finance disclosure `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]`
+- **Banco Central guidance documents** (BCB.gov.br/openbanking) elaborate on phased implementation timeline and technical standards `[unverified: not found in primary source]`
 
 ---
 
@@ -52,7 +52,7 @@ If blank, I'll flag what you need to decide.
 
 ### 1. Scope — which data is Open Finance data?
 
-Resolução BCB 32/2020 defines Open Finance scope (data customers can request to be shared) `[model knowledge — verify]`:
+Resolução BCB 32/2020 defines Open Finance scope (data customers can request to be shared) `[unverified: not found in primary source]`:
 
 - **Accounts data:** account type, balance, limits, status
 - **Transaction data:** historical transactions, payment records
@@ -66,7 +66,7 @@ Resolução BCB 32/2020 defines Open Finance scope (data customers can request t
 
 ### 2. Consent model — explicit and revocable
 
-**Resolução BCB 32/2020 requirement** `[model knowledge — verify]`: Consent must be **explicit** and **per recipient and data category**. 
+**Resolução BCB 32/2020 requirement** `[unverified: not found in primary source]`: Consent must be **explicit** and **per recipient and data category**. 
 
 This means:
 - ✓ Customer logs in, sees list of authorized recipients (banks, fintech, mortgage companies), checks boxes for which ones can access their data, and confirms
@@ -87,7 +87,7 @@ Open Finance data is personal data under LGPD (Lei 13.709/2018). When you share 
 
 - **Establish controller/processor roles (Art. 5º LGPD):** Are you the controller (you decide what data to collect and how to share it)? Is the recipient also a controller (they decide to use the data)? Both are typically controllers for their own purposes.
 - **Have a DPA (Art. 33 LGPD) if the recipient is a processor:** Not typically the case in Open Finance (recipients are usually controllers too), but flag if unclear.
-- **Include LGPD scope in your consent:** Customers must know they're sharing "personal data per LGPD" — not just "financial data." `[model knowledge — verify]`
+- **Include LGPD scope in your consent:** Customers must know they're sharing "personal data per LGPD" — not just "financial data." `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]`
 - **Provide LGPD rights:** Customers have the right to access (Art. 18 LGPD), correct (Art. 19), delete (Art. 17, with exceptions for contractual obligations), port their data (Art. 20) — these rights exist independently of Open Finance consent.
 
 **Your LGPD compliance:** Do your Open Finance terms explain LGPD rights? Do you have mechanisms to honor data access and portability requests? This is separate from Open Finance, but failures here are failures in both regimes.

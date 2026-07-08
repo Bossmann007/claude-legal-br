@@ -24,11 +24,11 @@ This skill reviews a contract against your playbook positions and flags deviatio
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-- **Código Civil (Lei 10.406/2002)** — general contract law, Arts. 421-480 (contratos em geral, disposições especiais); arts. 591-608 on loan (empréstimo) and financing `[model knowledge — verify]`
-- **CDC (Lei 8.078/1990)** — consumer protection law; applies when borrower is a consumer (destinatário final, sem repasse); makes many contract terms abusive/void (Art. 51) `[model knowledge — verify]`
-- **Lei de Usura (Decreto 22.626/1933)** — antediluvian usury law, technically still in force but overridden by more recent rules `[model knowledge — verify]`
-- **BCB Resolutions** — specific rules for crédito consignado (CCB), financiamento imobiliário, etc. `[model knowledge — verify]`
-- **STJ precedent** — Súmulas and jurisprudence on capitalized interest, CET disclosure, abusive fees `[model knowledge — verify]`
+- **Código Civil (Lei 10.406/2002)** — general contract law, Arts. 421-480 (contratos em geral); arts. 591-592 on loan (empréstimo/mútuo), with services/empreitada in the following provisions rather than "financing" as a single block. `[CORRECTION NEEDED: Código Civil Arts. 421-480 tratam de contratos em geral; Arts. 591-592 tratam do mútuo/empréstimo de coisas fungíveis, enquanto Arts. 593-609 tratam de prestação de serviço/empreitada; a faixa 591-608 não é bloco de empréstimo e financiamento — https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]`
+- **CDC (Lei 8.078/1990)** — consumer protection law; applies when borrower is a consumer (destinatário final, Art. 2º); makes many contract terms abusive/void (Art. 51) `[verified: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm]`
+- **Lei de Usura (Decreto 22.626/1933)** — antediluvian usury law; its rules do not apply to rates/charges in operations by institutions in the national financial system under STF Súmula 596. `[verified: https://www.planalto.gov.br/ccivil_03/decreto/d22626.htm; https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=30&sumula=2017]`
+- **BCB Resolutions** — specific rules for crédito consignado (CCB), financiamento imobiliário, etc. `[unverified: not found in primary source]`
+- **STJ precedent** — Súmulas and jurisprudence on capitalized interest, CET disclosure, abusive fees `[verified: https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2017/2017-02-09_18-51_Previsao-contratual-e-exigida-para-capitalizacao-de-juros-em-qualquer-periodicidade.aspx]`
 
 ---
 
@@ -53,7 +53,7 @@ If blank, proceed with analysis and flag where the playbook needs clarification.
 
 - **Consumer:** Individual borrowing for personal use (car financing, credit card, personal loan)
 - **Corporate:** Company borrowing for business use (working capital, expansion, equipment) — CDC may not apply if the company is clearly a professional buyer
-- **Ambiguous:** A small business (microempreendedor) borrowing for personal/business overlap — increasingly treated as consumer-like under STJ recent precedent `[model knowledge — verify]`
+- **Ambiguous:** A small business (microempreendedor) borrowing for personal/business overlap — increasingly treated as consumer-like under STJ recent precedent `[unverified: not found in primary source]`
 
 **Action:** Confirm with the playbook: are you lending to consumers? If yes, CDC rules apply **cogently** (non-waivable). Many contract terms borrowers might accept are void per CDC Art. 51 (abusive clauses).
 
@@ -61,7 +61,7 @@ If blank, proceed with analysis and flag where the playbook needs clarification.
 
 **The legal mess:** Brazil has no statutory usury cap (unlike many jurisdictions with fixed %). Lei de Usura caps are technically ~12% p.a. but haven't been enforced in decades. What remains are:
 
-- **STJ precedent on "abusive interest":** Súmula 382/STJ — "A estipulação de juros remuneratórios superiores a 12% ao ano, por si só, não indica abusividade" `[settled — 2026-07-03]` (verificado contra STJ AtoM / arquivocidadao.stj.jus.br: no per se abuse over 12%; excessiveness analyzed case-by-case vs. taxa média de mercado). Instituições financeiras não se sujeitam à Lei de Usura (Súmula 596/STF) `[model knowledge — verify]`
+- **STJ precedent on "abusive interest":** Súmula 382/STJ — "A estipulação de juros remuneratórios superiores a 12% ao ano, por si só, não indica abusividade" `[settled — 2026-07-03]` (verificado contra STJ AtoM / arquivocidadao.stj.jus.br: no per se abuse over 12%; excessiveness analyzed case-by-case vs. taxa média de mercado). Instituições financeiras não se sujeitam à Lei de Usura (Súmula 596/STF) `[verified: https://portal.stf.jus.br/jurisprudencia/sumariosumulas.asp?base=30&sumula=2017]`
 - **CDC + consumer = risk:** For consumer credit, excessively high interest can be challenged as "abusive" (Art. 51 CDC) even if not per se usury
 
 **Your policy:** Check the playbook. What's your interest rate ceiling? Common approaches:
@@ -77,7 +77,7 @@ If blank, proceed with analysis and flag where the playbook needs clarification.
 
 ### 3. CET (Custo Efetivo Total) disclosure
 
-**BCB requirement** `[model knowledge — verify]`: For many credit products, the lender must disclose CET (the true all-in annual percentage rate, including all fees and charges). This is **mandatory**, **in writing**, **before** the borrower signs. Failure to disclose is a BC violation and makes the contract challengeable.
+**BCB requirement** `[unverified: not found in primary source]`: For many credit products, the lender must disclose CET (the true all-in annual percentage rate, including all fees and charges). This is **mandatory**, **in writing**, **before** the borrower signs. Failure to disclose is a BC violation and makes the contract challengeable.
 
 **What's CET:** It includes:
 - Base interest rate
@@ -99,8 +99,8 @@ If blank, proceed with analysis and flag where the playbook needs clarification.
 ### 4. Capitalization of interest
 
 **For consumers (CDC):** Capitalization (compound interest) is prohibited except:
-- Capitalização de juros com periodicidade inferior à anual é permitida em contratos com instituições do Sistema Financeiro Nacional celebrados a partir de 31/3/2000 (MP 1.963-17/2000, reeditada como MP 2.170-36/2001), **desde que expressamente pactuada** — Súmula 539/STJ `[settled — 2026-07-03]` (verificado contra STJ AtoM). A capitalização exige previsão contratual expressa em qualquer periodicidade (Tema 953/STJ) `[model knowledge — verify]`
-- Interest on unpaid installments, calculated per period (not compound on compound) — the law is murky here and subject to STJ debate `[model knowledge — verify]`
+- Capitalização de juros com periodicidade inferior à anual é permitida em contratos com instituições do Sistema Financeiro Nacional celebrados a partir de 31/3/2000 (MP 1.963-17/2000, reeditada como MP 2.170-36/2001), **desde que expressamente pactuada** — Súmula 539/STJ `[settled — 2026-07-03]` (verificado contra STJ AtoM). A capitalização exige previsão contratual expressa em qualquer periodicidade (Tema 953/STJ) `[verified: https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias-antigas/2017/2017-02-09_18-51_Previsao-contratual-e-exigida-para-capitalizacao-de-juros-em-qualquer-periodicidade.aspx]`
+- Interest on unpaid installments, calculated per period (not compound on compound) — the law is murky here and subject to STJ debate `[unverified: not found in primary source]`
 
 **For corporates:** Capitalization is usually allowed, but must be transparent.
 
@@ -120,13 +120,13 @@ If blank, proceed with analysis and flag where the playbook needs clarification.
 - Admin fee: Often 0.5–2% of principal. Defensible if disclosed and market-normal.
 - Processing fee: Fixed or percentage. Per-se reasonable if ≤ cost to process.
 - Mortgage registration fee / Title insurance: Often bundled; should be separate and itemized if consumer borrowing.
-- Early payment penalty: Many contracts charge a "fine" if you repay early to recoup lost interest. STJ has oscillated on this — currently seems to allow it for corporate but not consumer. Flag this specifically. `[model knowledge — verify]`
+- Early payment penalty: Many contracts charge a "fine" if you repay early to recoup lost interest. STJ has oscillated on this — currently seems to allow it for corporate but not consumer. Flag this specifically. `[unverified: not found in primary source]`
 
 **Your playbook check:** What's your fee ceiling? E.g., "Admin fee max 1.5% of principal", "No prepayment penalty for consumers"?
 
 ### 6. Crédito consignado (salary-deducted loans)
 
-**Special rules apply** `[model knowledge — verify]`:
+**Special rules apply** `[unverified: not found in primary source]`:
 - CCB (Cédula de Crédito Bancário) is the instrument; specific BCB resolution governs terms
 - Borrower consent + employer consent required
 - Interest cap: Often lower than unsecured lending (because guaranteed by salary deduction)

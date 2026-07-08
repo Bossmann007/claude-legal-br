@@ -24,12 +24,12 @@ It runs against your playbook positions from `~/.claude/plugins/config/claude-fo
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-Lei das Instituições de Pagamento (Lei 12.865/2013) governs payment institutions and payment arrangements in Brazil. Regulated by Banco Central do Brasil (BCB). Key statutes and resolutions `[model knowledge — verify]`:
+Lei das Instituições de Pagamento (Lei 12.865/2013) governs payment institutions and payment arrangements in Brazil. Regulated by Banco Central do Brasil (BCB). Key statutes and resolutions `[verified: https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Lei/l12865.htm]`:
 
-- **Lei 12.865/2013** — defines Instituição de Pagamento (Art. 6º) and Arranjo de Pagamento (Art. 7º) `[model knowledge — verify]`
-- **Resolução BCB 4.658/2018** (and updates) — governance and operational requirements for Instituições de Pagamento `[model knowledge — verify]`
-- **Resolução BCB 32/2020** — Open Finance requirements for participant institutions `[model knowledge — verify]`
-- **Pix Resolution** — BCB rules for Pix participants, settlement on D+0 `[model knowledge — verify]`
+- **Lei 12.865/2013** — defines Instituição de Pagamento and Arranjo de Pagamento in Art. 6º; Art. 7º sets principles for payment arrangements and institutions. `[CORRECTION NEEDED: Lei 12.865/2013 Art. 6º traz as definições de arranjo de pagamento e instituição de pagamento; Art. 7º não é a definição de arranjo, mas lista princípios a observar — https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Lei/l12865.htm]`
+- **Resolução BCB 4.658/2018** (and updates) — governance and operational requirements for Instituições de Pagamento `[unverified: not found in primary source]`
+- **Resolução BCB 32/2020** — Open Finance requirements for participant institutions `[unverified: not found in primary source]`
+- **Pix Resolution** — BCB rules for Pix participants, settlement on D+0 `[unverified: not found in primary source]`
 
 ---
 
@@ -48,11 +48,11 @@ If the section is blank (`[PLACEHOLDER]`), proceed with the analysis and note th
 
 ### 1. Institutional classification — Instituição vs. Arranjo
 
-**Lei 12.865/2013 definitions** `[model knowledge — verify]`:
+**Lei 12.865/2013 definitions** `[verified: https://www.planalto.gov.br/ccivil_03/_Ato2011-2014/2013/Lei/l12865.htm]`:
 
 - **Instituição de Pagamento (Art. 6º):** A legal entity (not a bank or payment bank) that, as its core business, receives funds from payers and makes them available to payees through payment arrangements. Typically requires BCB authorization, minimum capital, governance board, compliance officer, risk management, and annual financial reporting.
 
-- **Arranjo de Pagamento (Art. 7º):** A set of rules, infrastructure, and procedures for payment transactions among participants. Can be operated by an Instituição de Pagamento, a bank, or (under certain conditions) another entity with specific BCB authorization. Lower regulatory burden than an Instituição standalone, but still requires compliance with the system's rules.
+- **Arranjo de Pagamento (Art. 6º):** A set of rules and procedures that disciplines the provision of a payment service to the public accepted by more than one recipient, by direct access by final users, payers and recipients. Art. 7º sets principles for arrangements and institutions rather than defining the term.
 
 **Your classification:**
 
@@ -67,34 +67,34 @@ Based on the description you provided, does your operation:
 ### 2. Regulatory requirements by type
 
 If **Instituição de Pagamento:**
-- BCB authorization required (process can take 6-12 months) `[model knowledge — verify]`
-- Minimum capital: [check current BCB requirement; last known was R$ 2M for some categories] `[model knowledge — verify]`
-- Governance: Board, Audit Committee, Risk Committee (size depending on capital tier) `[model knowledge — verify]`
-- Chief Compliance Officer and independent risk management `[model knowledge — verify]`
-- Annual financial reporting to BCB, including prudential ratios `[model knowledge — verify]`
-- Segregated customer funds (Conta de Depósitos Judiciais or equivalent) `[model knowledge — verify]`
+- BCB authorization required (process can take 6-12 months) `[unverified: not found in primary source]`
+- Minimum capital: [check current BCB requirement; last known was R$ 2M for some categories] `[unverified: not found in primary source]`
+- Governance: Board, Audit Committee, Risk Committee (size depending on capital tier) `[unverified: not found in primary source]`
+- Chief Compliance Officer and independent risk management `[unverified: not found in primary source]`
+- Annual financial reporting to BCB, including prudential ratios `[unverified: not found in primary source]`
+- Segregated customer funds (Conta de Depósitos Judiciais or equivalent) `[unverified: not found in primary source]`
 
 If **Arranjo de Pagamento:**
-- Classification and notification to BCB (less formal than Instituição authorization) `[model knowledge — verify]`
+- Classification and notification to BCB (less formal than Instituição authorization) `[unverified: not found in primary source]`
 - If you own the Arranjo: governance and compliance rules, but often lighter than Instituição
 - If you participate in an existing Arranjo (e.g., Pix): adherence to that Arranjo's operational rules
 
 ### 3. Open Finance (if applicable)
 
 If you handle customer financial data (accounts, transactions, credit), you may be subject to Resolução BCB 32/2020 (Open Finance Brasil). This requires:
-- Data sharing with customer consent `[model knowledge — verify]`
-- API compliance with BCB standard (not your choice of format) `[model knowledge — verify]`
-- Explicit customer consent model (not implicit) `[model knowledge — verify]`
-- LGPD-compliant Data Processing Agreement with recipients `[model knowledge — verify]`
+- Data sharing with customer consent `[unverified: not found in primary source]`
+- API compliance with BCB standard (not your choice of format) `[unverified: not found in primary source]`
+- Explicit customer consent model (not implicit) `[unverified: not found in primary source]`
+- LGPD-compliant Data Processing Agreement with recipients `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]`
 
 Check your playbook (`## Playbook` → `### Payment Systems and Open Finance` → `**Open Finance participation**`). If you're not Open Finance-eligible (e.g., you don't hold customer accounts), skip this.
 
 ### 4. AML/PLD (if handling customer funds)
 
 Any entity accepting customer funds must comply with Lei 9.613/1998 (Lei de Prevenção à Lavagem de Dinheiro — AML/PLD law):
-- Know Your Customer (KYC) — identity verification, beneficial ownership, source of funds `[model knowledge — verify]`
-- Customer Due Diligence (CDD) — ongoing transaction monitoring `[model knowledge — verify]`
-- Suspicious Activity Reporting (SAR) to COAF (Conselho de Controle de Atividades Financeiras) `[model knowledge — verify]`
+- Know Your Customer (KYC) — identity verification, beneficial ownership, source of funds `[verified: https://www.planalto.gov.br/ccivil_03/LEIS/L9613compilado.htm]`
+- Customer Due Diligence (CDD) — ongoing transaction monitoring `[verified: https://www.planalto.gov.br/ccivil_03/LEIS/L9613compilado.htm]`
+- Suspicious Activity Reporting (SAR) to COAF (Conselho de Controle de Atividades Financeiras) `[verified: https://www.planalto.gov.br/ccivil_03/LEIS/L9613compilado.htm]`
 
 Your playbook should record your AML/PLD posture. If blank, this will be a standard requirement regardless.
 
