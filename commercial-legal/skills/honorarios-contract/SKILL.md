@@ -16,7 +16,7 @@ argument-hint: "[tipo de caso ou descrição da relação de mandato]"
 1. Load `~/.claude/plugins/config/claude-for-legal/commercial-legal/CLAUDE.md` → firm position on fee arrangements, escalation chain.
 2. Run the workflow below.
 3. Determinar a hipótese legal de honorários (sucumbência, êxito, pró-labore, tabela, porcentagem, combinada).
-4. Checar limites éticos: quota litis é **permitida, porém restrita** (CED-OAB art. 50 [unverified: not found in primary source]) — em regra apenas por escrito, honorários não podem ser superiores às vantagens do cliente, e são vedados o aviltamento e a assunção de despesas pelo advogado como condição. Não é "proibida na maioria dos casos"; é excepcional e regulada.
+4. Checar limites éticos: quota litis é **permitida, porém restrita** (CED-OAB art. 50 `[verified: https://www.oab.org.br/arquivos/pdf/legislacaoOab/codigodeetica.pdf]`) — em regra apenas por escrito, honorários não podem ser superiores às vantagens do cliente, e são vedados o aviltamento e a assunção de despesas pelo advogado como condição. Não é "proibida na maioria dos casos"; é excepcional e regulada.
 5. Draftar cláusulas: estrutura, reajuste, hipótese de revogação/suspensão, confidencialidade, resolução de conflitos.
 6. Aplicar consequential-action gate antes de entregar rascunho.
 
@@ -317,7 +317,7 @@ _________________________     _______________________
 
 ## Nota ética: captação indevida é vedada
 
-Segundo Provimento CFOAB 205/2021 [unverified: not found in primary source], publicidade de serviços jurídicos é permitida (derrogando proibição histórica), mas **captação indevida** é proibida — marketing agressivo, coação, promessas de resultado garantido, ou honorários contingentes não-explícitos podem caracterizar falta ética. O contrato de honorários, se resultante de captação indevida, é eticamente comprometido.
+Segundo Provimento CFOAB 205/2021 `[verified: https://eticaedisciplina.oab.org.br/assets/docs/Provimento%20n.%20205.2021%20-%20Publicidade.pdf]`, publicidade de serviços jurídicos é permitida (derrogando proibição histórica), mas **captação indevida** é proibida — marketing agressivo, coação, promessas de resultado garantido, ou honorários contingentes não-explícitos podem caracterizar falta ética. O contrato de honorários, se resultante de captação indevida, é eticamente comprometido.
 
 **Consequential-action gate:** se há indício de que o cliente foi captado de forma agressiva ou coagido a assinar, flagge o contrato antes de entregar.
 
