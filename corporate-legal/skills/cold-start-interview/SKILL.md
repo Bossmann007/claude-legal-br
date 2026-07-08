@@ -363,7 +363,7 @@ Ask which regime applies first — this changes every question below: **B3 (CVM-
 
 **Negociação por administradores e pessoas ligadas (insider reporting):**
 - Who tracks reportable trades by administradores/controladores — you, outside counsel, RI, or a combination?
-- What's your internal target for filing the negociação disclosure? (Resolução CVM 44 sets the current filing deadline for administrators/controlling shareholders `[model knowledge — verify current deadline]`; internal targets are often tighter.)
+- What's your internal target for filing the negociação disclosure? (Resolução CVM 44 sets the current filing deadline for administrators/controlling shareholders `[verified: https://conteudo.cvm.gov.br/export/sites/cvm/legislacao/resolucoes/anexos/001/resol044.pdf]`; internal targets are often tighter.)
 - Does your política de negociação de valores mobiliários require pre-clearance? Who approves?
 
 **Política de negociação (trading policy):**

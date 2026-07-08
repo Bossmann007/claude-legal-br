@@ -14,7 +14,7 @@ argument-hint: "[descreva o ato que precisa de aprovação societária]"
 
 # /written-consent
 
-**Base legal.** Ltda.: deliberação escrita é expressamente admitida — Art. 1.072, §3º, Código Civil permite dispensa de reunião ou assembleia quando todos os sócios decidirem por escrito sobre a matéria objeto da deliberação. S.A.: a Lei 6.404/1976 NÃO tem equivalente geral de "consentimento por escrito" para deliberação de acionistas — Assembleia Geral (Arts. 121-137) exige convocação e reunião (presencial ou por meios eletrônicos, Art. 121, parágrafo único). O que É viável por escrito numa S.A.: deliberação do Conselho de Administração, se o Estatuto Social autorizar (Art. 140, Lei 6.404/1976, na redação dada pela Lei 14.195/2021, que passou a admitir expressamente reunião e deliberação por meios remotos/escritos quando o estatuto permitir). Antes de redigir para uma S.A., confirme no Estatuto Social se o conselho pode deliberar por escrito — se a matéria é de competência da Assembleia Geral, não existe atalho por consentimento escrito; a via é sempre AGO/AGE. [model knowledge — verify]
+**Base legal.** Ltda.: deliberação escrita é expressamente admitida — Art. 1.072, §3º, Código Civil permite dispensa de reunião ou assembleia quando todos os sócios decidirem por escrito sobre a matéria objeto da deliberação. S.A.: a Lei 6.404/1976 NÃO tem equivalente geral de "consentimento por escrito" para deliberação de acionistas — Assembleia Geral (Arts. 121-137) exige convocação e reunião (presencial ou por meios eletrônicos, Art. 121, parágrafo único). O que É viável por escrito numa S.A.: deliberação do Conselho de Administração, se o Estatuto Social autorizar (Art. 140, Lei 6.404/1976, na redação dada pela Lei 14.195/2021, que passou a admitir expressamente reunião e deliberação por meios remotos/escritos quando o estatuto permitir). Antes de redigir para uma S.A., confirme no Estatuto Social se o conselho pode deliberar por escrito — se a matéria é de competência da Assembleia Geral, não existe atalho por consentimento escrito; a via é sempre AGO/AGE. [CORRECTION NEEDED: CC Art. 1.072, §3º confirma dispensa de reunião/assembleia quando todos os sócios decidirem por escrito; LSA Art. 121 trata assembleia geral e participação/voto a distância, mas Art. 140 não confirmou a formulação sobre deliberação remota/escrita do conselho — https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm; https://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm]
 
 1. Load `~/.claude/plugins/config/claude-for-legal/corporate-legal/CLAUDE.md` → Board & Secretary (consents repository, resolution language, state of incorporation, board composition).
 2. Use the workflow below.
@@ -232,7 +232,7 @@ Data: _______________
 [Repetir para cada sócio / conselheiro]
 ```
 
-**Registro na Junta Comercial.** Deliberação de sócios de Ltda. que altere o contrato social (capital, quotas, administração, objeto) é, na prática, formalizada como alteração contratual e arquivada na Junta Comercial em até 30 dias (Art. 36, Lei 8.934/1994). Deliberação de sócios que NÃO altera o contrato social (ex.: aprovação de contrato específico, autorização de ato de gestão) pode ficar arquivada internamente, sem registro na Junta — confirme com o advogado responsável qual é o caso. [model knowledge — verify]
+**Registro na Junta Comercial.** Deliberação de sócios de Ltda. que altere o contrato social (capital, quotas, administração, objeto) é, na prática, formalizada como alteração contratual e arquivada na Junta Comercial em até 30 dias (Art. 36, Lei 8.934/1994). Deliberação de sócios que NÃO altera o contrato social (ex.: aprovação de contrato específico, autorização de ato de gestão) pode ficar arquivada internamente, sem registro na Junta — confirme com o advogado responsável qual é o caso. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8934.htm]
 
 ### Resolution drafting notes
 
@@ -247,9 +247,9 @@ Data: _______________
 
 Verifique o tipo societário em `~/.claude/plugins/config/claude-for-legal/corporate-legal/CLAUDE.md`. Confirme antes de redigir:
 
-- **Ltda.:** unanimidade é exigida para dispensar reunião/assembleia (Art. 1.072, §3º, CC) — sem unanimidade, a via por escrito não é válida; nesse caso a reunião ou assembleia formal é obrigatória. [model knowledge — verify]
+- **Ltda.:** unanimidade é exigida para dispensar reunião/assembleia (Art. 1.072, §3º, CC) — sem unanimidade, a via por escrito não é válida; nesse caso a reunião ou assembleia formal é obrigatória. [verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]
 - **S.A. — Conselho de Administração:** o Estatuto Social autoriza deliberação por meios remotos/escritos (Art. 140, Lei 6.404/1976, redação Lei 14.195/2021)? Sem previsão estatutária expressa, confirme com o advogado responsável antes de prosseguir por essa via.
-- **S.A. — Assembleia Geral:** não há via de consentimento escrito — se a matéria é de competência da Assembleia (Art. 122, Lei 6.404/1976), pare e redirecione pro fluxo de convocação de AGO/AGE. [model knowledge — verify]
+- **S.A. — Assembleia Geral:** não há via de consentimento escrito — se a matéria é de competência da Assembleia (Art. 122, Lei 6.404/1976), pare e redirecione pro fluxo de convocação de AGO/AGE. [verified: https://www.planalto.gov.br/ccivil_03/leis/l6404consol.htm]
 - Qual forma de assinatura é válida (manuscrita, eletrônica avançada/qualificada nos termos da Lei 14.063/2020, vias simultâneas)?
 - O Contrato Social/Estatuto Social sobrepõe alguma regra padrão — ex.: quórum mais alto, restrição sobre quais matérias podem ser decididas por escrito?
 
