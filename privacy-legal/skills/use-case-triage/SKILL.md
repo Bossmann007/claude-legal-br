@@ -14,7 +14,7 @@ argument-hint: "[describe the data processing activity or feature]"
 
 1. Read `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md`. Confirm privacy practice is configured — if not, stop and direct to setup.
 2. Run the workflow below. Clarify the activity if vague.
-3. House trigger check → RIPD-trigger check (LGPD art. 38 — ANPD may require; high-risk factors art. 10 §3º / art. 11 / art. 14 / art. 20) (mandatory assessment may be required) / GDPR DPIA check (if GDPR also in footprint) → privacy policy conflict check. [model knowledge — verify]
+3. House trigger check → RIPD-trigger check (LGPD art. 38 — ANPD may require; high-risk factors art. 10 §3º / art. 11 / art. 14 / art. 20) (mandatory assessment may be required) / GDPR DPIA check (if GDPR also in footprint) → privacy policy conflict check. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
 4. Output: classification (PROCEED / PIA REQUIRED / DPIA MANDATORY / STOP), reasoning, conditions table if required, cross-plugin handoffs.
 5. Offer to continue into PIA generation if assessment is required.
 
@@ -125,7 +125,7 @@ activities need a PIA regardless of internal policy.
 
 For each regime in `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md` → `## Regulatory footprint`, **research the currently operative mandatory privacy/data-protection assessment triggers**. Cite controlling statute, regulation, or ANPD guidance (Resoluções CD/ANPD, gov.br/anpd) with pinpoint references. Note effective dates — ANPD publishes and updates guidance regularly; do not rely on a static checklist. Flag uncertainty for attorney verification rather than guess.
 
-If **any** applicable regime's mandatory trigger is met → **DPIA MANDATORY** (Relatório de Impacto à Proteção de Dados — RIPD, LGPD art. 38 / art. 5º, XVII — or the equivalent regime-specific mandate), regardless of house trigger. Note: LGPD art. 38 empowers the ANPD to determine/request a RIPD; it is NOT a blanket universal mandate. A dedicated ANPD RIPD regulation is not yet in force (was under public consultation) — verify current status; do not conflate with Res. CD/ANPD nº 18/2024, which regulates the encarregado (DPO), not the RIPD. `[model knowledge — verify]`
+If **any** applicable regime's mandatory trigger is met → **DPIA MANDATORY** (Relatório de Impacto à Proteção de Dados — RIPD, LGPD art. 38 / art. 5º, XVII — or the equivalent regime-specific mandate), regardless of house trigger. Note: LGPD art. 38 empowers the ANPD to determine/request a RIPD; it is NOT a blanket universal mandate. A dedicated ANPD RIPD regulation is not listed as vigente on the ANPD regulations page; do not conflate with Res. CD/ANPD nº 18/2024, which regulates the encarregado (DPO), not the RIPD. `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm; https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd]`
 
 **Strong indicators (not necessarily mandatory but do one anyway):**
 - New technology or novel use of existing technology

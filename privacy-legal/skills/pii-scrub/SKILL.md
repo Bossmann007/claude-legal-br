@@ -22,7 +22,7 @@ Before a lawyer pastes processual content, client data, or contracts into Claude
 This skill assumes **Brasil (LGPD, Lei 13.709/2018)** as the default jurisdiction. The obligations around PII and dados sensíveis come from:
 
 - **Lei 13.709/2018 (LGPD)** — art. 7 (base legal for treatment), art. 11 (dados sensíveis: health, race/ethnicity, political opinion, religious belief, union membership, genetic, biometric data), art. 48 (notification to ANPD upon incident), art. 41 (DPO obligations)
-- **CPC (Código de Processo Civil)** — art. 189 (segredo de justiça — private family, succession, mediation matters can be sealed; judge can order sealing in other cases to protect privacy or security) `[model knowledge — verify]`
+- **CPC (Código de Processo Civil)** — art. 189 (segredo de justiça — interesse público/social, família, dados íntimos e arbitragem confidencial podem tramitar em segredo; sucessões ou mediação não aparecem como categorias gerais autônomas) `[CORRECTION NEEDED: CPC Art. 189 prevê segredo de justiça para interesse público/social, família (casamento, separação, divórcio, união estável, filiação, alimentos, guarda), dados íntimos e arbitragem com confidencialidade; não confirma sucessões ou mediação como categorias gerais — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`
 - **Lei 12.527/2011 (Lei de Acesso à Informação)** — art. 31 (personal data excluded from disclosure requirements unless subject consented)
 
 ---
@@ -40,8 +40,8 @@ This skill assumes **Brasil (LGPD, Lei 13.709/2018)** as the default jurisdictio
 Before scrubbing, ask:
 
 > **Quick legal check — answer 1-2 questions:**
-> 1. Does this document run under **segredo de justiça** (CPC art. 189 `[model knowledge — verify]`) or involve a sealed/confidential proceeding? (Yes / No / Unsure)
-> 2. Does it contain **dados sensíveis** (health, race/ethnicity, religion, political opinion, biometrics, union, genetic — LGPD art. 11 `[model knowledge — verify]`)? (Yes / No / Unsure)
+> 1. Does this document run under **segredo de justiça** (CPC art. 189 `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`) or involve a sealed/confidential proceeding? (Yes / No / Unsure)
+> 2. Does it contain **dados sensíveis** (health, race/ethnicity, religion, political opinion, biometrics, union, genetic — LGPD art. 11 `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]`)? (Yes / No / Unsure)
 >
 > If yes to either: **caution flag** (see Step 4 below) before scrubbing.
 

@@ -247,7 +247,7 @@ Aim for 2-5 real risks, not 15 padded ones.
 Every PIA should cross-check against the privacy policy commitments in `~/.claude/plugins/config/claude-for-legal/privacy-legal/CLAUDE.md`. The common drift:
 
 - Policy says "we collect X, Y, Z" — new feature collects W. Policy needs updating, or stop collecting W.
-- Política diz "não compartilhamos dados com terceiros" — nova feature compartilha com parceiro de anúncios. Isso exige base legal própria e atualização da política (Art. 9º LGPD — transparência). [model knowledge — verify]
+- Política diz "não compartilhamos dados com terceiros" — nova feature compartilha com parceiro de anúncios. Isso exige base legal própria e atualização da política (Art. 9º LGPD — transparência). [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
 - Policy says retention is "as long as your account is active" — new feature keeps data post-deletion.
 
 Flag every mismatch. One of them has to change before launch.

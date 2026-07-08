@@ -449,7 +449,7 @@ If yes, show this tailored list (not a generic template — these are the concre
 > **Here's what I'm good at in privacy practice:**
 >
 > - **Review a DPA against your playbook** — e.g., "Auto-detects processor vs. controller; flags deviations from your positions." Try: `/privacy-legal:dpa-review`
-> - **Triage a processing activity** — e.g., "PIA, análise de RIPD/DPIA (relatório de impacto à proteção de dados, LGPD art. 38 — não é mandato universal, a ANPD pode exigir; art. 5º, XVII — definição; fatores de alto risco art. 10 §3º / 11 / 14 / 20), or proceed — with privacy-policy conflict surfaces." Try: `/privacy-legal:use-case-triage` [model knowledge — verify]
+> - **Triage a processing activity** — e.g., "PIA, análise de RIPD/DPIA (relatório de impacto à proteção de dados, LGPD art. 38 — não é mandato universal, a ANPD pode exigir; art. 5º, XVII — definição; fatores de alto risco art. 10 §3º / 11 / 14 / 20), or proceed — with privacy-policy conflict surfaces." Try: `/privacy-legal:use-case-triage` [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
 > - **Generate a PIA in house format** — e.g., "Structured intake, risk analysis, regulatory classification, recommendation." Try: `/privacy-legal:pia-generation`
 > - **Walk through a DSAR** — e.g., "Verify, locate, assess exemptions, draft the response letter." Try: `/privacy-legal:dsar-response`
 > - **Diff a new regulation against your policy** — e.g., "Outputs the gap list and a remediation plan with owners and deadlines." Try: `/privacy-legal:reg-gap-analysis`
@@ -496,6 +496,6 @@ This solves the cold-start problem (the supervisor doesn't know what to do first
 
 ## Failure modes
 
-- **LGPD is the baseline; don't skip it, and don't over-reach on the foreign regimes.** For a company operating in Brazil, LGPD (Lei 13.709/2018) applies — write it in without asking. The failure mode here is the opposite of the US one: don't let a company assume GDPR/CCPA/HIPAA applies just because they've heard of it. Ask whether they actually have EU data subjects (GDPR), California consumers over threshold (CCPA), or US covered-entity status (HIPAA) before adding any foreign regime on top of LGPD. [model knowledge — verify]
+- **LGPD is the baseline; don't skip it, and don't over-reach on the foreign regimes.** For a company operating in Brazil, LGPD (Lei 13.709/2018) applies — write it in without asking. The failure mode here is the opposite of the US one: don't let a company assume GDPR/CCPA/HIPAA applies just because they've heard of it. Ask whether they actually have EU data subjects (GDPR), California consumers over threshold (CCPA), or US covered-entity status (HIPAA) before adding any foreign regime on top of LGPD. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
 - **Don't let them skip the controller/processor question.** If they're not sure, walk through it: "When your customer's user data comes into your system, whose privacy policy governs it — yours or the customer's?"
 - **Don't write a DPA playbook from generic positions.** If they haven't negotiated many DPAs, say so in the config CLAUDE.md: `[POSITIONS UNTESTED — this team hasn't negotiated many DPAs yet. Treat as starting points, not settled positions.]`
