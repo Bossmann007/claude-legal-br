@@ -32,18 +32,18 @@ Implementar um programa de privacidade (ou "plano de adequação à LGPD") é es
 
 **Premissa de jurisdição (Brasil):**
 
-A LGPD (Lei 13.709/2018) dispõe sobre tratamento de dados pessoais por pessoa natural ou jurídica de direito público ou privado (Art. 1º); o escopo territorial e a oferta de bens/serviços para indivíduos localizados no Brasil aparecem no Art. 3º. Um programa de privacidade estrutura o cumprimento contínuo da lei e reduz exposição regulatória. Não é obrigatório por lei, mas é a base defensiva quando auditada pela ANPD (Autoridade Nacional de Proteção de Dados). [CORRECTION NEEDED: LGPD Art. 1º dispõe sobre tratamento de dados pessoais por pessoa natural ou jurídica de direito público ou privado; o escopo territorial/oferta de bens ou serviços a indivíduos no Brasil é tratado no Art. 3º — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
+A LGPD (Lei 13.709/2018) dispõe sobre tratamento de dados pessoais por pessoa natural ou jurídica de direito público ou privado (Art. 1º); o escopo territorial e a oferta de bens/serviços para indivíduos localizados no Brasil aparecem no Art. 3º. Um programa de privacidade estrutura o cumprimento contínuo da lei e reduz exposição regulatória. Não é obrigatório por lei, mas é a base defensiva quando auditada pela ANPD (Autoridade Nacional de Proteção de Dados). [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
 
 Elementos obrigatórios sob LGPD:
 - **Identificação do controlador** (Art. 5º, VI — quem decide fins e meios [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
 - **Indicação de Encarregado** (Art. 41 — DPO; dispensa possível para agente de pequeno porte per Res. CD/ANPD nº 2/2022 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm; https://www.gov.br/anpd/pt-br/acesso-a-informacao/institucional/atos-normativos/regulamentacoes_anpd/resolucao-cd-anpd-no-2-de-27-de-janeiro-de-2022])
 - **Registro de atividades de tratamento** (Art. 37 — inventário de dados / Matriz de Atividades [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
 - **Base legal para cada finalidade** (Art. 7º ou Art. 11 se sensível [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
-- **Avaliação de Impacto (RIPD)** quando a ANPD determinar ao controlador sua elaboração (Art. 38 [CORRECTION NEEDED: LGPD Art. 38 diz que a ANPD poderá determinar ao controlador a elaboração de RIPD e define conteúdo mínimo; não cria obrigação geral automática para toda atividade de alto risco — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
-- **Políticas de retenção** (Art. 16 — conservação após término do tratamento em hipóteses específicas; necessidade/minimização está no Art. 6º, III [CORRECTION NEEDED: LGPD Art. 16 trata das hipóteses de conservação após o término do tratamento; o princípio de necessidade/minimização está no Art. 6º, III — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
+- **Avaliação de Impacto (RIPD)** quando a ANPD determinar ao controlador sua elaboração (Art. 38 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
+- **Políticas de retenção** (Art. 16 — conservação após término do tratamento em hipóteses específicas; necessidade/minimização está no Art. 6º, III [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
 - **Direitos de titulares** (Art. 18 — acesso, correção, exclusão, portabilidade, etc. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
-- **Segurança** (Art. 46 — medidas técnicas e administrativas [CORRECTION NEEDED: LGPD Art. 46 trata de medidas de segurança técnicas e administrativas; Art. 32 não é a base correta para essa obrigação — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
-- **Plano de resposta a incidente** (Art. 48 — se houver incidente que possa acarretar risco ou dano relevante, comunicar ANPD + afetados [CORRECTION NEEDED: LGPD Art. 48 exige comunicação à ANPD e ao titular quando o incidente de segurança possa acarretar risco ou dano relevante; não é qualquer vazamento — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
+- **Segurança** (Art. 46 — medidas técnicas e administrativas [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
+- **Plano de resposta a incidente** (Art. 48 — se houver incidente que possa acarretar risco ou dano relevante, comunicar ANPD + afetados [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
 
 > **No silent supplement.** If a research query to the configured legal research tool (JusBrasil, Escavador) returns few or no results for a LGPD provision or ANPD regulação, report what was found and stop. Do NOT fill the gap from web search or model knowledge without asking. Say: "The search returned [N] results from [tool]. Coverage appears thin for [requirement]. Options: (1) broaden the search query, (2) try a different research tool, (3) search the web — results will be tagged `[web search — verify]` and should be checked against a primary source before relying, or (4) flag as unverified and stop. Which would you like?" A lawyer decides whether to accept lower-confidence sources.
 >
@@ -119,16 +119,16 @@ For each data category, confirm the lawful basis per Art. 7º (or Art. 11 for se
 - In-house operations manager with DPO training
 
 **DPO responsibilities:**
-- Aceitar reclamações e comunicações dos titulares, prestar esclarecimentos e adotar providências (Art. 41, §2º, I [CORRECTION NEEDED: LGPD Art. 41, §2º, I trata de aceitar reclamações e comunicações dos titulares, prestar esclarecimentos e adotar providências; não é "monitor compliance" — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
-- Receber comunicações da ANPD e adotar providências (Art. 41, §2º, II [CORRECTION NEEDED: LGPD Art. 41, §2º, II trata de receber comunicações da autoridade nacional e adotar providências — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
-- Orientar funcionários e contratados sobre práticas de proteção de dados (Art. 41, §2º, III [CORRECTION NEEDED: LGPD Art. 41, §2º, III trata de orientar funcionários e contratados a respeito das práticas de proteção de dados pessoais; cooperação com ANPD aparece no inciso II como recebimento de comunicações e providências — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
+- Aceitar reclamações e comunicações dos titulares, prestar esclarecimentos e adotar providências (Art. 41, §2º, I [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
+- Receber comunicações da ANPD e adotar providências (Art. 41, §2º, II [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
+- Orientar funcionários e contratados sobre práticas de proteção de dados (Art. 41, §2º, III [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
 - Act as escalation point for privacy concerns
 
 **Output:** DPO name, title, email, start date, training completed.
 
 ### Step 5: RIPD (Privacy Impact Assessments) — which activities need one?
 
-**RIPD triggers (Art. 38 LGPD [CORRECTION NEEDED: LGPD Art. 38 diz que a ANPD poderá determinar ao controlador a elaboração de RIPD e define conteúdo mínimo; não lista estes gatilhos automáticos — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]):**
+**RIPD triggers (Art. 38 LGPD [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]):**
 - [ ] Treatment founded on **legitimate interest** (Art. 7º, IX) — RIPD highly recommended (ANPD may require)
 - [ ] Large-scale or sensitive data (health, financial, biometric, etc.)
 - [ ] Automated decision-making that affects the person (Art. 20 LGPD [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
@@ -168,7 +168,7 @@ The company should document:
 
 6. **Incident response plan** (Art. 48 LGPD [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm])
    - If personal data is breached or compromised, what happens?
-   - Notification timeline to ANPD (3 business days under current ANPD incident guidance [CORRECTION NEEDED: ANPD informa prazo de 3 dias úteis para comunicação à ANPD e titulares conforme Arts. 6º e 9º da Resolução CD/ANPD nº 15/2024; "without unjustified delay" não é o prazo brasileiro vigente nessa fonte — https://www.gov.br/anpd/pt-br/assuntos/comunicacao-de-incidentes-de-seguranca-cis])
+   - Notification timeline to ANPD (3 business days under current ANPD incident guidance [verified: https://www.gov.br/anpd/pt-br/assuntos/comunicacao-de-incidentes-de-seguranca-cis])
    - Notification to affected data subjects (if the incident can cause relevant risk or damage [verified: https://www.gov.br/anpd/pt-br/assuntos/comunicacao-de-incidentes-de-seguranca-cis])
    - Forensics / investigation process
 

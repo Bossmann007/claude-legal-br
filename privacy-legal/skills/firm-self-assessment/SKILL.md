@@ -58,7 +58,7 @@ A LGPD (Lei 13.709/2018) aplica-se a qualquer operação de tratamento de dados 
 - Determina as finalidades e meios do tratamento (Art. 5º, VI);
 - Coleta dados de cliente, partes, testemunhas, staff e os processa.
 
-Sigilo profissional do advogado é uma **proteção contra divulgação involuntária**, não uma base legal de tratamento. O Estatuto OAB Art. 7º, II trata da inviolabilidade de escritório, instrumentos de trabalho, correspondência e comunicações; o Art. 7º, XIX trata da recusa a depor como testemunha sobre fato ligado a cliente ou sigilo profissional. Sigilo NÃO dispensa: [CORRECTION NEEDED: Estatuto OAB Art. 7º, II confirma inviolabilidade de escritório, instrumentos, correspondência e comunicações; Art. 7º, XIX confirma recusa a depor como testemunha sobre fato ligado a cliente ou sigilo profissional; a frase original atribuía a correspondência ao inciso XIX — https://www.planalto.gov.br/ccivil_03/leis/l8906.htm]
+Sigilo profissional do advogado é uma **proteção contra divulgação involuntária**, não uma base legal de tratamento. O Estatuto OAB Art. 7º, II trata da inviolabilidade de escritório, instrumentos de trabalho, correspondência e comunicações; o Art. 7º, XIX trata da recusa a depor como testemunha sobre fato ligado a cliente ou sigilo profissional. Sigilo NÃO dispensa: [verified: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm]
 
 - Uma base legal sob LGPD art. 7 (consentimento, obrigação legal, execução de contrato, legítimo interesse com teste de balanceamento, proteção de vida, tutela de saúde, pesquisa, proteção de crédito).
 - Medidas de segurança (Art. 46 LGPD) — sigilo profissional + criptografia em repouso é melhor que sigilo profissional sozinho. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
@@ -69,7 +69,7 @@ Sigilo profissional do advogado é uma **proteção contra divulgação involunt
 - **Obrigação legal** — Estatuto OAB, CPC, Lei 13.140 (mediação) e outras exigem que advogado mantenha registros de cliente (Art. 7º, II LGPD).
 - **Legítimo interesse** — cobranças, contato para aviso de vencimento, análise de risco do cliente (se balanceado e documentado).
 
-**Para dados ALÉM do mandato** (ex.: newsletter, marketing, comunicações promocionais), consentimento é uma base legal possível (Art. 7º, I LGPD) e pode ser revogado a qualquer tempo (Art. 8º, §5º); confirme a base legal aplicável ao fluxo concreto, pois o Art. 7º prevê outras hipóteses. [CORRECTION NEEDED: LGPD Art. 7º, I confirma consentimento como uma base legal e Art. 8º, §5º confirma revogação; a fonte não confirma que consentimento seja sempre exigido para todo marketing/newsletter, pois o Art. 7º prevê outras bases legais — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
+**Para dados ALÉM do mandato** (ex.: newsletter, marketing, comunicações promocionais), consentimento é uma base legal possível (Art. 7º, I LGPD) e pode ser revogado a qualquer tempo (Art. 8º, §5º); confirme a base legal aplicável ao fluxo concreto, pois o Art. 7º prevê outras hipóteses. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
 
 **RIPD obrigatória (Art. 38 LGPD)?** Sim, quando:
 - Tratamento é fundado em legítimo interesse (exige teste de balanceamento documentado);
@@ -78,9 +78,9 @@ Sigilo profissional do advogado é uma **proteção contra divulgação involunt
 
 A RIPD de um escritório é rara mas recomendável quando: (a) guarda dados sensíveis (ex.: segredos de negócio do cliente), (b) processamento envolve larga escala de titulares (ex.: base de testemunhas em litigação coletiva), (c) novo sistema de retenção ou compartilhamento de dados.
 
-**Prazos de retenção:** não foi confirmada na whitelist a afirmação de que o Estatuto OAB Art. 1º fixe guarda documental do cliente "enquanto durar o relacionamento e após", nem que o CPC art. 204 autorize condenação por destruição de documentos. **LGPD exige que retenção respeite finalidade/necessidade: guardar por prazo legítimo, não indefinido.** Balanço de prazo deve ser validado por política do escritório e fonte normativa específica. [CORRECTION NEEDED: Estatuto OAB Art. 1º trata das atividades privativas da advocacia, não de guarda documental; CPC Art. 204 trata de acórdão, não de condenação por destruição de documentos; fonte whitelist não confirmou a praxe de 5 anos — https://www.planalto.gov.br/ccivil_03/leis/l8906.htm; https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]
+**Prazos de retenção:** não foi confirmada na whitelist a afirmação de que o Estatuto OAB Art. 1º fixe guarda documental do cliente "enquanto durar o relacionamento e após", nem que o CPC art. 204 autorize condenação por destruição de documentos. **LGPD exige que retenção respeite finalidade/necessidade: guardar por prazo legítimo, não indefinido.** Balanço de prazo deve ser validado por política do escritório e fonte normativa específica. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm; https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]
 
-**Incidente de dados (Art. 48 LGPD):** Controlador deve comunicar à ANPD e ao titular incidente de segurança que possa acarretar risco ou dano relevante aos titulares. A ANPD informa que, conforme a Res. CD/ANPD nº 15/2024, a comunicação à ANPD e aos titulares deve ocorrer em até **3 dias úteis**, ressalvada legislação específica. [CORRECTION NEEDED: LGPD Art. 48 exige comunicação à ANPD e ao titular de incidente de segurança que possa acarretar risco ou dano relevante; ANPD informa que, conforme Arts. 6º e 9º da Resolução CD/ANPD nº 15/2024, a comunicação à ANPD e aos titulares deve ocorrer em até 3 dias úteis, não 72 horas nem Res. nº 3/2024 — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm; https://www.gov.br/anpd/pt-br/assuntos/comunicacao-de-incidentes-de-seguranca-cis]
+**Incidente de dados (Art. 48 LGPD):** Controlador deve comunicar à ANPD e ao titular incidente de segurança que possa acarretar risco ou dano relevante aos titulares. A ANPD informa que, conforme a Res. CD/ANPD nº 15/2024, a comunicação à ANPD e aos titulares deve ocorrer em até **3 dias úteis**, ressalvada legislação específica. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm; https://www.gov.br/anpd/pt-br/assuntos/comunicacao-de-incidentes-de-seguranca-cis]
 
 ---
 
@@ -148,8 +148,8 @@ Para CADA finalidade de tratamento, identificar qual é a base legal:
 
 - **Estatuto OAB:** Guarda "enquanto durar o relacionamento e após" (vago).
 - **Jurisprudência OAB:** 5 anos após fim do mandato (recomendado, citado em Provimentos) [unverified: not found in primary source].
-- **LGPD Art. 15-16:** término do tratamento e hipóteses de conservação após o término; o direito de eliminação pelo titular está no Art. 18, VI. [CORRECTION NEEDED: LGPD Art. 15 trata do término do tratamento e Art. 16 permite conservação após o término em hipóteses específicas; o direito de eliminação pelo titular está no Art. 18, VI — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
-- **CPC Art. 204 e correlatos:** CPC Art. 204 não confirma obrigação geral de guarda de processos nem responsabilidade por destruição prematura. [CORRECTION NEEDED: CPC Art. 204 trata de acórdão; não confirma obrigação geral de guarda de processos nem responsabilidade por destruição prematura — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]
+- **LGPD Art. 15-16:** término do tratamento e hipóteses de conservação após o término; o direito de eliminação pelo titular está no Art. 18, VI. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm]
+- **CPC Art. 204 e correlatos:** CPC Art. 204 não confirma obrigação geral de guarda de processos nem responsabilidade por destruição prematura. [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]
 
 **Política do escritório:**
 - Definir: guardar 5 anos após fim do mandato (padrão defensável)?

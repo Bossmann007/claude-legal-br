@@ -22,7 +22,7 @@ Before a lawyer pastes processual content, client data, or contracts into Claude
 This skill assumes **Brasil (LGPD, Lei 13.709/2018)** as the default jurisdiction. The obligations around PII and dados sensíveis come from:
 
 - **Lei 13.709/2018 (LGPD)** — art. 7 (base legal for treatment), art. 11 (dados sensíveis: health, race/ethnicity, political opinion, religious belief, union membership, genetic, biometric data), art. 48 (notification to ANPD upon incident), art. 41 (DPO obligations)
-- **CPC (Código de Processo Civil)** — art. 189 (segredo de justiça — interesse público/social, família, dados íntimos e arbitragem confidencial podem tramitar em segredo; sucessões ou mediação não aparecem como categorias gerais autônomas) `[CORRECTION NEEDED: CPC Art. 189 prevê segredo de justiça para interesse público/social, família (casamento, separação, divórcio, união estável, filiação, alimentos, guarda), dados íntimos e arbitragem com confidencialidade; não confirma sucessões ou mediação como categorias gerais — https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`
+- **CPC (Código de Processo Civil)** — art. 189 (segredo de justiça — interesse público/social, família, dados íntimos e arbitragem confidencial podem tramitar em segredo; sucessões ou mediação não aparecem como categorias gerais autônomas) `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`
 - **Lei 12.527/2011 (Lei de Acesso à Informação)** — art. 31 (personal data excluded from disclosure requirements unless subject consented)
 
 ---
