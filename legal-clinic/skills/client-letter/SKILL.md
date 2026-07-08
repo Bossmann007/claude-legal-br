@@ -54,7 +54,7 @@ Whatever the posture, the output always includes: "**Pedagogy mode: [assist/guid
 
 ## Sign-off and student-attorney disclosure
 
-No Brasil, o estagiário de Direito atua sob a Lei 8.906/1994 (Estatuto da OAB, art. 3º, §2º) e o regulamento do Núcleo de Prática Jurídica (NPJ) da instituição — ou convênio com Defensoria Pública. A correspondência assinada por estagiário deve identificá-lo como estagiário(a) e identificar o(a) advogado(a) supervisor(a) com nº de inscrição na OAB. The templates below use a generic form — conform the sign-off to your NPJ's rule (e regulamento do convênio, se houver) before sending. [model knowledge — verify]
+No Brasil, o estagiário de Direito atua sob a Lei 8.906/1994 (Estatuto da OAB, art. 3º, §2º), praticando atos compatíveis com sua atividade acadêmica sob responsabilidade e em conjunto com advogado, e também deve observar o regulamento do Núcleo de Prática Jurídica (NPJ) da instituição — ou convênio com Defensoria Pública. A regra detalhada de assinatura/identificação em correspondência deve ser conferida no regulamento do NPJ ou convênio aplicável. The templates below use a generic form — conform the sign-off to your NPJ's rule (e regulamento do convênio, se houver) before sending. [verified: https://www.planalto.gov.br/ccivil_03/leis/l8906.htm] [unverified: not found in primary source]
 
 ## Letter types
 
