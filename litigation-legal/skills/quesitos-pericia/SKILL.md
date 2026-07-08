@@ -1,7 +1,7 @@
 ---
 name: quesitos-pericia
 description: >
-  Entrevista o advogado sobre a tese e gera quesitos de perícia (CPC arts. 464-480 [model knowledge — verify]) + checklist de assistente técnico, por área (médica, contábil, engenharia, grafotécnica, ambiental). Quesito ruim = perícia perdida. Inclui guidance para quesitos suplementares e impugnação ao laudo.
+  Entrevista o advogado sobre a tese e gera quesitos de perícia (CPC arts. 464-480 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) + checklist de assistente técnico, por área (médica, contábil, engenharia, grafotécnica, ambiental). Quesito ruim = perícia perdida. Inclui guidance para quesitos suplementares e impugnação ao laudo.
 user-invocable: true
 argument-hint: "[--area medica|contabil|engenharia|grafotecnica|ambiental|outro]"
 ---
@@ -28,7 +28,7 @@ Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `�
 ## Purpose
 
 Quesitos periciais set the frame for what the expert will investigate and opine on. A poorly framed quesito:
-- Asks for opinion rather than fact (violates CPC art. 464, parágrafo único [model knowledge — verify] — the expert produces fact, not legal conclusions)
+- Asks for a legal conclusion rather than technical clarification (CPC art. 464, § 1º lets the judge deny expert evidence when proof of the fact does not depend on special technical knowledge, is unnecessary in view of other evidence, or is impracticable) `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`
 - Is ambiguous (expert interprets it their way, not yours)
 - Omits the logical sequence (expert skips steps, making it hard for the judge to follow the reasoning)
 - Opens the door to a crushing counter-opinion (because you didn't ask the right follow-up)
@@ -39,7 +39,7 @@ Good quesitos are **nested, specific, sequenced, and tied to the case theory.** 
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-**CPC arts. 464–480** `[model knowledge — verify]` govern perícia in Brazilian civil procedure:
+**CPC arts. 464–480** `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]` govern perícia in Brazilian civil procedure:
 - Art. 464: The expert is appointed by the judge (on motion of a party or ex officio) and owes a duty of impartiality to the court, not to the parties. The expert's report is a deposition to the judge, not advocacy.
 - Arts. 465–468: Appointment procedure, conflict of interest, challenge of the expert.
 - Arts. 469–472: The expert produces a written report (laudo pericial). The parties may name assistentes técnicos (party-retained experts) to critique the laudo and propose counter-opinion.
@@ -122,7 +122,7 @@ These ask the expert to establish the causal chain:
 
 | # | Quesito | Type | Why it matters |
 |---|---|---|---|
-| 4 | A composição material efetiva [actual materials] ATENDE aos requisitos técnicos da NBR [número] `[model knowledge — verify]`? Se não, descrever o desvio. | Standard compliance | Is there a defect by code? |
+| 4 | A composição material efetiva [actual materials] ATENDE aos requisitos técnicos da NBR [número] `[unverified: not found in primary source]`? Se não, descrever o desvio. | Standard compliance | Is there a defect by code? |
 | 5 | Qual é a causa técnica da infiltração / dano / falha observada? Descrever o mecanismo. | Root cause | Nail down causation |
 | 6 | A causa identificada decorre de (a) erro no projeto / na execução, (b) vício de material, ou (c) uso inadequado / falta de manutenção? | Attribution | Who is at fault? |
 
@@ -178,7 +178,7 @@ Organize them in a logical flow:
 
 ### Step 6: Assistente técnico checklist
 
-When you name an assistente técnico (your party's expert counterpart), they will review the perito's laudo and file a written response (parecer técnico) `[model knowledge — verify]`. Prepare them for:
+When you name an assistente técnico (your party's expert counterpart), they will review the perito's laudo and file a written response (parecer técnico) `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`. Prepare them for:
 
 **Pre-laudo tasks:**
 - [ ] Review the quesitos you (the party's lawyer) formulated — confirm they're tight and not waivable.
@@ -196,13 +196,13 @@ When you name an assistente técnico (your party's expert counterpart), they wil
   - The specific passage from the laudo
   - Your expert's critique (fact-based, with citations to documents the perito had / should have reviewed)
   - An alternative fact / calculation
-- [ ] If the laudo is deeply flawed on a pivot point, consider requesting supplemental quesitos (art. 480) `[model knowledge — verify]` — but this rarely works; the judge is usually reluctant to reopen the perícia once the laudo is filed.
+- [ ] If the laudo is deeply flawed on a pivot point, consider requesting new expert examination under art. 480 when the matter is not sufficiently clarified; supplemental quesitos are governed by art. 469 during the diligence. `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`
 
 ---
 
 ### Step 7: Supplemental quesitos and impeachment
 
-**CPC art. 480** `[model knowledge — verify]` allows a party to propose quesitos suplementares at the time of filing the parecer técnico (within a set period). These are follow-ups on facts the perito partially answered or omitted. Draft them with the same rigor as the originals — they're your last chance to reframe an unfavorable finding.
+**CPC art. 480** `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]` allows the judge to determine, ex officio or on a party's request, a new expert examination (nova perícia) when the matter was not sufficiently clarified. For supplemental quesitos, use CPC art. 469 during the diligence. Draft any follow-up with the same rigor as the originals — it may be your last chance to reframe an unfavorable finding.
 
 **Common impeachment angles:**
 

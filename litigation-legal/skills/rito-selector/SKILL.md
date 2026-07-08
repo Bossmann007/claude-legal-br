@@ -1,7 +1,7 @@
 ---
 name: rito-selector
 description: >
-  Decision tree para "qual rito/procedimento para meu caso": juizado especial cível (Lei 9.099/1995, até 40 SM, até 20 SM sem advogado [model knowledge — verify]), juizado especial da Fazenda (Lei 12.153/2009 [model knowledge — verify]), procedimento comum (CPC), ação monitória (CPC arts. 700-702 [model knowledge — verify]), execução de título extrajudicial (CPC art. 784 [model knowledge — verify]), tutela de urgência/evidência (CPC arts. 300/311 [model knowledge — verify]). Interview do usuário → recomenda rito + sinaliza requisitos + aponta template. Inclui skeleton breve por rito.
+  Decision tree para "qual rito/procedimento para meu caso": juizado especial cível (Lei 9.099/1995, até 40 SM, até 20 SM sem advogado [verified: https://www.planalto.gov.br/ccivil_03/leis/l9099.htm]), juizado especial da Fazenda (Lei 12.153/2009 [verified: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12153.htm]), procedimento comum (CPC), ação monitória (CPC arts. 700-702 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]), execução de título extrajudicial (CPC art. 784 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]), tutela de urgência/evidência (CPC arts. 300/311 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]). Interview do usuário → recomenda rito + sinaliza requisitos + aponta template. Inclui skeleton breve por rito.
 user-invocable: true
 argument-hint: "[--claim-value <R$>] [--party-type plaintiff|defendant] [--dispute-type contract|labor|consumer|property|other]"
 ---
@@ -36,19 +36,19 @@ Before drafting a complaint, you need to know which procedure controls. A contra
 Brazilian civil procedure offers multiple tracks:
 
 **Value / jurisdiction gatekeepers:**
-- **Juizado Especial Cível** (Lei 9.099/1995 [model knowledge — verify]) — up to 40 salários mínimos (SM). Natural persons and microenterprises (ME) can sue/defend without a lawyer up to 20 SM; above 20 SM but below 40 SM, lawyer is mandatory.
-- **Juizado Especial da Fazenda Pública** (Lei 12.153/2009 [model knowledge — verify]) — disputes with government up to 60 SM. Above 60 SM, goes to common procedure.
-- **Procedimento Comum** (CPC arts. 318-369 [model knowledge — verify]) — unbounded value. Used for all disputes above juizado ceilings, disputes involving corporations, and disputes involving certain matters (family, estate, property title) even if value is low.
-- **Ação Monitória** (CPC arts. 700-702 [model knowledge — verify]) — applies when you have liquidated, undisputed debt (clear monetary amount, documented). Capped at 100 SM [model knowledge — verify]; above that, use common procedure. Faster if defendant doesn't object.
-- **Execução de Título Extrajudicial** (CPC art. 784 [model knowledge — verify]) — applies when you have final judgment, negotiable instrument, mortgage, or other executory title. Skip litigation; go straight to enforcement.
-- **Tutela de Urgência** (CPC arts. 300-310 [model knowledge — verify]) / **Tutela da Evidência** (CPC art. 311 [model knowledge — verify]) — interim relief, not standalone. Available within any main action. Tutela de urgência: irreparable harm. Tutela da evidência: claim is so clear that withholding relief is unjust.
+- **Juizado Especial Cível** (Lei 9.099/1995 [verified: https://www.planalto.gov.br/ccivil_03/leis/l9099.htm]) — up to 40 salários mínimos (SM). Natural persons and microenterprises (ME) can sue/defend without a lawyer up to 20 SM; above 20 SM but below 40 SM, lawyer is mandatory.
+- **Juizado Especial da Fazenda Pública** (Lei 12.153/2009 [verified: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12153.htm]) — disputes with government up to 60 SM. Above 60 SM, goes to common procedure.
+- **Procedimento Comum** (CPC arts. 318-369 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) — unbounded value. Used for all disputes above juizado ceilings, disputes involving corporations, and disputes involving certain matters (family, estate, property title) even if value is low.
+- **Ação Monitória** (CPC arts. 700-702 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) — applies when you have written evidence without executory-title force; the CPC provision does not set a 100 SM cap. Faster if defendant doesn't object. `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`
+- **Execução de Título Extrajudicial** (CPC art. 784 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) — applies when you have final judgment, negotiable instrument, mortgage, or other executory title. Skip litigation; go straight to enforcement.
+- **Tutela de Urgência** (CPC arts. 300-310 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) / **Tutela da Evidência** (CPC art. 311 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) — interim relief, not standalone. Available within any main action. Tutela de urgência: irreparable harm. Tutela da evidência: claim is so clear that withholding relief is unjust.
 
 **Special procedure gatekeepers (not covered in full here; skill flags and refers):**
 - **Property disputes** — CPC art. 282 § único specifies procedures for real property disputes. If your dispute involves real property, flag and refer to specialist.
 - **Family matters** — separate codes. Not covered; route to specialist.
 - **Labor disputes** — Justiça do Trabalho, specialized. Not covered; route to specialist.
 
-**Mandatory representation [model knowledge — verify]:**
+**Mandatory representation [verified: https://www.planalto.gov.br/ccivil_03/leis/l9099.htm]:**
 - **Natural person in common procedure:** Lawyer mandatory unless value < 20 SM.
 - **Corporation:** Always requires lawyer.
 - **Government:** Always represented by Attorney General or public defender.

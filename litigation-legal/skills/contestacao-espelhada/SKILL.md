@@ -1,7 +1,7 @@
 ---
 name: contestacao-espelhada
 description: >
-  Decompõe a petição inicial (elemento por elemento, pedido por pedido, causa de pedir por causa de pedir) em uma matriz: alegação do autor → defesa possível (preliminar CPC 337 / mérito) → prova necessária → ônus. Força ônus da impugnação especificada (CPC art. 341 [model knowledge — verify] — fato não impugnado presume-se verdadeiro). Sinaliza prescrição/decadência e preliminares. Produz scaffold de defesa, não contestação final (consequential-action gate applies).
+  Decompõe a petição inicial (elemento por elemento, pedido por pedido, causa de pedir por causa de pedir) em uma matriz: alegação do autor → defesa possível (preliminar CPC 337 / mérito) → prova necessária → ônus. Força ônus da impugnação especificada (CPC art. 341 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm] — fato não impugnado presume-se verdadeiro). Sinaliza prescrição/decadência e preliminares. Produz scaffold de defesa, não contestação final (consequential-action gate applies).
 user-invocable: true
 ---
 
@@ -26,7 +26,7 @@ Check `## Matter workspaces` in the practice-level CLAUDE.md. If `Enabled` is `�
 
 ## Purpose
 
-A contestação (answer) is a structural document. It admits or denies each factual allegation (CPC art. 341 [model knowledge — verify]), then either rests (no defense on the merits) or mounts affirmative defenses (preliminares or mérito). The structure matters because:
+A contestação (answer) is a structural document. It admits or denies each factual allegation (CPC art. 341 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]), then either rests (no defense on the merits) or mounts affirmative defenses (preliminares or mérito). The structure matters because:
 
 - **Failing to deny a factual allegation = admission.** Art. 341 says "fato não impugnado presume-se verdadeiro" — if the author alleges "réu received the shipment on Jan. 1" and you don't deny it, the court presumes it's true. You can't later say "actually, we got it on Jan. 15" without opening yourself to a charge of surprise / lack of candor.
 - **Preliminary defenses stop the case before merits (CPC art. 337).** If the author sued in the wrong forum, or there's res judicata, or the statute of limitations has run, you raise that first — it may end the case without a trial on the facts.
@@ -39,15 +39,15 @@ This skill builds the scaffold — the structure. You fill in the specifics (you
 
 ## Jurisdiction assumption / Premissa de jurisdição (Brasil)
 
-**CPC arts. 336–353** `[model knowledge — verify]` govern contestação:
-- Art. 336: Réu must file dentro do prazo (usually 15 dias úteis after service, doubled for Fazenda/MP per arts. 180/183/186 [model knowledge — verify]).
+**CPC arts. 336–353** `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]` govern contestação:
+- Art. 336: Réu must file dentro do prazo (usually 15 dias úteis after service, doubled for Fazenda/MP per arts. 180/183/186 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]).
 - Art. 337: Preliminary defenses (13 of them listed) can be raised in limine, in the contestação, or in certain cases at trial (depende the defense type). Common ones: lack of jurisdiction, res judicata, prescription, lack of capacity.
 - Art. 341: "Fact not denied is presumed true" (presunção de verdade) — but only facts, not legal conclusions or abstract allegations.
 - Art. 356: Reply (tréplica) by the plaintiff within 15 dias úteis if the defendant raises new facts in the contestação that weren't in the petition.
 
 **Key constraint: you must be specific.** A blanket denial ("everything is false") is no defense — you must say which facts you deny, which you partially admit, which you do not know enough to admit or deny. This is called "impugnação especificada" (specified denial / rebuttal).
 
-**Prescription & limitation periods.** If a right is prescribed or time-barred, raising prescription is a defense — it's usually on the defendant to plead and prove, but varies by obligation type. Some statute-of-limitations rules are mandatory (the judge can raise them ex officio) `[model knowledge — verify]`; others require a party to plead. Flag which in the matrix.
+**Prescription & limitation periods.** If a right is prescribed or time-barred, raising prescription is a defense — it's usually on the defendant to plead and prove, but varies by obligation type. Some statute-of-limitations rules are mandatory (the judge can raise them ex officio) `[unverified: not found in primary source]`; others require a party to plead. Flag which in the matrix.
 
 **Affirmative defenses common in contract / commercial litigation:**
 - Prescription (prazo prescricional)
@@ -107,7 +107,7 @@ For each allegation, ask yourself (and flag in the matrix):
 | Allegation | Type | Impugnable? | How to respond |
 |---|---|---|---|
 | "Contrato de compra e venda foi celebrado" | Fact | ✅ Yes | Admit, deny, or say "don't know" |
-| "Lei 10.406/2002 (CC) art. 427 allows rescission" | Law / legal conclusion | ❌ No | Don't deny; instead, distinguish or argue the law applies differently | [model knowledge — verify]
+| "Lei 10.406/2002 (CC) art. 427 allows rescission" | Law / legal conclusion | ❌ No | Don't deny; instead, distinguish or argue the law applies differently; note that CC art. 427 addresses when a proposal binds the proponent, not rescission `[verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]` |
 | "Prazo para performance was 30 dias" | Fact (what the contract said) | ✅ Yes | Admit or deny; may quote the contract |
 | "Réu was negligent" | Legal characterization | ❌ No — it's shorthand for facts you deny | Counter: deny the underlying facts ("I took all reasonable care") |
 
@@ -134,9 +134,9 @@ For each preliminary defense that applies, create a row:
 
 | # | Defesa preliminar (CPC 337) | Sua defesa | Prova | Impacto se aprovada |
 |---|---|---|---|---|
-| P.1 | Falta de jurisdiction (art. 337, inciso I) `[model knowledge — verify]` | "A vara competente é a de [comarca], não essa" (CPC art. 46 — domicílio do réu) | Comprovação do seu domicílio em outra comarca | Extinção sem julgamento de mérito — caso volta a foro competente |
-| P.2 | Res judicata (art. 337, inciso V) `[model knowledge — verify]` | "Esse conflito já foi julgado em [another case, docket #]" | Cópia da sentença anterior (coisa julgada) | Extinção sem julgamento do mérito |
-| P.3 | Prescrição (art. 337, inciso IV — se aplicável) `[model knowledge — verify]` | "Prazo prescricional de 5 anos expirou em [date]" | Documentos que mostram quando a obrigação nasceu | Extinção sem julgamento de mérito (prescrição é causa extintiva do direito) |
+| P.1 | Falta de jurisdiction / incompetência (art. 337, inciso II) `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]` | "A vara competente é a de [comarca], não essa" (CPC art. 46 — domicílio do réu) | Comprovação do seu domicílio em outra comarca | Remessa ao foro competente, conforme o caso |
+| P.2 | Res judicata / coisa julgada (art. 337, inciso VII) `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]` | "Esse conflito já foi julgado em [another case, docket #]" | Cópia da sentença anterior (coisa julgada) | Extinção sem julgamento do mérito |
+| P.3 | Prescrição (CPC art. 487, II — se aplicável) `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]` | "Prazo prescricional de 5 anos expirou em [date]" | Documentos que mostram quando a obrigação nasceu | Resolução de mérito por prescrição, se acolhida |
 
 **Critical point:** Preliminares are waived if not raised in the contestação or in the first motion if the defendant chooses to file a moção to dismiss (demanda prévia) instead. After you file the contestação, you can't later say "oh, there's also a jurisdiction problem." Raise all preliminares NOW or lose them.
 

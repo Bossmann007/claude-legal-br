@@ -1,7 +1,7 @@
 ---
 name: tese-vinculante-checker
 description: >
-  Antes de protocolar, estrutura uma verificação da tese jurídica contra autoridade vinculante e persuasiva que poderia suspender ou derrotar o caso: súmulas vinculantes STF, súmulas STJ/STF, temas de repercussão geral (STF) e recursos repetitivos (STJ). Identifica risco de sobrestamento nacional (CPC art. 1.037 [model knowledge — verify]) e IRDR local (CPC arts. 976-987 [model knowledge — verify]). Não asserta existência de súmula sem fonte. Estrutura protocolo de pesquisa (o que buscar em JusBrasil/STF/STJ) e interpreta resultados. Output: por tese, existe autoridade vinculante a favor/contra, há risco de sobrestamento ativo, recomendação.
+  Antes de protocolar, estrutura uma verificação da tese jurídica contra autoridade vinculante e persuasiva que poderia suspender ou derrotar o caso: súmulas vinculantes STF, súmulas STJ/STF, temas de repercussão geral (STF) e recursos repetitivos (STJ). Identifica risco de sobrestamento nacional (CPC art. 1.037 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) e IRDR local (CPC arts. 976-987 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]). Não asserta existência de súmula sem fonte. Estrutura protocolo de pesquisa (o que buscar em JusBrasil/STF/STJ) e interpreta resultados. Output: por tese, existe autoridade vinculante a favor/contra, há risco de sobrestamento ativo, recomendação.
 user-invocable: true
 argument-hint: "[--theme <description>] [--side plaintiff|defense] [--tribunal STF|STJ|TJ|local]"
 ---
@@ -37,10 +37,10 @@ A central legal thesis lives or dies on whether a superior court has already rul
 Brazilian appellate authority comes in binding (vinculante) and persuasive (persuasiva) tiers:
 
 **Binding:**
-- **Súmula Vinculante STF** (Lei 11.417/2006 [model knowledge — verify]) — applicable to all lower courts nationwide. A lower court contradicting it is reversible on appeal.
-- **Temas de Repercussão Geral (STF)** (CF/88 art. 102, §3º; CPC arts. 1.024-1.030 [model knowledge — verify]) — when STF declares constitutional/statutory question has general repercussion, cases pending on that identical theme are typically suspended (sobrestamento) under CPC art. 1.037 [model knowledge — verify] until STF rules.
-- **Recursos Repetitivos (STJ)** (CPC arts. 1.036-1.041 [model knowledge — verify]) — when STJ marks a recurring question as "repetitive appeal," lower-court decisions are suspended pending STJ's ruling on the thesis, then applied uniformly.
-- **IRDR** (CPC arts. 976-987 [model knowledge — verify]) — state (TJ) or federal (TRF) consolidation of identical theses; binds all cases in that court system on the question. Suspends pending cases while IRDR is resolved.
+- **Súmula Vinculante STF** (Lei 11.417/2006 [verified: https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2006/lei/l11417.htm]) — applicable to lower courts and public administration under the binding-effect framework. A lower court contradicting it is reversible on appeal.
+- **Temas de Repercussão Geral (STF)** (CF/88 art. 102, §3º; CPC art. 1.035 `[verified: https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm; https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`) — when STF declares constitutional/statutory question has general repercussion, cases pending on that identical theme are typically suspended (sobrestamento) under CPC art. 1.037 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm] until STF rules.
+- **Recursos Repetitivos (STJ)** (CPC arts. 1.036-1.041 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) — when STJ marks a recurring question as "repetitive appeal," lower-court decisions are suspended pending STJ's ruling on the thesis, then applied uniformly.
+- **IRDR** (CPC arts. 976-987 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]) — state (TJ) or federal (TRF) consolidation of identical theses; binds all cases in that court system on the question. Suspends pending cases while IRDR is resolved.
 
 **Persuasive (highly influential but not binding):**
 - **Súmulas STJ** (non-vinculante) — lower courts follow by practice unless strong reason to diverge.
@@ -134,7 +134,7 @@ For each authority found, apply:
 
 **Question 3: Procedural consequence if binding?**
 - **Súmula Vinculante STF contradicts:** Case is dead. Do NOT file. Lower court must follow the súmula.
-- **Unresolved Tema de Repercussão Geral:** Case will be suspended under CPC art. 1.037 [model knowledge — verify] when filed. Remains suspended (possibly years) until STF rules. Filing now locks you into suspension.
+- **Unresolved Tema de Repercussão Geral:** Case may be suspended under CPC art. 1.037 [verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm] when filed, depending on the affected issue and tribunal handling. Remains suspended until the binding issue is resolved. Filing now may lock you into suspension.
 - **Active Recurso Especial Repetitivo:** Case suspended at STJ level. Thesis applied uniformly once decided.
 - **Active IRDR in your local TJ/TRF:** Case suspended until IRDR is resolved. Local-level effects only.
 
