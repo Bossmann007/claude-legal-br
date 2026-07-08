@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Python dependencies
+        run: pip install jsonschema pyyaml
+
+      - name: Run cookbook gates
+        run: bash scripts/test-cookbooks.sh
+
+      - name: Run connector and anti-injection tests
+        run: |
+          node connectors/datajud/test.mjs
+          node connectors/djen/test.mjs
+          node anti-injection/hooks/test.mjs
+
+      - name: Run citation provenance lint
+        continue-on-error: true
+        run: python3 scripts/lint-citations.py
