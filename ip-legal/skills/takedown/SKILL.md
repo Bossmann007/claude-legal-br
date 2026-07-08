@@ -32,7 +32,7 @@ Three modes. Pick one:
 
 4. **Respect the gates.** In `--send` and `--counter`, the loud gate runs before any final output is written. The limitations/exceptions gate in `--send` is separate and runs earlier; "debatable" or "likely covered by a limitation (art. 46-48)" stops the draft and routes to attorney review.
 
-5. **Jurisdiction note.** The Marco Civil regime (Lei 12.965/2014 art. 19/21) governs content hosted by providers reachable under Brazilian jurisdiction. Under **art. 19**, the general rule is that a provider is only civilly liable for third-party content after failing to comply with a **specific court order** — an extrajudicial notice does not, by itself, compel removal. Under **art. 21**, non-consensual nudity or private sexual acts are the express exception: notification by the victim (or legal representative) is enough to trigger provider liability. If the provider sits under **US jurisdiction only** (US-hosted, no Brazilian presence), the DMCA path in the gated fallback section may be the effective instrument instead of — or alongside — the Brazilian route. [model knowledge — verify]
+5. **Jurisdiction note.** The Marco Civil regime (Lei 12.965/2014 art. 19/21) governs content hosted by providers reachable under Brazilian jurisdiction. Under **art. 19**, the general rule is that a provider is only civilly liable for third-party content after failing to comply with a **specific court order** — an extrajudicial notice does not, by itself, compel removal. Under **art. 21**, non-consensual nudity or private sexual acts are the express exception: notification by the victim (or legal representative) is enough to trigger provider liability. If the provider sits under **US jurisdiction only** (US-hosted, no Brazilian presence), the DMCA path in the gated fallback section may be the effective instrument instead of — or alongside — the Brazilian route. [verified: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm]
 
 6. **Hand off where appropriate.** `--respond` with a contest recommendation chains into `/ip-legal:takedown --counter` — but only after the triage memo has been reviewed and the decision to contest has been made deliberately.
 
@@ -70,7 +70,7 @@ If the user does not pass a flag, ask once: "Are we sending a notificação de r
 
 ## Jurisdiction assumption
 
-The Marco Civil da Internet (**Lei 12.965/2014**) governs provider liability for third-party content in Brazil. The two load-bearing articles: [model knowledge — verify]
+The Marco Civil da Internet (**Lei 12.965/2014**) governs provider liability for third-party content in Brazil. The two load-bearing articles: [verified: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l12965.htm]
 
 - **Art. 19 — general rule.** A connection/application provider is civilly liable for third-party content only if, **after a specific court order** identifying the content, it fails to make it unavailable. An extrajudicial notice does not trigger liability for ordinary content; a court order (typically a tutela de urgência, CPC art. 300) is the instrument that compels removal. `[settled — last confirmed 2026-07-02]`
 - **Art. 21 — exception.** For content containing **nudity or private sexual acts** disclosed without the participant's consent, the provider is subsidiarily liable if, **after notification by the participant or their legal representative**, it does not act diligently to remove it. Here a notification — not a court order — is the trigger. `[settled — last confirmed 2026-07-02]`
@@ -124,7 +124,7 @@ Record the answer in the notice file. If "debatable" or "likely covered," do not
 
 ### Step 4: Good-faith belief
 
-The notifier asserts, in good faith, that the use is unauthorized and unlawful. A false or reckless assertion supports an abuse-of-notification / abuso de direito claim (CC art. 187) and possible danos morais. [model knowledge — verify]
+The notifier asserts, in good faith, that the use is unauthorized and unlawful. A false or reckless assertion supports an abuse-of-notification / abuso de direito claim (CC art. 187) and possible danos morais. [verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm]
 
 The sender forms this belief on the record. Have they:
 
@@ -241,7 +241,7 @@ Do not write the final output without explicit engagement with the gate.
 
 **Reviewer-facing closing note** (in the in-chat preview only):
 
-> This is a draft notice for attorney review, not a notice ready to serve. Sending it is a formal assertion of a right with abuse-of-right exposure (CC art. 187), and compelling removal of ordinary content requires a court order (tutela de urgência, CPC art. 300). An advogado inscrito na OAB reviews, edits, and takes professional responsibility before service. Do not send this unreviewed. [model knowledge — verify]
+> This is a draft notice for attorney review, not a notice ready to serve. Sending it is a formal assertion of a right with abuse-of-right exposure (CC art. 187), and compelling removal of ordinary content requires a court order (tutela de urgência, CPC art. 300). An advogado inscrito na OAB reviews, edits, and takes professional responsibility before service. Do not send this unreviewed. [verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm; https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]
 
 **Citation verification.** Any case or statutory citation included (for example, in internal memoranda around the notice) must be verified on a legal research tool. Source-tag each — `[JusBrasil]`, `[Escavador]`, `[PJe]`, `[user provided]`, `[model knowledge — verify]`, `[web search — verify]`. Citations tagged `verify` get checked first. No silent supplement from web or model knowledge if a configured research tool comes up thin — present options to the user.
 

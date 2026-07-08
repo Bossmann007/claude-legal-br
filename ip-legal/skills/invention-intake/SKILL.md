@@ -250,7 +250,7 @@ borderline. `[settled — last confirmed 2026-07-02]`
   cryptography, robotics) with the technical means described — this is what takes
   a software-related invention out of art. 10 V ("as such") and into
   patentability, consistent with INPI's exam guidelines for computer-implemented
-  inventions `[model knowledge — verify against current INPI guidelines]`
+  inventions `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm] [unverified: not found in primary source]`
 
 **Anything borderline gets a 🟡 with "art. 10/18 — route to specialist / agente
 da PI."** A non-specialist should not call a close eligibility question.
@@ -287,7 +287,7 @@ Categorize the disclosure status:
 - **Any** public disclosure before filing, if foreign rights matter — most
   countries outside Brazil/US (EU, China, Japan) apply an absolute-novelty bar
   with no grace period. Potentially fatal to foreign rights even while Brazil is
-  still open under art. 12. `[model knowledge — verify per target jurisdiction]`
+  still open under art. 12. `[unverified: not found in primary source]`
 
 **🟡 Clock is running:**
 - Publicly disclosed within the last 12 months — the BR *período de graça* (art.

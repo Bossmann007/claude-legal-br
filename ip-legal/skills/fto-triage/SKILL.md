@@ -75,7 +75,7 @@ not drop it. Do not soften it. Do not let the reader skim past it.**
 > destruction) are governed by Lei 9.279/1996, arts. 183–210 `[verify]` — there
 > is no US-style treble-damages structure, but proceeding with knowledge of a
 > specific patent still affects the damages calculation and can support a
-> bad-faith finding `[model knowledge — verify]`. For US-designated patents in
+> bad-faith finding `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm; https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`. For US-designated patents in
 > scope, willful infringement can triple damages under 35 U.S.C. § 284 — see
 > the jurisdiction-specific note below. The decision to launch, make, use,
 > sell, or import is a business decision informed by a formal FTO study and
@@ -165,7 +165,7 @@ Ask in a single batch:
 >    the more real the triage.)
 > 3. **Jurisdictions.** Where will it be made, used, sold, offered for sale,
 >    imported? Each act is separately relevant — in Brazil under Lei
->    9.279/1996 art. 42 `[model knowledge — verify]`, in the US under
+>    9.279/1996 art. 42 `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`, in the US under
 >    35 U.S.C. § 271. I'll default to Brazil if you don't specify, and flag
 >    if a foreign jurisdiction (US, EU, etc.) looks like it's actually in
 >    scope from your description.
@@ -303,8 +303,7 @@ Capture:
   a *minimum* term of 10 (invention) or 7 (utility model) years from grant when
   examination ran long — but the STF declared that minimum-term guarantee
   unconstitutional in ADI 5.529 (May 2021), so it no longer applies to grants
-  issued after that ruling `[model knowledge — verify against current INPI/STF
-  guidance if a minimum-term calculation is in play]`. Confirm the actual
+	  issued after that ruling. `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm; https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=465506]` Confirm the actual
   expiration in **e-INPI / RPI**, not by calculating from the priority date
   alone — the filing date that starts the clock, any divisional filings, and
   any annuity lapse all affect the real date. For a US-designated patent in
@@ -315,7 +314,7 @@ Capture:
   alive by annual **anuidades** (retribuições anuais) starting from the 3rd
   year of the filing date and payable every year thereafter for the life of
   the patent, with a grace period (currently understood as up to 6 months
-  with surcharge) before lapse for non-payment `[model knowledge — verify]` —
+	  with surcharge) before lapse for non-payment `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]` —
   a materially different schedule from the US 3.5/7.5/11.5-year fixed
   maintenance-fee points (Lei 9.279/1996 arts. 84–87 govern the anuidade
   regime; verify current fee schedule and grace period directly against
@@ -384,12 +383,12 @@ each independent claim element-by-element.
 >   the applicable damages regime is art. 210 (greatest of infringer's gain,
 >   patentee's loss, or reasonable royalty) rather than US §284/§289; there is
 >   no direct equivalent to the US treble-damages willfulness enhancement
->   `[model knowledge — verify]`. Prosecution-history estoppel and DOE exist
+>   `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`. Prosecution-history estoppel and DOE exist
 >   in BR practice in less codified form than in the US and are decided
 >   case-by-case by the courts (patent litigation in Brazil runs through the
 >   ordinary federal/state judiciary — specialized IP chambers exist in
 >   São Paulo and Rio de Janeiro — rather than a dedicated patent court)
->   `[model knowledge — verify]`. Flag DOE and estoppel reads as attorney
+>   `[unverified: not found in primary source]`. Flag DOE and estoppel reads as attorney
 >   judgment calls, same as for the US, but do not import the US doctrinal
 >   tests (function-way-result, *Festo*) without confirming they apply.
 > - **United States:** all-elements rule, doctrine of equivalents,
@@ -459,7 +458,7 @@ Bucket by what the triage found:
   proceeding without further analysis can support a §284 willfulness finding.
   For BR-designated patents, proceeding with knowledge still bears on the
   art. 210 damages calculation and can support a *litigância de má-fé*
-  characterization `[model knowledge — verify]`. Counsel — Agente da
+  characterization `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm; https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm]`. Counsel — Agente da
   Propriedade Industrial / patent attorney for BR, registered patent
   attorney for US — should document the path forward.
 
@@ -571,7 +570,7 @@ without further counsel review after this knowledge can support a willfulness
 finding and enhanced damages under § 284. For a BR-designated patent,
 proceeding with this knowledge bears on the losses-and-damages calculation
 under Lei 9.279/1996 art. 210 and can support a *litigância de má-fé*
-characterization `[model knowledge — verify]` — there is no direct BR
+characterization `[verified: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm; https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]` — there is no direct BR
 equivalent to the US treble-damages enhancement, so do not describe BR
 exposure in those terms. The path forward should be documented by qualified
 patent counsel in each jurisdiction in scope; the business decision to
@@ -612,7 +611,7 @@ Before issuing the output, read `## Who's using this`. If the Role is Non-lawyer
 > work, representation before INPI is through an **Agente da Propriedade
 > Industrial** (Lei 9.279/1996, art. 216) — the INPI registry lists qualified
 > agents, and the OAB (Ordem dos Advogados do Brasil) can refer a patent
-> litigator for court proceedings `[model knowledge — verify]`. For US patent
+> litigator for court proceedings `[CORRECTION NEEDED: LPI Art. 216 diz que os atos previstos na lei serão praticados pelas partes ou por seus procuradores devidamente qualificados; não diz que representação perante o INPI é através de Agente da Propriedade Industrial nem confirma o encaminhamento OAB para litígio — https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`. For US patent
 > work, a registered patent attorney or patent agent is required (not every
 > lawyer is registered — the USPTO Office of Enrollment and Discipline
 > maintains a directory). For other jurisdictions, use the relevant patent

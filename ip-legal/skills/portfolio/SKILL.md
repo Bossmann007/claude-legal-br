@@ -133,8 +133,7 @@ Maintenance mechanics vary by jurisdiction and asset type:
   mid-term declaration of use — Brazil does not require a use affidavit
   during the term, though non-use for 5+ consecutive years exposes the
   registration to a third-party *caducidade* (lapse-for-non-use) action
-  under LPI art. 143. `[model knowledge — verify current INPI fee schedule
-  and grace terms]`
+  under LPI art. 143. `[CORRECTION NEEDED: LPI Art. 143 confirma caducidade por falta de uso por 5 anos; a janela de prorrogação de 6 meses após o termo final do registro consta do Art. 133, §2º, não do Art. 143, §1º — https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`
 - **Brazilian patents (INPI, LPI arts. 40, 84-86):** Annual fees (*retribuição
   anual*/annuities) due starting in the 3rd year from filing, payable within
   the prior year or in a 6-month grace window with surcharge (LPI art. 84).
@@ -143,8 +142,7 @@ Maintenance mechanics vary by jurisdiction and asset type:
   a *minimum* term of 10 years (patents) / 7 years (utility models) from
   grant if prosecution ran long — the STF declared that minimum-term
   guarantee unconstitutional in ADI 5.529 (May 2021), so grants issued after
-  that ruling do not carry it. `[model knowledge — verify against current
-  INPI/STF guidance if a minimum-term calculation is in play]`
+  that ruling do not carry it. `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm; https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=465506]`
 - **Madrid International trademarks:** 10-year registration term renewable at
   WIPO; individual designated countries — including Brazil, a Madrid Protocol
   member since October 2019 (Decreto 10.033/2019) — may layer local

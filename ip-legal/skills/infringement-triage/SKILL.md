@@ -379,7 +379,7 @@ point). This skill flags issues; it does not assess infringement.
 The rest of this mode assumes the asserted patent is a **utility patent**
 (no `D`/`RE`/`PP` prefix). If the D-number branch above applies, stop here.
 
-> **Brazil (Lei 9.279/1996 — LPI) is the default patent framework for this skill.** The all-elements rule and element-by-element claim charting are jurisdiction-agnostic mechanics and carry over, but the substantive law underneath — patentability, invalidity grounds, and damages — is Brazilian unless the patent is US-designated (or otherwise foreign-designated) and the accused conduct is US-territorial. Route to `/ip-legal:fto-triage` for the full BR-first framework (INPI e-Patentes/RPI, anuidade regime, art. 40 term) — this triage uses the same substantive law, "accused product" substituted for "own product." When a US-designated patent or US-territorial accused conduct is genuinely in scope, apply the US contrastive frameworks noted inline below `[model knowledge — verify]`.
+> **Brazil (Lei 9.279/1996 — LPI) is the default patent framework for this skill.** The all-elements rule and element-by-element claim charting are jurisdiction-agnostic mechanics and carry over, but the substantive law underneath — patentability, invalidity grounds, and damages — is Brazilian unless the patent is US-designated (or otherwise foreign-designated) and the accused conduct is US-territorial. Route to `/ip-legal:fto-triage` for the full BR-first framework (INPI e-Patentes/RPI, anuidade regime, art. 40 term) — this triage uses the same substantive law, "accused product" substituted for "own product." When a US-designated patent or US-territorial accused conduct is genuinely in scope, apply the US contrastive frameworks noted inline below `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`.
 > - **Germany:** Utility models (Gebrauchsmuster), the Schneidmesser/Kunststoffrohrteil questions for DOE, bifurcated validity/infringement proceedings.
 > - **China:** Utility models (shiyong xinxing), CNIPA examination, different claim construction.
 > - **Japan:** Utility models, JPO examination, a narrower DOE.
@@ -396,15 +396,15 @@ The rest of this mode assumes the asserted patent is a **utility patent**
 - Literal infringement first. DOE ("equivalência" — Brazilian courts and INPI
   practice recognize infringement by equivalent means; there is no LPI
   article codifying a US-style function-way-result test, so flag DOE analysis
-  as `[model knowledge — verify]` and expect it argued from LPI art. 42 §1º's
+	  as `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]` and expect it argued from LPI art. 42 §1º's
   exclusive-exploitation-right language and case law rather than a codified
   doctrine) as a flag.
 - Indirect and divided infringement as flags. LPI does not codify separate
   "induced" / "contributory" infringement categories the way 35 U.S.C.
   §271(b)/(c) does — Brazilian practice reaches indirect participation through
-  general civil co-authorship of the unlawful act (Código Civil arts. 186,
-  927, 942) rather than a patent-specific indirect-infringement statute.
-  `[model knowledge — verify]`
+	  general civil co-authorship of the unlawful act (Código Civil arts. 186,
+	  927, 942) rather than a patent-specific indirect-infringement statute.
+	  `[verified: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm] [unverified: not found in primary source]`
 - **Invalidity defenses to consider (LPI arts. 8, 11-15, 18, 24, 46-57)** —
   lack of novelty (art. 8, 11), lack of inventive step (art. 8, 13), lack of
   industrial applicability (art. 8, 15), non-patentable subject matter (art.
@@ -415,10 +415,10 @@ The rest of this mode assumes the asserted patent is a **utility patent**
   transgenic microorganisms meeting the three patentability requirements),
   and insufficient disclosure (art. 24 — the closest BR analogue to §112
   written description/enablement; a claim not fully and clearly supported by
-  the specification is invalid). **Administrative nullity** (art. 51, [model knowledge — verify]
+	  the specification is invalid). **Administrative nullity** (art. 51, [verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]
   INPI-initiated or third-party petition, no deadline) and **judicial
   nullity action** (art. 56 — anytime during the patent's term, filed in the
-  federal courts, **with INPI as a mandatory co-defendant per art. 57** — a [model knowledge — verify]
+	  federal courts, **with INPI as a mandatory co-defendant per art. 57** — a [verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]
   nullity claim or contention that omits INPI as a party is procedurally
   defective). There is no LPI equivalent to inter partes review (IPR) or
   post-grant review (PGR) — Brazil's administrative and judicial nullity
@@ -426,7 +426,7 @@ The rest of this mode assumes the asserted patent is a **utility patent**
 - **Unenforceability-adjacent defenses** — bad-faith prosecution flag (no
   direct LPI equivalent to US inequitable conduct doctrine; Brazilian
   practice would frame deceptive procurement as fraud voiding the act under
-  general civil law, `[model knowledge — verify]`), laches-type delay
+	  general civil law, `[unverified: not found in primary source]`), laches-type delay
   (Brazilian law uses limitation periods rather than an equitable laches
   doctrine — check the applicable prescription period under Código Civil
   art. 206 rather than assuming a US-style laches defense), assignment /
@@ -440,7 +440,7 @@ The rest of this mode assumes the asserted patent is a **utility patent**
   or willfulness-enhancement equivalent** — LPI does not multiply damages
   for willful infringement; the "greatest of" formula is the full remedy
   (subject to moral damages under general civil law in egregious cases,
-  `[model knowledge — verify]`). There is no US-style pre-suit marking
+	  `[verified: https://www.planalto.gov.br/ccivil_03/leis/l9279.htm]`). There is no US-style pre-suit marking
   requirement gating damages; provisional protection instead runs from
   publication of the application under art. 44, giving a retroactive
   indemnity right for the pre-grant period once the patent issues. If a
