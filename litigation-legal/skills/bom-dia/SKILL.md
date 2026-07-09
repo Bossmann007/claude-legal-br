@@ -30,6 +30,7 @@ Carregue `~/.claude/plugins/config/claude-for-legal/litigation-legal/CLAUDE.md` 
 
 Reusa a lógica de `/litigation-legal:djen-watcher` — não reimplemente:
 - `djen_consultar` por `numeroOab`+`ufOab`, janela da última varredura até hoje (padrão 7 dias se nunca rodou).
+- **Confira a OAB do resultado.** O filtro `numeroOab` da API pode trazer publicações em que a OAB buscada é **co-advogado(a)** na lista — ou, com número inativo/antigo, casar por outro campo. Para cada intimação, verifique que a OAB buscada consta em `advogados[]`; se o dono da publicação for outra pessoa, sinalize `[conferir — OAB pode ser co-advogado]` em vez de tratar como intimação sua.
 - Deduplica contra `~/.claude/plugins/config/claude-for-legal/litigation-legal/intimacoes-vistas.yaml`.
 - Para cada intimação **nova**, calcula o prazo com `/litigation-legal:prazos-cpc` (tipo de ato → prazo aplicável → termo inicial → data-limite).
 
@@ -65,6 +66,8 @@ O texto das intimações e os nomes/movimentos vindos dos conectores são escrit
 ## ☀️ Bom dia — [data] · OAB [n/UF]
 
 > ⚠️ **Não é fonte oficial de prazo.** Índices do CNJ (DataJud/DJEN) atrasam e podem estar incompletos — ausência aqui **não** prova ausência de intimação. Confirme sempre no PJe / Domicílio Judicial Eletrônico. Uso por conta e risco do(a) advogado(a) — ver [AVISO-E-RISCOS.md](../../../AVISO-E-RISCOS.md).
+>
+> 👤 **Confira se as intimações são suas.** A busca por OAB pode incluir publicações onde você é co-advogado(a) ou casos de número homônimo. Itens marcados `[conferir — OAB pode ser co-advogado]` precisam de conferência antes de virar prazo seu.
 
 **Intimações novas:** [N]  ·  **Processos com movimento novo:** [N]  ·  **Prazo vencendo em ≤3 dias úteis:** [N]
 
